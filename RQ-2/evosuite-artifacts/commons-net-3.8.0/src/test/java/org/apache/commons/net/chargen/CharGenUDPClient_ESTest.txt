@@ -1,0 +1,108 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      InetAddress inetAddress0 = MockInetAddress.getByName("org.apache.commons.net.chargen.CharGenUDPClient");
+      charGenUDPClient0.open(0);
+      charGenUDPClient0.send(inetAddress0, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      charGenUDPClient0.open();
+      EvoSuiteLocalAddress evoSuiteLocalAddress0 = new EvoSuiteLocalAddress("192.168.1.42", 40000);
+      byte[] byteArray0 = new byte[3];
+      NetworkHandling.sendUdpPacket(evoSuiteLocalAddress0, byteArray0);
+      byte[] byteArray1 = charGenUDPClient0.receive();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      charGenUDPClient0.open();
+      EvoSuiteLocalAddress evoSuiteLocalAddress0 = new EvoSuiteLocalAddress("192.168.1.42", 40000);
+      byte[] byteArray0 = new byte[0];
+      NetworkHandling.sendUdpPacket(evoSuiteLocalAddress0, byteArray0);
+      byte[] byteArray1 = charGenUDPClient0.receive();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      // Undeclared exception!
+      try { 
+        charGenUDPClient0.send((InetAddress) null, 727);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.chargen.CharGenUDPClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      InetAddress inetAddress0 = MockInetAddress.getLocalHost();
+      // Undeclared exception!
+      try { 
+        charGenUDPClient0.send(inetAddress0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.chargen.CharGenUDPClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      charGenUDPClient0.open(0);
+      try { 
+        charGenUDPClient0.receive();
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Simulated IO exception
+         //
+         verifyException("org.evosuite.runtime.mock.java.net.EvoDatagramSocketImpl", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      // Undeclared exception!
+      try { 
+        charGenUDPClient0.send(inetAddress0, (-383));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Port out of range:-383
+         //
+         verifyException("java.net.DatagramPacket", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      charGenUDPClient0.open();
+      InetAddress inetAddress0 = charGenUDPClient0.getLocalAddress();
+      charGenUDPClient0.send(inetAddress0);
+      assertFalse(inetAddress0.isLoopbackAddress());
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      CharGenUDPClient charGenUDPClient0 = new CharGenUDPClient();
+      // Undeclared exception!
+      try { 
+        charGenUDPClient0.receive();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.chargen.CharGenUDPClient", e);
+      }
+  }

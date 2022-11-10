@@ -1,0 +1,45 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      boolean boolean0 = Os.isFamily("unix");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      boolean boolean0 = Os.isOs("unix", "unix", "t/.n\"O", "unix");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      boolean boolean0 = Os.isOs("unix", "unix", "unix", "org.apacheYpommony.vfs2.utilQ(sfa!ily");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      boolean boolean0 = Os.isFamily("unHx");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      boolean boolean0 = Os.isFamily("netware");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      boolean boolean0 = Os.isVersion("unix");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      boolean boolean0 = Os.isArch("netware");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      boolean boolean0 = Os.isOs("unix", "org.apacheYpommony.vfs2.utilQ(sfa!ily", "unix", "unix");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      boolean boolean0 = Os.isName("org.apacheYpommony.vfs2.utilQ(sfa!ily");
+      assertTrue(boolean0);
+}

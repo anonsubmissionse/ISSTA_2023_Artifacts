@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableDoubleConsumer<Throwable> failableDoubleConsumer0 = FailableDoubleConsumer.nop();
+      FailableDoubleConsumer<Throwable> failableDoubleConsumer1 = failableDoubleConsumer0.andThen(failableDoubleConsumer0);
+      FailableDoubleConsumer<Throwable> failableDoubleConsumer2 = failableDoubleConsumer0.andThen(failableDoubleConsumer1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableDoubleConsumer<Throwable> failableDoubleConsumer0 = FailableDoubleConsumer.nop();
+      failableDoubleConsumer0.accept(0.0);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableDoubleConsumer<Throwable> failableDoubleConsumer0 = FailableDoubleConsumer.nop();
+      // Undeclared exception!
+      try { 
+        failableDoubleConsumer0.andThen((FailableDoubleConsumer<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }

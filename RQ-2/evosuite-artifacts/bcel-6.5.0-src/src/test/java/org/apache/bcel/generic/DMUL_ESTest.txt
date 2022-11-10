@@ -1,0 +1,53 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      Frame frame0 = new Frame(2205, 2205);
+      instConstraintVisitor0.setFrame(frame0);
+      DMUL dMUL0 = new DMUL();
+      // Undeclared exception!
+      try { 
+        dMUL0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Instruction DMUL constraint violated: Cannot consume 4 stack slots: only 0 slot(s) left on stack!
+         // Stack:
+         // Slots used: 0 MaxStack: 2205.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DMUL dMUL0 = new DMUL();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      LocalVariables localVariables0 = new LocalVariables(741);
+      ObjectType objectType0 = Type.STRING;
+      OperandStack operandStack0 = new OperandStack(741, objectType0);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      executionVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        dMUL0.accept(executionVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DMUL dMUL0 = new DMUL();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        dMUL0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }

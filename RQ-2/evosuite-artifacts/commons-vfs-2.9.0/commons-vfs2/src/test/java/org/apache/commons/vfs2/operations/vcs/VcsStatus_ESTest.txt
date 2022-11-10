@@ -1,0 +1,33 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      VcsStatus[] vcsStatusArray0 = VcsStatus.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      VcsStatus vcsStatus0 = VcsStatus.valueOf("ADDED");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      VcsStatus vcsStatus0 = VcsStatus.valueOf("UNKNOWN");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      VcsStatus vcsStatus0 = VcsStatus.valueOf("NOT_MODIFIED");
+      int int0 = vcsStatus0.getStatus();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      VcsStatus vcsStatus0 = VcsStatus.UNKNOWN;
+      int int0 = vcsStatus0.getStatus();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      VcsStatus vcsStatus0 = VcsStatus.ADDED;
+      int int0 = vcsStatus0.getStatus();
+      assertEquals(0, int0);
+}

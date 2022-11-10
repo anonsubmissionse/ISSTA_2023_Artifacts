@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FormSetFactory formSetFactory0 = new FormSetFactory();
+      Digester digester0 = new Digester();
+      formSetFactory0.setDigester(digester0);
+      AttributesImpl attributesImpl0 = new AttributesImpl();
+      attributesImpl0.addAttribute("country", "country", "country", "5,Kk/i376V$1", "country");
+      try { 
+        formSetFactory0.createObject(attributesImpl0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.validator.FormSetFactory", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FormSetFactory formSetFactory0 = new FormSetFactory();
+      Attributes2Impl attributes2Impl0 = new Attributes2Impl();
+      Digester digester0 = new Digester();
+      digester0.push((Object) formSetFactory0);
+      formSetFactory0.setDigester(digester0);
+      try { 
+        formSetFactory0.createObject(attributes2Impl0);
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+         //
+         // org.apache.commons.validator.FormSetFactory cannot be cast to org.apache.commons.validator.ValidatorResources
+         //
+         verifyException("org.apache.commons.validator.FormSetFactory", e);
+      }
+  }

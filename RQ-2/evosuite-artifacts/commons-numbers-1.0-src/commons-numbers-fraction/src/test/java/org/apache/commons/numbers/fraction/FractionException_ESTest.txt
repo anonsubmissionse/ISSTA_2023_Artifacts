@@ -1,0 +1,63 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Object[] objectArray0 = new Object[3];
+      FractionException fractionException0 = null;
+      try {
+        fractionException0 = new FractionException("DGCk{rQC^+IwaT%Pxb", objectArray0);
+        fail("Expecting exception: UnknownFormatConversionException");
+      } catch(UnknownFormatConversionException e) {
+         //
+         // Conversion = 'P'
+         //
+         verifyException("java.util.Formatter$FormatSpecifier", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Object[] objectArray0 = new Object[1];
+      FractionException fractionException0 = null;
+      try {
+        fractionException0 = new FractionException("Overflow trying to convert %s to fraction (%d/%d)", objectArray0);
+        fail("Expecting exception: MissingFormatArgumentException");
+      } catch(MissingFormatArgumentException e) {
+         //
+         // Format specifier '%d'
+         //
+         verifyException("java.util.Formatter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object[] objectArray0 = new Object[7];
+      objectArray0[1] = (Object) "kX-6?BL`;ezp";
+      FractionException fractionException0 = null;
+      try {
+        fractionException0 = new FractionException("Unable to convert %s to fraction after %d iterations", objectArray0);
+        fail("Expecting exception: IllegalFormatConversionException");
+      } catch(IllegalFormatConversionException e) {
+         //
+         // d != java.lang.String
+         //
+         verifyException("java.util.Formatter$FormatSpecifier", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FractionException fractionException0 = null;
+      try {
+        fractionException0 = new FractionException((String) null, (Object[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FractionException fractionException0 = new FractionException("", (Object[]) null);
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FractionException fractionException0 = new FractionException("");
+  }

@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EnterpriseUnixFTPEntryParser enterpriseUnixFTPEntryParser0 = new EnterpriseUnixFTPEntryParser();
+      // Undeclared exception!
+      try { 
+        enterpriseUnixFTPEntryParser0.parseFTPEntry((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EnterpriseUnixFTPEntryParser enterpriseUnixFTPEntryParser0 = new EnterpriseUnixFTPEntryParser();
+      enterpriseUnixFTPEntryParser0.setRegex("Ss1a", 0);
+      // Undeclared exception!
+      try { 
+        enterpriseUnixFTPEntryParser0.parseFTPEntry("Ss1a");
+        fail("Expecting exception: IndexOutOfBoundsException");
+      } catch(IndexOutOfBoundsException e) {
+         //
+         // No group 14
+         //
+         verifyException("java.util.regex.Matcher", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      EnterpriseUnixFTPEntryParser enterpriseUnixFTPEntryParser0 = new EnterpriseUnixFTPEntryParser();
+      FTPFile fTPFile0 = enterpriseUnixFTPEntryParser0.parseFTPEntry("Ss1a");
+      ;
+}

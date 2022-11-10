@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeavableConstructor<Locale.FilteringMode> weavableConstructor0 = null;
+      try {
+        weavableConstructor0 = new WeavableConstructor<Locale.FilteringMode>((Constructor<Locale.FilteringMode>) null, (WeavableClass<Locale.FilteringMode>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.WeavableConstructor", e);
+      }
+  }

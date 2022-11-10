@@ -1,0 +1,51 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DDIV dDIV0 = new DDIV();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        dDIV0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DDIV dDIV0 = new DDIV();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      OperandStack operandStack0 = new OperandStack((-3720));
+      Frame frame0 = new Frame((LocalVariables) null, operandStack0);
+      instConstraintVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        dDIV0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Instruction DDIV constraint violated: Cannot consume 4 stack slots: only 0 slot(s) left on stack!
+         // Stack:
+         // Slots used: 0 MaxStack: -3720.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DDIV dDIV0 = new DDIV();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      dDIV0.setOpcode((short) (-704));
+      // Undeclared exception!
+      try { 
+        dDIV0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -704
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }

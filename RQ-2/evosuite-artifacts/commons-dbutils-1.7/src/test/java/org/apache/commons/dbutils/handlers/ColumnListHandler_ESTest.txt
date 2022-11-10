@@ -1,0 +1,22 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ColumnListHandler<Object> columnListHandler0 = new ColumnListHandler<Object>();
+      // Undeclared exception!
+      try { 
+        columnListHandler0.handleRow((ResultSet) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.ColumnListHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ColumnListHandler<String> columnListHandler0 = new ColumnListHandler<String>(0);
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(resultSet0).getObject(anyInt());
+      String string0 = columnListHandler0.handleRow(resultSet0);
+      assertNotNull(string0);
+}

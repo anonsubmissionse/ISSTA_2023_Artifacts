@@ -1,0 +1,136 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration();
+      XMLBeanDeclaration xMLBeanDeclaration0 = new XMLBeanDeclaration((HierarchicalConfiguration<ImmutableNode>) combinedConfiguration0);
+      ConstructorArg constructorArg0 = ConstructorArg.forBeanDeclaration((BeanDeclaration) xMLBeanDeclaration0);
+      Object object0 = constructorArg0.getValue();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConstructorArg constructorArg0 = ConstructorArg.forValue((Object) "g)%>6$K", "\"");
+      String string0 = constructorArg0.getTypeName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0, "");
+      String string0 = constructorArg0.getTypeName();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      BeanDeclaration[] beanDeclarationArray0 = new BeanDeclaration[0];
+      CombinedBeanDeclaration combinedBeanDeclaration0 = new CombinedBeanDeclaration(beanDeclarationArray0);
+      ConstructorArg constructorArg0 = ConstructorArg.forBeanDeclaration((BeanDeclaration) combinedBeanDeclaration0, "ZcPzv^7u>");
+      BeanDeclaration beanDeclaration0 = constructorArg0.getBeanDeclaration();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        ConstructorArg.forBeanDeclaration((BeanDeclaration) null, "+;T0xY0eq6%");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // beanDeclaration
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      BeanDeclaration[] beanDeclarationArray0 = new BeanDeclaration[0];
+      CombinedBeanDeclaration combinedBeanDeclaration0 = new CombinedBeanDeclaration(beanDeclarationArray0);
+      ConstructorArg constructorArg0 = ConstructorArg.forBeanDeclaration((BeanDeclaration) combinedBeanDeclaration0, ",n]qa+");
+      boolean boolean0 = constructorArg0.isNestedBeanDeclaration();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0);
+      boolean boolean0 = constructorArg0.isNestedBeanDeclaration();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0);
+      String string0 = constructorArg0.getTypeName();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0);
+      Object object1 = constructorArg0.getValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0);
+      BeanDeclaration beanDeclaration0 = constructorArg0.getBeanDeclaration();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      ConstructorArg constructorArg0 = ConstructorArg.forValue((Object) "AhiMQYpWU;M5^", "java.lang.String");
+      Class<String> class0 = String.class;
+      boolean boolean0 = constructorArg0.matches(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      HierarchicalConfiguration<Object> hierarchicalConfiguration0 = (HierarchicalConfiguration<Object>) mock(HierarchicalConfiguration.class, new ViolatedAssumptionAnswer());
+      XMLBeanDeclaration xMLBeanDeclaration0 = new XMLBeanDeclaration(hierarchicalConfiguration0, (XMLBeanDeclaration.NodeData<?>) null);
+      ConstructorArg constructorArg0 = ConstructorArg.forBeanDeclaration((BeanDeclaration) xMLBeanDeclaration0, "");
+      Class<Object> class0 = Object.class;
+      boolean boolean0 = constructorArg0.matches(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      ConstructorArg constructorArg0 = ConstructorArg.forValue((Object) "AhiMQYpWU;M5^", "java.lang.String");
+      boolean boolean0 = constructorArg0.matches((Class<?>) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0);
+      Class<Object> class0 = Object.class;
+      boolean boolean0 = constructorArg0.matches(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        ConstructorArg.forBeanDeclaration((BeanDeclaration) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // beanDeclaration
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      Object object0 = new Object();
+      ConstructorArg constructorArg0 = ConstructorArg.forValue(object0);
+      constructorArg0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      HierarchicalConfiguration<Object> hierarchicalConfiguration0 = (HierarchicalConfiguration<Object>) mock(HierarchicalConfiguration.class, new ViolatedAssumptionAnswer());
+      XMLBeanDeclaration xMLBeanDeclaration0 = new XMLBeanDeclaration(hierarchicalConfiguration0, (XMLBeanDeclaration.NodeData<?>) null);
+      ConstructorArg constructorArg0 = ConstructorArg.forBeanDeclaration((BeanDeclaration) xMLBeanDeclaration0, "");
+      constructorArg0.toString();
+      ;
+}

@@ -1,0 +1,42 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EnvironmentConfiguration environmentConfiguration0 = new EnvironmentConfiguration();
+      // Undeclared exception!
+      try { 
+        environmentConfiguration0.clearInternal();
+        fail("Expecting exception: UnsupportedOperationException");
+      } catch(UnsupportedOperationException e) {
+         //
+         // EnvironmentConfiguration is read-only!
+         //
+         verifyException("org.apache.commons.configuration2.EnvironmentConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EnvironmentConfiguration environmentConfiguration0 = new EnvironmentConfiguration();
+      // Undeclared exception!
+      try { 
+        environmentConfiguration0.clearPropertyDirect("J{0^");
+        fail("Expecting exception: UnsupportedOperationException");
+      } catch(UnsupportedOperationException e) {
+         //
+         // EnvironmentConfiguration is read-only!
+         //
+         verifyException("org.apache.commons.configuration2.EnvironmentConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      EnvironmentConfiguration environmentConfiguration0 = new EnvironmentConfiguration();
+      // Undeclared exception!
+      try { 
+        environmentConfiguration0.addPropertyDirect("~WE?%9K`>!|IlP^", "~WE?%9K`>!|IlP^");
+        fail("Expecting exception: UnsupportedOperationException");
+      } catch(UnsupportedOperationException e) {
+         //
+         // EnvironmentConfiguration is read-only!
+         //
+         verifyException("org.apache.commons.configuration2.EnvironmentConfiguration", e);
+      }
+  }

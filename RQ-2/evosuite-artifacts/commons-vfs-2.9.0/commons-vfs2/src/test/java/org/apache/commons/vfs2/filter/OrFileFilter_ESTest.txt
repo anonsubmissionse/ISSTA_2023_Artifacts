@@ -1,0 +1,161 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      List<String> list0 = ResourceBundle.Control.FORMAT_DEFAULT;
+      SuffixFileFilter suffixFileFilter0 = new SuffixFileFilter(list0);
+      orFileFilter0.addFileFilter(suffixFileFilter0);
+      boolean boolean0 = orFileFilter0.removeFileFilter(suffixFileFilter0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter((List<FileFilter>) null);
+      // Undeclared exception!
+      try { 
+        orFileFilter0.setFileFilters((List<FileFilter>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      EmptyFileFilter emptyFileFilter0 = (EmptyFileFilter)EmptyFileFilter.EMPTY;
+      orFileFilter0.addFileFilter(emptyFileFilter0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn((FileObject) null).when(fileSelectInfo0).getFile();
+      // Undeclared exception!
+      try { 
+        orFileFilter0.accept(fileSelectInfo0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.EmptyFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      EmptyFileFilter emptyFileFilter0 = (EmptyFileFilter)EmptyFileFilter.EMPTY;
+      orFileFilter0.addFileFilter(emptyFileFilter0);
+      orFileFilter0.addFileFilter((FileFilter) null);
+      String string0 = orFileFilter0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Stack<FileFilter> stack0 = new Stack<FileFilter>();
+      FalseFileFilter falseFileFilter0 = new FalseFileFilter();
+      OrFileFilter orFileFilter0 = new OrFileFilter(stack0);
+      orFileFilter0.addFileFilter(falseFileFilter0);
+      String string0 = orFileFilter0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Stack<FileFilter> stack0 = new Stack<FileFilter>();
+      FalseFileFilter falseFileFilter0 = new FalseFileFilter();
+      OrFileFilter orFileFilter0 = new OrFileFilter(stack0);
+      orFileFilter0.addFileFilter(falseFileFilter0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = orFileFilter0.accept(fileSelectInfo0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      orFileFilter0.addFileFilter((FileFilter) null);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      // Undeclared exception!
+      try { 
+        orFileFilter0.accept(fileSelectInfo0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.OrFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      List<FileFilter> list0 = orFileFilter0.getFileFilters();
+      OrFileFilter orFileFilter1 = new OrFileFilter(list0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      FileFilter[] fileFilterArray0 = new FileFilter[1];
+      AndFileFilter andFileFilter0 = new AndFileFilter();
+      fileFilterArray0[0] = (FileFilter) andFileFilter0;
+      OrFileFilter orFileFilter0 = new OrFileFilter(fileFilterArray0);
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      FileFilter[] fileFilterArray0 = new FileFilter[1];
+      OrFileFilter orFileFilter0 = null;
+      try {
+        orFileFilter0 = new OrFileFilter(fileFilterArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Null filters are not allowed
+         //
+         verifyException("org.apache.commons.vfs2.filter.OrFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      FileFilter[] fileFilterArray0 = new FileFilter[0];
+      OrFileFilter orFileFilter0 = null;
+      try {
+        orFileFilter0 = new OrFileFilter(fileFilterArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // The filters must not be null or empty
+         //
+         verifyException("org.apache.commons.vfs2.filter.OrFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      OrFileFilter orFileFilter0 = null;
+      try {
+        orFileFilter0 = new OrFileFilter((FileFilter[]) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // The filters must not be null or empty
+         //
+         verifyException("org.apache.commons.vfs2.filter.OrFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      boolean boolean0 = orFileFilter0.removeFileFilter(orFileFilter0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter();
+      List<FileFilter> list0 = orFileFilter0.getFileFilters();
+      orFileFilter0.setFileFilters(list0);
+      assertTrue(list0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      OrFileFilter orFileFilter0 = new OrFileFilter((List<FileFilter>) null);
+      TrueFileFilter trueFileFilter0 = new TrueFileFilter();
+      orFileFilter0.addFileFilter(trueFileFilter0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = orFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}

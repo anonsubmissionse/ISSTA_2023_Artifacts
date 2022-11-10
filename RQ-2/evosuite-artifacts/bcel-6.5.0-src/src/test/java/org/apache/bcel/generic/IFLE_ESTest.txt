@@ -1,0 +1,56 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IFLE iFLE0 = new IFLE((InstructionHandle) null);
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      LocalVariables localVariables0 = new LocalVariables(1285);
+      ObjectType objectType0 = new ObjectType("");
+      OperandStack operandStack0 = new OperandStack(2663, objectType0);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      instConstraintVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        iFLE0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Instruction IFLE constraint violated: The value at the stack top is not of type 'int', but of type ''.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      IFLE iFLE0 = new IFLE();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        iFLE0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      IFLE iFLE0 = new IFLE((InstructionHandle) null);
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        iFLE0.accept(instConstraintVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      IFLE iFLE0 = new IFLE((InstructionHandle) null);
+      IfInstruction ifInstruction0 = iFLE0.negate();
+      ;
+}

@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableToLongBiFunction<Object, String, Throwable> failableToLongBiFunction0 = FailableToLongBiFunction.nop();
+      Object object0 = new Object();
+      long long0 = failableToLongBiFunction0.applyAsLong(object0, "");
+      assertEquals(0, long0);
+}

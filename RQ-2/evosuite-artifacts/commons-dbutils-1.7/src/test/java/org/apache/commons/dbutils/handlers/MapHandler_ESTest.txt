@@ -1,0 +1,30 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BasicRowProcessor basicRowProcessor0 = new BasicRowProcessor();
+      MapHandler mapHandler0 = new MapHandler(basicRowProcessor0);
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MapHandler mapHandler0 = new MapHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((ResultSetMetaData) null).when(resultSet0).getMetaData();
+      doReturn(true).when(resultSet0).next();
+      // Undeclared exception!
+      try { 
+        mapHandler0.handle(resultSet0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.BasicRowProcessor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MapHandler mapHandler0 = new MapHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(resultSet0).next();
+      Map<String, Object> map0 = mapHandler0.handle(resultSet0);
+      assertNotNull(map0);
+}

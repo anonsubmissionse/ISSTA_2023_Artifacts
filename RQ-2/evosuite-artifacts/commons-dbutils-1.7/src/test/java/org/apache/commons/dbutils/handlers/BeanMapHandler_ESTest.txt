@@ -1,0 +1,100 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      BeanMapHandler<Object, Object> beanMapHandler0 = new BeanMapHandler<Object, Object>(class0);
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(0).when(resultSetMetaData0).getColumnCount();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      Object object0 = beanMapHandler0.createRow(resultSet0);
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<Integer> class0 = Integer.class;
+      BeanMapHandler<String, Integer> beanMapHandler0 = new BeanMapHandler<String, Integer>(class0, "/[.uYkUG8=,5");
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(resultSet0).getObject(anyString());
+      String string0 = beanMapHandler0.createKey(resultSet0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(3181).when(resultSetMetaData0).getColumnCount();
+      doReturn("", (String) null).when(resultSetMetaData0).getColumnLabel(anyInt());
+      doReturn("", (String) null).when(resultSetMetaData0).getColumnName(anyInt());
+      Class<String> class0 = String.class;
+      BeanMapHandler<String, String> beanMapHandler0 = new BeanMapHandler<String, String>(class0, 3181);
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      // Undeclared exception!
+      try { 
+        beanMapHandler0.createRow(resultSet0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.BeanProcessor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      BeanMapHandler<String, Object> beanMapHandler0 = new BeanMapHandler<String, Object>(class0, "");
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn((-997)).when(resultSetMetaData0).getColumnCount();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      // Undeclared exception!
+      try { 
+        beanMapHandler0.createRow(resultSet0);
+        fail("Expecting exception: NegativeArraySizeException");
+      } catch(NegativeArraySizeException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.BeanProcessor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Class<Integer> class0 = Integer.class;
+      BeanMapHandler<String, Integer> beanMapHandler0 = new BeanMapHandler<String, Integer>(class0, "/[.uYkUG8=,5");
+      // Undeclared exception!
+      try { 
+        beanMapHandler0.createKey((ResultSet) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.BeanMapHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      BeanMapHandler<Object, Object> beanMapHandler0 = new BeanMapHandler<Object, Object>(class0);
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(beanMapHandler0).when(resultSet0).getObject(anyInt());
+      Object object0 = beanMapHandler0.createKey(resultSet0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Class<Integer> class0 = Integer.class;
+      BasicRowProcessor basicRowProcessor0 = new BasicRowProcessor();
+      BeanMapHandler<Object, Integer> beanMapHandler0 = new BeanMapHandler<Object, Integer>(class0, basicRowProcessor0);
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      try { 
+        beanMapHandler0.createRow(resultSet0);
+        fail("Expecting exception: SQLException");
+      } catch(SQLException e) {
+         //
+         // Cannot create java.lang.Integer: java.lang.Integer
+         //
+         verifyException("org.apache.commons.dbutils.BeanProcessor", e);
+      }
+  }

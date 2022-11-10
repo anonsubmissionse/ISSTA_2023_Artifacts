@@ -1,0 +1,140 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      // Undeclared exception!
+      try { 
+        mLSxEntryParser0.parseFTPEntry((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        MLSxEntryParser.parseEntry((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("=; ]u0Nm,;ij9Atm+_-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("=; ]u0Nm,;ij9Atm+_-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("=; ]u0Nm,;ij9Atm+_-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = new MLSxEntryParser();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("N; }u0iVm,Z9A+_<--.");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = new MLSxEntryParser();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("TYQe=(; >");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = new MLSxEntryParser();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("TYQe=(; >");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = new MLSxEntryParser();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("TYQe=(; >");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("_8.[N ");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("X");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        MLSxEntryParser.parseGMTdateTime("");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      Calendar calendar0 = MLSxEntryParser.parseGMTdateTime("!-Wpn]&sj\".: em:");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      FTPFile fTPFile0 = MLSxEntryParser.parseEntry("=; ]u0Nm,;ij9Atm+_-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      FTPFile fTPFile0 = MLSxEntryParser.parseEntry("=; ]u0Nm,;ij9Atm+_-");
+      assertNotNull(fTPFile0);
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      FTPFile fTPFile0 = MLSxEntryParser.parseEntry("=; ]u0Nm,;ij9Atm+_-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      FTPFile fTPFile0 = MLSxEntryParser.parseEntry("d; Di8h~)[8n+9AI-.");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = new MLSxEntryParser();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry("bu2G#G#88Q-M P");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry(" %8d");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = MLSxEntryParser.getInstance();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry(" %8d");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      MLSxEntryParser mLSxEntryParser0 = new MLSxEntryParser();
+      FTPFile fTPFile0 = mLSxEntryParser0.parseFTPEntry(" ");
+      ;
+}

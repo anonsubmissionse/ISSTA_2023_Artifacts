@@ -1,0 +1,36 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FTPSTrustManager fTPSTrustManager0 = new FTPSTrustManager();
+      // Undeclared exception!
+      try { 
+        fTPSTrustManager0.checkServerTrusted((X509Certificate[]) null, (String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.ftp.FTPSTrustManager", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FTPSTrustManager fTPSTrustManager0 = new FTPSTrustManager();
+      X509Certificate[] x509CertificateArray0 = new X509Certificate[1];
+      X509Certificate x509Certificate0 = mock(X509Certificate.class, new ViolatedAssumptionAnswer());
+      x509CertificateArray0[0] = x509Certificate0;
+      fTPSTrustManager0.checkServerTrusted(x509CertificateArray0, "HLuV:");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FTPSTrustManager fTPSTrustManager0 = new FTPSTrustManager();
+      X509Certificate[] x509CertificateArray0 = fTPSTrustManager0.getAcceptedIssuers();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FTPSTrustManager fTPSTrustManager0 = new FTPSTrustManager();
+      X509Certificate[] x509CertificateArray0 = new X509Certificate[1];
+      fTPSTrustManager0.checkClientTrusted(x509CertificateArray0, "HLuV:");
+      ;
+}

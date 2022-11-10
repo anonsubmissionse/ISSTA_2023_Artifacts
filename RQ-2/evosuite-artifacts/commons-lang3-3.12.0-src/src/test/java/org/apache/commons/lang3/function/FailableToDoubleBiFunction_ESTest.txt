@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableToDoubleBiFunction<String, Object, Throwable> failableToDoubleBiFunction0 = FailableToDoubleBiFunction.nop();
+      Object object0 = new Object();
+      double double0 = failableToDoubleBiFunction0.applyAsDouble("", object0);
+      ;
+}

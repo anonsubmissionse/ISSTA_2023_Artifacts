@@ -1,0 +1,107 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      discardUDPClient0.open(0);
+      discardUDPClient0.send(byteArray0, 0, inetAddress0, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      discardUDPClient0.open(0);
+      discardUDPClient0.send(byteArray0, inetAddress0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      discardUDPClient0.open(0);
+      discardUDPClient0.send(byteArray0, 0, inetAddress0);
+      assertNotNull(inetAddress0.toString());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.getByName("");
+      // Undeclared exception!
+      try { 
+        discardUDPClient0.send(byteArray0, 9, inetAddress0, 618);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // illegal length
+         //
+         verifyException("java.net.DatagramPacket", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[2];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      // Undeclared exception!
+      try { 
+        discardUDPClient0.send(byteArray0, 215, inetAddress0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // illegal length
+         //
+         verifyException("java.net.DatagramPacket", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      // Undeclared exception!
+      try { 
+        discardUDPClient0.send(byteArray0, 0, inetAddress0, 0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.discard.DiscardUDPClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      // Undeclared exception!
+      try { 
+        discardUDPClient0.send(byteArray0, inetAddress0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.discard.DiscardUDPClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      DiscardUDPClient discardUDPClient0 = new DiscardUDPClient();
+      byte[] byteArray0 = new byte[0];
+      InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
+      // Undeclared exception!
+      try { 
+        discardUDPClient0.send(byteArray0, 0, inetAddress0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.discard.DiscardUDPClient", e);
+      }
+  }

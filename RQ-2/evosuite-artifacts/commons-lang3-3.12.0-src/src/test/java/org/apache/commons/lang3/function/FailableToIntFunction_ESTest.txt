@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableToIntFunction<Object, Throwable> failableToIntFunction0 = FailableToIntFunction.nop();
+      MockThrowable mockThrowable0 = new MockThrowable("mDl;<d+k6UfgV)R&yDr");
+      int int0 = failableToIntFunction0.applyAsInt(mockThrowable0);
+      ;
+}

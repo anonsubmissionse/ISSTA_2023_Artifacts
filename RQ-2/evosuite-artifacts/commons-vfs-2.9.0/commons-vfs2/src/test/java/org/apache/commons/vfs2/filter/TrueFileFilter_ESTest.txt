@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      TrueFileFilter trueFileFilter0 = new TrueFileFilter();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = trueFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}

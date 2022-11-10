@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DisabledListDelimiterHandler disabledListDelimiterHandler0 = (DisabledListDelimiterHandler)DisabledListDelimiterHandler.INSTANCE;
+      String string0 = disabledListDelimiterHandler0.escapeString("WebTestClient-Request-Id");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DisabledListDelimiterHandler disabledListDelimiterHandler0 = new DisabledListDelimiterHandler();
+      String string0 = disabledListDelimiterHandler0.escapeString("");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DisabledListDelimiterHandler disabledListDelimiterHandler0 = new DisabledListDelimiterHandler();
+      Collection<String> collection0 = disabledListDelimiterHandler0.splitString((String) null, false);
+      assertNotNull(collection0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DisabledListDelimiterHandler disabledListDelimiterHandler0 = new DisabledListDelimiterHandler();
+      ValueTransformer valueTransformer0 = ListDelimiterHandler.NOOP_TRANSFORMER;
+      LinkedList<Object> linkedList0 = new LinkedList<Object>();
+      // Undeclared exception!
+      try { 
+        disabledListDelimiterHandler0.escapeList(linkedList0, valueTransformer0);
+        fail("Expecting exception: UnsupportedOperationException");
+      } catch(UnsupportedOperationException e) {
+         //
+         // Escaping lists is not supported!
+         //
+         verifyException("org.apache.commons.configuration2.convert.DisabledListDelimiterHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DisabledListDelimiterHandler disabledListDelimiterHandler0 = new DisabledListDelimiterHandler();
+      String string0 = disabledListDelimiterHandler0.escapeString((String) null);
+      assertNotNull(string0);
+}

@@ -1,0 +1,133 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      // Undeclared exception!
+      try { 
+        scanResult0.getWeavable((Class<WeavablePackage>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.ScanResult", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      // Undeclared exception!
+      try { 
+        scanResult0.getClassesAssignableTo((Class<?>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // supertype
+         //
+         verifyException("org.apache.commons.lang3.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavableClass<?>> annotatedElements0 = scanResult0.getClasses();
+      assertNotNull(annotatedElements0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavableMethod<?>> annotatedElements0 = scanResult0.getMethods();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavablePackage> annotatedElements0 = scanResult0.getPackages();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavableConstructor<?>> annotatedElements0 = scanResult0.getConstructors();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      WeavablePackage weavablePackage0 = scanResult0.getWeavable((Package) null);
+      WeavablePackage weavablePackage1 = scanResult0.getWeavable((Package) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      // Undeclared exception!
+      try { 
+        scanResult0.getWeavable((Constructor<WeavableConstructor<String>>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.ScanResult", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      Class<String> class0 = String.class;
+      WeavableClass<String> weavableClass0 = scanResult0.getWeavable(class0);
+      assertNotNull(weavableClass0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      // Undeclared exception!
+      try { 
+        scanResult0.getWeavable((Method) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.ScanResult", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      // Undeclared exception!
+      try { 
+        scanResult0.getWeavable((Field) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.ScanResult", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavableField<?>> annotatedElements0 = scanResult0.getFields();
+      assertNotNull(annotatedElements0);
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      Class<String> class0 = String.class;
+      AnnotatedElements<WeavableClass<?>> annotatedElements0 = scanResult0.getClassesAssignableTo(class0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavableConstructorParameter<?>> annotatedElements0 = scanResult0.getConstructorParameters();
+      assertNotNull(annotatedElements0);
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      ScanResult scanResult0 = new ScanResult();
+      AnnotatedElements<WeavableMethodParameter<?>> annotatedElements0 = scanResult0.getMethodParameters();
+      assertNotNull(annotatedElements0);
+}

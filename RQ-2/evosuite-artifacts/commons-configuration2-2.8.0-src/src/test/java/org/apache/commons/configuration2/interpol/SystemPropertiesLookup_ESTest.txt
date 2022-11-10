@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SystemPropertiesLookup systemPropertiesLookup0 = new SystemPropertiesLookup();
+      Object object0 = systemPropertiesLookup0.lookup("*a");
+      assertNotNull(object0);
+}

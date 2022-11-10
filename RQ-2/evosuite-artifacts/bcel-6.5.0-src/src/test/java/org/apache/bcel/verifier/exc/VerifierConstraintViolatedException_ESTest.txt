@@ -1,0 +1,38 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException("");
+      String string0 = loadingException0.getMessage();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException();
+      loadingException0.extendMessage("", (String) null);
+      assertNotNull(loadingException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException();
+      loadingException0.extendMessage((String) null, ".&Rb{,E");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException("");
+      loadingException0.extendMessage((String) null, "");
+      assertNotNull(loadingException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException("");
+      ClassConstraintException classConstraintException0 = new ClassConstraintException("", loadingException0);
+      classConstraintException0.extendMessage("org.apache.bcel.verifier.exc.CodeConstraintException", "");
+      String string0 = classConstraintException0.getMessage();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException();
+      String string0 = loadingException0.getMessage();
+      ;
+}

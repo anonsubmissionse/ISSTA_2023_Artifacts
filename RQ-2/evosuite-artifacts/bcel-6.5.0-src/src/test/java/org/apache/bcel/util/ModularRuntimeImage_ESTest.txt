@@ -1,0 +1,38 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ModularRuntimeImage modularRuntimeImage0 = null;
+      try {
+        modularRuntimeImage0 = new ModularRuntimeImage((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ModularRuntimeImage modularRuntimeImage0 = null;
+      try {
+        modularRuntimeImage0 = new ModularRuntimeImage("[!s$m");
+        fail("Expecting exception: ProviderNotFoundException");
+      } catch(ProviderNotFoundException e) {
+         //
+         // Provider \"jrt\" not found
+         //
+         verifyException("java.nio.file.FileSystems", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ModularRuntimeImage modularRuntimeImage0 = null;
+      try {
+        modularRuntimeImage0 = new ModularRuntimeImage();
+        fail("Expecting exception: ProviderNotFoundException");
+      } catch(ProviderNotFoundException e) {
+         //
+         // Provider \"jrt\" not found
+         //
+         verifyException("java.nio.file.FileSystems", e);
+      }
+  }

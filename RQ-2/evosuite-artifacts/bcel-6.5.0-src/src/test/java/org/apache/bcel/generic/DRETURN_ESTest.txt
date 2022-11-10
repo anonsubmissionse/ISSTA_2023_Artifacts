@@ -1,0 +1,43 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      LocalVariables localVariables0 = new LocalVariables(2649);
+      ObjectType objectType0 = Type.STRING;
+      OperandStack operandStack0 = new OperandStack(2649, objectType0);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      executionVisitor0.setFrame(frame0);
+      DRETURN dRETURN0 = new DRETURN();
+      dRETURN0.accept(executionVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DRETURN dRETURN0 = new DRETURN();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        dRETURN0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DRETURN dRETURN0 = new DRETURN();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      dRETURN0.setOpcode((short)1569);
+      // Undeclared exception!
+      try { 
+        dRETURN0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 1569
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }

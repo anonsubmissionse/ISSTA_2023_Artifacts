@@ -1,0 +1,27 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      JSONConfiguration jSONConfiguration0 = new JSONConfiguration();
+      ImmutableConfigurationInvocationHandler immutableConfigurationInvocationHandler0 = new ImmutableConfigurationInvocationHandler(jSONConfiguration0);
+      try { 
+        immutableConfigurationInvocationHandler0.invoke(jSONConfiguration0, (Method) null, (Object[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.ImmutableConfigurationInvocationHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ImmutableConfigurationInvocationHandler immutableConfigurationInvocationHandler0 = null;
+      try {
+        immutableConfigurationInvocationHandler0 = new ImmutableConfigurationInvocationHandler((Configuration) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // configuration
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }

@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String[] stringArray0 = new String[22];
+      SystemInUtil.addInputLine("");
+      // Undeclared exception!
+      try { 
+        SubnetUtilsExample.main(stringArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Could not parse []
+         //
+         verifyException("org.apache.commons.net.util.SubnetUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String[] stringArray0 = new String[22];
+      SubnetUtilsExample.main(stringArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SubnetUtilsExample subnetUtilsExample0 = new SubnetUtilsExample();
+  }

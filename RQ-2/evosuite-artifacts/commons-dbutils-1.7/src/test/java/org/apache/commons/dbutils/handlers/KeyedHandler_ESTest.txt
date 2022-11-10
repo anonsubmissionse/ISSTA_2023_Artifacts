@@ -1,0 +1,53 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      KeyedHandler<String> keyedHandler0 = new KeyedHandler<String>();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(0).when(resultSetMetaData0).getColumnCount();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      Map<String, Object> map0 = keyedHandler0.createRow(resultSet0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      KeyedHandler<String> keyedHandler0 = new KeyedHandler<String>((-5577));
+      // Undeclared exception!
+      try { 
+        keyedHandler0.createKey((ResultSet) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.KeyedHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BasicRowProcessor basicRowProcessor0 = new BasicRowProcessor();
+      KeyedHandler<HashMap<Object, Object>> keyedHandler0 = new KeyedHandler<HashMap<Object, Object>>(basicRowProcessor0);
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      KeyedHandler<String> keyedHandler0 = new KeyedHandler<String>();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(resultSet0).getObject(anyInt());
+      String string0 = keyedHandler0.createKey(resultSet0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      KeyedHandler<Object> keyedHandler0 = new KeyedHandler<Object>(0);
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((ResultSetMetaData) null).when(resultSet0).getMetaData();
+      // Undeclared exception!
+      try { 
+        keyedHandler0.createRow(resultSet0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.BasicRowProcessor", e);
+      }
+  }

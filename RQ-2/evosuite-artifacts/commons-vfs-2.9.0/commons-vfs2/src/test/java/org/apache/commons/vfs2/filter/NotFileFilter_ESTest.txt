@@ -1,0 +1,39 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileFilter fileFilter0 = mock(FileFilter.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileFilter0).accept(any(org.apache.commons.vfs2.FileSelectInfo.class));
+      NotFileFilter notFileFilter0 = new NotFileFilter(fileFilter0);
+      NotFileFilter notFileFilter1 = new NotFileFilter(notFileFilter0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = notFileFilter1.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileFilter fileFilter0 = mock(FileFilter.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileFilter0).accept(any(org.apache.commons.vfs2.FileSelectInfo.class));
+      NotFileFilter notFileFilter0 = new NotFileFilter(fileFilter0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = notFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NotFileFilter notFileFilter0 = null;
+      try {
+        notFileFilter0 = new NotFileFilter((FileFilter) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // The filter must not be null
+         //
+         verifyException("org.apache.commons.vfs2.filter.NotFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileFilter fileFilter0 = mock(FileFilter.class, new ViolatedAssumptionAnswer());
+      NotFileFilter notFileFilter0 = new NotFileFilter(fileFilter0);
+      String string0 = notFileFilter0.toString();
+      ;
+}

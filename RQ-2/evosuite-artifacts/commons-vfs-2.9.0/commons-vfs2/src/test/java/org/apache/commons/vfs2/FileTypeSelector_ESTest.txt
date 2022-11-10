@@ -1,0 +1,44 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileType fileType0 = FileType.FOLDER;
+      FileTypeSelector fileTypeSelector0 = new FileTypeSelector(fileType0);
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileType0).when(fileObject0).getType();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = fileTypeSelector0.includeFile(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileType fileType0 = FileType.FOLDER;
+      FileTypeSelector fileTypeSelector0 = new FileTypeSelector(fileType0);
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn((FileType) null).when(fileObject0).getType();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = fileTypeSelector0.includeFile(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileType fileType0 = FileType.FOLDER;
+      FileTypeSelector fileTypeSelector0 = new FileTypeSelector(fileType0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = fileTypeSelector0.traverseDescendents(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileType fileType0 = FileType.FILE_OR_FOLDER;
+      FileTypeSelector fileTypeSelector0 = new FileTypeSelector(fileType0);
+      try { 
+        fileTypeSelector0.includeFile((FileSelectInfo) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.FileTypeSelector", e);
+      }
+  }

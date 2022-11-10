@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableLongFunction<Object, Throwable> failableLongFunction0 = FailableLongFunction.nop();
+      Object object0 = failableLongFunction0.apply(0L);
+      assertNotNull(object0);
+}

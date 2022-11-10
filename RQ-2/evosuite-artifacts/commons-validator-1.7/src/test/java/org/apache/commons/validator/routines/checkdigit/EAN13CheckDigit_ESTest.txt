@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EAN13CheckDigit eAN13CheckDigit0 = (EAN13CheckDigit)EAN13CheckDigit.EAN13_CHECK_DIGIT;
+      int int0 = eAN13CheckDigit0.weightedValue(0, (-2311), 704);
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EAN13CheckDigit eAN13CheckDigit0 = (EAN13CheckDigit)EAN13CheckDigit.EAN13_CHECK_DIGIT;
+      int int0 = eAN13CheckDigit0.weightedValue(2765, (-3365), 2765);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      EAN13CheckDigit eAN13CheckDigit0 = (EAN13CheckDigit)EAN13CheckDigit.EAN13_CHECK_DIGIT;
+      int int0 = eAN13CheckDigit0.weightedValue((-3365), 2765, 232);
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      EAN13CheckDigit eAN13CheckDigit0 = new EAN13CheckDigit();
+      assertEquals(0, eAN13CheckDigit0.getModulus());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      EAN13CheckDigit eAN13CheckDigit0 = (EAN13CheckDigit)EAN13CheckDigit.EAN13_CHECK_DIGIT;
+      // Undeclared exception!
+      try { 
+        eAN13CheckDigit0.weightedValue(0, (-2073), (-2073));
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit", e);
+      }
+  }

@@ -1,0 +1,28 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SetBuilder setBuilder0 = null;
+      try {
+        setBuilder0 = new SetBuilder((-3741));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Illegal initial capacity: -3741
+         //
+         verifyException("java.util.HashMap", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SetBuilder setBuilder0 = new SetBuilder(0);
+      Object object0 = setBuilder0.create();
+      setBuilder0.add(object0);
+      // Undeclared exception!
+      try { 
+        setBuilder0.add(object0);
+        fail("Expecting exception: StackOverflowError");
+      } catch(StackOverflowError e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }

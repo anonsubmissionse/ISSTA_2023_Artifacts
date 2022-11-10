@@ -1,0 +1,90 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(0L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      jDKRandomWrapper0.nextFloat();
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = new MarsagliaNormalizedGaussianSampler(jDKRandomWrapper0);
+      double double0 = marsagliaNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      byte[] byteArray0 = new byte[17];
+      jDKRandomWrapper0.nextBytes(byteArray0);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = MarsagliaNormalizedGaussianSampler.of((UniformRandomProvider) jDKRandomWrapper0);
+      double double0 = marsagliaNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      byte[] byteArray0 = new byte[17];
+      jDKRandomWrapper0.nextBytes(byteArray0);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = MarsagliaNormalizedGaussianSampler.of((UniformRandomProvider) jDKRandomWrapper0);
+      double double0 = marsagliaNormalizedGaussianSampler0.sample();
+      double double1 = marsagliaNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = MarsagliaNormalizedGaussianSampler.of((UniformRandomProvider) null);
+      // Undeclared exception!
+      try { 
+        marsagliaNormalizedGaussianSampler0.toString();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper((Random) null);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = new MarsagliaNormalizedGaussianSampler(jDKRandomWrapper0);
+      // Undeclared exception!
+      try { 
+        marsagliaNormalizedGaussianSampler0.sample();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.JDKRandomWrapper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = MarsagliaNormalizedGaussianSampler.of((UniformRandomProvider) jDKRandomWrapper0);
+      double double0 = marsagliaNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = MarsagliaNormalizedGaussianSampler.of((UniformRandomProvider) jDKRandomWrapper0);
+      double double0 = marsagliaNormalizedGaussianSampler0.sample();
+      double double1 = marsagliaNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper((Random) null);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = new MarsagliaNormalizedGaussianSampler(jDKRandomWrapper0);
+      SharedStateContinuousSampler sharedStateContinuousSampler0 = marsagliaNormalizedGaussianSampler0.withUniformRandomProvider(jDKRandomWrapper0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper((Random) null);
+      MarsagliaNormalizedGaussianSampler marsagliaNormalizedGaussianSampler0 = new MarsagliaNormalizedGaussianSampler(jDKRandomWrapper0);
+      String string0 = marsagliaNormalizedGaussianSampler0.toString();
+      ;
+}

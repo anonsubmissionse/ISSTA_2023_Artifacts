@@ -1,0 +1,5 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Integer integer0 = Integer.getInteger("UW|>x<'.2}R#%, >Tv", 1);
+      WeavableMethodParameter<Integer> weavableMethodParameter0 = new WeavableMethodParameter<Integer>(integer0, (WeavableMethod<Integer>) null);
+  }

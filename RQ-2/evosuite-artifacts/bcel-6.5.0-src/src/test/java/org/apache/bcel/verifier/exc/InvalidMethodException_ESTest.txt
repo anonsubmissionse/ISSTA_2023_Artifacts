@@ -1,0 +1,4 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      InvalidMethodException invalidMethodException0 = new InvalidMethodException("];+->_Bd c*Q");
+  }

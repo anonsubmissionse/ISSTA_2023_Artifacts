@@ -1,0 +1,51 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = InvGamma1pm1.value(0.5);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = InvGamma1pm1.value(1.5);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      double double0 = InvGamma1pm1.value(0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      double double0 = InvGamma1pm1.value(0.715468213804935);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        InvGamma1pm1.value(27.134521614283152);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Number 27.135 is out of range [-0.5, 1.5]
+         //
+         verifyException("org.apache.commons.numbers.gamma.InvGamma1pm1", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      double double0 = InvGamma1pm1.value((-0.5));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        InvGamma1pm1.value((-106.68517814522396));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Number -106.685 is out of range [-0.5, 1.5]
+         //
+         verifyException("org.apache.commons.numbers.gamma.InvGamma1pm1", e);
+      }
+  }

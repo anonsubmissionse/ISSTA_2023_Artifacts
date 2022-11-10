@@ -1,0 +1,27 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LazyDynaBean lazyDynaBean0 = null;
+      try {
+        lazyDynaBean0 = new LazyDynaBean((DynaClass) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.beanutils.LazyDynaBean", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LazyDynaBean lazyDynaBean0 = new LazyDynaBean();
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Class<ConvertingWrapDynaBean> class0 = ConvertingWrapDynaBean.class;
+      WrapDynaClass wrapDynaClass0 = WrapDynaClass.createDynaClass(class0);
+      LazyDynaBean lazyDynaBean0 = new LazyDynaBean(wrapDynaClass0);
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      LazyDynaBean lazyDynaBean0 = new LazyDynaBean("");
+  }

@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EchoTCPClient echoTCPClient0 = new EchoTCPClient();
+      echoTCPClient0.getInputStream();
+      ;
+}

@@ -1,0 +1,28 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MkdirTask mkdirTask0 = new MkdirTask();
+      try { 
+        mkdirTask0.execute();
+        fail("Expecting exception: BuildException");
+      } catch(BuildException e) {
+         //
+         // Unknown message with code \"vfs.tasks/no-directory-specified.error\".
+         //
+         verifyException("org.apache.commons.vfs2.tasks.MkdirTask", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MkdirTask mkdirTask0 = new MkdirTask();
+      mkdirTask0.setDir("");
+      // Undeclared exception!
+      try { 
+        mkdirTask0.execute();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.tools.ant.Task", e);
+      }
+  }

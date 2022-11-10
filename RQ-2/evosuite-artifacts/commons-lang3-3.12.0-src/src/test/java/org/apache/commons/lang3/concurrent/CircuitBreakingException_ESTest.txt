@@ -1,0 +1,14 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CircuitBreakingException circuitBreakingException0 = new CircuitBreakingException();
+      CircuitBreakingException circuitBreakingException1 = new CircuitBreakingException(circuitBreakingException0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CircuitBreakingException circuitBreakingException0 = new CircuitBreakingException("%0D!");
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CircuitBreakingException circuitBreakingException0 = new CircuitBreakingException("", (Throwable) null);
+  }

@@ -1,0 +1,162 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter((-1L), true);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn((FileObject) null).when(fileSelectInfo0).getFile();
+      // Undeclared exception!
+      try { 
+        ageFileFilter0.accept(fileSelectInfo0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // fileObject
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SynchronizedFileObject synchronizedFileObject0 = new SynchronizedFileObject((FileObject) null);
+      AgeFileFilter ageFileFilter0 = null;
+      try {
+        ageFileFilter0 = new AgeFileFilter(synchronizedFileObject0, true);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.impl.DecoratedFileObject", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileType fileType0 = FileType.IMAGINARY;
+      LayeredFileName layeredFileName0 = new LayeredFileName("period: 0 (expected: != 0)", (FileName) null, "", fileType0);
+      FileSystemOptions fileSystemOptions0 = new FileSystemOptions();
+      LocalFileSystem localFileSystem0 = new LocalFileSystem((FileName) null, "period: 0 (expected: != 0)", fileSystemOptions0);
+      DelegateFileObject<LocalFileSystem> delegateFileObject0 = new DelegateFileObject<LocalFileSystem>(layeredFileName0, localFileSystem0, (FileObject) null);
+      AgeFileFilter ageFileFilter0 = null;
+      try {
+        ageFileFilter0 = new AgeFileFilter(delegateFileObject0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.provider.AbstractFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = null;
+      try {
+        ageFileFilter0 = new AgeFileFilter((Date) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.AgeFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockDate mockDate0 = new MockDate(0L);
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter(mockDate0, false);
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MockDate mockDate0 = new MockDate();
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter(mockDate0);
+      String string0 = ageFileFilter0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter((-688L), false);
+      String string0 = ageFileFilter0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter((-688L), false);
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(fileObject0).exists();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = ageFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter((-691L), false);
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileObject0).exists();
+      doReturn((FileContent) null).when(fileObject0).getContent();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      // Undeclared exception!
+      try { 
+        ageFileFilter0.accept(fileSelectInfo0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.AgeFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      MockDate mockDate0 = new MockDate();
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter(mockDate0);
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(fileObject0).exists();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = ageFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = null;
+      try {
+        ageFileFilter0 = new AgeFileFilter((Date) null, true);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.AgeFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = new AgeFileFilter((-54L));
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = null;
+      try {
+        ageFileFilter0 = new AgeFileFilter((FileObject) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.AgeFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      AgeFileFilter ageFileFilter0 = null;
+      try {
+        ageFileFilter0 = new AgeFileFilter((FileObject) null, false);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.AgeFileFilter", e);
+      }
+  }

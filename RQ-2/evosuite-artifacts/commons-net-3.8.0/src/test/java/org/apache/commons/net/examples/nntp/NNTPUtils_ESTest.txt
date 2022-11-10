@@ -1,0 +1,18 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NNTPClient nNTPClient0 = new NNTPClient();
+      // Undeclared exception!
+      try { 
+        NNTPUtils.getArticleInfo(nNTPClient0, (-1015L), 119);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.nntp.NNTP", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NNTPUtils nNTPUtils0 = new NNTPUtils();
+  }

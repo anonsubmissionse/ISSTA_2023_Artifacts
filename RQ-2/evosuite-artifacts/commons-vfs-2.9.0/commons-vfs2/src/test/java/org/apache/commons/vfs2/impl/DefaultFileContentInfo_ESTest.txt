@@ -1,0 +1,60 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo((String) null, (String) null);
+      String string0 = defaultFileContentInfo0.getContentType();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("org.apache.commons.vfs2.impl.DefaultFileContentInfo", "");
+      String string0 = defaultFileContentInfo0.getContentType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("org.apache.commons.vfs2.impl.DefaultFileContentInfo", "");
+      String string0 = defaultFileContentInfo0.getContentType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo((String) null, (String) null);
+      String string0 = defaultFileContentInfo0.getContentEncoding();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("org.apache.commons.vfs2.impl.DefaultFileContentInfo", "");
+      String string0 = defaultFileContentInfo0.getContentEncoding();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("org.apache.commons.vfs2.impl.DefaultFileContentInfo", "");
+      String string0 = defaultFileContentInfo0.getContentEncoding();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("", ";F-w");
+      String string0 = defaultFileContentInfo0.getContentType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("", ";F-w");
+      String string0 = defaultFileContentInfo0.getContentType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("", ";F-w");
+      String string0 = defaultFileContentInfo0.getContentEncoding();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      DefaultFileContentInfo defaultFileContentInfo0 = new DefaultFileContentInfo("", ";F-w");
+      String string0 = defaultFileContentInfo0.getContentEncoding();
+      ;
+}

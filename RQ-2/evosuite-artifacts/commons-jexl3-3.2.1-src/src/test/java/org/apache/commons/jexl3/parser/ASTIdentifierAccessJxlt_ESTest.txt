@@ -1,0 +1,29 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Parser parser0 = new Parser("true");
+      ASTIdentifierAccessJxlt aSTIdentifierAccessJxlt0 = new ASTIdentifierAccessJxlt(parser0, 1205);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ASTIdentifierAccessJxlt aSTIdentifierAccessJxlt0 = new ASTIdentifierAccessJxlt(0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTIdentifierAccessSafeJxlt aSTIdentifierAccessSafeJxlt0 = new ASTIdentifierAccessSafeJxlt((Parser) null, (-12));
+      boolean boolean0 = aSTIdentifierAccessSafeJxlt0.isExpression();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ASTIdentifierAccessSafeJxlt aSTIdentifierAccessSafeJxlt0 = new ASTIdentifierAccessSafeJxlt(2708);
+      aSTIdentifierAccessSafeJxlt0.setExpression((JxltEngine.Expression) null);
+      assertEquals(1, aSTIdentifierAccessSafeJxlt0.jjtGetNumChildren());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ASTIdentifierAccessSafeJxlt aSTIdentifierAccessSafeJxlt0 = new ASTIdentifierAccessSafeJxlt(2708);
+      JxltEngine.Expression jxltEngine_Expression0 = aSTIdentifierAccessSafeJxlt0.getExpression();
+      assertNotNull(jxltEngine_Expression0);
+}

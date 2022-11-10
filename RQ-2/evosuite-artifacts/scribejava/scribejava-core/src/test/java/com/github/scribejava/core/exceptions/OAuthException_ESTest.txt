@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OAuthException oAuthException0 = new OAuthException("-EC[eGCcGI(4D&P[R%z");
+      OAuthException oAuthException1 = new OAuthException(oAuthException0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OAuthException oAuthException0 = new OAuthException("-EC[eGCcGI(4D&P[R%z");
+      MockException mockException0 = new MockException(oAuthException0);
+      OAuthException oAuthException1 = new OAuthException("", mockException0);
+      ;
+}

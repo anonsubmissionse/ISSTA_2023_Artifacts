@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileNotFolderException fileNotFolderException0 = new FileNotFolderException("NZ");
+      FileNotFolderException fileNotFolderException1 = new FileNotFolderException(fileNotFolderException0, fileNotFolderException0);
+      ;
+}

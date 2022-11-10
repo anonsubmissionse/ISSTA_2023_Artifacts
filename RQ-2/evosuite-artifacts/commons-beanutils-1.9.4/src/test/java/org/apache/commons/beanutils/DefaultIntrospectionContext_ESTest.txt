@@ -1,0 +1,169 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext((Class<?>) null);
+      Class<?> class0 = defaultIntrospectionContext0.getTargetClass();
+      assertNotNull(class0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<Annotation> class0 = Annotation.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      Class<?> class1 = defaultIntrospectionContext0.getTargetClass();
+      assertFalse(class1.isEnum());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("Property descriptor must not be null!", class0, (String) null, (String) null);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      PropertyDescriptor[] propertyDescriptorArray0 = defaultIntrospectionContext0.getPropertyDescriptors();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor(" y%", class0, (String) null, (String) null);
+      propertyDescriptor0.setPreferred(true);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      PropertyDescriptor propertyDescriptor1 = defaultIntrospectionContext0.getPropertyDescriptor(" y%");
+      assertTrue(propertyDescriptor1.isPreferred());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("Property descriptor must not be null!", class0, (String) null, (String) null);
+      propertyDescriptor0.setHidden(true);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      PropertyDescriptor propertyDescriptor1 = defaultIntrospectionContext0.getPropertyDescriptor("Property descriptor must not be null!");
+      assertFalse(propertyDescriptor1.isExpert());
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor(" y%", class0, (String) null, (String) null);
+      propertyDescriptor0.setExpert(true);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      PropertyDescriptor propertyDescriptor1 = defaultIntrospectionContext0.getPropertyDescriptor(" y%");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("M y%", class0, (String) null, (String) null);
+      propertyDescriptor0.setConstrained(true);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      PropertyDescriptor propertyDescriptor1 = defaultIntrospectionContext0.getPropertyDescriptor("M y%");
+      assertFalse(propertyDescriptor1.isHidden());
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Class<String> class0 = String.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("ZQg;=UTsN%3L", (Method) null, (Method) null);
+      propertyDescriptor0.setBound(true);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      PropertyDescriptor propertyDescriptor1 = defaultIntrospectionContext0.getPropertyDescriptor("ZQg;=UTsN%3L");
+      assertNotNull(propertyDescriptor1.getShortDescription());
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      boolean boolean0 = defaultIntrospectionContext0.hasProperty((String) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor[] propertyDescriptorArray0 = new PropertyDescriptor[2];
+      // Undeclared exception!
+      try { 
+        defaultIntrospectionContext0.addPropertyDescriptors(propertyDescriptorArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Property descriptor must not be null!
+         //
+         verifyException("org.apache.commons.beanutils.DefaultIntrospectionContext", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Class<String> class0 = String.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      // Undeclared exception!
+      try { 
+        defaultIntrospectionContext0.addPropertyDescriptors((PropertyDescriptor[]) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Array with descriptors must not be null!
+         //
+         verifyException("org.apache.commons.beanutils.DefaultIntrospectionContext", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      // Undeclared exception!
+      try { 
+        defaultIntrospectionContext0.addPropertyDescriptor((PropertyDescriptor) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Property descriptor must not be null!
+         //
+         verifyException("org.apache.commons.beanutils.DefaultIntrospectionContext", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("y%", class0, (String) null, (String) null);
+      defaultIntrospectionContext0.addPropertyDescriptor(propertyDescriptor0);
+      boolean boolean0 = defaultIntrospectionContext0.hasProperty("y%");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor[] propertyDescriptorArray0 = defaultIntrospectionContext0.getPropertyDescriptors();
+      defaultIntrospectionContext0.addPropertyDescriptors(propertyDescriptorArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      Set<String> set0 = defaultIntrospectionContext0.propertyNames();
+      assertTrue(set0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      PropertyDescriptor propertyDescriptor0 = defaultIntrospectionContext0.getPropertyDescriptor((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      Class<?> class1 = defaultIntrospectionContext0.getTargetClass();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      defaultIntrospectionContext0.removePropertyDescriptor((String) null);
+  }

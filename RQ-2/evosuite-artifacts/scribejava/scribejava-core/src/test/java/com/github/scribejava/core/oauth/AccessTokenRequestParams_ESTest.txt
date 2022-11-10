@@ -1,0 +1,153 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = new AccessTokenRequestParams("");
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.scope("");
+      String string0 = accessTokenRequestParams1.getScope();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = new AccessTokenRequestParams("b");
+      accessTokenRequestParams0.pkceCodeVerifier("t/r#w+4'WE1TjJM1");
+      String string0 = accessTokenRequestParams0.getPkceCodeVerifier();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create((String) null);
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.pkceCodeVerifier("");
+      String string0 = accessTokenRequestParams1.getPkceCodeVerifier();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = new AccessTokenRequestParams("com.github.scribejava.core.oauth.AccessTokenRequestParams");
+      HashMap<String, String> hashMap0 = new HashMap<String, String>();
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.setExtraParameters(hashMap0);
+      Map<String, String> map0 = accessTokenRequestParams1.getExtraParameters();
+      assertEquals(0, map0.size());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = new AccessTokenRequestParams((String) null);
+      String string0 = accessTokenRequestParams0.getCode();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("");
+      String string0 = accessTokenRequestParams0.getCode();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("");
+      // Undeclared exception!
+      try { 
+        accessTokenRequestParams0.scope((ScopeBuilder) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.github.scribejava.core.oauth.AccessTokenRequestParams", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = new AccessTokenRequestParams((String) null);
+      ScopeBuilder scopeBuilder0 = new ScopeBuilder();
+      // Undeclared exception!
+      try { 
+        accessTokenRequestParams0.scope(scopeBuilder0);
+        fail("Expecting exception: StringIndexOutOfBoundsException");
+      } catch(StringIndexOutOfBoundsException e) {
+         //
+         // String index out of range: -1
+         //
+         verifyException("java.lang.AbstractStringBuilder", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.addExtraParameter("com.github.scribejava.core.builder.ScopeBuilder", "com.github.scribejava.core.builder.ScopeBuilder");
+      AccessTokenRequestParams accessTokenRequestParams2 = accessTokenRequestParams1.addExtraParameter("com.github.scribejava.core.builder.ScopeBuilder", "com.github.scribejava.core.builder.ScopeBuilder");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.addExtraParameter("com.github.scribejava.core.builder.ScopeBuilder", "com.github.scribejava.core.builder.ScopeBuilder");
+      Map<String, String> map0 = accessTokenRequestParams0.getExtraParameters();
+      accessTokenRequestParams1.setExtraParameters((Map<String, String>) null);
+      // Undeclared exception!
+      try { 
+        accessTokenRequestParams0.addExtraParameters(map0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.github.scribejava.core.oauth.AccessTokenRequestParams", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      HashMap<String, String> hashMap0 = new HashMap<String, String>();
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.addExtraParameters(hashMap0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      accessTokenRequestParams0.addExtraParameter("com.github.scribejava.core.builder.ScopeBuilder", "com.github.scribejava.core.builder.ScopeBuilder");
+      Map<String, String> map0 = accessTokenRequestParams0.getExtraParameters();
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.addExtraParameters(map0);
+      assertNotNull(accessTokenRequestParams1.getCode());
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.addExtraParameters((Map<String, String>) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      Map<String, String> map0 = accessTokenRequestParams0.getExtraParameters();
+      assertNotNull(map0);
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      String string0 = accessTokenRequestParams0.getPkceCodeVerifier();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      String string0 = accessTokenRequestParams0.getCode();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      String string0 = accessTokenRequestParams0.getScope();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      accessTokenRequestParams0.scope("com.github.scribejava.core.builder.ScopeBuilder");
+      String string0 = accessTokenRequestParams0.getScope();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      AccessTokenRequestParams accessTokenRequestParams0 = AccessTokenRequestParams.create("com.github.scribejava.core.builder.ScopeBuilder");
+      ScopeBuilder scopeBuilder0 = new ScopeBuilder("com.github.scribejava.core.builder.ScopeBuilder");
+      AccessTokenRequestParams accessTokenRequestParams1 = accessTokenRequestParams0.scope(scopeBuilder0);
+      assertNotNull(accessTokenRequestParams1.getPkceCodeVerifier());
+}

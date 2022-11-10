@@ -1,0 +1,48 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      MethodParameters methodParameters0 = null;
+      try {
+        methodParameters0 = new MethodParameters(0, 0, (DataInput) null, constantPool0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.MethodParameters", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      PipedInputStream pipedInputStream0 = new PipedInputStream();
+      BufferedInputStream bufferedInputStream0 = new BufferedInputStream(pipedInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(bufferedInputStream0);
+      MethodParameters methodParameters0 = null;
+      try {
+        methodParameters0 = new MethodParameters(0, 0, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // Pipe not connected
+         //
+         verifyException("java.io.PipedInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Enumeration<ObjectInputStream> enumeration0 = (Enumeration<ObjectInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+      DataInputStream dataInputStream0 = new DataInputStream(sequenceInputStream0);
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      MethodParameters methodParameters0 = null;
+      try {
+        methodParameters0 = new MethodParameters(0, 0, dataInputStream0, constantPool0);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }

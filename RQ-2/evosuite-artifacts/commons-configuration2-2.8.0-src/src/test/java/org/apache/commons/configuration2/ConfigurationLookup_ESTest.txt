@@ -1,0 +1,92 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      HashMap<String, Configuration> hashMap0 = new HashMap<String, Configuration>();
+      MapConfiguration mapConfiguration0 = new MapConfiguration(hashMap0);
+      ConfigurationLookup configurationLookup0 = new ConfigurationLookup(mapConfiguration0);
+      Object object0 = configurationLookup0.lookup("");
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      HashMap<String, Configuration> hashMap0 = new HashMap<String, Configuration>();
+      MapConfiguration mapConfiguration0 = new MapConfiguration(hashMap0);
+      BiFunction<Configuration, Object, Configuration> biFunction0 = (BiFunction<Configuration, Object, Configuration>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+      hashMap0.merge((String) null, mapConfiguration0, biFunction0);
+      ConfigurationLookup configurationLookup0 = new ConfigurationLookup(mapConfiguration0);
+      Object object0 = configurationLookup0.lookup((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(context0).lookup(anyString());
+      JNDIConfiguration jNDIConfiguration0 = new JNDIConfiguration(context0);
+      ConfigurationLookup configurationLookup0 = new ConfigurationLookup(jNDIConfiguration0);
+      // Undeclared exception!
+      try { 
+        configurationLookup0.lookup("SCXT");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.JNDIConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Object object0 = new Object();
+      Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
+      doReturn(object0).when(context0).lookup(anyString());
+      JNDIConfiguration jNDIConfiguration0 = new JNDIConfiguration(context0);
+      ConfigurationLookup configurationLookup0 = new ConfigurationLookup(jNDIConfiguration0);
+      // Undeclared exception!
+      try { 
+        configurationLookup0.lookup("getAbandonedConnectionTimeout");
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+         //
+         // java.lang.Object cannot be cast to javax.naming.Context
+         //
+         verifyException("org.apache.commons.configuration2.JNDIConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      HashMap<String, Configuration> hashMap0 = new HashMap<String, Configuration>();
+      MapConfiguration mapConfiguration0 = new MapConfiguration(hashMap0);
+      ConfigurationLookup configurationLookup0 = new ConfigurationLookup(mapConfiguration0);
+      MapConfiguration mapConfiguration1 = (MapConfiguration)configurationLookup0.getConfiguration();
+      assertFalse(mapConfiguration1.isTrimmingDisabled());
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ConfigurationLookup configurationLookup0 = null;
+      try {
+        configurationLookup0 = new ConfigurationLookup((ImmutableConfiguration) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Configuration must not be null!
+         //
+         verifyException("org.apache.commons.configuration2.ConfigurationLookup", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration();
+      NodeSelector nodeSelector0 = new NodeSelector("rBsoAa\"C,!5");
+      TrackedNodeModel trackedNodeModel0 = new TrackedNodeModel(combinedConfiguration0, nodeSelector0, true);
+      SubnodeConfiguration subnodeConfiguration0 = new SubnodeConfiguration(combinedConfiguration0, trackedNodeModel0);
+      ConfigurationLookup configurationLookup0 = new ConfigurationLookup(subnodeConfiguration0);
+      // Undeclared exception!
+      try { 
+        configurationLookup0.lookup("/'kB(OZE=ro");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // No tracked node found: org.apache.commons.configuration2.tree.NodeSelector@11[keys=[rBsoAa\"C,!5]]
+         //
+         verifyException("org.apache.commons.configuration2.tree.NodeTracker", e);
+      }
+  }

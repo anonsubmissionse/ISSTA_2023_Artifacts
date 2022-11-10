@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      PeriodFormatter periodFormatter0 = ISOPeriodFormat.alternateExtendedWithWeeks();
+      PeriodFormatter periodFormatter1 = ISOPeriodFormat.alternateExtendedWithWeeks();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      PeriodFormatter periodFormatter0 = ISOPeriodFormat.alternateWithWeeks();
+      PeriodFormatter periodFormatter1 = ISOPeriodFormat.alternateWithWeeks();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ISOPeriodFormat.alternateExtended();
+      PeriodFormatter periodFormatter0 = ISOPeriodFormat.alternateExtended();
+      assertFalse(periodFormatter0.isParser());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ISOPeriodFormat.alternate();
+      PeriodFormatter periodFormatter0 = ISOPeriodFormat.alternate();
+      assertTrue(periodFormatter0.isParser());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ISOPeriodFormat.standard();
+      PeriodFormatter periodFormatter0 = ISOPeriodFormat.standard();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ISOPeriodFormat iSOPeriodFormat0 = new ISOPeriodFormat();
+  }

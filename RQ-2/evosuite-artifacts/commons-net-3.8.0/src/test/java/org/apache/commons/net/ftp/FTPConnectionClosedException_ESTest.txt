@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FTPConnectionClosedException fTPConnectionClosedException0 = new FTPConnectionClosedException("");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FTPConnectionClosedException fTPConnectionClosedException0 = new FTPConnectionClosedException();
+  }

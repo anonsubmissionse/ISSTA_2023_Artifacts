@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DateConverter dateConverter0 = new DateConverter((Object) null);
+      assertFalse(dateConverter0.isUseDefault());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Object object0 = new Object();
+      DateConverter dateConverter0 = null;
+      try {
+        dateConverter0 = new DateConverter(object0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // DateConverter does not support default String to 'Date' conversion.
+         //
+         verifyException("org.apache.commons.beanutils.converters.DateTimeConverter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DateConverter dateConverter0 = new DateConverter();
+      Class<?> class0 = dateConverter0.getDefaultType();
+      assertTrue(class0.isInterface());
+}

@@ -1,0 +1,32 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MapListHandler mapListHandler0 = new MapListHandler();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(0).when(resultSetMetaData0).getColumnCount();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      Map<String, Object> map0 = mapListHandler0.handleRow(resultSet0);
+      assertTrue(map0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BeanProcessor beanProcessor0 = new BeanProcessor();
+      BasicRowProcessor basicRowProcessor0 = new BasicRowProcessor(beanProcessor0);
+      MapListHandler mapListHandler0 = new MapListHandler(basicRowProcessor0);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MapListHandler mapListHandler0 = new MapListHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((ResultSetMetaData) null).when(resultSet0).getMetaData();
+      // Undeclared exception!
+      try { 
+        mapListHandler0.handleRow(resultSet0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.BasicRowProcessor", e);
+      }
+  }

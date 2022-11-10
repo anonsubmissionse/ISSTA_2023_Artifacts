@@ -1,0 +1,29 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Processor processor0 = ArchUtils.getProcessor("java.endorsed.dirs");
+      assertNotNull(processor0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Processor processor0 = ArchUtils.getProcessor("ppc");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Processor processor0 = ArchUtils.getProcessor("ia64w");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Processor processor0 = ArchUtils.getProcessor("i386");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ArchUtils archUtils0 = new ArchUtils();
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Processor processor0 = ArchUtils.getProcessor();
+      assertTrue(processor0.is64Bit());
+}

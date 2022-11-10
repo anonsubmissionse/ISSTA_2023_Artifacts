@@ -1,0 +1,61 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      RuntimeInvisibleAnnotations runtimeInvisibleAnnotations0 = null;
+      try {
+        runtimeInvisibleAnnotations0 = new RuntimeInvisibleAnnotations((-1), (-1), (DataInput) null, constantPool0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.Annotations", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      PipedInputStream pipedInputStream0 = new PipedInputStream();
+      DataInputStream dataInputStream0 = new DataInputStream(pipedInputStream0);
+      RuntimeInvisibleAnnotations runtimeInvisibleAnnotations0 = null;
+      try {
+        runtimeInvisibleAnnotations0 = new RuntimeInvisibleAnnotations((-491), (-491), dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // Pipe not connected
+         //
+         verifyException("java.io.PipedInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      byte[] byteArray0 = new byte[0];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      RuntimeInvisibleAnnotations runtimeInvisibleAnnotations0 = null;
+      try {
+        runtimeInvisibleAnnotations0 = new RuntimeInvisibleAnnotations((-1), (-811), dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ClassPath classPath0 = ClassPath.SYSTEM_CLASS_PATH;
+      InputStream inputStream0 = classPath0.getInputStream("", "");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      RuntimeInvisibleAnnotations runtimeInvisibleAnnotations0 = null;
+      try {
+        runtimeInvisibleAnnotations0 = new RuntimeInvisibleAnnotations(173, 1301, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Unexpected element value kind in annotation: 10
+         //
+         verifyException("org.apache.bcel.classfile.ElementValue", e);
+      }
+  }

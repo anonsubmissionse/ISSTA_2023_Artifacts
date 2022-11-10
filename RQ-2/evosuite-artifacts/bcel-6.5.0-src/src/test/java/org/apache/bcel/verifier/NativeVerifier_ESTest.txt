@@ -1,0 +1,58 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String[] stringArray0 = new String[1];
+      stringArray0[0] = "org.apache.bcel.verifier.NativeVerifier";
+      // Undeclared exception!
+      try { 
+        NativeVerifier.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String[] stringArray0 = new String[1];
+      stringArray0[0] = "D.class";
+      // Undeclared exception!
+      try { 
+        NativeVerifier.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      String[] stringArray0 = new String[0];
+      // Undeclared exception!
+      try { 
+        NativeVerifier.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      String[] stringArray0 = new String[1];
+      // Undeclared exception!
+      try { 
+        NativeVerifier.main(stringArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.NativeVerifier", e);
+      }
+  }

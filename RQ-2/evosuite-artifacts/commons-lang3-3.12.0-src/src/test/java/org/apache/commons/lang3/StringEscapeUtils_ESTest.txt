@@ -1,0 +1,335 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeCsv("\f");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      StringEscapeUtils.CsvUnescaper stringEscapeUtils_CsvUnescaper0 = new StringEscapeUtils.CsvUnescaper();
+      StringWriter stringWriter0 = new StringWriter();
+      // Undeclared exception!
+      try { 
+        stringEscapeUtils_CsvUnescaper0.translate((CharSequence) "Yte*#!_QCDt}", (-431), (Writer) stringWriter0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // CsvUnescaper should never reach the [1] index
+         //
+         verifyException("org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      StringEscapeUtils.CsvEscaper stringEscapeUtils_CsvEscaper0 = new StringEscapeUtils.CsvEscaper();
+      // Undeclared exception!
+      try { 
+        stringEscapeUtils_CsvEscaper0.translate((CharSequence) "xToDE;:", (-2008), (Writer) null);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // CsvEscaper should never reach the [1] index
+         //
+         verifyException("org.apache.commons.lang3.StringEscapeUtils$CsvEscaper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      StringEscapeUtils.CsvUnescaper stringEscapeUtils_CsvUnescaper0 = new StringEscapeUtils.CsvUnescaper();
+      StringWriter stringWriter0 = new StringWriter();
+      int int0 = stringEscapeUtils_CsvUnescaper0.translate((CharSequence) "\"Ii`\"\"{\"", 0, (Writer) stringWriter0);
+      assertNotNull(stringWriter0.toString());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      StringEscapeUtils.CsvUnescaper stringEscapeUtils_CsvUnescaper0 = new StringEscapeUtils.CsvUnescaper();
+      StringWriter stringWriter0 = new StringWriter();
+      int int0 = stringEscapeUtils_CsvUnescaper0.translate((CharSequence) "\"Ii`\"\"{\"", 0, (Writer) stringWriter0);
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      StringEscapeUtils.CsvEscaper stringEscapeUtils_CsvEscaper0 = new StringEscapeUtils.CsvEscaper();
+      StringWriter stringWriter0 = new StringWriter(0);
+      stringEscapeUtils_CsvEscaper0.translate((CharSequence) "\u001E", 0, (Writer) stringWriter0);
+      assertNotNull(stringWriter0.toString());
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeXml((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeXml("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeJson((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeJson("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeJava((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeJava("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeHtml4((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeHtml4("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeHtml3((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeHtml3("^?+#*F!WHO]|X-?L.");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeEcmaScript((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeEcmaScript("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeCsv((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeCsv("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml11((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml11("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml10((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test23()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml10("\u0002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test24()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test25()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test26()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeJson((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test27()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeJson("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test28()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeJava((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test29()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeJava("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test30()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeHtml4((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test31()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeHtml4("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test32()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeHtml3((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test33()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeHtml3("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test34()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeEcmaScript((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test35()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeEcmaScript("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test36()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeCsv((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test37()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeCsv("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test38()  throws Throwable  {
+      StringEscapeUtils.CsvUnescaper stringEscapeUtils_CsvUnescaper0 = new StringEscapeUtils.CsvUnescaper();
+      String string0 = stringEscapeUtils_CsvUnescaper0.translate((CharSequence) "\"8p&/B~n3%");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test39()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeCsv("n;Jx'v#e|3,ZqWF");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test40()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeEcmaScript("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test41()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeJava("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test42()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeXml("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test43()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeJson("c");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test44()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test45()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeHtml4("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test46()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeEcmaScript("\"8p&/B~n3%");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test47()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeHtml3("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test48()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeJava("IrPY;1d]''b(~*J~J");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test49()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeHtml3("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test50()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeHtml4("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test51()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml10("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test52()  throws Throwable  {
+      String string0 = StringEscapeUtils.escapeXml11("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test53()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeCsv("\u2002");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test54()  throws Throwable  {
+      String string0 = StringEscapeUtils.unescapeJson("n;Jx'v#e|3,ZqWF");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test55()  throws Throwable  {
+      StringEscapeUtils stringEscapeUtils0 = new StringEscapeUtils();
+  }
+ @Test(timeout = 4000)
+  public void test56()  throws Throwable  {
+      StringEscapeUtils.CsvUnescaper stringEscapeUtils_CsvUnescaper0 = new StringEscapeUtils.CsvUnescaper();
+      StringWriter stringWriter0 = new StringWriter();
+      // Undeclared exception!
+      try { 
+        stringEscapeUtils_CsvUnescaper0.translate((CharSequence) "8", 8, (Writer) stringWriter0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // CsvUnescaper should never reach the [1] index
+         //
+         verifyException("org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test57()  throws Throwable  {
+      StringEscapeUtils.CsvEscaper stringEscapeUtils_CsvEscaper0 = new StringEscapeUtils.CsvEscaper();
+      StringWriter stringWriter0 = new StringWriter();
+      // Undeclared exception!
+      try { 
+        stringEscapeUtils_CsvEscaper0.translate((CharSequence) "&emsp;", 3586, (Writer) stringWriter0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // CsvEscaper should never reach the [1] index
+         //
+         verifyException("org.apache.commons.lang3.StringEscapeUtils$CsvEscaper", e);
+      }
+  }

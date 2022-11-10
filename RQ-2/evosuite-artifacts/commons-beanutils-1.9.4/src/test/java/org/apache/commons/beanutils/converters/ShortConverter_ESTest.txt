@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Short short0 = new Short((short) (-1));
+      ShortConverter shortConverter0 = new ShortConverter(short0);
+      assertTrue(shortConverter0.isUseDefault());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ShortConverter shortConverter0 = new ShortConverter();
+      Class<Short> class0 = shortConverter0.getDefaultType();
+      assertTrue(class0.isInterface());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object object0 = new Object();
+      ShortConverter shortConverter0 = null;
+      try {
+        shortConverter0 = new ShortConverter(object0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error converting from 'Object' to 'Short' For input string: \"java.lang.Object@0000000002\"
+         //
+         verifyException("org.apache.commons.beanutils.converters.AbstractConverter", e);
+      }
+  }

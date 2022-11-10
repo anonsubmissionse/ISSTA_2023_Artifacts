@@ -1,0 +1,118 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      AnnotationDefault annotationDefault0 = new AnnotationDefault(1, 2550, (ElementValue) null, constantPool0);
+      ElementValue elementValue0 = annotationDefault0.getDefaultValue();
+      assertNotNull(elementValue0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      ClassElementValue classElementValue0 = new ClassElementValue((-3489), 0, constantPool0);
+      AnnotationDefault annotationDefault0 = new AnnotationDefault((-3489), 3490, classElementValue0, constantPool0);
+      ElementValue elementValue0 = annotationDefault0.getDefaultValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      byte[] byteArray0 = new byte[6];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 0, 1112);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      AnnotationDefault annotationDefault0 = null;
+      try {
+        annotationDefault0 = new AnnotationDefault(2389, 2389, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Unexpected element value kind in annotation: 0
+         //
+         verifyException("org.apache.bcel.classfile.ElementValue", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      PipedInputStream pipedInputStream0 = new PipedInputStream(1396);
+      DataInputStream dataInputStream0 = new DataInputStream(pipedInputStream0);
+      AnnotationDefault annotationDefault0 = null;
+      try {
+        annotationDefault0 = new AnnotationDefault(35, 2249, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // Pipe not connected
+         //
+         verifyException("java.io.PipedInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Enumeration<InputStream> enumeration0 = (Enumeration<InputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+      DataInputStream dataInputStream0 = new DataInputStream(sequenceInputStream0);
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      AnnotationDefault annotationDefault0 = null;
+      try {
+        annotationDefault0 = new AnnotationDefault((-472), 234, dataInputStream0, constantPool0);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
+      AnnotationDefault annotationDefault0 = null;
+      try {
+        annotationDefault0 = new AnnotationDefault(224, (-2614), dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      SimpleElementValue simpleElementValue0 = new SimpleElementValue(0, 0, (ConstantPool) null);
+      AnnotationDefault annotationDefault0 = new AnnotationDefault(16, 0, simpleElementValue0, (ConstantPool) null);
+      ElementValue elementValue0 = annotationDefault0.getDefaultValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      ClassElementValue classElementValue0 = new ClassElementValue((-3489), 0, constantPool0);
+      AnnotationDefault annotationDefault0 = new AnnotationDefault((-3489), 3490, classElementValue0, constantPool0);
+      Attribute attribute0 = annotationDefault0.copy(constantPool0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ClassElementValue classElementValue0 = new ClassElementValue((-2606), (-2606), (ConstantPool) null);
+      AnnotationDefault annotationDefault0 = new AnnotationDefault(0, 0, classElementValue0, (ConstantPool) null);
+      DescendingVisitor descendingVisitor0 = new DescendingVisitor((JavaClass) null, (Visitor) null);
+      // Undeclared exception!
+      try { 
+        annotationDefault0.accept(descendingVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.AnnotationDefault", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Constant[] constantArray0 = new Constant[8];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      ClassElementValue classElementValue0 = new ClassElementValue(0, 0, constantPool0);
+      AnnotationDefault annotationDefault0 = new AnnotationDefault(0, 0, classElementValue0, constantPool0);
+      annotationDefault0.setDefaultValue(classElementValue0);
+      assertEquals(0, annotationDefault0.getNameIndex());
+}

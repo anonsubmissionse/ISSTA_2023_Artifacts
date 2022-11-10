@@ -1,0 +1,20 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      TargetLostException targetLostException0 = new TargetLostException((InstructionHandle[]) null, "=(=pZ/BmLW&!=?S57u");
+      InstructionHandle[] instructionHandleArray0 = targetLostException0.getTargets();
+      assertNotNull(instructionHandleArray0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      InstructionHandle[] instructionHandleArray0 = new InstructionHandle[2];
+      TargetLostException targetLostException0 = new TargetLostException(instructionHandleArray0, (String) null);
+      InstructionHandle[] instructionHandleArray1 = targetLostException0.getTargets();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      InstructionHandle[] instructionHandleArray0 = new InstructionHandle[0];
+      TargetLostException targetLostException0 = new TargetLostException(instructionHandleArray0, "");
+      InstructionHandle[] instructionHandleArray1 = targetLostException0.getTargets();
+      ;
+}

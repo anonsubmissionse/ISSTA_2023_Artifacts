@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<String> class0 = String.class;
+      // Undeclared exception!
+      try { 
+        DuckGetExecutor.discover((Introspector) null, class0, (Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.DuckGetExecutor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector((Log) null, classLoader0);
+      Class<Integer> class0 = Integer.class;
+      // Undeclared exception!
+      try { 
+        DuckGetExecutor.discover(introspector0, class0, class0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ClassMap", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Permissions permissions0 = new Permissions();
+      SimpleLog simpleLog0 = new SimpleLog("<jgc`k^>~%?");
+      Class<Annotation> class0 = Annotation.class;
+      Introspector introspector0 = new Introspector(simpleLog0, classLoader0, permissions0);
+      DuckGetExecutor duckGetExecutor0 = DuckGetExecutor.discover(introspector0, class0, simpleLog0);
+      assertNotNull(duckGetExecutor0);
+}

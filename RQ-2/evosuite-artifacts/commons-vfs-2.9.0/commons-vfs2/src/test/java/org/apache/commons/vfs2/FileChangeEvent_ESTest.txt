@@ -1,0 +1,12 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileChangeEvent fileChangeEvent0 = new FileChangeEvent((FileObject) null);
+      FileObject fileObject0 = fileChangeEvent0.getFile();
+      assertNotNull(fileObject0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileChangeEvent fileChangeEvent0 = new FileChangeEvent((FileObject) null);
+      FileObject fileObject0 = fileChangeEvent0.getFileObject();
+      ;
+}

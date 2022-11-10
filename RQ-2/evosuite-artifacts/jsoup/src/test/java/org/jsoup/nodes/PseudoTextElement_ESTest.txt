@@ -1,0 +1,49 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Attributes attributes0 = new Attributes();
+      PseudoTextElement pseudoTextElement0 = null;
+      try {
+        pseudoTextElement0 = new PseudoTextElement((Tag) null, "", attributes0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Object must not be null
+         //
+         verifyException("org.jsoup.helper.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Tag tag0 = Tag.valueOf("tzmaKGH}{k,w");
+      Attributes attributes0 = new Attributes();
+      attributes0.vals = null;
+      PseudoTextElement pseudoTextElement0 = null;
+      try {
+        pseudoTextElement0 = new PseudoTextElement(tag0, "tzmaKGH}{k,w", attributes0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.jsoup.nodes.Attributes", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ParseSettings parseSettings0 = ParseSettings.preserveCase;
+      Tag tag0 = Tag.valueOf("org.jsoup.nodes.PseudoTextElement", parseSettings0);
+      Attributes attributes0 = new Attributes();
+      PseudoTextElement pseudoTextElement0 = new PseudoTextElement(tag0, (String) null, attributes0);
+      Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
+      pseudoTextElement0.outerHtmlHead((Appendable) null, 0, document_OutputSettings0);
+      assertNotNull(pseudoTextElement0.tagName());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Tag tag0 = Tag.valueOf("hz.");
+      Attributes attributes0 = new Attributes();
+      PseudoTextElement pseudoTextElement0 = new PseudoTextElement(tag0, "", attributes0);
+      Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
+      pseudoTextElement0.outerHtmlTail((Appendable) null, 0, document_OutputSettings0);
+      assertNotNull(pseudoTextElement0.tagName());
+}

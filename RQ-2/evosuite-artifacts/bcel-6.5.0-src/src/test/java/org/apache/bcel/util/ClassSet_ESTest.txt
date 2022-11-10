@@ -1,0 +1,110 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      ClassLoaderRepository classLoaderRepository0 = new ClassLoaderRepository(classLoader0);
+      JavaClass javaClass0 = classLoaderRepository0.loadClass("java.lang.Object");
+      classSet0.remove(javaClass0);
+      assertNotNull(javaClass0.getSuperclassName());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      ClassLoaderRepository classLoaderRepository0 = new ClassLoaderRepository(classLoader0);
+      JavaClass javaClass0 = classLoaderRepository0.loadClass("java.lang.Object");
+      classSet0.add(javaClass0);
+      classSet0.toArray();
+      assertTrue(classSet0.empty());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      ClassLoaderRepository classLoaderRepository0 = new ClassLoaderRepository(classLoader0);
+      JavaClass javaClass0 = classLoaderRepository0.loadClass("java.lang.Object");
+      classSet0.add(javaClass0);
+      classSet0.getClassNames();
+      assertTrue(classSet0.empty());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      // Undeclared exception!
+      try { 
+        classSet0.add((JavaClass) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.util.ClassSet", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      boolean boolean0 = classSet0.empty();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      ClassLoaderRepository classLoaderRepository0 = new ClassLoaderRepository(classLoader0);
+      JavaClass javaClass0 = classLoaderRepository0.loadClass("java.lang.Object");
+      classSet0.add(javaClass0);
+      boolean boolean0 = classSet0.empty();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      ClassLoaderRepository classLoaderRepository0 = new ClassLoaderRepository(classLoader0);
+      JavaClass javaClass0 = classLoaderRepository0.loadClass("java.lang.Object");
+      classSet0.add(javaClass0);
+      boolean boolean0 = classSet0.add(javaClass0);
+      assertTrue(classSet0.empty());
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      ClassLoaderRepository classLoaderRepository0 = new ClassLoaderRepository(classLoader0);
+      JavaClass javaClass0 = classLoaderRepository0.loadClass("java.lang.Object");
+      classSet0.add(javaClass0);
+      boolean boolean0 = classSet0.add(javaClass0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      String[] stringArray0 = classSet0.getClassNames();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      JavaClass[] javaClassArray0 = classSet0.toArray();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      ClassSet classSet0 = new ClassSet();
+      // Undeclared exception!
+      try { 
+        classSet0.remove((JavaClass) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.util.ClassSet", e);
+      }
+  }

@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CloneFailedException cloneFailedException0 = new CloneFailedException("org.apache.commons.lang3.exception.CloneFailedException");
+      MockThrowable mockThrowable0 = new MockThrowable("", cloneFailedException0);
+      CloneFailedException cloneFailedException1 = new CloneFailedException("@,ymb~+er;r", mockThrowable0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CloneFailedException cloneFailedException0 = new CloneFailedException("org.apache.commons.lang3.exception.CloneFailedException");
+      CloneFailedException cloneFailedException1 = new CloneFailedException(cloneFailedException0);
+      ;
+}

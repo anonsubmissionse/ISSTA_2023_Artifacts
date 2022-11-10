@@ -1,0 +1,107 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      interpolatorSpecification_Builder0.reset();
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      Lookup lookup0 = mock(Lookup.class, new ViolatedAssumptionAnswer());
+      doReturn("4&v_nm4z").when(lookup0).toString();
+      interpolatorSpecification_Builder0.withDefaultLookup(lookup0);
+      InterpolatorSpecification interpolatorSpecification0 = interpolatorSpecification_Builder0.create();
+      Collection<Lookup> collection0 = interpolatorSpecification0.getDefaultLookups();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withDefaultLookups(collection0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withDefaultLookups((Collection<? extends Lookup>) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      Lookup lookup0 = mock(Lookup.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(lookup0).toString();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withPrefixLookup("", lookup0);
+      InterpolatorSpecification interpolatorSpecification0 = interpolatorSpecification_Builder0.create();
+      Map<String, Lookup> map0 = interpolatorSpecification0.getPrefixLookups();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder2 = interpolatorSpecification_Builder0.withPrefixLookups(map0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withPrefixLookups((Map<String, ? extends Lookup>) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Lookup lookup0 = mock(Lookup.class, new ViolatedAssumptionAnswer());
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      // Undeclared exception!
+      try { 
+        interpolatorSpecification_Builder0.withPrefixLookup((String) null, lookup0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Prefix must not be null!
+         //
+         verifyException("org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification interpolatorSpecification0 = interpolatorSpecification_Builder0.create();
+      Function<Object, String> function0 = interpolatorSpecification0.getStringConverter();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification interpolatorSpecification0 = interpolatorSpecification_Builder0.create();
+      ConfigurationInterpolator configurationInterpolator0 = interpolatorSpecification0.getInterpolator();
+      assertNotNull(configurationInterpolator0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification interpolatorSpecification0 = interpolatorSpecification_Builder0.create();
+      ConfigurationInterpolator configurationInterpolator0 = interpolatorSpecification0.getParentInterpolator();
+      assertNotNull(configurationInterpolator0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withStringConverter((Function<Object, String>) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withInterpolator((ConfigurationInterpolator) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      // Undeclared exception!
+      try { 
+        interpolatorSpecification_Builder0.withDefaultLookup((Lookup) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Lookup must not be null!
+         //
+         verifyException("org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder0 = new InterpolatorSpecification.Builder();
+      InterpolatorSpecification.Builder interpolatorSpecification_Builder1 = interpolatorSpecification_Builder0.withParentInterpolator((ConfigurationInterpolator) null);
+      ;
+}

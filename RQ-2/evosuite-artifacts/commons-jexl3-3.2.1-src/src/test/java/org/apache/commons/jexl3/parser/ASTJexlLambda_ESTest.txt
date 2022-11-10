@@ -1,0 +1,19 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ASTJexlLambda aSTJexlLambda0 = new ASTJexlLambda((-2333));
+      boolean boolean0 = aSTJexlLambda0.isTopLevel();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Parser parser0 = new Parser("");
+      ASTJexlLambda aSTJexlLambda0 = new ASTJexlLambda(parser0, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTJexlLambda aSTJexlLambda0 = new ASTJexlLambda((-2333));
+      aSTJexlLambda0.jjtSetParent(aSTJexlLambda0);
+      boolean boolean0 = aSTJexlLambda0.isTopLevel();
+      assertTrue(boolean0);
+}

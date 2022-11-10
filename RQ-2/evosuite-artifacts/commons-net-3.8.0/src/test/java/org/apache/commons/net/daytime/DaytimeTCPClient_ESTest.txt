@@ -1,0 +1,14 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DaytimeTCPClient daytimeTCPClient0 = new DaytimeTCPClient();
+      // Undeclared exception!
+      try { 
+        daytimeTCPClient0.getTime();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.Reader", e);
+      }
+  }

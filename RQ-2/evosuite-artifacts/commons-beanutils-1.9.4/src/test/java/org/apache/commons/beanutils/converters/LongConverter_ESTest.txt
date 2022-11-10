@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Long long0 = new Long(0L);
+      LongConverter longConverter0 = new LongConverter(long0);
+      assertFalse(longConverter0.isUseDefault());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LongConverter longConverter0 = new LongConverter();
+      Class<Long> class0 = longConverter0.getDefaultType();
+      assertTrue(class0.isAnnotation());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      LongConverter longConverter0 = null;
+      try {
+        longConverter0 = new LongConverter("]L0{~?mE");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error converting from 'String' to 'Long' For input string: \"java.lang.String@0000000002\"
+         //
+         verifyException("org.apache.commons.beanutils.converters.AbstractConverter", e);
+      }
+  }

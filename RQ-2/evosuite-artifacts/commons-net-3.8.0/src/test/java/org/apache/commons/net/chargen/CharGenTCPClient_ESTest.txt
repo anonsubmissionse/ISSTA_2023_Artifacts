@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CharGenTCPClient charGenTCPClient0 = new CharGenTCPClient();
+      charGenTCPClient0.getInputStream();
+      ;
+}

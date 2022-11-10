@@ -1,0 +1,65 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom((-2113L));
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxMullerNormalizedGaussianSampler boxMullerNormalizedGaussianSampler0 = BoxMullerNormalizedGaussianSampler.of((UniformRandomProvider) jDKRandomWrapper0);
+      boxMullerNormalizedGaussianSampler0.sample();
+      mockRandom0.nextGaussian();
+      double double0 = boxMullerNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom((-2113L));
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxMullerNormalizedGaussianSampler boxMullerNormalizedGaussianSampler0 = BoxMullerNormalizedGaussianSampler.of((UniformRandomProvider) jDKRandomWrapper0);
+      boxMullerNormalizedGaussianSampler0.sample();
+      mockRandom0.nextGaussian();
+      double double0 = boxMullerNormalizedGaussianSampler0.sample();
+      double double1 = boxMullerNormalizedGaussianSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BoxMullerNormalizedGaussianSampler boxMullerNormalizedGaussianSampler0 = new BoxMullerNormalizedGaussianSampler((UniformRandomProvider) null);
+      // Undeclared exception!
+      try { 
+        boxMullerNormalizedGaussianSampler0.toString();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      BoxMullerNormalizedGaussianSampler boxMullerNormalizedGaussianSampler0 = new BoxMullerNormalizedGaussianSampler((UniformRandomProvider) null);
+      // Undeclared exception!
+      try { 
+        boxMullerNormalizedGaussianSampler0.sample();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.BoxMullerNormalizedGaussianSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxMullerNormalizedGaussianSampler boxMullerNormalizedGaussianSampler0 = new BoxMullerNormalizedGaussianSampler(jDKRandomWrapper0);
+      String string0 = boxMullerNormalizedGaussianSampler0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxMullerNormalizedGaussianSampler boxMullerNormalizedGaussianSampler0 = new BoxMullerNormalizedGaussianSampler(jDKRandomWrapper0);
+      SharedStateContinuousSampler sharedStateContinuousSampler0 = boxMullerNormalizedGaussianSampler0.withUniformRandomProvider(jDKRandomWrapper0);
+      ;
+}

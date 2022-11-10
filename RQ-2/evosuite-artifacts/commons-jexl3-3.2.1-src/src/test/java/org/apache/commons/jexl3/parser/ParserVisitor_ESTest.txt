@@ -1,0 +1,29 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OperatorController operatorController0 = new OperatorController();
+      // Undeclared exception!
+      try { 
+        operatorController0.visit((SimpleNode) null, (Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.parser.ParserVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OperatorController operatorController0 = OperatorController.INSTANCE;
+      ASTAmbiguous aSTAmbiguous0 = new ASTAmbiguous(2226);
+      // Undeclared exception!
+      try { 
+        operatorController0.visit(aSTAmbiguous0, aSTAmbiguous0);
+        fail("Expecting exception: UnsupportedOperationException");
+      } catch(UnsupportedOperationException e) {
+         //
+         // unexpected type of node
+         //
+         verifyException("org.apache.commons.jexl3.parser.ParserVisitor", e);
+      }
+  }

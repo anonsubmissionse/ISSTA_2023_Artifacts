@@ -1,0 +1,137 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic(41, (-3670));
+      EmptyVisitor emptyVisitor0 = new EmptyVisitor();
+      constantInvokeDynamic0.accept(emptyVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic(0, 0);
+      int int0 = constantInvokeDynamic0.getBootstrapMethodAttrIndex();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic(41, (-3670));
+      int int0 = constantInvokeDynamic0.getBootstrapMethodAttrIndex();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = null;
+      try {
+        constantInvokeDynamic0 = new ConstantInvokeDynamic((ConstantInvokeDynamic) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantInvokeDynamic", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = null;
+      try {
+        constantInvokeDynamic0 = new ConstantInvokeDynamic((DataInput) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantInvokeDynamic", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      byte[] byteArray0 = new byte[1];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-128), 2253);
+      PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(pushbackInputStream0);
+      ConstantInvokeDynamic constantInvokeDynamic0 = null;
+      try {
+        constantInvokeDynamic0 = new ConstantInvokeDynamic(dataInputStream0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Enumeration<PushbackInputStream> enumeration0 = (Enumeration<PushbackInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+      DataInputStream dataInputStream0 = new DataInputStream(sequenceInputStream0);
+      ConstantInvokeDynamic constantInvokeDynamic0 = null;
+      try {
+        constantInvokeDynamic0 = new ConstantInvokeDynamic(dataInputStream0);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      byte[] byteArray0 = new byte[4];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(sequenceInputStream0);
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic(dataInputStream0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic((-2944), 0);
+      int int0 = constantInvokeDynamic0.getBootstrapMethodAttrIndex();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic((-2944), (-2944));
+      String string0 = constantInvokeDynamic0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic((-2944), (-2944));
+      ConstantInvokeDynamic constantInvokeDynamic1 = new ConstantInvokeDynamic(constantInvokeDynamic0);
+      assertEquals(1, constantInvokeDynamic1.getClassIndex());
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      ConstantInvokeDynamic constantInvokeDynamic0 = new ConstantInvokeDynamic((-2944), (-2944));
+      DescendingVisitor descendingVisitor0 = new DescendingVisitor((JavaClass) null, (Visitor) null);
+      // Undeclared exception!
+      try { 
+        constantInvokeDynamic0.accept(descendingVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantInvokeDynamic", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      BufferedInputStream bufferedInputStream0 = new BufferedInputStream((InputStream) null);
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(bufferedInputStream0, (InputStream) null);
+      PushbackInputStream pushbackInputStream0 = new PushbackInputStream(sequenceInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(pushbackInputStream0);
+      ConstantInvokeDynamic constantInvokeDynamic0 = null;
+      try {
+        constantInvokeDynamic0 = new ConstantInvokeDynamic(dataInputStream0);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // Stream closed
+         //
+         verifyException("java.io.BufferedInputStream", e);
+      }
+  }

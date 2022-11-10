@@ -1,0 +1,11 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ClassPath classPath0 = new ClassPath("org.apache.bcel.generic.Type");
+      SyntheticRepository syntheticRepository0 = SyntheticRepository.getInstance(classPath0);
+      assertNotNull(syntheticRepository0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SyntheticRepository syntheticRepository0 = SyntheticRepository.getInstance();
+      assertNotNull(syntheticRepository0);
+}

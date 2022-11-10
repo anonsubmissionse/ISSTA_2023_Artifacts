@@ -1,0 +1,351 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("[-R]");
+      byte[] byteArray0 = new byte[2];
+      FileSystemHandling.appendDataToFile(evoSuiteFile0, byteArray0);
+      SystemInUtil.addInputLine("ls [-R] [path]     Lists contents of a file or folder.");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("<src>");
+      FileSystemHandling.createFolder(evoSuiteFile0);
+      SystemInUtil.addInputLine("cp <src> <dest>    Copies a file or folder.");
+      String[] stringArray0 = new String[2];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SystemInUtil.addInputLine("cat <file>         Displays the contents of a file.");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("<dest>");
+      FileSystemHandling.createFolder(evoSuiteFile0);
+      SystemInUtil.addInputLine("cp <src> <dest>    Copies a file or folder.");
+      String[] stringArray0 = new String[2];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("<dest>");
+      FileSystemHandling.appendLineToFile(evoSuiteFile0, "UAGE rm <path>");
+      SystemInUtil.addInputLine("cp <src> <dest>    Copies a file or folder.");
+      String[] stringArray0 = new String[2];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      SystemInUtil.addInputLine("cp");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String[] stringArray0 = new String[5];
+      SystemInUtil.addInputLine("rm <path>          Deletes a file or folder.");
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      SystemInUtil.addInputLine("info [scheme]      Displays information about providSrs.");
+      String[] stringArray0 = new String[0];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      SystemInUtil.addInputLine("info");
+      String[] stringArray0 = new String[2];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      SystemInUtil.addInputLine("touch");
+      String[] stringArray0 = new String[0];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      SystemInUtil.addInputLine("rm");
+      String[] stringArray0 = new String[5];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      SystemInUtil.addInputLine("itlfo");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      SystemInUtil.addInputLine("ls");
+      String[] stringArray0 = new String[1];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      SystemInUtil.addInputLine("?");
+      String[] stringArray0 = new String[1];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      SystemInUtil.addInputLine("cd");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      SystemInUtil.addInputLine("cat");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      SystemInUtil.addInputLine("quit");
+      // Undeclared exception!
+      try { 
+        Shell.main((String[]) null);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      SystemInUtil.addInputLine("exit");
+      // Undeclared exception!
+      try { 
+        Shell.main((String[]) null);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      SystemInUtil.addInputLine("");
+      String[] stringArray0 = new String[9];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      String[] stringArray0 = new String[23];
+      SystemInUtil.addInputLine("pwd");
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      SystemInUtil.addInputLine("help");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      SystemInUtil.addInputLine("pwfs");
+      String[] stringArray0 = new String[4];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      String[] stringArray0 = new String[2];
+      // Undeclared exception!
+      try { 
+        Shell.main(stringArray0);
+        fail("Expecting exception: System.SystemExitException");
+      } catch(System.SystemExitException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }

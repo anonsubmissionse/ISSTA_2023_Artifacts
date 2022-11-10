@@ -1,0 +1,12 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SerializationException serializationException0 = new SerializationException();
+      SerializationException serializationException1 = new SerializationException("", serializationException0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SerializationException serializationException0 = new SerializationException("");
+      SerializationException serializationException1 = new SerializationException(serializationException0);
+      ;
+}

@@ -1,0 +1,41 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileFileFilter fileFileFilter0 = (FileFileFilter)FileFileFilter.FILE;
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn((FileObject) null).when(fileSelectInfo0).getFile();
+      // Undeclared exception!
+      try { 
+        fileFileFilter0.accept(fileSelectInfo0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.FileFileFilter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileFileFilter fileFileFilter0 = (FileFileFilter)FileFileFilter.FILE;
+      FileType fileType0 = FileType.FILE;
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileType0).when(fileObject0).getType();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = fileFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileFileFilter fileFileFilter0 = (FileFileFilter)FileFileFilter.FILE;
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn((FileType) null).when(fileObject0).getType();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = fileFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileFileFilter fileFileFilter0 = new FileFileFilter();
+  }

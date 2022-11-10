@@ -1,0 +1,542 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(72.4646499934488);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      FP64 fP64_2 = fP64_0.subtract(fP64_1);
+      assertNotNull(fP64_2.toString());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(653.0641922302804);
+      FP64 fP64_1 = FP64.of(1553.02628248);
+      FP64 fP64_2 = fP64_0.subtract(fP64_1);
+      assertEquals(1, fP64_2.longValue());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(653.0641922302804);
+      FP64 fP64_1 = FP64.of(1553.02628248);
+      FP64 fP64_2 = fP64_0.subtract(fP64_1);
+      assertEquals(0, fP64_1.intValue());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1663.639348899747);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      FP64 fP64_2 = fP64_1.reciprocal();
+      assertNotNull(fP64_2.toString());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1663.639348899747);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      FP64 fP64_2 = fP64_1.reciprocal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1.0));
+      FP64 fP64_1 = fP64_0.reciprocal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1.0));
+      FP64 fP64_1 = fP64_0.reciprocal();
+      assertNotNull(fP64_0.toString());
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-4407.56243));
+      FP64 fP64_1 = fP64_0.pow(1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-4407.56243));
+      FP64 fP64_1 = fP64_0.pow(1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(2835.164);
+      FP64 fP64_1 = fP64_0.pow(5222);
+      FP64 fP64_2 = fP64_1.reciprocal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(2835.164);
+      FP64 fP64_1 = fP64_0.pow(5222);
+      FP64 fP64_2 = fP64_1.reciprocal();
+      assertNotNull(fP64_0.byteValue());
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = fP64_0.negate();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = fP64_0.negate();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1853));
+      FP64 fP64_1 = fP64_0.negate();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1853));
+      FP64 fP64_1 = fP64_0.negate();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.zero();
+      FP64 fP64_2 = fP64_1.multiply(fP64_1);
+      assertNotNull(fP64_2.toString());
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.zero();
+      FP64 fP64_2 = fP64_1.multiply(fP64_1);
+      assertEquals(0, fP64_0.intValue());
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1644.1088012358);
+      FP64 fP64_1 = fP64_0.multiply(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1644.1088012358);
+      FP64 fP64_1 = fP64_0.multiply(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1.0);
+      FP64 fP64_1 = fP64_0.multiply(3531);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1.0);
+      FP64 fP64_1 = fP64_0.multiply(3531);
+      assertEquals(1, fP64_0.longValue());
+}
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2519.01709));
+      FP64 fP64_1 = fP64_0.multiply(1337);
+      assertEquals(1, fP64_1.longValue());
+}
+ @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2519.01709));
+      FP64 fP64_1 = fP64_0.multiply(1337);
+      assertEquals(1, fP64_0.intValue());
+}
+ @Test(timeout = 4000)
+  public void test23()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      fP64_0.longValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test24()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2570.886701));
+      long long0 = fP64_0.longValue();
+      assertEquals(1, long0);
+}
+ @Test(timeout = 4000)
+  public void test25()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      fP64_0.intValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test26()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1.0));
+      int int0 = fP64_0.intValue();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test27()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.zero();
+      float float0 = fP64_1.floatValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test28()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-193.6));
+      float float0 = fP64_0.floatValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test29()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      double double0 = fP64_0.doubleValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test30()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2570.886701));
+      double double0 = fP64_0.doubleValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test31()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = FP64.of(1.0);
+      FP64 fP64_2 = fP64_0.subtract(fP64_1);
+      FP64 fP64_3 = fP64_2.divide(fP64_1);
+      FP64 fP64_4 = fP64_3.multiply(fP64_1);
+      assertEquals(0, fP64_1.intValue());
+}
+ @Test(timeout = 4000)
+  public void test32()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = FP64.of(1.0);
+      FP64 fP64_2 = fP64_0.subtract(fP64_1);
+      FP64 fP64_3 = fP64_2.divide(fP64_1);
+      FP64 fP64_4 = fP64_3.multiply(fP64_1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test33()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(26.972329262064843);
+      int int0 = fP64_0.compareTo(fP64_0);
+      assertEquals(0, fP64_0.intValue());
+}
+ @Test(timeout = 4000)
+  public void test34()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(26.972329262064843);
+      int int0 = fP64_0.compareTo(fP64_0);
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test35()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(4088.205008);
+      FP64 fP64_1 = fP64_0.multiply(0);
+      int int0 = fP64_0.compareTo(fP64_1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test36()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(4088.205008);
+      FP64 fP64_1 = fP64_0.multiply(0);
+      int int0 = fP64_0.compareTo(fP64_1);
+      assertNotNull(fP64_1.toString());
+}
+ @Test(timeout = 4000)
+  public void test37()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1663.639348899747);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      int int0 = fP64_1.compareTo(fP64_0);
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test38()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1663.639348899747);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      int int0 = fP64_1.compareTo(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test39()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-336.25071));
+      byte byte0 = fP64_0.byteValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test40()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2570.886701));
+      FP64 fP64_1 = fP64_0.add(fP64_0);
+      assertNotNull(fP64_1.byteValue());
+}
+ @Test(timeout = 4000)
+  public void test41()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2570.886701));
+      FP64 fP64_1 = fP64_0.add(fP64_0);
+      assertEquals(fP64_1, fP64_0.shortValue());
+}
+ @Test(timeout = 4000)
+  public void test42()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = fP64_0.add(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test43()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = fP64_0.add(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test44()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1786.657463175);
+      FP64 fP64_1 = FP64.of(3966.308772361);
+      FP64 fP64_2 = fP64_0.add(fP64_1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test45()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1786.657463175);
+      FP64 fP64_1 = FP64.of(3966.308772361);
+      FP64 fP64_2 = fP64_0.add(fP64_1);
+      assertNotNull(fP64_2.byteValue());
+}
+ @Test(timeout = 4000)
+  public void test46()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-2237.625));
+      // Undeclared exception!
+      try { 
+        fP64_0.subtract((FP64) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.numbers.field.FP64", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test47()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(2882.72292386);
+      // Undeclared exception!
+      try { 
+        fP64_0.multiply((FP64) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.numbers.field.FP64", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test48()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(1.0);
+      // Undeclared exception!
+      try { 
+        fP64_0.divide((FP64) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.numbers.field.FP64", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test49()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      boolean boolean0 = fP64_0.equals(fP64_0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test50()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      boolean boolean0 = fP64_0.equals(fP64_0);
+      assertTrue(fP64_0.shortValue());
+}
+ @Test(timeout = 4000)
+  public void test51()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      boolean boolean0 = fP64_0.equals("~N");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test52()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      boolean boolean0 = fP64_0.equals("~N");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test53()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = fP64_0.pow(0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test54()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      FP64 fP64_1 = fP64_0.pow(0);
+      assertEquals(0, fP64_1.longValue());
+}
+ @Test(timeout = 4000)
+  public void test55()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1853));
+      FP64 fP64_1 = fP64_0.pow((-1853));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test56()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1853));
+      FP64 fP64_1 = fP64_0.pow((-1853));
+      assertEquals(1, fP64_0.intValue());
+}
+ @Test(timeout = 4000)
+  public void test57()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(72.4646499934488);
+      fP64_0.one();
+      assertEquals(1, fP64_0.intValue());
+}
+ @Test(timeout = 4000)
+  public void test58()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      byte byte0 = fP64_0.byteValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test59()  throws Throwable  {
+      FP64 fP64_0 = FP64.of((-1853));
+      String string0 = fP64_0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test60()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      int int0 = fP64_0.intValue();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test61()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      FP64 fP64_1 = fP64_0.divide(fP64_0);
+      assertEquals(0, fP64_1.intValue());
+}
+ @Test(timeout = 4000)
+  public void test62()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      FP64 fP64_1 = fP64_0.divide(fP64_0);
+      assertEquals(fP64_1, fP64_0.shortValue());
+}
+ @Test(timeout = 4000)
+  public void test63()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(72.4646499934488);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      byte byte0 = fP64_1.byteValue();
+      assertNotNull(fP64_1.toString());
+}
+ @Test(timeout = 4000)
+  public void test64()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(72.4646499934488);
+      FP64 fP64_1 = fP64_0.reciprocal();
+      byte byte0 = fP64_1.byteValue();
+      assertNotNull(byte0);
+}
+ @Test(timeout = 4000)
+  public void test65()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      long long0 = fP64_0.longValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test66()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.multiply(fP64_0);
+      assertNotNull(fP64_1.toString());
+}
+ @Test(timeout = 4000)
+  public void test67()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.multiply(fP64_0);
+      assertEquals(fP64_1, fP64_0.shortValue());
+}
+ @Test(timeout = 4000)
+  public void test68()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(0.0);
+      // Undeclared exception!
+      try { 
+        fP64_0.add((FP64) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.numbers.field.FP64", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test69()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.zero();
+      FP64 fP64_2 = fP64_1.divide(fP64_0);
+      assertNotNull(fP64_2.toString());
+}
+ @Test(timeout = 4000)
+  public void test70()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      FP64 fP64_1 = fP64_0.zero();
+      FP64 fP64_2 = fP64_1.divide(fP64_0);
+      assertEquals(1, fP64_0.longValue());
+}
+ @Test(timeout = 4000)
+  public void test71()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      double double0 = fP64_0.doubleValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test72()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      fP64_0.hashCode();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test73()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      FP64 fP64_1 = fP64_0.negate();
+      boolean boolean0 = fP64_1.equals(fP64_0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test74()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      FP64 fP64_1 = fP64_0.negate();
+      boolean boolean0 = fP64_1.equals(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test75()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3859.964252455);
+      // Undeclared exception!
+      try { 
+        fP64_0.compareTo((FP64) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.numbers.field.FP64", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test76()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(72.4646499934488);
+      FP64 fP64_1 = fP64_0.subtract(fP64_0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test77()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(72.4646499934488);
+      FP64 fP64_1 = fP64_0.subtract(fP64_0);
+      assertEquals(1, fP64_0.longValue());
+}
+ @Test(timeout = 4000)
+  public void test78()  throws Throwable  {
+      FP64 fP64_0 = FP64.of(3491.6804096619207);
+      float float0 = fP64_0.floatValue();
+      ;
+}

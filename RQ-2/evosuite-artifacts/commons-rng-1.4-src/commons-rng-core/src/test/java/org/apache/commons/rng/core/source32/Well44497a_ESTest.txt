@@ -1,0 +1,60 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      Well44497a well44497a0 = new Well44497a(intArray0);
+      float float0 = well44497a0.nextFloat();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      intArray0[0] = 8;
+      Well44497a well44497a0 = new Well44497a(intArray0);
+      int int0 = well44497a0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      int[] intArray0 = new int[3];
+      Well44497a well44497a0 = new Well44497a(intArray0);
+      well44497a0.index = 2876;
+      // Undeclared exception!
+      try { 
+        well44497a0.next();
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 2876
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractWell$IndexTable", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      intArray0[0] = 8;
+      Well44497a well44497a0 = new Well44497a(intArray0);
+      float float0 = well44497a0.nextFloat();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      intArray0[0] = 8;
+      Well44497a well44497a0 = new Well44497a(intArray0);
+      float float0 = well44497a0.nextFloat();
+      int int0 = well44497a0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Well44497a well44497a0 = null;
+      try {
+        well44497a0 = new Well44497a((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }

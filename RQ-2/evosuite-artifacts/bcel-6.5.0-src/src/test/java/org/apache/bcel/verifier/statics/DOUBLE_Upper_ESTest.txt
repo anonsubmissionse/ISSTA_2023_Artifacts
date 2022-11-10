@@ -1,0 +1,5 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DOUBLE_Upper dOUBLE_Upper0 = DOUBLE_Upper.theInstance();
+      assertNotNull(dOUBLE_Upper0.getSignature());
+}

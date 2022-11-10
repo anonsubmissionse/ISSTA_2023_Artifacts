@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileTypeHasNoContentException fileTypeHasNoContentException0 = new FileTypeHasNoContentException("iZKXE,Jw1zVaT#)}\"");
+      FileTypeHasNoContentException fileTypeHasNoContentException1 = new FileTypeHasNoContentException("iZKXE,Jw1zVaT#)}\"", fileTypeHasNoContentException0);
+      ;
+}

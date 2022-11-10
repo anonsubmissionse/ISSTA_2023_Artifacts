@@ -1,0 +1,28 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ShowFileTask showFileTask0 = new ShowFileTask();
+      try { 
+        showFileTask0.execute();
+        fail("Expecting exception: BuildException");
+      } catch(BuildException e) {
+         //
+         // java.lang.NullPointerException
+         //
+         verifyException("org.apache.commons.vfs2.tasks.ShowFileTask", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ShowFileTask showFileTask0 = new ShowFileTask();
+      showFileTask0.setRecursive(true);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ShowFileTask showFileTask0 = new ShowFileTask();
+      showFileTask0.setFile("");
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ShowFileTask showFileTask0 = new ShowFileTask();
+      showFileTask0.setShowContent(true);
+  }

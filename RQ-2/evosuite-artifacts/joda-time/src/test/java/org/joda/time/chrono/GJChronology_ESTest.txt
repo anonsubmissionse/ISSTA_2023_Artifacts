@@ -1,0 +1,86 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        GJChronology.getInstance((DateTimeZone) null, (-12219292800019L), (-2184));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Invalid min days in first week: -2184
+         //
+         verifyException("org.joda.time.chrono.JulianChronology", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) null, 1570);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Invalid min days in first week: 1570
+         //
+         verifyException("org.joda.time.chrono.JulianChronology", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Instant instant0 = Instant.now();
+      // Undeclared exception!
+      try { 
+        GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) instant0, 2381);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Invalid min days in first week: 2381
+         //
+         verifyException("org.joda.time.chrono.JulianChronology", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        GJChronology.getInstance((DateTimeZone) null, (-12219292800000L), 10);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Invalid min days in first week: 10
+         //
+         verifyException("org.joda.time.chrono.JulianChronology", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        GJChronology.getInstance((DateTimeZone) null, (-1L), 547);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Invalid min days in first week: 547
+         //
+         verifyException("org.joda.time.chrono.JulianChronology", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) null);
+      assertEquals(0, gJChronology0.getMinimumDaysInFirstWeek());
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+      assertEquals(0, gJChronology0.getMinimumDaysInFirstWeek());
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null);
+      assertEquals(1, gJChronology0.getMinimumDaysInFirstWeek());
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      GJChronology gJChronology0 = GJChronology.getInstance();
+      assertEquals(0, gJChronology0.getMinimumDaysInFirstWeek());
+}

@@ -1,0 +1,44 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      RecursiveToStringStyle recursiveToStringStyle0 = new RecursiveToStringStyle();
+      ReflectionDiffBuilder<Object> reflectionDiffBuilder0 = null;
+      try {
+        reflectionDiffBuilder0 = new ReflectionDiffBuilder<Object>((Object) null, recursiveToStringStyle0, recursiveToStringStyle0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // lhs
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MultilineRecursiveToStringStyle multilineRecursiveToStringStyle0 = new MultilineRecursiveToStringStyle();
+      StringBuffer stringBuffer0 = new StringBuffer();
+      Integer integer0 = new Integer(1456);
+      ReflectionDiffBuilder<Object> reflectionDiffBuilder0 = new ReflectionDiffBuilder<Object>(stringBuffer0, integer0, multilineRecursiveToStringStyle0);
+      // Undeclared exception!
+      try { 
+        reflectionDiffBuilder0.build();
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MultilineRecursiveToStringStyle multilineRecursiveToStringStyle0 = new MultilineRecursiveToStringStyle();
+      Integer integer0 = new Integer(1456);
+      ReflectionDiffBuilder<Integer> reflectionDiffBuilder0 = new ReflectionDiffBuilder<Integer>(integer0, integer0, multilineRecursiveToStringStyle0);
+      DiffResult<Integer> diffResult0 = reflectionDiffBuilder0.build();
+      assertEquals(0, diffResult0.getNumberOfDiffs());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Diff<String> diff0 = (Diff<String>) mock(Diff.class, new ViolatedAssumptionAnswer());
+      Diff<String> diff1 = (Diff<String>) mock(Diff.class, new ViolatedAssumptionAnswer());
+      MultilineRecursiveToStringStyle multilineRecursiveToStringStyle0 = new MultilineRecursiveToStringStyle();
+      ReflectionDiffBuilder<Diff<String>> reflectionDiffBuilder0 = new ReflectionDiffBuilder<Diff<String>>(diff0, diff1, multilineRecursiveToStringStyle0);
+      DiffResult<Diff<String>> diffResult0 = reflectionDiffBuilder0.build();
+      assertEquals(1, diffResult0.getNumberOfDiffs());
+}

@@ -1,0 +1,51 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      intArray0[0] = 24;
+      Well1024a well1024a0 = new Well1024a(intArray0);
+      int int0 = well1024a0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      int[] intArray0 = new int[44];
+      Well1024a well1024a0 = new Well1024a(intArray0);
+      int int0 = well1024a0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      int[] intArray0 = new int[4];
+      Well1024a well1024a0 = new Well1024a(intArray0);
+      well1024a0.index = 733;
+      // Undeclared exception!
+      try { 
+        well1024a0.next();
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 733
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractWell$IndexTable", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      int[] intArray0 = new int[0];
+      Well1024a well1024a0 = new Well1024a(intArray0);
+      int int0 = well1024a0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Well1024a well1024a0 = null;
+      try {
+        well1024a0 = new Well1024a((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractWell", e);
+      }
+  }

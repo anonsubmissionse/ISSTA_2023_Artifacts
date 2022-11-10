@@ -1,0 +1,80 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        ProcessorBase.getServiceInstances((Class<Object>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // The validated object is null
+         //
+         verifyException("org.apache.commons.lang3.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      List<String> list0 = ResourceBundle.Control.FORMAT_CLASS;
+      MockFile mockFile0 = new MockFile("X", "X");
+      Properties properties0 = new Properties();
+      ProvidersTest providersTest0 = new ProvidersTest();
+      ArrayDeque<ProvidersTest.Monkeywrench> arrayDeque0 = new ArrayDeque<ProvidersTest.Monkeywrench>();
+      ProvidersTest.Monkeywrench providersTest_Monkeywrench0 = providersTest0.new Monkeywrench();
+      arrayDeque0.add(providersTest_Monkeywrench0);
+      ProcessorBase<ProvidersTest.Monkeywrench> processorBase0 = null;
+      try {
+        processorBase0 = new ProcessorBase<ProvidersTest.Monkeywrench>(list0, mockFile0, properties0, arrayDeque0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.utils.Providers$SortWorker", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Vector<String> vector0 = new Vector<String>();
+      Properties properties0 = new Properties();
+      LinkedHashSet<ProvidersTest.Monkeywrench> linkedHashSet0 = new LinkedHashSet<ProvidersTest.Monkeywrench>(1285);
+      ProcessorBase<ProvidersTest.Monkeywrench> processorBase0 = null;
+      try {
+        processorBase0 = new ProcessorBase<ProvidersTest.Monkeywrench>(vector0, (File) null, properties0, linkedHashSet0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // target
+         //
+         verifyException("org.apache.commons.lang3.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ArrayList<String> arrayList0 = new ArrayList<String>();
+      File file0 = MockFile.createTempFile(";J0xS6qqlbHV``,7Xy", ";J0xS6qqlbHV``,7Xy");
+      Stack<ProvidersTest.Monkeywrench> stack0 = new Stack<ProvidersTest.Monkeywrench>();
+      ProcessorBase<ProvidersTest.Monkeywrench> processorBase0 = null;
+      try {
+        processorBase0 = new ProcessorBase<ProvidersTest.Monkeywrench>(arrayList0, file0, (Properties) null, stack0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // /tmp/;J0xS6qqlbHV``,7Xy0;J0xS6qqlbHV``,7Xy is not a directory
+         //
+         verifyException("org.apache.commons.lang3.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      LinkedList<String> linkedList0 = new LinkedList<String>();
+      MockFile mockFile0 = new MockFile("", "");
+      Properties properties0 = new Properties();
+      Class<ProvidersTest.W> class0 = ProvidersTest.W.class;
+      Iterable<ProvidersTest.W> iterable0 = ProcessorBase.getServiceInstances(class0);
+      ProcessorBase<ProvidersTest.W> processorBase0 = new ProcessorBase<ProvidersTest.W>(linkedList0, mockFile0, properties0, iterable0);
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Class<Proxy.Type> class0 = Proxy.Type.class;
+      Iterable<Proxy.Type> iterable0 = ProcessorBase.getServiceInstances(class0);
+      ;
+}

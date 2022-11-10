@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeavablePackage weavablePackage0 = new WeavablePackage((Package) null);
+      Class<Annotation> class0 = Annotation.class;
+      WeavableClass<Annotation> weavableClass0 = weavablePackage0.getWeavable(class0);
+      WeavableConstructor<Annotation> weavableConstructor0 = null;
+      try {
+        weavableConstructor0 = new WeavableConstructor<Annotation>((Constructor<Annotation>) null, weavableClass0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.WeavableConstructor", e);
+      }
+  }

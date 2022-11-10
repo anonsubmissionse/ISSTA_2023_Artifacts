@@ -1,0 +1,93 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      try { 
+        iSBN10CheckDigit0.toCheckDigit(841);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Invalid Check Digit Value =841
+         //
+         verifyException("org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      try { 
+        iSBN10CheckDigit0.toInt('v', 4257, 1);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Invalid Character[4257] = 'v'
+         //
+         verifyException("org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      int int0 = iSBN10CheckDigit0.weightedValue(0, 0, 1193);
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = (ISBN10CheckDigit)ISBN10CheckDigit.ISBN10_CHECK_DIGIT;
+      int int0 = iSBN10CheckDigit0.weightedValue((-759), (-707), (-707));
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      int int0 = iSBN10CheckDigit0.weightedValue(1, 1, (-1375));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      int int0 = iSBN10CheckDigit0.toInt('0', (-1509), 210);
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      int int0 = iSBN10CheckDigit0.toInt('5', 2458, 2458);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = (ISBN10CheckDigit)ISBN10CheckDigit.ISBN10_CHECK_DIGIT;
+      try { 
+        iSBN10CheckDigit0.toCheckDigit((-2374));
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Invalid Check Digit Value =-2374
+         //
+         verifyException("org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      String string0 = iSBN10CheckDigit0.toCheckDigit(6);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      boolean boolean0 = iSBN10CheckDigit0.isValid("6");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      String string0 = iSBN10CheckDigit0.calculate("6");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      ISBN10CheckDigit iSBN10CheckDigit0 = new ISBN10CheckDigit();
+      boolean boolean0 = iSBN10CheckDigit0.isValid("X");
+      assertTrue(boolean0);
+}

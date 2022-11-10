@@ -1,0 +1,120 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BaseConfiguration baseConfiguration0 = new BaseConfiguration();
+      baseConfiguration0.addPropertyDirect("b;c/{w*-F!", (Object) null);
+      int int0 = baseConfiguration0.sizeInternal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BaseConfiguration baseConfiguration0 = new BaseConfiguration();
+      Object object0 = baseConfiguration0.getPropertyInternal("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BaseConfiguration baseConfiguration0 = new BaseConfiguration();
+      baseConfiguration0.addProperty("catalog-name", "catalog-name");
+      Object object0 = baseConfiguration0.getPropertyInternal("catalog-name");
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      propertiesConfiguration0.setInterpolator((ConfigurationInterpolator) null);
+      // Undeclared exception!
+      try { 
+        propertiesConfiguration0.clone();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.AbstractConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      BaseConfiguration baseConfiguration0 = new BaseConfiguration();
+      Object object0 = baseConfiguration0.clone();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      propertiesConfiguration0.addPropertyDirect("/(^qLTycd?C/<jT", "/(^qLTycd?C/<jT");
+      Object object0 = propertiesConfiguration0.clone();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.CLEAR_PROPERTY;
+      Collection<EventListener<? super ConfigurationEvent>> collection0 = propertiesConfiguration0.getEventListeners(eventType0);
+      propertiesConfiguration0.addPropertyDirect("ISO-8859-1", collection0);
+      Object object0 = propertiesConfiguration0.clone();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.addProperty("UTF-8", "UTF-8");
+      boolean boolean0 = xMLPropertiesConfiguration0.containsKeyInternal("UTF-8");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      boolean boolean0 = propertiesConfiguration0.containsKeyInternal("ISO-8859-1");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      boolean boolean0 = xMLPropertiesConfiguration0.isEmptyInternal();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.CLEAR_PROPERTY;
+      Collection<EventListener<? super ConfigurationEvent>> collection0 = propertiesConfiguration0.getEventListeners(eventType0);
+      propertiesConfiguration0.addPropertyDirect("ISO-8859-1", collection0);
+      boolean boolean0 = propertiesConfiguration0.isEmptyInternal();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      int int0 = propertiesConfiguration0.sizeInternal();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      Iterator<String> iterator0 = propertiesConfiguration0.getKeysInternal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.clearInternal();
+      assertFalse(xMLPropertiesConfiguration0.isDetailEvents());
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.clearPropertyDirect("UTF-8");
+      assertFalse(xMLPropertiesConfiguration0.isDetailEvents());
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      PropertiesConfiguration propertiesConfiguration0 = new PropertiesConfiguration();
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.CLEAR_PROPERTY;
+      Collection<EventListener<? super ConfigurationEvent>> collection0 = propertiesConfiguration0.getEventListeners(eventType0);
+      propertiesConfiguration0.addPropertyDirect("ISO-8859-1", collection0);
+      propertiesConfiguration0.addPropertyDirect("ISO-8859-1", "ISO-8859-1");
+      Integer integer0 = new Integer(0);
+      propertiesConfiguration0.addPropertyDirect("ISO-8859-1", integer0);
+      assertTrue(propertiesConfiguration0.isThrowExceptionOnMissing());
+}

@@ -1,0 +1,23 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileSystemLocationStrategy fileSystemLocationStrategy0 = new FileSystemLocationStrategy();
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      FileLocator.FileLocatorBuilder fileLocator_FileLocatorBuilder0 = mock(FileLocator.FileLocatorBuilder.class, new ViolatedAssumptionAnswer());
+      FileLocator fileLocator0 = new FileLocator(fileLocator_FileLocatorBuilder0);
+      URL uRL0 = fileSystemLocationStrategy0.locate(defaultFileSystem0, fileLocator0);
+      assertNotNull(uRL0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileSystemLocationStrategy fileSystemLocationStrategy0 = new FileSystemLocationStrategy();
+      // Undeclared exception!
+      try { 
+        fileSystemLocationStrategy0.locate((FileSystem) null, (FileLocator) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.io.FileSystemLocationStrategy", e);
+      }
+  }

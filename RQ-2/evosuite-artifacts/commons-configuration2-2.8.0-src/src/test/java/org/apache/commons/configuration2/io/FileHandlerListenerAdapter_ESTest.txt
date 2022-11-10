@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileHandlerListenerAdapter fileHandlerListenerAdapter0 = new FileHandlerListenerAdapter();
+      HashMap<String, FileLocationStrategy> hashMap0 = new HashMap<String, FileLocationStrategy>();
+      FileHandler fileHandler0 = FileHandler.fromMap(hashMap0);
+      fileHandlerListenerAdapter0.loaded(fileHandler0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileHandlerListenerAdapter fileHandlerListenerAdapter0 = new FileHandlerListenerAdapter();
+      HashMap<String, FileLocationStrategy> hashMap0 = new HashMap<String, FileLocationStrategy>();
+      FileHandler fileHandler0 = FileHandler.fromMap(hashMap0);
+      fileHandlerListenerAdapter0.saving(fileHandler0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileHandlerListenerAdapter fileHandlerListenerAdapter0 = new FileHandlerListenerAdapter();
+      HashMap<String, FileLocationStrategy> hashMap0 = new HashMap<String, FileLocationStrategy>();
+      FileHandler fileHandler0 = FileHandler.fromMap(hashMap0);
+      fileHandlerListenerAdapter0.saved(fileHandler0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileHandlerListenerAdapter fileHandlerListenerAdapter0 = new FileHandlerListenerAdapter();
+      HashMap<String, FileLocationStrategy> hashMap0 = new HashMap<String, FileLocationStrategy>();
+      FileHandler fileHandler0 = FileHandler.fromMap(hashMap0);
+      fileHandlerListenerAdapter0.locationChanged(fileHandler0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FileHandlerListenerAdapter fileHandlerListenerAdapter0 = new FileHandlerListenerAdapter();
+      HashMap<String, FileLocationStrategy> hashMap0 = new HashMap<String, FileLocationStrategy>();
+      FileHandler fileHandler0 = FileHandler.fromMap(hashMap0);
+      fileHandlerListenerAdapter0.loading(fileHandler0);
+      ;
+}

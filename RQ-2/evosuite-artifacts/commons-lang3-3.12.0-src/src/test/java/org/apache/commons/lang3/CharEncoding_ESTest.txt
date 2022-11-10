@@ -1,0 +1,19 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      boolean boolean0 = CharEncoding.isSupported("UTF-16BE");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      boolean boolean0 = CharEncoding.isSupported((String) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      boolean boolean0 = CharEncoding.isSupported("");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CharEncoding charEncoding0 = new CharEncoding();
+  }

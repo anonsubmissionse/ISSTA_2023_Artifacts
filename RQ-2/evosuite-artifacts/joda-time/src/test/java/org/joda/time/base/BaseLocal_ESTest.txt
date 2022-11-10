@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MonthDay monthDay0 = new MonthDay(1L);
+      LocalDate localDate0 = monthDay0.toLocalDate(168);
+      ;
+}

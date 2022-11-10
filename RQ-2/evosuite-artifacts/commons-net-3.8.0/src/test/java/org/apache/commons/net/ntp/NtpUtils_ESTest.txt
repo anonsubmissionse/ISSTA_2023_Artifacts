@@ -1,0 +1,76 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String string0 = NtpUtils.getHostAddress((-79));
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = NtpUtils.getModeName((-1629));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(7);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(6);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(5);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(4);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(3);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(2);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      String string0 = NtpUtils.getModeName(0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      String string0 = NtpUtils.getReferenceClock((NtpV3Packet) null);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      NtpV3Impl ntpV3Impl0 = new NtpV3Impl();
+      String string0 = NtpUtils.getReferenceClock(ntpV3Impl0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      NtpV3Impl ntpV3Impl0 = new NtpV3Impl();
+      String string0 = NtpUtils.getRefAddress(ntpV3Impl0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      NtpUtils ntpUtils0 = new NtpUtils();
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      String string0 = NtpUtils.getRefAddress((NtpV3Packet) null);
+      assertNotNull(string0);
+}

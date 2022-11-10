@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeakRefFilesCache weakRefFilesCache0 = new WeakRefFilesCache();
+      Reference<FileObject> reference0 = weakRefFilesCache0.createReference((FileObject) null, (ReferenceQueue<FileObject>) null);
+      assertTrue(reference0.isEnqueued());
+}

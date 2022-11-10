@@ -1,0 +1,43 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      I2D i2D0 = new I2D();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      LocalVariables localVariables0 = new LocalVariables((byte)83);
+      ObjectType objectType0 = ObjectType.getInstance("R+hwm");
+      OperandStack operandStack0 = new OperandStack((byte)83, objectType0);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      executionVisitor0.setFrame(frame0);
+      i2D0.accept(executionVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      I2D i2D0 = new I2D();
+      i2D0.setOpcode((short) (-710));
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        i2D0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -710
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      I2D i2D0 = new I2D();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        i2D0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }

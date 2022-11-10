@@ -1,0 +1,59 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Object object0 = new Object();
+      ShortArrayConverter shortArrayConverter0 = new ShortArrayConverter(object0);
+      Class<String> class0 = String.class;
+      Object object1 = shortArrayConverter0.convert(class0, class0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Object object0 = new Object();
+      ShortArrayConverter shortArrayConverter0 = new ShortArrayConverter(object0);
+      Class<String> class0 = String.class;
+      Object object1 = shortArrayConverter0.convert(class0, class0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ShortArrayConverter shortArrayConverter0 = new ShortArrayConverter((Object) null);
+      Class<Object> class0 = Object.class;
+      Object object0 = shortArrayConverter0.convert(class0, (Object) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ShortArrayConverter shortArrayConverter0 = new ShortArrayConverter();
+      Class<Object> class0 = Object.class;
+      // Undeclared exception!
+      try { 
+        shortArrayConverter0.convert(class0, shortArrayConverter0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // org.apache.commons.beanutils.converters.ShortArrayConverter@0000000001
+         //
+         verifyException("org.apache.commons.beanutils.converters.ShortArrayConverter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      ShortArrayConverter shortArrayConverter0 = new ShortArrayConverter(class0);
+      Class class1 = (Class)shortArrayConverter0.convert(class0, (Object) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ShortArrayConverter shortArrayConverter0 = new ShortArrayConverter();
+      // Undeclared exception!
+      try { 
+        shortArrayConverter0.convert((Class) null, (Object) null);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // No value specified
+         //
+         verifyException("org.apache.commons.beanutils.converters.ShortArrayConverter", e);
+      }
+  }

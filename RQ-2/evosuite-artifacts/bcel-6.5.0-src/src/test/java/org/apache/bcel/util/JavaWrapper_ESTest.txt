@@ -1,0 +1,78 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      JavaWrapper javaWrapper0 = new JavaWrapper(classLoader0);
+      String[] stringArray0 = new String[9];
+      // Undeclared exception!
+      try { 
+        javaWrapper0.runMain((String) null, stringArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String[] stringArray0 = new String[0];
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      JavaWrapper javaWrapper0 = new JavaWrapper(classLoader0);
+      try { 
+        javaWrapper0.runMain("", stringArray0);
+        fail("Expecting exception: ClassNotFoundException");
+      } catch(ClassNotFoundException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      try { 
+        JavaWrapper.main((String[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.util.JavaWrapper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      String[] stringArray0 = new String[0];
+      JavaWrapper.main(stringArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      String[] stringArray0 = new String[8];
+      try { 
+        JavaWrapper.main(stringArray0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // The property 'bcel.classloader' must be defined
+         //
+         verifyException("org.apache.bcel.util.JavaWrapper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      java.lang.ClassLoader classLoader0 = java.lang.ClassLoader.getSystemClassLoader();
+      JavaWrapper javaWrapper0 = new JavaWrapper(classLoader0);
+      String[] stringArray0 = new String[8];
+      javaWrapper0.runMain("org.apache.bcel.util.JavaWrapper", stringArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      JavaWrapper javaWrapper0 = null;
+      try {
+        javaWrapper0 = new JavaWrapper();
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // The property 'bcel.classloader' must be defined
+         //
+         verifyException("org.apache.bcel.util.JavaWrapper", e);
+      }
+  }

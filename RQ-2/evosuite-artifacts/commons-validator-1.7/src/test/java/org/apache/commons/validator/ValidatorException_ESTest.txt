@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ValidatorException validatorException0 = new ValidatorException();
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ValidatorException validatorException0 = new ValidatorException("<((_n%Vq_s&>)K");
+  }

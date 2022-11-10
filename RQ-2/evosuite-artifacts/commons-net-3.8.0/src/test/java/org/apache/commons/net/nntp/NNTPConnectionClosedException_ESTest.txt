@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NNTPConnectionClosedException nNTPConnectionClosedException0 = new NNTPConnectionClosedException((String) null);
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NNTPConnectionClosedException nNTPConnectionClosedException0 = new NNTPConnectionClosedException();
+  }

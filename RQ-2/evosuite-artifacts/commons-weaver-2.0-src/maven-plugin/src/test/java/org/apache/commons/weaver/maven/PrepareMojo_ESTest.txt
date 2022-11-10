@@ -1,0 +1,36 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      System.setCurrentTimeMillis((-724L));
+      PrepareMojo prepareMojo0 = new PrepareMojo();
+      File file0 = prepareMojo0.getTarget();
+      File file1 = MockFile.createTempFile("~3r", "juTI&8.", file0);
+      prepareMojo0.target = file1;
+      File file2 = prepareMojo0.getTarget();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      PrepareMojo prepareMojo0 = new PrepareMojo();
+      MockFile mockFile0 = new MockFile("|iu}ujk`o$bJGb", "");
+      mockFile0.mkdir();
+      prepareMojo0.target = (File) mockFile0;
+      File file0 = prepareMojo0.getTarget();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      PrepareMojo prepareMojo0 = new PrepareMojo();
+      DefaultModelLocator defaultModelLocator0 = new DefaultModelLocator();
+      File file0 = defaultModelLocator0.locatePom((File) null);
+      prepareMojo0.target = file0;
+      File file1 = prepareMojo0.getTarget();
+      assertEquals(1, file1.getTotalSpace());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      PrepareMojo prepareMojo0 = new PrepareMojo();
+      MockFile mockFile0 = new MockFile(".>_[uz");
+      prepareMojo0.target = (File) mockFile0;
+      File file0 = prepareMojo0.getTarget();
+      assertFalse(file0.isHidden());
+}

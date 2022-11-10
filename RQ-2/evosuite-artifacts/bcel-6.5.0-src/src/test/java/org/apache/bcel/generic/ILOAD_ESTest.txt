@@ -1,0 +1,69 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ILOAD iLOAD0 = new ILOAD(1);
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      Frame frame0 = new Frame(1, 1);
+      executionVisitor0.setFrame(frame0);
+      iLOAD0.accept(executionVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ILOAD iLOAD0 = new ILOAD();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        iLOAD0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ILOAD iLOAD0 = null;
+      try {
+        iLOAD0 = new ILOAD((-379));
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Illegal value: -379
+         //
+         verifyException("org.apache.bcel.generic.LocalVariableInstruction", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ILOAD iLOAD0 = new ILOAD(0);
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      Frame frame0 = new Frame(0, 0);
+      executionVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        iLOAD0.accept(executionVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // INTERNAL ERROR: OperandStack too small, should have thrown proper Exception elsewhere. Stack: Slots used: 0 MaxStack: 0.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.OperandStack", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ILOAD iLOAD0 = new ILOAD();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        iLOAD0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }

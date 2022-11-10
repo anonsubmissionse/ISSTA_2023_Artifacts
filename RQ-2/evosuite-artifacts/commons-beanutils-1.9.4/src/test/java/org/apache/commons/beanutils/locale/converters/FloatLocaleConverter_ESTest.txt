@@ -1,0 +1,124 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Double double0 = new Double(3.4028234663852886E38);
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(double0);
+      Object object0 = floatLocaleConverter0.parse(double0, "a1i");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Locale locale0 = Locale.FRANCE;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(locale0, "");
+      Double double0 = Double.valueOf(1.401298464324817E-45);
+      Object object0 = floatLocaleConverter0.parse(double0, "No pattern provided, using default.");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Byte byte0 = new Byte((byte) (-1));
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(byte0);
+      // Undeclared exception!
+      try { 
+        floatLocaleConverter0.parse((Object) null, "");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(true);
+      try { 
+        floatLocaleConverter0.parse("", "");
+        fail("Expecting exception: ParseException");
+      } catch(ParseException e) {
+         //
+         // Unparseable number: \"\"
+         //
+         verifyException("java.text.NumberFormat", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Object object0 = new Object();
+      Locale locale0 = Locale.CANADA;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(object0, locale0, (String) null, false);
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Double double0 = new Double((-1.0));
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(double0, true);
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter((Locale) null, false);
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Object object0 = new Object();
+      Locale locale0 = Locale.CHINESE;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(object0, locale0, true);
+      // Undeclared exception!
+      try { 
+        floatLocaleConverter0.parse(object0, "'`");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Malformed pattern \"'`\"
+         //
+         verifyException("java.text.DecimalFormat", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      Locale locale0 = Locale.GERMANY;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(locale0, (String) null, false);
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Byte byte0 = new Byte((byte) (-1));
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(byte0);
+      Byte byte1 = new Byte((byte)0);
+      Object object0 = floatLocaleConverter0.parse(byte1, "J]R*?o");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Locale locale0 = Locale.CANADA_FRENCH;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(locale0);
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter();
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      Byte byte0 = new Byte((byte) (-110));
+      Locale locale0 = Locale.JAPANESE;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(byte0, locale0, "");
+      // Undeclared exception!
+      try { 
+        floatLocaleConverter0.parse(locale0, "");
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+         //
+         // java.util.Locale cannot be cast to java.lang.String
+         //
+         verifyException("org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      Long long0 = new Long((-58L));
+      Locale locale0 = Locale.CHINA;
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(long0, locale0);
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      Byte byte0 = new Byte((byte) (-1));
+      FloatLocaleConverter floatLocaleConverter0 = new FloatLocaleConverter(byte0);
+      Object object0 = floatLocaleConverter0.convert((Object) byte0);
+      ;
+}

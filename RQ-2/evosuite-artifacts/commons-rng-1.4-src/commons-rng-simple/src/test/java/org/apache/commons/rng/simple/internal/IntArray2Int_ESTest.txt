@@ -1,0 +1,46 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IntArray2Int intArray2Int0 = new IntArray2Int();
+      int[] intArray0 = new int[3];
+      intArray0[0] = (-341);
+      intArray0[1] = (-3717);
+      Integer integer0 = intArray2Int0.convert(intArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      IntArray2Int intArray2Int0 = new IntArray2Int();
+      int[] intArray0 = new int[1];
+      intArray0[0] = 1149;
+      Integer integer0 = intArray2Int0.convert(intArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      IntArray2Int intArray2Int0 = new IntArray2Int();
+      int[] intArray0 = new int[2];
+      intArray0[1] = (-90);
+      Integer integer0 = intArray2Int0.convert(intArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      IntArray2Int intArray2Int0 = new IntArray2Int();
+      // Undeclared exception!
+      try { 
+        intArray2Int0.convert((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.internal.IntArray2Int", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      IntArray2Int intArray2Int0 = new IntArray2Int();
+      int[] intArray0 = new int[1];
+      Integer integer0 = intArray2Int0.convert(intArray0);
+      ;
+}

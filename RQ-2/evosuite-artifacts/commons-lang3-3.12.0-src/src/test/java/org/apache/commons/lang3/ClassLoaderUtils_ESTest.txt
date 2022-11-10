@@ -1,0 +1,43 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        ClassLoaderUtils.toString((URLClassLoader) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.lang3.ClassLoaderUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      URL[] uRLArray0 = new URL[0];
+      URLClassLoader uRLClassLoader0 = URLClassLoader.newInstance(uRLArray0);
+      String string0 = ClassLoaderUtils.toString(uRLClassLoader0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        ClassLoaderUtils.toString((ClassLoader) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.System", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      String string0 = ClassLoaderUtils.toString(classLoader0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ClassLoaderUtils classLoaderUtils0 = new ClassLoaderUtils();
+  }

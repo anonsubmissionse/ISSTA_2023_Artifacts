@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BeanAccessLanguageException beanAccessLanguageException0 = new BeanAccessLanguageException("&");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BeanAccessLanguageException beanAccessLanguageException0 = new BeanAccessLanguageException();
+  }

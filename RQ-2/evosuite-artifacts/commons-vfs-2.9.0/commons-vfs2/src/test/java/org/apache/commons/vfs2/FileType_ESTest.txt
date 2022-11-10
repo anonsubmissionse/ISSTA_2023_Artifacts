@@ -1,0 +1,63 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileType[] fileTypeArray0 = FileType.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileType fileType0 = FileType.valueOf("FILE_OR_FOLDER");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileType fileType0 = FileType.valueOf("IMAGINARY");
+      assertFalse(fileType0.hasAttributes());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileType fileType0 = FileType.FOLDER;
+      boolean boolean0 = fileType0.hasContent();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FileType fileType0 = FileType.FOLDER;
+      boolean boolean0 = fileType0.hasChildren();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FileType fileType0 = FileType.IMAGINARY;
+      boolean boolean0 = fileType0.hasAttributes();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FileType fileType0 = FileType.FILE;
+      boolean boolean0 = fileType0.hasChildren();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      FileType fileType0 = FileType.FILE;
+      String string0 = fileType0.getName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      FileType fileType0 = FileType.FILE;
+      String string0 = fileType0.toString();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      FileType fileType0 = FileType.FILE;
+      boolean boolean0 = fileType0.hasContent();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      FileType fileType0 = FileType.FILE;
+      boolean boolean0 = fileType0.hasAttributes();
+      assertTrue(boolean0);
+}

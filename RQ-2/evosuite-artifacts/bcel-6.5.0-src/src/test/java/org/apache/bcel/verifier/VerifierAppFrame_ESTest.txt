@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      VerifierAppFrame verifierAppFrame0 = null;
+      try {
+        verifierAppFrame0 = new VerifierAppFrame();
+        fail("Expecting exception: HeadlessException");
+      } catch(HeadlessException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.awt.GraphicsEnvironment", e);
+      }
+  }

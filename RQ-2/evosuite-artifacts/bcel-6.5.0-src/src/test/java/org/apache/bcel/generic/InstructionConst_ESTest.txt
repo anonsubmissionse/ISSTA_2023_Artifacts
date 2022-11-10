@@ -1,0 +1,28 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Instruction instruction0 = InstructionConst.getInstruction(159);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Instruction instruction0 = InstructionConst.getInstruction(0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Instruction instruction0 = InstructionConst.getInstruction(113);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        InstructionConst.getInstruction((-2106));
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -2106
+         //
+         verifyException("org.apache.bcel.generic.InstructionConst", e);
+      }
+  }

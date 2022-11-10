@@ -1,0 +1,36 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BREAKPOINT bREAKPOINT0 = new BREAKPOINT();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      bREAKPOINT0.accept(executionVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BREAKPOINT bREAKPOINT0 = new BREAKPOINT();
+      // Undeclared exception!
+      try { 
+        bREAKPOINT0.accept((Visitor) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.BREAKPOINT", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BREAKPOINT bREAKPOINT0 = new BREAKPOINT();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        bREAKPOINT0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // INTERNAL ERROR: In this JustIce verification pass there should not occur an illegal instruction such as BREAKPOINT.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }

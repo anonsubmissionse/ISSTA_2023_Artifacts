@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog("0");
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Permissions permissions0 = Permissions.DEFAULT;
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0, permissions0);
+      Integer integer0 = new Integer((-2246));
+      // Undeclared exception!
+      try { 
+        ListSetExecutor.discover(introspector0, (Class<?>) null, integer0, (Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ListSetExecutor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Permissions permissions0 = new Permissions();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0, permissions0);
+      Class<Object> class0 = Object.class;
+      Integer integer0 = new Integer(15);
+      ListSetExecutor listSetExecutor0 = ListSetExecutor.discover(introspector0, class0, integer0, noOpLog0);
+      assertNotNull(listSetExecutor0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Permissions permissions0 = new Permissions();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0, permissions0);
+      Class<Object> class0 = Object.class;
+      Class<String> class1 = String.class;
+      ListSetExecutor listSetExecutor0 = ListSetExecutor.discover(introspector0, class0, class1, noOpLog0);
+      assertNotNull(listSetExecutor0);
+}

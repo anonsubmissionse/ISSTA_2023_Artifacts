@@ -1,0 +1,85 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      long[] longArray0 = new long[9];
+      longArray0[0] = 895L;
+      MersenneTwister64 mersenneTwister64_0 = new MersenneTwister64(longArray0);
+      byte[] byteArray0 = mersenneTwister64_0.getStateInternal();
+      mersenneTwister64_0.nextBytes(byteArray0);
+      mersenneTwister64_0.setStateInternal(byteArray0);
+      long long0 = mersenneTwister64_0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      long[] longArray0 = new long[3];
+      MersenneTwister64 mersenneTwister64_0 = new MersenneTwister64(longArray0);
+      long long0 = mersenneTwister64_0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      long[] longArray0 = new long[7];
+      MersenneTwister64 mersenneTwister64_0 = new MersenneTwister64(longArray0);
+      // Undeclared exception!
+      try { 
+        mersenneTwister64_0.setStateInternal((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      long[] longArray0 = new long[1];
+      MersenneTwister64 mersenneTwister64_0 = new MersenneTwister64(longArray0);
+      byte[] byteArray0 = new byte[0];
+      // Undeclared exception!
+      try { 
+        mersenneTwister64_0.setStateInternal(byteArray0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // State size must be larger than 2504 but was 0
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      long[] longArray0 = new long[9];
+      MersenneTwister64 mersenneTwister64_0 = new MersenneTwister64(longArray0);
+      byte[] byteArray0 = mersenneTwister64_0.getStateInternal();
+      mersenneTwister64_0.nextBytes(byteArray0);
+      mersenneTwister64_0.setStateInternal(byteArray0);
+      // Undeclared exception!
+      try { 
+        mersenneTwister64_0.next();
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MersenneTwister64 mersenneTwister64_0 = null;
+      try {
+        mersenneTwister64_0 = new MersenneTwister64((long[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      long[] longArray0 = new long[0];
+      MersenneTwister64 mersenneTwister64_0 = new MersenneTwister64(longArray0);
+      long long0 = mersenneTwister64_0.next();
+      ;
+}

@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      RETURN rETURN0 = new RETURN();
+      // Undeclared exception!
+      try { 
+        rETURN0.accept((Visitor) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.RETURN", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      RETURN rETURN0 = new RETURN();
+      rETURN0.setOpcode((short) (-1196));
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        rETURN0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1196
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      RETURN rETURN0 = new RETURN();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      rETURN0.accept(executionVisitor0);
+      assertEquals(1, rETURN0.getLength());
+}

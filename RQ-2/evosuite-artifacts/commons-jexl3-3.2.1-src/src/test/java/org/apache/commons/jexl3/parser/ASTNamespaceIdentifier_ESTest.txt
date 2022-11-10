@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ASTNamespaceIdentifier aSTNamespaceIdentifier0 = new ASTNamespaceIdentifier(38);
+      aSTNamespaceIdentifier0.setNamespace("", "org.apache.commons.jexl3.parser.ASTNamespaceIdentifier");
+      String string0 = aSTNamespaceIdentifier0.getNamespace();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ASTNamespaceIdentifier aSTNamespaceIdentifier0 = new ASTNamespaceIdentifier(38);
+      aSTNamespaceIdentifier0.setNamespace("", "org.apache.commons.jexl3.parser.ASTNamespaceIdentifier");
+      String string0 = aSTNamespaceIdentifier0.getNamespace();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTNamespaceIdentifier aSTNamespaceIdentifier0 = new ASTNamespaceIdentifier(38);
+      aSTNamespaceIdentifier0.setNamespace("", "org.apache.commons.jexl3.parser.ASTNamespaceIdentifier");
+      String string0 = aSTNamespaceIdentifier0.getNamespace();
+      assertNotNull(aSTNamespaceIdentifier0.getName());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ASTNamespaceIdentifier aSTNamespaceIdentifier0 = new ASTNamespaceIdentifier(38);
+      String string0 = aSTNamespaceIdentifier0.getNamespace();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ASTNamespaceIdentifier aSTNamespaceIdentifier0 = new ASTNamespaceIdentifier(38);
+      aSTNamespaceIdentifier0.setNamespace("X?8$c", "X?8$c");
+      String string0 = aSTNamespaceIdentifier0.getNamespace();
+      assertNotNull(string0);
+}

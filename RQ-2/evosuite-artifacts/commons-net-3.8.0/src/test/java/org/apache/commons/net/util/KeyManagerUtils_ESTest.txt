@@ -1,0 +1,155 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        KeyManagerUtils.createClientKeyManager((KeyStore) null, "%ABmGHIYo(", ",C");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.util.KeyManagerUtils$ClientKeyStore", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        KeyManagerUtils.createClientKeyManager((String) null, (File) null, "The filters must not be null", "[%?", "[%?");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) null, "Gutq", "Gutq");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("U");
+      FileSystemHandling.appendStringToFile(evoSuiteFile0, "SENSITIVE");
+      MockFile mockFile0 = new MockFile("U");
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) mockFile0, "U", "org.apache.commons.io.filefilter.AndFileFilter");
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockFile mockFile0 = new MockFile((File) null, "");
+      mockFile0.createNewFile();
+      mockFile0.delete();
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) mockFile0, "", "");
+        fail("Expecting exception: EOFException");
+      } catch(EOFException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      URI uRI0 = MockURI.aFileURI;
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("/tmp/foo.bar");
+      FileSystemHandling.appendStringToFile(evoSuiteFile0, "]{Y(+O7+_mKW2");
+      MockFile mockFile0 = new MockFile(uRI0);
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) mockFile0, "");
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      MockFile mockFile0 = new MockFile("org.apache.commons.net.util.KeyManagerUtils$X509KeyManager");
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) mockFile0, "org.apache.commons.net.util.KeyManagerUtils$X509KeyManager");
+        fail("Expecting exception: FileNotFoundException");
+      } catch(FileNotFoundException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      MockFile mockFile0 = new MockFile("Bpx\"MRK~k1sph");
+      File file0 = MockFile.createTempFile("Bpx\"MRK~k1sph", "Bpx\"MRK~k1sph", (File) mockFile0);
+      try { 
+        KeyManagerUtils.createClientKeyManager(file0, "Bpx\"MRK~k1sph");
+        fail("Expecting exception: EOFException");
+      } catch(EOFException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      File file0 = MockFile.createTempFile("]X_6L", "]X_6L");
+      try { 
+        KeyManagerUtils.createClientKeyManager("]X_6L", file0, "]X_6L", "Sensitive", (String) null);
+        fail("Expecting exception: KeyStoreException");
+      } catch(KeyStoreException e) {
+         //
+         // ]X_6L not found
+         //
+         verifyException("java.security.KeyStore", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        KeyManagerUtils.createClientKeyManager((KeyStore) null, (String) null, (String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.util.KeyManagerUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      MockFile mockFile0 = new MockFile("U");
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) mockFile0, "U", "org.apache.commons.io.filefilter.AndFileFilter");
+        fail("Expecting exception: FileNotFoundException");
+      } catch(FileNotFoundException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        KeyManagerUtils.createClientKeyManager((File) null, "Ym=i+A@a(on8");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileInputStream", e);
+      }
+  }

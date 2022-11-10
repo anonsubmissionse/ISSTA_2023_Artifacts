@@ -1,0 +1,55 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LazyDynaClass lazyDynaClass0 = new LazyDynaClass();
+      DynaBean dynaBean0 = lazyDynaClass0.newInstance();
+      DynaBeanPropertyMapDecorator dynaBeanPropertyMapDecorator0 = new DynaBeanPropertyMapDecorator(dynaBean0);
+      String string0 = dynaBeanPropertyMapDecorator0.convertKey((String) null);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LazyDynaMap lazyDynaMap0 = new LazyDynaMap("n8f6S$5L");
+      DynaBeanPropertyMapDecorator dynaBeanPropertyMapDecorator0 = new DynaBeanPropertyMapDecorator(lazyDynaMap0);
+      String string0 = dynaBeanPropertyMapDecorator0.convertKey("");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      LazyDynaMap lazyDynaMap0 = new LazyDynaMap();
+      DynaBeanPropertyMapDecorator dynaBeanPropertyMapDecorator0 = new DynaBeanPropertyMapDecorator(lazyDynaMap0, true);
+      assertTrue(dynaBeanPropertyMapDecorator0.isReadOnly());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      LazyDynaClass lazyDynaClass0 = new LazyDynaClass();
+      DynaBean dynaBean0 = lazyDynaClass0.newInstance();
+      DynaBeanPropertyMapDecorator dynaBeanPropertyMapDecorator0 = new DynaBeanPropertyMapDecorator(dynaBean0);
+      String string0 = dynaBeanPropertyMapDecorator0.convertKey("org.apache.commons.beanutils.BaseDynaBeanMapDecorator");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DynaBeanPropertyMapDecorator dynaBeanPropertyMapDecorator0 = null;
+      try {
+        dynaBeanPropertyMapDecorator0 = new DynaBeanPropertyMapDecorator((DynaBean) null, true);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // DynaBean is null
+         //
+         verifyException("org.apache.commons.beanutils.BaseDynaBeanMapDecorator", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DynaBeanPropertyMapDecorator dynaBeanPropertyMapDecorator0 = null;
+      try {
+        dynaBeanPropertyMapDecorator0 = new DynaBeanPropertyMapDecorator((DynaBean) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // DynaBean is null
+         //
+         verifyException("org.apache.commons.beanutils.BaseDynaBeanMapDecorator", e);
+      }
+  }

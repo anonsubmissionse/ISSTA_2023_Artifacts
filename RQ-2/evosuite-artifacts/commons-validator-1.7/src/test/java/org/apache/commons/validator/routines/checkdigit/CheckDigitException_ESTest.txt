@@ -1,0 +1,10 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CheckDigitException checkDigitException0 = new CheckDigitException();
+      CheckDigitException checkDigitException1 = new CheckDigitException("", checkDigitException0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CheckDigitException checkDigitException0 = new CheckDigitException(":O*ac<");
+  }

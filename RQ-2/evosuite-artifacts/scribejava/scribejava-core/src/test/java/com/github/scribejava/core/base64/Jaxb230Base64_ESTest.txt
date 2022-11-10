@@ -1,0 +1,61 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Jaxb230Base64 jaxb230Base64_0 = new Jaxb230Base64();
+      byte[] byteArray0 = new byte[0];
+      String string0 = jaxb230Base64_0.internalEncodeUrlWithoutPadding(byteArray0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Jaxb230Base64 jaxb230Base64_0 = new Jaxb230Base64();
+      byte[] byteArray0 = new byte[0];
+      String string0 = jaxb230Base64_0.internalEncode(byteArray0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Jaxb230Base64 jaxb230Base64_0 = new Jaxb230Base64();
+      // Undeclared exception!
+      try { 
+        jaxb230Base64_0.internalEncodeUrlWithoutPadding((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("javax.xml.bind.DatatypeConverterImpl", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Jaxb230Base64 jaxb230Base64_0 = new Jaxb230Base64();
+      // Undeclared exception!
+      try { 
+        jaxb230Base64_0.internalEncode((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("javax.xml.bind.DatatypeConverterImpl", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      byte[] byteArray0 = new byte[8];
+      Jaxb230Base64 jaxb230Base64_0 = new Jaxb230Base64();
+      String string0 = jaxb230Base64_0.internalEncodeUrlWithoutPadding(byteArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      boolean boolean0 = Jaxb230Base64.isAvailable();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Jaxb230Base64 jaxb230Base64_0 = new Jaxb230Base64();
+      byte[] byteArray0 = new byte[3];
+      String string0 = jaxb230Base64_0.internalEncode(byteArray0);
+      ;
+}

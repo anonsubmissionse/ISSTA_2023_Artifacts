@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ArrayListWrapper arrayListWrapper0 = null;
+      try {
+        arrayListWrapper0 = new ArrayListWrapper((Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ArrayListWrapper", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ArrayListWrapper arrayListWrapper0 = null;
+      try {
+        arrayListWrapper0 = new ArrayListWrapper("CvAE DoH>8J6iO\"W]|");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // class java.lang.String is not an array
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ArrayListWrapper", e);
+      }
+  }

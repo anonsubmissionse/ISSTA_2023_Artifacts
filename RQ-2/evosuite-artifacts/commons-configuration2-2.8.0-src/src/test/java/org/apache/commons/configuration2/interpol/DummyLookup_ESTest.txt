@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DummyLookup[] dummyLookupArray0 = DummyLookup.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DummyLookup dummyLookup0 = DummyLookup.valueOf("INSTANCE");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DummyLookup dummyLookup0 = DummyLookup.INSTANCE;
+      Object object0 = dummyLookup0.lookup("");
+      assertNotNull(object0);
+}

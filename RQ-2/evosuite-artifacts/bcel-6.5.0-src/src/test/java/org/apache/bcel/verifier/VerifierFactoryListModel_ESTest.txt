@@ -1,0 +1,50 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      VerifierFactoryListModel verifierFactoryListModel0 = new VerifierFactoryListModel();
+      verifierFactoryListModel0.addListDataListener((ListDataListener) null);
+      // Undeclared exception!
+      try { 
+        verifierFactoryListModel0.update("zxPb&e{>%f");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.VerifierFactoryListModel", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      VerifierFactoryListModel verifierFactoryListModel0 = new VerifierFactoryListModel();
+      // Undeclared exception!
+      try { 
+        verifierFactoryListModel0.getElementAt(0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 0
+         //
+         verifyException("org.apache.bcel.verifier.VerifierFactoryListModel", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      VerifierFactoryListModel verifierFactoryListModel0 = new VerifierFactoryListModel();
+      int int0 = verifierFactoryListModel0.getSize();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      VerifierFactoryListModel verifierFactoryListModel0 = new VerifierFactoryListModel();
+      JComboBox<String> jComboBox0 = new JComboBox<String>();
+      verifierFactoryListModel0.addListDataListener(jComboBox0);
+      verifierFactoryListModel0.update("?");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      VerifierFactoryListModel verifierFactoryListModel0 = new VerifierFactoryListModel();
+      JComboBox<String> jComboBox0 = new JComboBox<String>();
+      verifierFactoryListModel0.removeListDataListener(jComboBox0);
+      assertFalse(jComboBox0.getFocusTraversalKeysEnabled());
+}

@@ -1,0 +1,27 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ListenerList listenerList0 = new ListenerList();
+      int int0 = listenerList0.getListenerCount();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ListenerList listenerList0 = new ListenerList();
+      DefaultEditorKit.InsertBreakAction defaultEditorKit_InsertBreakAction0 = new DefaultEditorKit.InsertBreakAction();
+      listenerList0.removeListener(defaultEditorKit_InsertBreakAction0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ListenerList listenerList0 = new ListenerList();
+      Action action0 = TransferHandler.getCopyAction();
+      listenerList0.addListener(action0);
+      int int0 = listenerList0.getListenerCount();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ListenerList listenerList0 = new ListenerList();
+      Iterator<EventListener> iterator0 = listenerList0.iterator();
+      ;
+}

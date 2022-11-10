@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ISBNValidator iSBNValidator0 = new ISBNValidator();
+      boolean boolean0 = iSBNValidator0.isValid("[J");
+      assertTrue(boolean0);
+}

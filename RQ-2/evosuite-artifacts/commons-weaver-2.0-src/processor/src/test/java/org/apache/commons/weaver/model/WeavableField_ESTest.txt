@@ -1,0 +1,17 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeavablePackage weavablePackage0 = new WeavablePackage((Package) null);
+      Class<Object> class0 = Object.class;
+      WeavableClass<Object> weavableClass0 = weavablePackage0.getWeavable(class0);
+      WeavableField<Object> weavableField0 = new WeavableField<Object>((Field) null, weavableClass0);
+      // Undeclared exception!
+      try { 
+        weavableField0.localCompareTo(weavableField0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.WeavableField", e);
+      }
+  }

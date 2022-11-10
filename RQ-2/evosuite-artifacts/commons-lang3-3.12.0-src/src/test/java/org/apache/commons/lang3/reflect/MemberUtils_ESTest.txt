@@ -1,0 +1,120 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Member member0 = mock(Member.class, new ViolatedAssumptionAnswer());
+      doReturn((-539)).when(member0).getModifiers();
+      doReturn(true).when(member0).isSynthetic();
+      boolean boolean0 = MemberUtils.isAccessible(member0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Member member0 = mock(Member.class, new ViolatedAssumptionAnswer());
+      doReturn(570).when(member0).getModifiers();
+      boolean boolean0 = MemberUtils.isAccessible(member0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Member member0 = mock(Member.class, new ViolatedAssumptionAnswer());
+      doReturn((-1231)).when(member0).getModifiers();
+      doReturn(false).when(member0).isSynthetic();
+      boolean boolean0 = MemberUtils.isAccessible(member0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      boolean boolean0 = MemberUtils.isAccessible((Member) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      boolean boolean0 = MemberUtils.isPackageAccess(0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      boolean boolean0 = MemberUtils.isPackageAccess((-4572));
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      AccessibleObject accessibleObject0 = mock(AccessibleObject.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(accessibleObject0).isAccessible();
+      boolean boolean0 = MemberUtils.setAccessibleWorkaround(accessibleObject0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      AccessibleObject accessibleObject0 = mock(AccessibleObject.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(accessibleObject0).isAccessible();
+      // Undeclared exception!
+      try { 
+        MemberUtils.setAccessibleWorkaround(accessibleObject0);
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+         //
+         // codegen.java.lang.reflect.AccessibleObject$MockitoMock$1479382577 cannot be cast to java.lang.reflect.Member
+         //
+         verifyException("org.apache.commons.lang3.reflect.MemberUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      boolean boolean0 = MemberUtils.setAccessibleWorkaround((AccessibleObject) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Class<String>[] classArray0 = (Class<String>[]) Array.newInstance(Class.class, 6);
+      // Undeclared exception!
+      try { 
+        MemberUtils.isMatchingMethod((Method) null, classArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.lang3.reflect.MemberUtils$Executable", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Class<Integer>[] classArray0 = (Class<Integer>[]) Array.newInstance(Class.class, 3);
+      // Undeclared exception!
+      try { 
+        MemberUtils.isMatchingConstructor((Constructor<?>) null, classArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.lang3.reflect.MemberUtils$Executable", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        MemberUtils.compareConstructorFit((Constructor<?>) null, (Constructor<?>) null, (Class<?>[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.lang3.reflect.MemberUtils$Executable", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      Class<Field>[] classArray0 = (Class<Field>[]) Array.newInstance(Class.class, 10);
+      // Undeclared exception!
+      try { 
+        MemberUtils.compareMethodFit((Method) null, (Method) null, classArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.lang3.reflect.MemberUtils$Executable", e);
+      }
+  }

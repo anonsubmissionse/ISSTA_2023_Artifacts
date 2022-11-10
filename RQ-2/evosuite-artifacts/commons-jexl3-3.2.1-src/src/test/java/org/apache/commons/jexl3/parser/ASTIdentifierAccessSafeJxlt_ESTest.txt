@@ -1,0 +1,11 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ASTIdentifierAccessSafeJxlt aSTIdentifierAccessSafeJxlt0 = new ASTIdentifierAccessSafeJxlt(400);
+      boolean boolean0 = aSTIdentifierAccessSafeJxlt0.isSafe();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ASTIdentifierAccessSafeJxlt aSTIdentifierAccessSafeJxlt0 = new ASTIdentifierAccessSafeJxlt((Parser) null, (-108));
+      ;
+}

@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      POP3MessageInfo pOP3MessageInfo0 = new POP3MessageInfo();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      POP3MessageInfo pOP3MessageInfo0 = new POP3MessageInfo();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      POP3MessageInfo pOP3MessageInfo0 = new POP3MessageInfo((-2063), (-2063));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      POP3MessageInfo pOP3MessageInfo0 = new POP3MessageInfo((-2063), (-2063));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      POP3MessageInfo pOP3MessageInfo0 = new POP3MessageInfo((-21), ",a");
+      String string0 = pOP3MessageInfo0.toString();
+      ;
+}

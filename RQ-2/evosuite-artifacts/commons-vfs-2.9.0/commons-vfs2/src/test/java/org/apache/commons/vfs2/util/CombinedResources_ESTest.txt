@@ -1,0 +1,89 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources(".properties");
+      combinedResources0.loadResources(".properties");
+      assertNotNull(combinedResources0.getResourceName());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("");
+      Locale locale0 = Locale.SIMPLIFIED_CHINESE;
+      combinedResources0.loadResources(locale0);
+      assertNotNull(locale0.toString());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("");
+      Object object0 = combinedResources0.handleGetObject("&j{s)b{f<,");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources(".properties");
+      String string0 = combinedResources0.getResourceName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("");
+      Enumeration<String> enumeration0 = combinedResources0.getKeys();
+      assertNotNull(enumeration0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("u(<S(b|+&!\"e87}");
+      // Undeclared exception!
+      try { 
+        combinedResources0.loadResources((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.util.CombinedResources", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("llud(WKN!");
+      // Undeclared exception!
+      try { 
+        combinedResources0.handleGetObject((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      CombinedResources combinedResources0 = null;
+      try {
+        combinedResources0 = new CombinedResources((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.util.CombinedResources", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("");
+      String string0 = combinedResources0.getResourceName();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("7");
+      combinedResources0.init();
+      assertNotNull(combinedResources0.getResourceName());
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      CombinedResources combinedResources0 = new CombinedResources("7");
+      boolean boolean0 = combinedResources0.containsKey("7");
+      ;
+}

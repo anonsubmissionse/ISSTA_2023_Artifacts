@@ -1,0 +1,22 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        FTPCommand.getCommand(858);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 858
+         //
+         verifyException("org.apache.commons.net.ftp.FTPCommand", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FTPCommand.checkArray();
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      String string0 = FTPCommand.getCommand(0);
+      assertNotNull(string0);
+}

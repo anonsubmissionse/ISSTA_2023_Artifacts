@@ -1,0 +1,14 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileContentInfoFilenameFactory fileContentInfoFilenameFactory0 = new FileContentInfoFilenameFactory();
+      // Undeclared exception!
+      try { 
+        fileContentInfoFilenameFactory0.create((FileContent) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.impl.FileContentInfoFilenameFactory", e);
+      }
+  }

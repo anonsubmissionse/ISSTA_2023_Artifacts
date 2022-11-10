@@ -1,0 +1,68 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator();
+      boolean boolean0 = creditCardValidator0.isValid("I>DL*#n_W+`Ta9&6&HV");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(19);
+      // Undeclared exception!
+      try { 
+        creditCardValidator0.luhnCheck((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.validator.CreditCardValidator", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(13);
+      boolean boolean0 = creditCardValidator0.luhnCheck("1");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(2);
+      boolean boolean0 = creditCardValidator0.luhnCheck("59");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(2);
+      boolean boolean0 = creditCardValidator0.luhnCheck("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator();
+      boolean boolean0 = creditCardValidator0.isValid(" oTldn! clone }(gs object.");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(2);
+      boolean boolean0 = creditCardValidator0.isValid("");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(2);
+      boolean boolean0 = creditCardValidator0.isValid((String) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator();
+      boolean boolean0 = creditCardValidator0.isValid("24}7;:zI%%H##");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      CreditCardValidator creditCardValidator0 = new CreditCardValidator(190);
+      creditCardValidator0.addAllowedCardType((CreditCardValidator.CreditCardType) null);
+      ;
+}

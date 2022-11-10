@@ -1,0 +1,59 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String string0 = URIUtils.encodePath("", "data may not be null");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = URIUtils.encodePath(">#w");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      String string0 = URIUtils.encodePath("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        URIUtils.encodePath((String) null, "/~vZ40]?9U0G0avO#em");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // The string to encode may not be null.
+         //
+         verifyException("org.apache.commons.vfs2.util.URIUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      String string0 = URIUtils.encodePath("5p9MO^XC", " ^M@");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        URIUtils.encodePath("The Hiearchy.overrideAsNeeded method has been deprecated.", (String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // charset may not be null or empty
+         //
+         verifyException("org.apache.commons.vfs2.util.URIUtils$EncodingUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        URIUtils.encodePath((String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // The string to encode may not be null.
+         //
+         verifyException("org.apache.commons.vfs2.util.URIUtils", e);
+      }
+  }

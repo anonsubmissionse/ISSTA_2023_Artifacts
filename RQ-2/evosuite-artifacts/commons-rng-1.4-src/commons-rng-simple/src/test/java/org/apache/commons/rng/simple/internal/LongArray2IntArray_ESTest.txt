@@ -1,0 +1,28 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LongArray2IntArray longArray2IntArray0 = new LongArray2IntArray();
+      long[] longArray0 = new long[8];
+      int[] intArray0 = longArray2IntArray0.convert(longArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LongArray2IntArray longArray2IntArray0 = new LongArray2IntArray();
+      long[] longArray0 = new long[0];
+      int[] intArray0 = longArray2IntArray0.convert(longArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      LongArray2IntArray longArray2IntArray0 = new LongArray2IntArray();
+      // Undeclared exception!
+      try { 
+        longArray2IntArray0.convert((long[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.internal.LongArray2IntArray", e);
+      }
+  }

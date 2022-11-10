@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ContextClassLoaderLocal<Object> contextClassLoaderLocal0 = new ContextClassLoaderLocal<Object>();
+      Object object0 = contextClassLoaderLocal0.initialValue();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ContextClassLoaderLocal<Integer> contextClassLoaderLocal0 = new ContextClassLoaderLocal<Integer>();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      contextClassLoaderLocal0.unset(classLoader0);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ContextClassLoaderLocal<String> contextClassLoaderLocal0 = new ContextClassLoaderLocal<String>();
+      contextClassLoaderLocal0.set("s");
+      contextClassLoaderLocal0.set("s");
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ContextClassLoaderLocal<String> contextClassLoaderLocal0 = new ContextClassLoaderLocal<String>();
+      contextClassLoaderLocal0.set("s");
+      String string0 = contextClassLoaderLocal0.get();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ContextClassLoaderLocal<Object> contextClassLoaderLocal0 = new ContextClassLoaderLocal<Object>();
+      contextClassLoaderLocal0.unset();
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ContextClassLoaderLocal<Object> contextClassLoaderLocal0 = new ContextClassLoaderLocal<Object>();
+      contextClassLoaderLocal0.get();
+      Object object0 = contextClassLoaderLocal0.get();
+      assertNotNull(object0);
+}

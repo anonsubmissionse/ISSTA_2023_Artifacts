@@ -1,0 +1,29 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableBiFunction<Integer, Object, String, Throwable> failableBiFunction0 = FailableBiFunction.nop();
+      Integer integer0 = new Integer((-1));
+      MockThrowable mockThrowable0 = new MockThrowable();
+      String string0 = failableBiFunction0.apply(integer0, mockThrowable0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableBiFunction<Throwable, Object, Throwable, Throwable> failableBiFunction0 = FailableBiFunction.nop();
+      // Undeclared exception!
+      try { 
+        failableBiFunction0.andThen((FailableFunction<? super Throwable, ? extends Throwable, Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableBiFunction<Object, Object, Object, Throwable> failableBiFunction0 = FailableBiFunction.nop();
+      FailableFunction<Object, Integer, Throwable> failableFunction0 = FailableFunction.nop();
+      FailableBiFunction<Object, Object, Object, Throwable> failableBiFunction1 = failableBiFunction0.andThen((FailableFunction<? super Object, ?, Throwable>) failableFunction0);
+      ;
+}

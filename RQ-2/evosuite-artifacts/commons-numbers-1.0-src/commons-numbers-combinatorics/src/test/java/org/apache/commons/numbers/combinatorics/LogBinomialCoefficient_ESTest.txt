@@ -1,0 +1,53 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(2007, 1004);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(67, 3);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        LogBinomialCoefficient.value(105, 1004);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Number 1,004 is out of range [0, 105]
+         //
+         verifyException("org.apache.commons.numbers.combinatorics.BinomialCoefficient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(1030, 3);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(50, 20);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(359, 358);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(1, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(1030, 1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      double double0 = LogBinomialCoefficient.value(1030, 1030);
+      ;
+}

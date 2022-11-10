@@ -1,0 +1,10 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ClassConstraintException classConstraintException0 = new ClassConstraintException("org.apache.bcel.verifier.exc.VerifierConstraintViolatedException");
+      ClassConstraintException classConstraintException1 = new ClassConstraintException(">A}DM&", classConstraintException0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ClassConstraintException classConstraintException0 = new ClassConstraintException();
+  }

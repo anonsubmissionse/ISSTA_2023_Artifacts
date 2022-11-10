@@ -1,0 +1,27 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Integer integer0 = new Integer(0);
+      // Undeclared exception!
+      try { 
+        ListGetExecutor.discover((Introspector) null, (Class<?>) null, integer0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ListGetExecutor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<Integer> class0 = Integer.TYPE;
+      Integer integer0 = new Integer((-3344));
+      ListGetExecutor listGetExecutor0 = ListGetExecutor.discover((Introspector) null, class0, integer0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Class<Integer> class0 = Integer.TYPE;
+      ListGetExecutor listGetExecutor0 = ListGetExecutor.discover((Introspector) null, class0, (Integer) null);
+      ;
+}

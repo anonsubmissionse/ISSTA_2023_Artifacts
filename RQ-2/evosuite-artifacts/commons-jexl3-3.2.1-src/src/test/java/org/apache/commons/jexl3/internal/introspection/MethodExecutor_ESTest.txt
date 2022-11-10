@@ -1,0 +1,128 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Object[] objectArray0 = new Object[1];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, noOpLog0, "warn", objectArray0);
+      Object object0 = methodExecutor0.invoke(noOpLog0, objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Object[] objectArray0 = new Object[1];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, noOpLog0, "warn", objectArray0);
+      // Undeclared exception!
+      try { 
+        methodExecutor0.tryInvoke((String) null, (Object) null, objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.MethodKey", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Object[] objectArray0 = new Object[1];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, noOpLog0, "warn", objectArray0);
+      // Undeclared exception!
+      try { 
+        methodExecutor0.invoke((Object) null, objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Object[] objectArray0 = new Object[1];
+      // Undeclared exception!
+      try { 
+        MethodExecutor.discover((Introspector) null, (Object) null, " i1^IM`|pl", objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.MethodExecutor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector((Log) null, classLoader0);
+      Integer integer0 = new Integer(0);
+      Object[] objectArray0 = new Object[9];
+      // Undeclared exception!
+      try { 
+        MethodExecutor.discover(introspector0, integer0, "org.apache.commons.jexl3.internal.introspection.MethodExecutor", objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ClassMap", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Object[] objectArray0 = new Object[1];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, noOpLog0, "error", objectArray0);
+      Object object0 = methodExecutor0.tryInvoke("error", noOpLog0, objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Class<Object> class0 = Object.class;
+      Object[] objectArray0 = new Object[1];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, noOpLog0, "warn", objectArray0);
+      Object object0 = methodExecutor0.tryInvoke("warn", class0, objectArray0);
+      // Undeclared exception!
+      try { 
+        methodExecutor0.invoke(object0, objectArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Object[] objectArray0 = new Object[20];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, classLoader0, "mepYa>ZUrj zn\"CEj", objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Class<Object> class0 = Object.class;
+      Object[] objectArray0 = new Object[20];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, class0, "mepYa>ZUrj zn\"CEj", objectArray0);
+      assertNotNull(methodExecutor0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Object[] objectArray0 = new Object[1];
+      MethodExecutor methodExecutor0 = MethodExecutor.discover(introspector0, noOpLog0, "warn", objectArray0);
+      Object object0 = methodExecutor0.tryInvoke("", noOpLog0, objectArray0);
+      ;
+}

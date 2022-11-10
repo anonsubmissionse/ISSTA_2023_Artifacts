@@ -1,0 +1,184 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SQLException sQLException0 = new SQLException("8\"mQ)S$E");
+      SQLException sQLException1 = new SQLException(sQLException0);
+      sQLException0.setNextException(sQLException1);
+      DbUtils.printStackTrace(sQLException0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      doReturn((SQLWarning) null).when(connection0).getWarnings();
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter("}g}");
+      DbUtils.printWarnings(connection0, (PrintWriter) mockPrintWriter0);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      boolean boolean0 = DbUtils.loadDriver(classLoader0, "N|0h|");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      boolean boolean0 = DbUtils.loadDriver((ClassLoader) null, "");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      boolean boolean0 = DbUtils.loadDriver("org.apache.commons.dbutils.DbUtils");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      SQLException sQLException0 = new SQLException("jey `Us!cND~d");
+      // Undeclared exception!
+      try { 
+        DbUtils.printStackTrace(sQLException0, (PrintWriter) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      SQLException sQLException0 = new SQLException("8\"mQ)S$E");
+      sQLException0.setNextException(sQLException0);
+      // Undeclared exception!
+      DbUtils.printStackTrace(sQLException0);
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      DbUtils.rollbackAndClose(connection0);
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      DbUtils.rollbackAndClose((Connection) null);
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter("9CTMFt?i-9<TPW=");
+      DbUtils.printWarnings((Connection) null, (PrintWriter) mockPrintWriter0);
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      SQLException sQLException0 = new SQLException("8\"mQ)S$E");
+      sQLException0.setNextException(sQLException0);
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter("8\"mQ)S$E");
+      // Undeclared exception!
+      DbUtils.printStackTrace(sQLException0, (PrintWriter) mockPrintWriter0);
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      SQLException sQLException0 = new SQLException("8\"mQ)S$E");
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter("8\"mQ)S$E");
+      DbUtils.printStackTrace(sQLException0, (PrintWriter) mockPrintWriter0);
+      assertNotNull(sQLException0.toString());
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      DbUtils.commitAndClose(connection0);
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      Statement statement0 = mock(Statement.class, new ViolatedAssumptionAnswer());
+      DbUtils.close(statement0);
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      DbUtils.close(resultSet0);
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      DbUtils.close((ResultSet) null);
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      DbUtils.close((Connection) null);
+  }
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      DbUtils.closeQuietly(resultSet0);
+  }
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      DbUtils.closeQuietly((Statement) null);
+  }
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      DbUtils.closeQuietly((Connection) null);
+  }
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      DbUtils.rollbackAndCloseQuietly(connection0);
+  }
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      DbUtils.rollback(connection0);
+  }
+ @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      DbUtils.rollback((Connection) null);
+  }
+ @Test(timeout = 4000)
+  public void test23()  throws Throwable  {
+      SQLException sQLException0 = new SQLException();
+      SQLWarning sQLWarning0 = mock(SQLWarning.class, new ViolatedAssumptionAnswer());
+      doReturn(sQLException0).when(sQLWarning0).getNextException();
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      doReturn(sQLWarning0).when(connection0).getWarnings();
+      // Undeclared exception!
+      try { 
+        DbUtils.printWarnings(connection0, (PrintWriter) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test24()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      boolean boolean0 = DbUtils.loadDriver(classLoader0, "org.apache.commons.dbutils.DbUtils");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test25()  throws Throwable  {
+      DbUtils.commitAndClose((Connection) null);
+  }
+ @Test(timeout = 4000)
+  public void test26()  throws Throwable  {
+      DbUtils.close((Statement) null);
+  }
+ @Test(timeout = 4000)
+  public void test27()  throws Throwable  {
+      Statement statement0 = mock(Statement.class, new ViolatedAssumptionAnswer());
+      DbUtils.closeQuietly((Connection) null, statement0, (ResultSet) null);
+  }
+ @Test(timeout = 4000)
+  public void test28()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      DbUtils.close(connection0);
+  }
+ @Test(timeout = 4000)
+  public void test29()  throws Throwable  {
+      DbUtils dbUtils0 = new DbUtils();
+  }
+ @Test(timeout = 4000)
+  public void test30()  throws Throwable  {
+      DbUtils.printWarnings((Connection) null);
+  }
+ @Test(timeout = 4000)
+  public void test31()  throws Throwable  {
+      Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+      DbUtils.commitAndCloseQuietly(connection0);
+  }

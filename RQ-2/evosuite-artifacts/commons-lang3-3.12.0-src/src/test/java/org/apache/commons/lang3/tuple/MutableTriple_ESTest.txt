@@ -1,0 +1,89 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MutableTriple<Object, String, Object> mutableTriple0 = new MutableTriple<Object, String, Object>();
+      mutableTriple0.setMiddle("dA`woYX'");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Integer integer0 = new Integer((-3698));
+      MutableTriple<String, Integer, String> mutableTriple0 = MutableTriple.of(",", integer0, ",");
+      assertNotNull(mutableTriple0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MutableTriple<Integer, Object, Object> mutableTriple0 = new MutableTriple<Integer, Object, Object>();
+      Object object0 = mutableTriple0.getRight();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MutableTriple<Object, Object, String> mutableTriple0 = new MutableTriple<Object, Object, String>();
+      Object object0 = mutableTriple0.getMiddle();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MutableTriple<Object, Object, Object> mutableTriple0 = new MutableTriple<Object, Object, Object>();
+      Object object0 = mutableTriple0.getLeft();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Integer integer0 = new Integer((-1720));
+      MutableTriple<Integer, Object, String> mutableTriple0 = new MutableTriple<Integer, Object, String>(integer0, integer0, "");
+      Object object0 = mutableTriple0.getLeft();
+      assertEquals(0, object0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Integer integer0 = new Integer((-1720));
+      MutableTriple<Integer, Object, String> mutableTriple0 = new MutableTriple<Integer, Object, String>(integer0, integer0, "");
+      Object object0 = mutableTriple0.getLeft();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      MutableTriple<Object, Object, String> mutableTriple0 = new MutableTriple<Object, Object, String>();
+      Integer integer0 = new Integer((-3569));
+      MutableTriple<Object, String, Integer> mutableTriple1 = new MutableTriple<Object, String, Integer>(mutableTriple0, (String) null, integer0);
+      Object object0 = mutableTriple1.getLeft();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      MutableTriple<Integer, String, Object> mutableTriple0 = new MutableTriple<Integer, String, Object>();
+      Integer integer0 = new Integer(2775);
+      MutableTriple<MutableTriple<Integer, String, Object>, String, Integer> mutableTriple1 = new MutableTriple<MutableTriple<Integer, String, Object>, String, Integer>(mutableTriple0, (String) null, integer0);
+      Integer integer1 = mutableTriple1.getRight();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      MutableTriple<Object, Object, Integer> mutableTriple0 = new MutableTriple<Object, Object, Integer>();
+      MutableTriple<Object, String, MutableTriple<Object, Object, Integer>> mutableTriple1 = new MutableTriple<Object, String, MutableTriple<Object, Object, Integer>>((Object) null, "", mutableTriple0);
+      String string0 = mutableTriple1.getMiddle();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Integer integer0 = new Integer(35);
+      MutableTriple<Integer, String, MutableTriple<Integer, String, Object>> mutableTriple0 = new MutableTriple<Integer, String, MutableTriple<Integer, String, Object>>();
+      MutableTriple<Integer, String, Object> mutableTriple1 = new MutableTriple<Integer, String, Object>(integer0, "/", integer0);
+      mutableTriple0.setRight(mutableTriple1);
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      MutableTriple<Integer, Object, Integer>[] mutableTripleArray0 = MutableTriple.emptyArray();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      MutableTriple<String, Integer, Integer> mutableTriple0 = new MutableTriple<String, Integer, Integer>();
+      mutableTriple0.setLeft("/");
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      Integer integer0 = new Integer(35);
+      MutableTriple<String, Integer, Object> mutableTriple0 = MutableTriple.of("/", integer0, (Object) integer0);
+      mutableTriple0.setMiddle(integer0);
+  }

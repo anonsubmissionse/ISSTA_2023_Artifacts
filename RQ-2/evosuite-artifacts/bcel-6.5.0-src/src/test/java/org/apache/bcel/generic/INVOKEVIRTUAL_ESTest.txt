@@ -1,0 +1,90 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = new INVOKEVIRTUAL();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        iNVOKEVIRTUAL0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = new INVOKEVIRTUAL();
+      DataOutputStream dataOutputStream0 = new DataOutputStream((OutputStream) null);
+      // Undeclared exception!
+      try { 
+        iNVOKEVIRTUAL0.dump(dataOutputStream0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = new INVOKEVIRTUAL();
+      MockFile mockFile0 = new MockFile("IzL};", "");
+      FileSystemHandling.shouldAllThrowIOExceptions();
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockFileOutputStream0);
+      try { 
+        iNVOKEVIRTUAL0.dump(dataOutputStream0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Simulated IOException
+         //
+         verifyException("org.evosuite.runtime.vfs.VirtualFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = new INVOKEVIRTUAL(1801);
+      // Undeclared exception!
+      try { 
+        iNVOKEVIRTUAL0.accept(instConstraintVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.FieldOrMethod", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = null;
+      try {
+        iNVOKEVIRTUAL0 = new INVOKEVIRTUAL((-749));
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Negative index value: -749
+         //
+         verifyException("org.apache.bcel.generic.CPInstruction", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = new INVOKEVIRTUAL();
+      Class<?>[] classArray0 = iNVOKEVIRTUAL0.getExceptions();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      INVOKEVIRTUAL iNVOKEVIRTUAL0 = new INVOKEVIRTUAL();
+      MockFile mockFile0 = new MockFile("IzL};", "");
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockFileOutputStream0);
+      iNVOKEVIRTUAL0.dump(dataOutputStream0);
+      assertEquals(0, iNVOKEVIRTUAL0.getIndex());
+}

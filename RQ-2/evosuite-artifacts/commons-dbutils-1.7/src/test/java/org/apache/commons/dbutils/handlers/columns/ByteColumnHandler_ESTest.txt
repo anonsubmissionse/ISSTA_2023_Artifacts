@@ -1,0 +1,57 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ByteColumnHandler byteColumnHandler0 = new ByteColumnHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((byte)0).when(resultSet0).getByte(anyInt());
+      Object object0 = byteColumnHandler0.apply(resultSet0, 638);
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ByteColumnHandler byteColumnHandler0 = new ByteColumnHandler();
+      // Undeclared exception!
+      try { 
+        byteColumnHandler0.match((Class<?>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.ByteColumnHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ByteColumnHandler byteColumnHandler0 = new ByteColumnHandler();
+      Class<Byte> class0 = Byte.class;
+      boolean boolean0 = byteColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ByteColumnHandler byteColumnHandler0 = new ByteColumnHandler();
+      Class<Integer> class0 = Integer.class;
+      boolean boolean0 = byteColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ByteColumnHandler byteColumnHandler0 = new ByteColumnHandler();
+      Class<Byte> class0 = Byte.TYPE;
+      boolean boolean0 = byteColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ByteColumnHandler byteColumnHandler0 = new ByteColumnHandler();
+      // Undeclared exception!
+      try { 
+        byteColumnHandler0.apply((ResultSet) null, (-11));
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.ByteColumnHandler", e);
+      }
+  }

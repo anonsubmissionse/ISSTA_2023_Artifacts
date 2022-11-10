@@ -1,0 +1,45 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CommonsCodecBase64 commonsCodecBase64_0 = new CommonsCodecBase64();
+      String string0 = commonsCodecBase64_0.internalEncodeUrlWithoutPadding((byte[]) null);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CommonsCodecBase64 commonsCodecBase64_0 = new CommonsCodecBase64();
+      byte[] byteArray0 = new byte[0];
+      String string0 = commonsCodecBase64_0.internalEncodeUrlWithoutPadding(byteArray0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CommonsCodecBase64 commonsCodecBase64_0 = new CommonsCodecBase64();
+      String string0 = commonsCodecBase64_0.internalEncode((byte[]) null);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CommonsCodecBase64 commonsCodecBase64_0 = new CommonsCodecBase64();
+      byte[] byteArray0 = new byte[0];
+      String string0 = commonsCodecBase64_0.internalEncode(byteArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      CommonsCodecBase64 commonsCodecBase64_0 = new CommonsCodecBase64();
+      byte[] byteArray0 = new byte[38];
+      String string0 = commonsCodecBase64_0.internalEncode(byteArray0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      boolean boolean0 = CommonsCodecBase64.isAvailable();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      CommonsCodecBase64 commonsCodecBase64_0 = new CommonsCodecBase64();
+      byte[] byteArray0 = new byte[38];
+      String string0 = commonsCodecBase64_0.internalEncodeUrlWithoutPadding(byteArray0);
+      ;
+}

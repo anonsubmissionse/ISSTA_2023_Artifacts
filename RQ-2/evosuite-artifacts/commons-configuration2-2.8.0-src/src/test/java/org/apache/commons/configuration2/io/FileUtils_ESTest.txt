@@ -1,0 +1,87 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl("D^N%eE$w%>9+v!L-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl("%I6dw/<4*Bh");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      URL uRL0 = MockURL.getFileExample();
+      URL uRL1 = MockURL.URL(uRL0, "[a-z]+://.*");
+      File file0 = FileUtils.toFile(uRL1);
+      assertNotNull(file0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      URL uRL0 = MockURL.getFileExample();
+      URL uRL1 = MockURL.URL(uRL0, "[a-z]+://.*");
+      File file0 = FileUtils.toFile(uRL1);
+      assertNotNull(file0.getName());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      URL uRL0 = MockURL.getFileExample();
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("/fake/but/wellformed/url");
+      FileSystemHandling.createFolder(evoSuiteFile0);
+      File file0 = FileUtils.toFile(uRL0);
+      assertFalse(file0.canRead());
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      URL uRL0 = MockURL.URL("file", "file", 3087, ":(?:[^/]+)@");
+      File file0 = FileUtils.toFile(uRL0);
+      assertNotNull(file0.getName());
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      URL uRL0 = MockURL.getFileExample();
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("/fake/but/wellformed/url");
+      FileSystemHandling.appendStringToFile(evoSuiteFile0, "(arfz^#u");
+      File file0 = FileUtils.toFile(uRL0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl("DX%eaNM&ys%)-");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl("\u0006(7]Rf#a&A%1d%");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl("sF Vr%e6");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      String string0 = FileUtils.decodeUrl((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      DefaultURLStreamHandler defaultURLStreamHandler0 = new DefaultURLStreamHandler((VfsComponentContext) null);
+      URL uRL0 = MockURL.URL("EkjF", "sF Vr\uFFFD", 3, "sF Vr\uFFFD", (URLStreamHandler) defaultURLStreamHandler0);
+      File file0 = FileUtils.toFile(uRL0);
+      assertNotNull(file0);
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      File file0 = FileUtils.toFile((URL) null);
+      assertNotNull(file0);
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      FileUtils fileUtils0 = new FileUtils();
+  }

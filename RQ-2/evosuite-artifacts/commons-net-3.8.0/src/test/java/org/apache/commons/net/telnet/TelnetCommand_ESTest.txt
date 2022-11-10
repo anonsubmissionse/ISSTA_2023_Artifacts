@@ -1,0 +1,38 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      boolean boolean0 = TelnetCommand.isValidCommand(236);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = TelnetCommand.getCommand(251);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      boolean boolean0 = TelnetCommand.isValidCommand(0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      boolean boolean0 = TelnetCommand.isValidCommand(255);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      boolean boolean0 = TelnetCommand.isValidCommand(1501);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        TelnetCommand.getCommand(1501);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1246
+         //
+         verifyException("org.apache.commons.net.telnet.TelnetCommand", e);
+      }
+  }

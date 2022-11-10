@@ -1,0 +1,74 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = new CurrencyValidator(false, false);
+      Locale locale0 = Locale.FRENCH;
+      DecimalFormat decimalFormat0 = (DecimalFormat)currencyValidator0.getFormat(locale0);
+      currencyValidator0.parse("(1%JKm-$PL\"^", decimalFormat0);
+      assertNotNull(decimalFormat0.getPositiveSuffix());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = new CurrencyValidator(false, false);
+      Locale locale0 = Locale.FRENCH;
+      DecimalFormat decimalFormat0 = (DecimalFormat)currencyValidator0.getFormat(locale0);
+      currencyValidator0.parse("(1%JKm-$PL\"^", decimalFormat0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = new CurrencyValidator();
+      DateFormatSymbols dateFormatSymbols0 = DateFormatSymbols.getInstance();
+      MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", dateFormatSymbols0);
+      // Undeclared exception!
+      try { 
+        currencyValidator0.parse("", mockSimpleDateFormat0);
+        fail("Expecting exception: NumberFormatException");
+      } catch(NumberFormatException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.math.BigDecimal", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = new CurrencyValidator(false, false);
+      Locale locale0 = Locale.JAPAN;
+      Object object0 = currencyValidator0.parse("6Ct9fA", "6Ct9fA", locale0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = (CurrencyValidator)CurrencyValidator.getInstance();
+      SimpleDateFormat simpleDateFormat0 = (SimpleDateFormat)MockDateFormat.getDateInstance(2);
+      Object object0 = currencyValidator0.parse("C5+H5(1:g)\"", simpleDateFormat0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = new CurrencyValidator(false, false);
+      DecimalFormat decimalFormat0 = new DecimalFormat();
+      BigDecimal bigDecimal0 = (BigDecimal)currencyValidator0.parse("6Ct9fA", decimalFormat0);
+      assertNotNull(bigDecimal0.shortValue());
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      BigDecimalValidator bigDecimalValidator0 = CurrencyValidator.getInstance();
+      BigDecimal bigDecimal0 = bigDecimalValidator0.validate("C5+H5(1:g)\"");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      CurrencyValidator currencyValidator0 = new CurrencyValidator();
+      NumberFormat numberFormat0 = NumberFormat.getPercentInstance();
+      // Undeclared exception!
+      try { 
+        currencyValidator0.parse((String) null, numberFormat0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.text.DecimalFormat", e);
+      }
+  }

@@ -1,0 +1,43 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IFLT iFLT0 = new IFLT();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        iFLT0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      IFLT iFLT0 = new IFLT();
+      IfInstruction ifInstruction0 = iFLT0.negate();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      IFLT iFLT0 = new IFLT();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        iFLT0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ISUB iSUB0 = new ISUB();
+      InstructionHandle instructionHandle0 = new InstructionHandle(iSUB0);
+      IFLT iFLT0 = new IFLT(instructionHandle0);
+      assertEquals(1, iFLT0.getIndex());
+}

@@ -1,0 +1,99 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Proxy.Type proxy_Type0 = Proxy.Type.SOCKS;
+      MockInetSocketAddress mockInetSocketAddress0 = new MockInetSocketAddress(63);
+      Proxy proxy0 = new Proxy(proxy_Type0, mockInetSocketAddress0);
+      MockSocket mockSocket0 = new MockSocket(proxy0);
+      MockPrintStream mockPrintStream0 = new MockPrintStream("d|e^>X<I)\"op=O!N%%'");
+      SocketOutputStream socketOutputStream0 = new SocketOutputStream(mockSocket0, mockPrintStream0);
+      socketOutputStream0.close();
+      byte[] byteArray0 = new byte[2];
+      socketOutputStream0.write(byteArray0, (-597), 63);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MockSocket mockSocket0 = new MockSocket();
+      SocketOutputStream socketOutputStream0 = new SocketOutputStream(mockSocket0, (OutputStream) null);
+      byte[] byteArray0 = new byte[9];
+      // Undeclared exception!
+      try { 
+        socketOutputStream0.write(byteArray0, (-1661), (int) (byte)31);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.io.SocketOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockSocket mockSocket0 = new MockSocket();
+      ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(63);
+      SocketOutputStream socketOutputStream0 = new SocketOutputStream(mockSocket0, byteArrayOutputStream0);
+      byte[] byteArray0 = new byte[3];
+      // Undeclared exception!
+      try { 
+        socketOutputStream0.write(byteArray0, (-616), (-616));
+        fail("Expecting exception: IndexOutOfBoundsException");
+      } catch(IndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.ByteArrayOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Proxy proxy0 = Proxy.NO_PROXY;
+      MockSocket mockSocket0 = new MockSocket(proxy0);
+      File file0 = MockFile.createTempFile("n5MiRy!", "");
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(file0);
+      MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0, true);
+      SocketOutputStream socketOutputStream0 = new SocketOutputStream(mockSocket0, mockPrintStream0);
+      byte[] byteArray0 = new byte[9];
+      // Undeclared exception!
+      try { 
+        socketOutputStream0.write(byteArray0, (-1883), 348);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1883
+         //
+         verifyException("org.evosuite.runtime.vfs.VFile", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Proxy proxy0 = Proxy.NO_PROXY;
+      MockSocket mockSocket0 = new MockSocket(proxy0);
+      SocketOutputStream socketOutputStream0 = new SocketOutputStream(mockSocket0, (OutputStream) null);
+      // Undeclared exception!
+      try { 
+        socketOutputStream0.close();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.FilterOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Proxy proxy0 = Proxy.NO_PROXY;
+      MockSocket mockSocket0 = new MockSocket(proxy0);
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("org.apache.commons.io.filefilter.AbstractFileFilter");
+      SocketOutputStream socketOutputStream0 = new SocketOutputStream(mockSocket0, mockFileOutputStream0);
+      byte[] byteArray0 = new byte[8];
+      try { 
+        socketOutputStream0.write(byteArray0, 0, (-1));
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Error in writing to file
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.NativeMockedIO", e);
+      }
+  }

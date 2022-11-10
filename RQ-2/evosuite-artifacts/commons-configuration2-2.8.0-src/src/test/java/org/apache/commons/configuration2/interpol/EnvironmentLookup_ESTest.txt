@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EnvironmentLookup environmentLookup0 = new EnvironmentLookup();
+      String string0 = environmentLookup0.lookup("_");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EnvironmentLookup environmentLookup0 = new EnvironmentLookup();
+      // Undeclared exception!
+      try { 
+        environmentLookup0.lookup((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      EnvironmentLookup environmentLookup0 = new EnvironmentLookup();
+      String string0 = environmentLookup0.lookup("org.apache.commons.configuration2.interpol.EnvironmentLookup");
+      assertNotNull(string0);
+}

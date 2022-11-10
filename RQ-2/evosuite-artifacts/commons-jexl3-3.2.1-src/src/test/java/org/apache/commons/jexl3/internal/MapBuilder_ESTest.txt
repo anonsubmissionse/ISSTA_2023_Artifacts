@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MapBuilder mapBuilder0 = new MapBuilder(1659);
+      Object object0 = new Object();
+      mapBuilder0.put(object0, "2Qw(j[ew:kv");
+      Map<Object, Object> map0 = mapBuilder0.create();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MapBuilder mapBuilder0 = new MapBuilder(1659);
+      Object object0 = new Object();
+      Map<Object, Object> map0 = mapBuilder0.create();
+      mapBuilder0.put(map0, object0);
+      // Undeclared exception!
+      try { 
+        mapBuilder0.put(map0, (Object) null);
+        fail("Expecting exception: StackOverflowError");
+      } catch(StackOverflowError e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MapBuilder mapBuilder0 = null;
+      try {
+        mapBuilder0 = new MapBuilder((-146));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Illegal initial capacity: -146
+         //
+         verifyException("java.util.HashMap", e);
+      }
+  }

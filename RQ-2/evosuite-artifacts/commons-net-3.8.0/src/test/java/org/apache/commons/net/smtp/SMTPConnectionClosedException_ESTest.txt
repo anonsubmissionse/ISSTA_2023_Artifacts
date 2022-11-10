@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SMTPConnectionClosedException sMTPConnectionClosedException0 = new SMTPConnectionClosedException("w[V");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SMTPConnectionClosedException sMTPConnectionClosedException0 = new SMTPConnectionClosedException();
+  }

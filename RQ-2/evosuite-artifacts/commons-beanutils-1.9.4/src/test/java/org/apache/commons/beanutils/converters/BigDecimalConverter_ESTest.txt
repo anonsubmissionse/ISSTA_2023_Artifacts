@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BigDecimal bigDecimal0 = BigDecimal.ONE;
+      BigDecimalConverter bigDecimalConverter0 = new BigDecimalConverter(bigDecimal0);
+      assertTrue(bigDecimalConverter0.isAllowDecimals());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BigDecimalConverter bigDecimalConverter0 = new BigDecimalConverter();
+      Class<BigDecimal> class0 = bigDecimalConverter0.getDefaultType();
+      assertNotNull(class0.toString());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BigDecimalConverter bigDecimalConverter0 = null;
+      try {
+        bigDecimalConverter0 = new BigDecimalConverter("E]-_iv#9`QJ]8X+");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error converting from 'String' to 'BigDecimal' null
+         //
+         verifyException("org.apache.commons.beanutils.converters.AbstractConverter", e);
+      }
+  }

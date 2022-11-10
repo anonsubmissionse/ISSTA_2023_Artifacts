@@ -1,0 +1,50 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      Object object0 = new Object();
+      // Undeclared exception!
+      try { 
+        FieldSetExecutor.discover((Introspector) null, class0, "", object0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.FieldSetExecutor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Permissions permissions0 = new Permissions();
+      Introspector introspector0 = new Introspector((Log) null, classLoader0, permissions0);
+      Class<String> class0 = String.class;
+      Object object0 = new Object();
+      // Undeclared exception!
+      try { 
+        FieldSetExecutor.discover(introspector0, class0, "lofMaS]RWpA%U|", object0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ClassMap", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(noOpLog0, classLoader0);
+      Class<Object> class0 = Object.class;
+      JexlPropertySet jexlPropertySet0 = FieldSetExecutor.discover(introspector0, class0, "f", introspector0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector((Log) null, classLoader0);
+      Class<Integer> class0 = Integer.class;
+      JexlPropertySet jexlPropertySet0 = FieldSetExecutor.discover(introspector0, class0, (String) null, introspector0);
+      ;
+}

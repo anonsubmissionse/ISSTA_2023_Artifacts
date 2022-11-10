@@ -1,0 +1,23 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileSystemManager fileSystemManager0 = mock(FileSystemManager.class, new ViolatedAssumptionAnswer());
+      doReturn((FileObject) null).when(fileSystemManager0).toFileObject(any(java.io.File.class));
+      VFS.setManager(fileSystemManager0);
+      try { 
+        RegexFileFilterExample.main((String[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.example.filter.RegexFileFilterExample", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      RegexFileFilterExample.main((String[]) null);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      RegexFileFilterExample regexFileFilterExample0 = new RegexFileFilterExample();
+  }

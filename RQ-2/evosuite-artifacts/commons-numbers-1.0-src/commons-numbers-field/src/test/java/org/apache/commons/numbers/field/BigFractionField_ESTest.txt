@@ -1,0 +1,12 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BigFractionField bigFractionField0 = BigFractionField.get();
+      BigFraction bigFraction0 = bigFractionField0.one();
+      assertEquals(bigFraction0, bigFraction0.shortValue());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BigFractionField bigFractionField0 = BigFractionField.get();
+      BigFraction bigFraction0 = bigFractionField0.zero();
+      ;
+}

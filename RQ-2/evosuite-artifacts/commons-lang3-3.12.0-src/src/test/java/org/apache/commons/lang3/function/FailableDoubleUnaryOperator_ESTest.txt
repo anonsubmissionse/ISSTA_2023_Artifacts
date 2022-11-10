@@ -1,0 +1,60 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator1 = FailableDoubleUnaryOperator.nop();
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator2 = failableDoubleUnaryOperator1.andThen(failableDoubleUnaryOperator0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      double double0 = failableDoubleUnaryOperator0.applyAsDouble(0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      double double0 = failableDoubleUnaryOperator0.applyAsDouble(1483.17117652);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      double double0 = failableDoubleUnaryOperator0.applyAsDouble((-2309.9));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      // Undeclared exception!
+      try { 
+        failableDoubleUnaryOperator0.compose((FailableDoubleUnaryOperator<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      // Undeclared exception!
+      try { 
+        failableDoubleUnaryOperator0.andThen((FailableDoubleUnaryOperator<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator0 = FailableDoubleUnaryOperator.identity();
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator1 = failableDoubleUnaryOperator0.andThen(failableDoubleUnaryOperator0);
+      FailableDoubleUnaryOperator<Throwable> failableDoubleUnaryOperator2 = failableDoubleUnaryOperator0.compose(failableDoubleUnaryOperator1);
+      ;
+}

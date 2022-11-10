@@ -1,0 +1,24 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CalendarConverter calendarConverter0 = new CalendarConverter((Object) null);
+      Class<?> class0 = calendarConverter0.getDefaultType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CalendarConverter calendarConverter0 = null;
+      try {
+        calendarConverter0 = new CalendarConverter("=);HZ-s(3");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // CalendarConverter does not support default String to 'Calendar' conversion.
+         //
+         verifyException("org.apache.commons.beanutils.converters.DateTimeConverter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CalendarConverter calendarConverter0 = new CalendarConverter();
+      assertFalse(calendarConverter0.isUseDefault());
+}

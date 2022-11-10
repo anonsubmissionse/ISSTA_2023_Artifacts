@@ -1,0 +1,69 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(1777L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      mockRandom0.nextDouble();
+      long long0 = SeedUtils.createLongHexPermutation(jDKRandomWrapper0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(1777L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      mockRandom0.nextDouble();
+      long long0 = SeedUtils.createLongHexPermutation(jDKRandomWrapper0);
+      int int0 = SeedUtils.createIntHexPermutation(jDKRandomWrapper0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(1777L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      mockRandom0.nextDouble();
+      long long0 = SeedUtils.createLongHexPermutation(jDKRandomWrapper0);
+      int int0 = SeedUtils.createIntHexPermutation(jDKRandomWrapper0);
+      SeedUtils.createIntHexPermutation(jDKRandomWrapper0);
+      long long1 = SeedUtils.createLongHexPermutation(jDKRandomWrapper0);
+      assertEquals(1, long1);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        SeedUtils.createLongHexPermutation((UniformRandomProvider) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.internal.SeedUtils$UnsignedByteProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        SeedUtils.createIntHexPermutation((UniformRandomProvider) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.internal.SeedUtils$UnsignedByteProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      int int0 = SeedUtils.createIntHexPermutation(jDKRandomWrapper0);
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      int int0 = SeedUtils.createIntHexPermutation(jDKRandomWrapper0);
+      long long0 = SeedUtils.createLongHexPermutation(jDKRandomWrapper0);
+      assertEquals(0, long0);
+}

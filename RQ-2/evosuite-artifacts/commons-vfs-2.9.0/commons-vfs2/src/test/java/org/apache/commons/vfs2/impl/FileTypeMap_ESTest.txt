@@ -1,0 +1,84 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      fileTypeMap0.addMimeType("V0%!g*#^1L_G0:", "`1Nn/3");
+      FileContentInfo fileContentInfo0 = mock(FileContentInfo.class, new ViolatedAssumptionAnswer());
+      doReturn("V0%!g*#^1L_G0:").when(fileContentInfo0).getContentType();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContentInfo0).when(fileContent0).getContentInfo();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      String string0 = fileTypeMap0.getScheme(fileObject0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      fileTypeMap0.addMimeType("V0%!g*#^1L_G0:", "`1Nn/3");
+      FileContentInfo fileContentInfo0 = mock(FileContentInfo.class, new ViolatedAssumptionAnswer());
+      doReturn("V0%!g*#^1L_G0:").when(fileContentInfo0).getContentType();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContentInfo0).when(fileContent0).getContentInfo();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      String string0 = fileTypeMap0.getScheme(fileObject0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      fileTypeMap0.addMimeType("", "");
+      FileContentInfo fileContentInfo0 = mock(FileContentInfo.class, new ViolatedAssumptionAnswer());
+      doReturn("").when(fileContentInfo0).getContentType();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContentInfo0).when(fileContent0).getContentInfo();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      String string0 = fileTypeMap0.getScheme(fileObject0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      FileContentInfo fileContentInfo0 = mock(FileContentInfo.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(fileContentInfo0).getContentType();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContentInfo0).when(fileContent0).getContentInfo();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      doReturn(false).when(fileObject0).isFile();
+      String string0 = fileTypeMap0.getScheme(fileObject0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      FileContentInfo fileContentInfo0 = mock(FileContentInfo.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(fileContentInfo0).getContentType();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContentInfo0).when(fileContent0).getContentInfo();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      doReturn((FileName) null).when(fileObject0).getName();
+      doReturn(true).when(fileObject0).isFile();
+      // Undeclared exception!
+      try { 
+        fileTypeMap0.getScheme(fileObject0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.impl.FileTypeMap", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      fileTypeMap0.clear();
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FileTypeMap fileTypeMap0 = new FileTypeMap();
+      fileTypeMap0.addExtension(":%+o*4", ".S{Awiqxx");
+  }

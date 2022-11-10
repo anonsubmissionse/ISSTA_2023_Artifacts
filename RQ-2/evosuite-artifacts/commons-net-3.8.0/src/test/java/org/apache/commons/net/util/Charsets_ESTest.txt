@@ -1,0 +1,79 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        Charsets.toCharset((String) null, "");
+        fail("Expecting exception: IllegalCharsetNameException");
+      } catch(IllegalCharsetNameException e) {
+         //
+         // 
+         //
+         verifyException("java.nio.charset.Charset", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Charset charset0 = Charsets.toCharset("L4", "");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        Charsets.toCharset("org.apache.commons.net.util.Charsets", (String) null);
+        fail("Expecting exception: UnsupportedCharsetException");
+      } catch(UnsupportedCharsetException e) {
+         //
+         // org.apache.commons.net.util.Charsets
+         //
+         verifyException("java.nio.charset.Charset", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        Charsets.toCharset("Kl6");
+        fail("Expecting exception: UnsupportedCharsetException");
+      } catch(UnsupportedCharsetException e) {
+         //
+         // Kl6
+         //
+         verifyException("java.nio.charset.Charset", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        Charsets.toCharset((String) null, (String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Null charset name
+         //
+         verifyException("java.nio.charset.Charset", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Charset charset0 = Charsets.toCharset((String) null);
+      assertTrue(charset0.isRegistered());
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        Charsets.toCharset("?ATy-93y\u00018_1");
+        fail("Expecting exception: IllegalCharsetNameException");
+      } catch(IllegalCharsetNameException e) {
+         //
+         // ?ATy-93y\u00018_1
+         //
+         verifyException("java.nio.charset.Charset", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Charsets charsets0 = new Charsets();
+  }

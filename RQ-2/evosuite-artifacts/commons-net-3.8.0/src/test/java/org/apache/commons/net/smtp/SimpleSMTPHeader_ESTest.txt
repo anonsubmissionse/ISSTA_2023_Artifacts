@@ -1,0 +1,50 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = new SimpleSMTPHeader("", "", "");
+      simpleSMTPHeader0.addCC("");
+      String string0 = simpleSMTPHeader0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = new SimpleSMTPHeader("R?egUKA0h8<XH)T+M ", (String) null, (String) null);
+      String string0 = simpleSMTPHeader0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = new SimpleSMTPHeader("", "", "");
+      simpleSMTPHeader0.addHeaderField("Date", "EEE, dd MMM yyyy HH:mm:ss Z");
+      String string0 = simpleSMTPHeader0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = new SimpleSMTPHeader("", "", "");
+      simpleSMTPHeader0.addCC("");
+      simpleSMTPHeader0.addCC("e_y71TSIs*S2S ljL'");
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = new SimpleSMTPHeader("", "", "");
+      simpleSMTPHeader0.addHeaderField("", "Date");
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = null;
+      try {
+        simpleSMTPHeader0 = new SimpleSMTPHeader((String) null, (String) null, (String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // From cannot be null
+         //
+         verifyException("org.apache.commons.net.smtp.SimpleSMTPHeader", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      SimpleSMTPHeader simpleSMTPHeader0 = new SimpleSMTPHeader("", "", "");
+      simpleSMTPHeader0.addHeaderField("Date", "EEE, dd MMM yyyy HH:mm:ss Z");
+      simpleSMTPHeader0.addHeaderField("", "");
+  }

@@ -1,0 +1,39 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Verb[] verbArray0 = Verb.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Verb verb0 = Verb.valueOf("PUT");
+      assertTrue(verb0.isRequiresBody());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Verb verb0 = Verb.valueOf("HEAD");
+      assertFalse(verb0.isPermitBody());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Verb verb0 = Verb.POST;
+      boolean boolean0 = verb0.isRequiresBody();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Verb verb0 = Verb.PATCH;
+      boolean boolean0 = verb0.isPermitBody();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Verb verb0 = Verb.GET;
+      boolean boolean0 = verb0.isPermitBody();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Verb verb0 = Verb.GET;
+      boolean boolean0 = verb0.isRequiresBody();
+      assertTrue(boolean0);
+}

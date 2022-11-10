@@ -1,0 +1,96 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ANEWARRAY aNEWARRAY0 = new ANEWARRAY();
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      // Undeclared exception!
+      try { 
+        aNEWARRAY0.getLoadClassType(constantPoolGen0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Constant pool at index 0 is null.
+         //
+         verifyException("org.apache.bcel.classfile.ConstantPool", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      instConstraintVisitor0.setConstantPoolGen(constantPoolGen0);
+      ANEWARRAY aNEWARRAY0 = new ANEWARRAY();
+      // Undeclared exception!
+      try { 
+        aNEWARRAY0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Constant pool at index 0 is null.
+         //
+         verifyException("org.apache.bcel.classfile.ConstantPool", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ANEWARRAY aNEWARRAY0 = new ANEWARRAY();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      Frame frame0 = new Frame(0, 0);
+      executionVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        aNEWARRAY0.accept(executionVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ANEWARRAY aNEWARRAY0 = new ANEWARRAY(138);
+      // Undeclared exception!
+      try { 
+        aNEWARRAY0.getLoadClassType((ConstantPoolGen) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.CPInstruction", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ANEWARRAY aNEWARRAY0 = new ANEWARRAY();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        aNEWARRAY0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ANEWARRAY aNEWARRAY0 = null;
+      try {
+        aNEWARRAY0 = new ANEWARRAY((-1));
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Negative index value: -1
+         //
+         verifyException("org.apache.bcel.generic.CPInstruction", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ANEWARRAY aNEWARRAY0 = new ANEWARRAY();
+      Class<?>[] classArray0 = aNEWARRAY0.getExceptions();
+      ;
+}

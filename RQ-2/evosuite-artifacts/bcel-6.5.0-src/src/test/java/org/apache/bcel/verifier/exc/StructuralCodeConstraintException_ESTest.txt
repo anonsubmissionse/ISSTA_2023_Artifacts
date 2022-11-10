@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      StructuralCodeConstraintException structuralCodeConstraintException0 = new StructuralCodeConstraintException("~[jZ\"\"/=O]f>z-6t;");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      StructuralCodeConstraintException structuralCodeConstraintException0 = new StructuralCodeConstraintException();
+  }

@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableObjIntConsumer<Object, Throwable> failableObjIntConsumer0 = FailableObjIntConsumer.nop();
+      Integer integer0 = new Integer(0);
+      failableObjIntConsumer0.accept(integer0, 0);
+  }

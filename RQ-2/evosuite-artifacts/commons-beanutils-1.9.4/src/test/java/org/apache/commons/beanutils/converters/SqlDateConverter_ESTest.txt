@@ -1,0 +1,24 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SqlDateConverter sqlDateConverter0 = new SqlDateConverter((Object) null);
+      assertTrue(sqlDateConverter0.isUseDefault());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SqlDateConverter sqlDateConverter0 = null;
+      try {
+        sqlDateConverter0 = new SqlDateConverter("4=I]{cf\"g@-c6LN");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // String must be in JDBC format [yyyy-MM-dd] to create a java.sql.Date
+         //
+         verifyException("org.apache.commons.beanutils.converters.DateTimeConverter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SqlDateConverter sqlDateConverter0 = new SqlDateConverter();
+      Class<?> class0 = sqlDateConverter0.getDefaultType();
+      ;
+}

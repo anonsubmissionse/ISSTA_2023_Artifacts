@@ -1,0 +1,15 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CleanTask cleanTask0 = new CleanTask((Project) null);
+      cleanTask0.setSettingsRef((String) null);
+      // Undeclared exception!
+      try { 
+        cleanTask0.execute();
+        fail("Expecting exception: BuildException");
+      } catch(BuildException e) {
+         //
+         // No Project specified
+         //
+         verifyException("org.apache.commons.weaver.ant.CleanTask", e);
+      }
+  }

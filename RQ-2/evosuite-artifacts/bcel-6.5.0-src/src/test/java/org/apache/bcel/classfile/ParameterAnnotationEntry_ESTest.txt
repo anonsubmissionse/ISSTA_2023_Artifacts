@@ -1,0 +1,126 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ClassPath classPath0 = ClassPath.SYSTEM_CLASS_PATH;
+      InputStream inputStream0 = classPath0.getInputStream("org.apache.bcel.classfile.ParameterAnnotationEntry");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      Constant[] constantArray0 = new Constant[6];
+      ConstantMethodref constantMethodref0 = new ConstantMethodref(dataInputStream0);
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      ParameterAnnotationEntry parameterAnnotationEntry0 = new ParameterAnnotationEntry(dataInputStream0, constantPool0);
+      // Undeclared exception!
+      try { 
+        parameterAnnotationEntry0.dump((DataOutputStream) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ParameterAnnotationEntry", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        ParameterAnnotationEntry.createParameterAnnotationEntries((Attribute[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ParameterAnnotationEntry", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ParameterAnnotationEntry parameterAnnotationEntry0 = null;
+      try {
+        parameterAnnotationEntry0 = new ParameterAnnotationEntry((DataInput) null, (ConstantPool) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ParameterAnnotationEntry", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Constant[] constantArray0 = new Constant[3];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      FileDescriptor fileDescriptor0 = new FileDescriptor();
+      MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
+      DataInputStream dataInputStream0 = new DataInputStream(mockFileInputStream0);
+      ParameterAnnotationEntry parameterAnnotationEntry0 = null;
+      try {
+        parameterAnnotationEntry0 = new ParameterAnnotationEntry(dataInputStream0, constantPool0);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.NativeMockedIO", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Attribute[] attributeArray0 = new Attribute[4];
+      ParameterAnnotationEntry[] parameterAnnotationEntryArray0 = ParameterAnnotationEntry.createParameterAnnotationEntries(attributeArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ClassPath classPath0 = ClassPath.SYSTEM_CLASS_PATH;
+      InputStream inputStream0 = classPath0.getInputStream("org.apache.bcel.classfile.ParameterAnnotationEntry");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      Constant[] constantArray0 = new Constant[6];
+      ConstantMethodref constantMethodref0 = new ConstantMethodref(dataInputStream0);
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      ParameterAnnotationEntry parameterAnnotationEntry0 = new ParameterAnnotationEntry(dataInputStream0, constantPool0);
+      PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+      MockPrintStream mockPrintStream0 = new MockPrintStream(pipedOutputStream0);
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockPrintStream0);
+      parameterAnnotationEntry0.dump(dataOutputStream0);
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ClassPath classPath0 = new ClassPath("");
+      InputStream inputStream0 = classPath0.getInputStream("", "");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      Constant[] constantArray0 = new Constant[3];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      ParameterAnnotationEntry parameterAnnotationEntry0 = null;
+      try {
+        parameterAnnotationEntry0 = new ParameterAnnotationEntry(dataInputStream0, constantPool0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Unexpected element value kind in annotation: 10
+         //
+         verifyException("org.apache.bcel.classfile.ElementValue", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ClassPath classPath0 = ClassPath.SYSTEM_CLASS_PATH;
+      InputStream inputStream0 = classPath0.getInputStream("org.apache.bcel.classfile.ParameterAnnotationEntry");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      Constant[] constantArray0 = new Constant[6];
+      ConstantMethodref constantMethodref0 = new ConstantMethodref(dataInputStream0);
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      ParameterAnnotationEntry parameterAnnotationEntry0 = new ParameterAnnotationEntry(dataInputStream0, constantPool0);
+      AnnotationEntry[] annotationEntryArray0 = parameterAnnotationEntry0.getAnnotationEntries();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ClassPath classPath0 = ClassPath.SYSTEM_CLASS_PATH;
+      InputStream inputStream0 = classPath0.getInputStream("org.apache.bcel.classfile.ParameterAnnotationEntry");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      Constant[] constantArray0 = new Constant[6];
+      ConstantMethodref constantMethodref0 = new ConstantMethodref(dataInputStream0);
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      ParameterAnnotationEntry parameterAnnotationEntry0 = new ParameterAnnotationEntry(dataInputStream0, constantPool0);
+      EmptyVisitor emptyVisitor0 = new EmptyVisitor();
+      parameterAnnotationEntry0.accept(emptyVisitor0);
+  }

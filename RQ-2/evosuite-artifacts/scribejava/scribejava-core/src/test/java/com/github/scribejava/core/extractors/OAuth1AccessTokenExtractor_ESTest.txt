@@ -1,0 +1,32 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OAuth1AccessTokenExtractor oAuth1AccessTokenExtractor0 = OAuth1AccessTokenExtractor.instance();
+      OAuth1AccessToken oAuth1AccessToken0 = oAuth1AccessTokenExtractor0.createToken("2EX`0W_AGZ}6l^M", "2EX`0W_AGZ}6l^M", "GNYuD8fI4aHW%ADC5");
+      assertNotNull(oAuth1AccessToken0.getToken());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OAuth1AccessTokenExtractor oAuth1AccessTokenExtractor0 = OAuth1AccessTokenExtractor.instance();
+      OAuth1AccessToken oAuth1AccessToken0 = oAuth1AccessTokenExtractor0.createToken("2EX`0W_AGZ}6l^M", "2EX`0W_AGZ}6l^M", "GNYuD8fI4aHW%ADC5");
+      assertNotNull(oAuth1AccessToken0.getTokenSecret());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      OAuth1AccessTokenExtractor oAuth1AccessTokenExtractor0 = new OAuth1AccessTokenExtractor();
+      OAuth1AccessToken oAuth1AccessToken0 = oAuth1AccessTokenExtractor0.createToken("", "", "");
+      assertFalse(oAuth1AccessToken0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      OAuth1AccessTokenExtractor oAuth1AccessTokenExtractor0 = OAuth1AccessTokenExtractor.instance();
+      // Undeclared exception!
+      try { 
+        oAuth1AccessTokenExtractor0.createToken((String) null, "9+9&M$^.GlUy", (String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // oauth_token can't be null
+         //
+         verifyException("com.github.scribejava.core.utils.Preconditions", e);
+      }
+  }

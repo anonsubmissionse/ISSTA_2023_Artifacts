@@ -1,0 +1,57 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SuppressPropertiesBeanIntrospector suppressPropertiesBeanIntrospector0 = SuppressPropertiesBeanIntrospector.SUPPRESS_CLASS;
+      // Undeclared exception!
+      try { 
+        suppressPropertiesBeanIntrospector0.introspect((IntrospectionContext) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.beanutils.SuppressPropertiesBeanIntrospector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LinkedList<String> linkedList0 = new LinkedList<String>();
+      List<String> list0 = linkedList0.subList(0, 0);
+      linkedList0.add("IW)rBG");
+      SuppressPropertiesBeanIntrospector suppressPropertiesBeanIntrospector0 = null;
+      try {
+        suppressPropertiesBeanIntrospector0 = new SuppressPropertiesBeanIntrospector(list0);
+        fail("Expecting exception: ConcurrentModificationException");
+      } catch(ConcurrentModificationException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.SubList", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SuppressPropertiesBeanIntrospector suppressPropertiesBeanIntrospector0 = SuppressPropertiesBeanIntrospector.SUPPRESS_CLASS;
+      Set<String> set0 = suppressPropertiesBeanIntrospector0.getSuppressedProperties();
+      assertEquals(0, set0.size());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      SuppressPropertiesBeanIntrospector suppressPropertiesBeanIntrospector0 = null;
+      try {
+        suppressPropertiesBeanIntrospector0 = new SuppressPropertiesBeanIntrospector((Collection<String>) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Property names must not be null!
+         //
+         verifyException("org.apache.commons.beanutils.SuppressPropertiesBeanIntrospector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      LinkedList<String> linkedList0 = new LinkedList<String>();
+      SuppressPropertiesBeanIntrospector suppressPropertiesBeanIntrospector0 = new SuppressPropertiesBeanIntrospector(linkedList0);
+      suppressPropertiesBeanIntrospector0.SUPPRESS_CLASS.introspect(defaultIntrospectionContext0);
+  }

@@ -1,0 +1,46 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Pass2Verifier pass2Verifier0 = new Pass2Verifier((Verifier) null);
+      // Undeclared exception!
+      try { 
+        pass2Verifier0.getLocalVariablesInfo(0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.statics.Pass2Verifier", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Pass2Verifier pass2Verifier0 = new Pass2Verifier((Verifier) null);
+      // Undeclared exception!
+      try { 
+        pass2Verifier0.do_verify();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.statics.Pass2Verifier", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      VerificationResult verificationResult0 = mock(VerificationResult.class, new ViolatedAssumptionAnswer());
+      Verifier verifier0 = mock(Verifier.class, new ViolatedAssumptionAnswer());
+      doReturn(verificationResult0).when(verifier0).doPass1();
+      Pass2Verifier pass2Verifier0 = new Pass2Verifier(verifier0);
+      VerificationResult verificationResult1 = pass2Verifier0.do_verify();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      VerificationResult verificationResult0 = mock(VerificationResult.class, new ViolatedAssumptionAnswer());
+      Verifier verifier0 = mock(Verifier.class, new ViolatedAssumptionAnswer());
+      doReturn(verificationResult0).when(verifier0).doPass1();
+      Pass2Verifier pass2Verifier0 = new Pass2Verifier(verifier0);
+      LocalVariablesInfo localVariablesInfo0 = pass2Verifier0.getLocalVariablesInfo(2);
+      ;
+}

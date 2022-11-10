@@ -1,0 +1,15 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = LanczosApproximation.value((-3.459));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = LanczosApproximation.value(4.7421875);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      double double0 = LanczosApproximation.g();
+      ;
+}

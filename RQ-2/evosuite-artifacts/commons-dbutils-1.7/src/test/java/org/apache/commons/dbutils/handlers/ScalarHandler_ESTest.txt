@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ScalarHandler<String> scalarHandler0 = new ScalarHandler<String>((String) null);
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(resultSet0).next();
+      String string0 = scalarHandler0.handle(resultSet0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ScalarHandler<Integer> scalarHandler0 = new ScalarHandler<Integer>("");
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(resultSet0).getObject(anyString());
+      doReturn(true).when(resultSet0).next();
+      Integer integer0 = scalarHandler0.handle(resultSet0);
+      assertNotNull(integer0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ScalarHandler<String> scalarHandler0 = new ScalarHandler<String>();
+      // Undeclared exception!
+      try { 
+        scalarHandler0.handle((ResultSet) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.ScalarHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ScalarHandler<Object> scalarHandler0 = new ScalarHandler<Object>((-1653));
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(resultSet0).getObject(anyInt());
+      doReturn(true).when(resultSet0).next();
+      Object object0 = scalarHandler0.handle(resultSet0);
+      ;
+}

@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      InlineProperties inlineProperties0 = new InlineProperties();
+      InlineProperties.InlineProperty inlineProperties_InlineProperty0 = inlineProperties0.createDynamicElement("org.apache.commons.weaver.Inflater$InfoMatcher", "org.apache.commons.weaver.Inflater$ParameterMatcher", "org.apache.commons.weaver.Inflater$InfoMatcher");
+      assertNotNull(inlineProperties_InlineProperty0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      InlineProperties inlineProperties0 = new InlineProperties();
+      InlineProperties.InlineProperty inlineProperties_InlineProperty0 = inlineProperties0.createDynamicElement("", "", "");
+      inlineProperties_InlineProperty0.addText(">|rGO8");
+      inlineProperties_InlineProperty0.addText("org.apache.commons.weaver.ant.InlineProperties$1");
+  }

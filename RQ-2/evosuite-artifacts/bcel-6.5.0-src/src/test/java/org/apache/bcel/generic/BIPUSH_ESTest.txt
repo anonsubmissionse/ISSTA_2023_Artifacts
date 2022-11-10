@@ -1,0 +1,145 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)58);
+      String string0 = bIPUSH0.toString(false);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)0);
+      Number number0 = bIPUSH0.getValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte) (-105));
+      Number number0 = bIPUSH0.getValue();
+      assertEquals(0, number0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)0);
+      // Undeclared exception!
+      try { 
+        bIPUSH0.initFromFile((ByteSequence) null, true);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.BIPUSH", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH();
+      byte[] byteArray0 = new byte[2];
+      ByteSequence byteSequence0 = new ByteSequence(byteArray0);
+      byteSequence0.readUnsignedByte();
+      bIPUSH0.initFromFile(byteSequence0, false);
+      try { 
+        bIPUSH0.initFromFile(byteSequence0, true);
+        fail("Expecting exception: EOFException");
+      } catch(EOFException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH();
+      // Undeclared exception!
+      try { 
+        bIPUSH0.dump((DataOutputStream) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.Instruction", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)0);
+      File file0 = MockFile.createTempFile("_]~'{/8Q/L", "_]~'{/8Q/L");
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(file0);
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockFileOutputStream0);
+      mockFileOutputStream0.close();
+      try { 
+        bIPUSH0.dump(dataOutputStream0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)2);
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        bIPUSH0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH();
+      // Undeclared exception!
+      try { 
+        bIPUSH0.toString(false);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        bIPUSH0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)22);
+      MockPrintStream mockPrintStream0 = new MockPrintStream("bipush[16](2) 22");
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockPrintStream0);
+      bIPUSH0.dump(dataOutputStream0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)22);
+      Number number0 = bIPUSH0.getValue();
+      assertEquals(0, number0);
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      BIPUSH bIPUSH0 = new BIPUSH((byte)22);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      Type type0 = bIPUSH0.getType(constantPoolGen0);
+      assertEquals(0, type0.getSize());
+}

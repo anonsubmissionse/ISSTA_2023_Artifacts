@@ -1,0 +1,57 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LongColumnHandler longColumnHandler0 = new LongColumnHandler();
+      // Undeclared exception!
+      try { 
+        longColumnHandler0.match((Class<?>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.LongColumnHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LongColumnHandler longColumnHandler0 = new LongColumnHandler();
+      // Undeclared exception!
+      try { 
+        longColumnHandler0.apply((ResultSet) null, 1357);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.LongColumnHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      LongColumnHandler longColumnHandler0 = new LongColumnHandler();
+      Class<Long> class0 = Long.class;
+      boolean boolean0 = longColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      LongColumnHandler longColumnHandler0 = new LongColumnHandler();
+      Class<Object> class0 = Object.class;
+      boolean boolean0 = longColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      LongColumnHandler longColumnHandler0 = new LongColumnHandler();
+      Class<Long> class0 = Long.TYPE;
+      boolean boolean0 = longColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      LongColumnHandler longColumnHandler0 = new LongColumnHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(0L).when(resultSet0).getLong(anyInt());
+      Object object0 = longColumnHandler0.apply(resultSet0, 1);
+      assertEquals(1, object0);
+}

@@ -1,0 +1,23 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MonthDay monthDay0 = new MonthDay();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MonthDay monthDay0 = new MonthDay((Object) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      YearMonth yearMonth0 = null;
+      try {
+        yearMonth0 = new YearMonth(1887, 1887);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Value 1887 for monthOfYear must not be larger than 12
+         //
+         verifyException("org.joda.time.chrono.BaseChronology", e);
+      }
+  }

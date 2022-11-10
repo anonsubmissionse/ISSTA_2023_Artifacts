@@ -1,0 +1,33 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeaveMojo weaveMojo0 = new WeaveMojo();
+      MockFile mockFile0 = new MockFile(" of type ", "");
+      weaveMojo0.target = (File) mockFile0;
+      System.setCurrentTimeMillis((-1284L));
+      mockFile0.mkdirs();
+      File file0 = weaveMojo0.getTarget();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      WeaveMojo weaveMojo0 = new WeaveMojo();
+      MockFile mockFile0 = new MockFile(".<<,Gl");
+      weaveMojo0.target = (File) mockFile0;
+      File file0 = weaveMojo0.getTarget();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      WeaveMojo weaveMojo0 = new WeaveMojo();
+      DefaultModelLocator defaultModelLocator0 = new DefaultModelLocator();
+      File file0 = defaultModelLocator0.locatePom((File) null);
+      weaveMojo0.target = file0;
+      File file1 = weaveMojo0.getTarget();
+      assertFalse(file1.isDirectory());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      WeaveMojo weaveMojo0 = new WeaveMojo();
+      File file0 = weaveMojo0.getTarget();
+      ;
+}

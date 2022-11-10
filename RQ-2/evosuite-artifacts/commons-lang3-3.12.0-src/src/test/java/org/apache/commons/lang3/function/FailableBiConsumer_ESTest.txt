@@ -1,0 +1,28 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableBiConsumer<Throwable, Throwable, Throwable> failableBiConsumer0 = FailableBiConsumer.nop();
+      MockThrowable mockThrowable0 = new MockThrowable("");
+      failableBiConsumer0.accept(mockThrowable0, mockThrowable0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableBiConsumer<Object, Integer, Throwable> failableBiConsumer0 = FailableBiConsumer.nop();
+      // Undeclared exception!
+      try { 
+        failableBiConsumer0.andThen((FailableBiConsumer<? super Object, ? super Integer, Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableBiConsumer<Object, Integer, Throwable> failableBiConsumer0 = FailableBiConsumer.nop();
+      FailableBiConsumer<Object, Integer, Throwable> failableBiConsumer1 = failableBiConsumer0.andThen(failableBiConsumer0);
+      FailableBiConsumer<Object, Integer, Throwable> failableBiConsumer2 = failableBiConsumer0.andThen(failableBiConsumer1);
+      ;
+}

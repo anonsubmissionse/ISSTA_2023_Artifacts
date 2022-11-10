@@ -1,0 +1,32 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      byte[] byteArray0 = new byte[4];
+      byteArray0[0] = (byte) (-116);
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 0, 80);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Constant[] constantArray0 = new Constant[4];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      RuntimeVisibleParameterAnnotations runtimeVisibleParameterAnnotations0 = null;
+      try {
+        runtimeVisibleParameterAnnotations0 = new RuntimeVisibleParameterAnnotations(0, 0, dataInputStream0, constantPool0);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      RuntimeVisibleParameterAnnotations runtimeVisibleParameterAnnotations0 = null;
+      try {
+        runtimeVisibleParameterAnnotations0 = new RuntimeVisibleParameterAnnotations(821, 821, (DataInput) null, (ConstantPool) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ParameterAnnotations", e);
+      }
+  }

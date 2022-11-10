@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableToIntBiFunction<Object, Integer, Throwable> failableToIntBiFunction0 = FailableToIntBiFunction.nop();
+      Integer integer0 = new Integer((-1));
+      int int0 = failableToIntBiFunction0.applyAsInt(integer0, integer0);
+      assertEquals(0, int0);
+}

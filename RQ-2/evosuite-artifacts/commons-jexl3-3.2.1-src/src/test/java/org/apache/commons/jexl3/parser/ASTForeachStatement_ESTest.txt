@@ -1,0 +1,31 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Parser parser0 = new Parser("c");
+      ASTForeachStatement aSTForeachStatement0 = new ASTForeachStatement(parser0, 1);
+      FeatureController featureController0 = parser0.featureController;
+      Object object0 = aSTForeachStatement0.jjtAccept(featureController0, (Object) null);
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Parser parser0 = new Parser("$rqhwZ6F[P\"#P# ,");
+      ASTForeachStatement aSTForeachStatement0 = new ASTForeachStatement(parser0, (-356));
+      FeatureController featureController0 = new FeatureController((JexlFeatures) null);
+      // Undeclared exception!
+      try { 
+        aSTForeachStatement0.jjtAccept(featureController0, featureController0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.parser.FeatureController", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTForeachStatement aSTForeachStatement0 = new ASTForeachStatement(0);
+      OperatorController operatorController0 = new OperatorController();
+      Object object0 = aSTForeachStatement0.jjtAccept(operatorController0, operatorController0);
+      assertTrue(object0);
+}

@@ -1,0 +1,162 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      fileHandler0.setFileName("");
+      String string0 = vFSFileHandlerReloadingDetector0.resolveFileURI();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      fileHandler0.setFileName("");
+      FileObject fileObject0 = vFSFileHandlerReloadingDetector0.getFileObject();
+      FileSystemManager fileSystemManager0 = mock(FileSystemManager.class, new ViolatedAssumptionAnswer());
+      doReturn((FileObject) null, (FileObject) null, fileObject0, fileObject0).when(fileSystemManager0).resolveFile(anyString());
+      VFS.setManager(fileSystemManager0);
+      vFSFileHandlerReloadingDetector0.getLastModificationDate();
+      vFSFileHandlerReloadingDetector0.getFileObject();
+      vFSFileHandlerReloadingDetector0.getLastModificationDate();
+      LocalFile localFile0 = (LocalFile)vFSFileHandlerReloadingDetector0.getFileObject();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      VFSFileSystem vFSFileSystem0 = new VFSFileSystem();
+      fileHandler0.setFileSystem(vFSFileSystem0);
+      // Undeclared exception!
+      try { 
+        vFSFileHandlerReloadingDetector0.resolveFileURI();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.provider.UriParser", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      VFSFileSystem vFSFileSystem0 = new VFSFileSystem();
+      fileHandler0.setFileSystem(vFSFileSystem0);
+      fileHandler0.setFileName("'lcAHZlney|)Mm}S,=");
+      // Undeclared exception!
+      try { 
+        vFSFileHandlerReloadingDetector0.getLastModificationDate();
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Unable to monitor file:/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/'l%7FcAHZlney%7C)Mm%7DS,=
+         //
+         verifyException("org.apache.commons.configuration2.reloading.VFSFileHandlerReloadingDetector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Hashtable<String, PGProperty> hashtable0 = new Hashtable<String, PGProperty>();
+      FileHandler fileHandler0 = FileHandler.fromMap(hashtable0);
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0, (-1L));
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn("").when(fileObject0).toString();
+      doReturn(true).when(fileObject0).exists();
+      doReturn((FileContent) null).when(fileObject0).getContent();
+      FileSystemManager fileSystemManager0 = mock(FileSystemManager.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSystemManager0).resolveFile(anyString());
+      VFS.setManager(fileSystemManager0);
+      FileUtil fileUtil0 = FileUtil.getFileUtil();
+      File file0 = fileUtil0.canonicalFile("0");
+      fileHandler0.setFile(file0);
+      // Undeclared exception!
+      try { 
+        vFSFileHandlerReloadingDetector0.getLastModificationDate();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.reloading.VFSFileHandlerReloadingDetector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      VFSFileSystem vFSFileSystem0 = new VFSFileSystem();
+      fileHandler0.setFileSystem(vFSFileSystem0);
+      FileSystemManager fileSystemManager0 = mock(FileSystemManager.class, new ViolatedAssumptionAnswer());
+      doReturn((FileName) null, (FileName) null).when(fileSystemManager0).resolveURI(anyString());
+      VFS.setManager(fileSystemManager0);
+      fileHandler0.setFileName("'lcAHZlney|)Mm}S,=");
+      // Undeclared exception!
+      try { 
+        vFSFileHandlerReloadingDetector0.getFileObject();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.io.VFSFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      VFSFileSystem vFSFileSystem0 = new VFSFileSystem();
+      fileHandler0.setFileSystem(vFSFileSystem0);
+      fileHandler0.setFileName("");
+      // Undeclared exception!
+      try { 
+        vFSFileHandlerReloadingDetector0.getFileObject();
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Unable to determine file to monitor
+         //
+         verifyException("org.apache.commons.configuration2.reloading.VFSFileHandlerReloadingDetector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0, (-2797L));
+      MockFile mockFile0 = new MockFile("0");
+      EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("0");
+      FileSystemHandling.appendStringToFile(evoSuiteFile0, "0");
+      fileHandler0.setFile(mockFile0);
+      long long0 = vFSFileHandlerReloadingDetector0.getLastModificationDate();
+      assertEquals(1, long0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      long long0 = vFSFileHandlerReloadingDetector0.getLastModificationDate();
+      assertEquals(0, long0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector();
+      assertEquals(0, vFSFileHandlerReloadingDetector0.getRefreshDelay());
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0, (-2797L));
+      MockFile mockFile0 = new MockFile("0");
+      fileHandler0.setFile(mockFile0);
+      long long0 = vFSFileHandlerReloadingDetector0.getLastModificationDate();
+      assertEquals(0, long0);
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      FileHandler fileHandler0 = new FileHandler();
+      VFSFileHandlerReloadingDetector vFSFileHandlerReloadingDetector0 = new VFSFileHandlerReloadingDetector(fileHandler0);
+      String string0 = vFSFileHandlerReloadingDetector0.resolveFileURI();
+      ;
+}

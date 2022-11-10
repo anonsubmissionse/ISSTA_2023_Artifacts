@@ -1,0 +1,33 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NoOpConverter<String> noOpConverter0 = new NoOpConverter<String>();
+      SeedConverterComposer<String, String, String> seedConverterComposer0 = new SeedConverterComposer<String, String, String>(noOpConverter0, noOpConverter0);
+      String string0 = seedConverterComposer0.convert("org.apache.commons.rng.simple.internal.Long2Int");
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SeedConverter<Integer, Object> seedConverter0 = (SeedConverter<Integer, Object>) mock(SeedConverter.class, new ViolatedAssumptionAnswer());
+      SeedConverterComposer<Object, Integer, Object> seedConverterComposer0 = new SeedConverterComposer<Object, Integer, Object>((SeedConverter<Object, Integer>) null, seedConverter0);
+      // Undeclared exception!
+      try { 
+        seedConverterComposer0.convert((Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.internal.SeedConverterComposer", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NoOpConverter<Object> noOpConverter0 = new NoOpConverter<Object>();
+      SeedConverter<Object, String> seedConverter0 = (SeedConverter<Object, String>) mock(SeedConverter.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(seedConverter0).convert(any());
+      SeedConverter<String, String> seedConverter1 = (SeedConverter<String, String>) mock(SeedConverter.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(seedConverter1).convert(anyString());
+      SeedConverterComposer<Object, String, String> seedConverterComposer0 = new SeedConverterComposer<Object, String, String>(seedConverter0, seedConverter1);
+      String string0 = seedConverterComposer0.convert(noOpConverter0);
+      assertNotNull(string0);
+}

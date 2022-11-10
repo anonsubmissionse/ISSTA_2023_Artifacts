@@ -1,0 +1,111 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      MockPrintStream mockPrintStream0 = new MockPrintStream("/<GfwB");
+      PrintCommandListener printCommandListener0 = new PrintCommandListener(mockPrintStream0, true, 't');
+      protocolCommandSupport0.addProtocolCommandListener(printCommandListener0);
+      int int0 = protocolCommandSupport0.getListenerCount();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      PrintCommandListener printCommandListener0 = new PrintCommandListener((PrintWriter) null, true, '2');
+      protocolCommandSupport0.addProtocolCommandListener(printCommandListener0);
+      // Undeclared exception!
+      try { 
+        protocolCommandSupport0.fireReplyReceived(1716, "");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.PrintCommandListener", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport((Object) null);
+      // Undeclared exception!
+      try { 
+        protocolCommandSupport0.fireReplyReceived((-1578), "");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // null source
+         //
+         verifyException("java.util.EventObject", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      VetoableChangeListener vetoableChangeListener0 = mock(VetoableChangeListener.class, new ViolatedAssumptionAnswer());
+      VetoableChangeListenerProxy vetoableChangeListenerProxy0 = new VetoableChangeListenerProxy((String) null, vetoableChangeListener0);
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(vetoableChangeListenerProxy0);
+      protocolCommandSupport0.addProtocolCommandListener((ProtocolCommandListener) null);
+      // Undeclared exception!
+      try { 
+        protocolCommandSupport0.fireCommandSent("Invalid IOCase name: ", "");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.ProtocolCommandSupport", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport((Object) null);
+      // Undeclared exception!
+      try { 
+        protocolCommandSupport0.fireCommandSent(":y{O5aRgo", "The wildcard list must not be null");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // null source
+         //
+         verifyException("java.util.EventObject", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      MockPrintStream mockPrintStream0 = new MockPrintStream("/<GfwB");
+      PrintCommandListener printCommandListener0 = new PrintCommandListener(mockPrintStream0, true, 't');
+      protocolCommandSupport0.addProtocolCommandListener(printCommandListener0);
+      protocolCommandSupport0.fireReplyReceived('t', "/<GfwB");
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      protocolCommandSupport0.fireCommandSent("/<GfwB", "/<GfwB");
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      MockPrintStream mockPrintStream0 = new MockPrintStream("/<GfwB");
+      PrintCommandListener printCommandListener0 = new PrintCommandListener(mockPrintStream0, true, 't');
+      protocolCommandSupport0.removeProtocolCommandListener(printCommandListener0);
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      MockPrintStream mockPrintStream0 = new MockPrintStream("/<GfwB");
+      PrintCommandListener printCommandListener0 = new PrintCommandListener(mockPrintStream0, true, 't');
+      protocolCommandSupport0.addProtocolCommandListener(printCommandListener0);
+      protocolCommandSupport0.fireCommandSent("/<GfwB", "/<GfwB");
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Object object0 = new Object();
+      ProtocolCommandSupport protocolCommandSupport0 = new ProtocolCommandSupport(object0);
+      int int0 = protocolCommandSupport0.getListenerCount();
+      assertEquals(0, int0);
+}

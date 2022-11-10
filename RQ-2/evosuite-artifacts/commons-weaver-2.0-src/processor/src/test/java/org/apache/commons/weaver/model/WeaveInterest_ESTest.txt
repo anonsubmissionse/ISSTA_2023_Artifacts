@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<Annotation> class0 = Annotation.class;
+      ElementType elementType0 = ElementType.TYPE;
+      WeaveInterest weaveInterest0 = WeaveInterest.of(class0, elementType0);
+      assertNotNull(weaveInterest0);
+}

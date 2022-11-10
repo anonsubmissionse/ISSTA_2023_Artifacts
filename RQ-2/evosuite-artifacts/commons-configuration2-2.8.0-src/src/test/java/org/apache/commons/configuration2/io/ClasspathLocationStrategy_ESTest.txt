@@ -1,0 +1,39 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ClasspathLocationStrategy classpathLocationStrategy0 = new ClasspathLocationStrategy();
+      // Undeclared exception!
+      try { 
+        classpathLocationStrategy0.locate((FileSystem) null, (FileLocator) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.io.ClasspathLocationStrategy", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ClasspathLocationStrategy classpathLocationStrategy0 = new ClasspathLocationStrategy();
+      VFSFileSystem vFSFileSystem0 = new VFSFileSystem();
+      FileLocator fileLocator0 = mock(FileLocator.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(fileLocator0).getFileName();
+      URL uRL0 = classpathLocationStrategy0.locate(vFSFileSystem0, fileLocator0);
+      assertNotNull(uRL0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ClasspathLocationStrategy classpathLocationStrategy0 = new ClasspathLocationStrategy();
+      FileLocator fileLocator0 = mock(FileLocator.class, new ViolatedAssumptionAnswer());
+      doReturn("xvX4`", (String) null).when(fileLocator0).getFileName();
+      VFSFileSystem vFSFileSystem0 = new VFSFileSystem();
+      // Undeclared exception!
+      try { 
+        classpathLocationStrategy0.locate(vFSFileSystem0, fileLocator0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }

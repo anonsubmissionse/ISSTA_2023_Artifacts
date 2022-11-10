@@ -1,0 +1,22 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NameScope[] nameScopeArray0 = NameScope.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NameScope nameScope0 = NameScope.valueOf("CHILD");
+      assertNotNull(nameScope0.getName());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NameScope nameScope0 = NameScope.CHILD;
+      String string0 = nameScope0.toString();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      NameScope nameScope0 = NameScope.DESCENDENT_OR_SELF;
+      String string0 = nameScope0.getName();
+      ;
+}

@@ -1,0 +1,35 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ASTBlock aSTBlock0 = new ASTBlock((-97));
+      JexlFeatures jexlFeatures0 = new JexlFeatures();
+      FeatureController featureController0 = new FeatureController(jexlFeatures0);
+      Object object0 = aSTBlock0.jjtAccept(featureController0, (Object) null);
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ASTBlock aSTBlock0 = new ASTBlock(1);
+      // Undeclared exception!
+      try { 
+        aSTBlock0.jjtAccept((ParserVisitor) null, (Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.parser.ASTBlock", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTBlock aSTBlock0 = new ASTBlock((-1584));
+      OperatorController operatorController0 = new OperatorController();
+      Object object0 = aSTBlock0.jjtAccept(operatorController0, (Object) null);
+      assertFalse(object0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Parser parser0 = new Parser("");
+      ASTBlock aSTBlock0 = new ASTBlock(parser0, 0);
+      assertEquals(1, aSTBlock0.getSymbolCount());
+}

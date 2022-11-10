@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      InvalidTelnetOptionException invalidTelnetOptionException0 = new InvalidTelnetOptionException("", 809);
+      String string0 = invalidTelnetOptionException0.getMessage();
+      assertNotNull(string0);
+}

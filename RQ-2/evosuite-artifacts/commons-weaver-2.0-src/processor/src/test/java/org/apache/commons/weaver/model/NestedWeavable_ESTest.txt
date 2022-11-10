@@ -1,0 +1,33 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<String> class0 = String.class;
+      WeavablePackage weavablePackage0 = new WeavablePackage((Package) null);
+      WeavableClass<String> weavableClass0 = new WeavableClass<String>(class0, weavablePackage0);
+      WeavableClass<String> weavableClass1 = weavablePackage0.getWeavable(class0);
+      int int0 = weavableClass1.compareTo(weavableClass0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<String> class0 = String.class;
+      WeavableClass<String> weavableClass0 = new WeavableClass<String>(class0, (WeavablePackage) null);
+      WeavablePackage weavablePackage0 = new WeavablePackage((Package) null);
+      WeavableClass<String> weavableClass1 = weavablePackage0.getWeavable(class0);
+      int int0 = weavableClass1.compareTo(weavableClass0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Class<String> class0 = String.class;
+      WeavableClass<String> weavableClass0 = new WeavableClass<String>(class0, (WeavablePackage) null);
+      // Undeclared exception!
+      try { 
+        weavableClass0.compareTo(weavableClass0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.NestedWeavable", e);
+      }
+  }

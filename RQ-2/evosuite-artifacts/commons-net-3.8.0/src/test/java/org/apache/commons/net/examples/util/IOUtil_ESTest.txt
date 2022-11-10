@@ -1,0 +1,23 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Enumeration<SequenceInputStream> enumeration0 = (Enumeration<SequenceInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" wW;*OYgCB&", true);
+      byte[] byteArray0 = new byte[8];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      IOUtil.readWrite(byteArrayInputStream0, mockFileOutputStream0, sequenceInputStream0, mockFileOutputStream0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Enumeration<SequenceInputStream> enumeration0 = (Enumeration<SequenceInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" wW;*OYgCB&", true);
+      IOUtil.readWrite(sequenceInputStream0, mockFileOutputStream0, sequenceInputStream0, (OutputStream) null);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      IOUtil iOUtil0 = new IOUtil();
+  }

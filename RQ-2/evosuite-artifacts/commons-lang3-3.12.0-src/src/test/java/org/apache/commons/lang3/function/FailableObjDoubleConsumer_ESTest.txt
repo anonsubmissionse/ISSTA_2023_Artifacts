@@ -1,0 +1,5 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableObjDoubleConsumer<String, Throwable> failableObjDoubleConsumer0 = FailableObjDoubleConsumer.nop();
+      failableObjDoubleConsumer0.accept(":P*nslxz2S'ZN", 1814.8063515798);
+  }

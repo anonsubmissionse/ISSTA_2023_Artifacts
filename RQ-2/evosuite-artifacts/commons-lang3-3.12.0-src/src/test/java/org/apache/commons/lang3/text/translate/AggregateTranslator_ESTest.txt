@@ -1,0 +1,54 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[2];
+      CharSequenceTranslator charSequenceTranslator0 = mock(CharSequenceTranslator.class, new ViolatedAssumptionAnswer());
+      doReturn(49).when(charSequenceTranslator0).translate(any(java.lang.CharSequence.class) , anyInt() , any(java.io.Writer.class));
+      charSequenceTranslatorArray0[0] = charSequenceTranslator0;
+      AggregateTranslator aggregateTranslator0 = new AggregateTranslator(charSequenceTranslatorArray0);
+      char[] charArray0 = new char[1];
+      CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
+      StringWriter stringWriter0 = new StringWriter();
+      int int0 = aggregateTranslator0.translate((CharSequence) charBuffer0, 0, (Writer) stringWriter0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[5];
+      AggregateTranslator aggregateTranslator0 = new AggregateTranslator(charSequenceTranslatorArray0);
+      StringWriter stringWriter0 = new StringWriter();
+      // Undeclared exception!
+      try { 
+        aggregateTranslator0.translate((CharSequence) "213", 531, (Writer) stringWriter0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.lang3.text.translate.AggregateTranslator", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[2];
+      CharSequenceTranslator charSequenceTranslator0 = mock(CharSequenceTranslator.class, new ViolatedAssumptionAnswer());
+      doReturn(0, 0, 0, (-2729)).when(charSequenceTranslator0).translate(any(java.lang.CharSequence.class) , anyInt() , any(java.io.Writer.class));
+      charSequenceTranslatorArray0[0] = charSequenceTranslator0;
+      charSequenceTranslatorArray0[1] = charSequenceTranslator0;
+      AggregateTranslator aggregateTranslator0 = new AggregateTranslator(charSequenceTranslatorArray0);
+      StringWriter stringWriter0 = new StringWriter();
+      int int0 = aggregateTranslator0.translate((CharSequence) "FFFFF557", (-2729), (Writer) stringWriter0);
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[2];
+      CharSequenceTranslator charSequenceTranslator0 = mock(CharSequenceTranslator.class, new ViolatedAssumptionAnswer());
+      doReturn(0, 0, 0, (-2729)).when(charSequenceTranslator0).translate(any(java.lang.CharSequence.class) , anyInt() , any(java.io.Writer.class));
+      charSequenceTranslatorArray0[0] = charSequenceTranslator0;
+      charSequenceTranslatorArray0[1] = charSequenceTranslator0;
+      AggregateTranslator aggregateTranslator0 = new AggregateTranslator(charSequenceTranslatorArray0);
+      StringWriter stringWriter0 = new StringWriter();
+      int int0 = aggregateTranslator0.translate((CharSequence) "FFFFF557", (-2729), (Writer) stringWriter0);
+      int int1 = aggregateTranslator0.translate((CharSequence) "FFFFF557", 0, (Writer) stringWriter0);
+      assertEquals(0, int1);
+}

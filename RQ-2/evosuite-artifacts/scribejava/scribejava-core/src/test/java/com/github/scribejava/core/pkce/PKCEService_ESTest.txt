@@ -1,0 +1,64 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      PKCEService pKCEService0 = new PKCEService(0);
+      byte[] byteArray0 = new byte[4];
+      Base64 base64_0 = mock(Base64.class, new ViolatedAssumptionAnswer());
+      Base64.init(base64_0);
+      // Undeclared exception!
+      try { 
+        pKCEService0.generatePKCE(byteArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.github.scribejava.core.pkce.PKCECodeChallengeMethod$1", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      PKCEService pKCEService0 = PKCEService.defaultInstance();
+      Base64 base64_0 = mock(Base64.class, new ViolatedAssumptionAnswer());
+      Base64.init(base64_0);
+      // Undeclared exception!
+      try { 
+        pKCEService0.generatePKCE();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.github.scribejava.core.pkce.PKCECodeChallengeMethod$1", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      PKCEService pKCEService0 = new PKCEService((-2668));
+      // Undeclared exception!
+      try { 
+        pKCEService0.generatePKCE();
+        fail("Expecting exception: NegativeArraySizeException");
+      } catch(NegativeArraySizeException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.github.scribejava.core.pkce.PKCEService", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      PKCEService pKCEService0 = new PKCEService((-2668));
+      byte[] byteArray0 = new byte[3];
+      PKCE pKCE0 = pKCEService0.generatePKCE(byteArray0);
+      assertNotNull(pKCE0.getCodeChallenge());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      PKCEService pKCEService0 = new PKCEService();
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      PKCEService pKCEService0 = PKCEService.defaultInstance();
+      PKCE pKCE0 = pKCEService0.generatePKCE();
+      ;
+}

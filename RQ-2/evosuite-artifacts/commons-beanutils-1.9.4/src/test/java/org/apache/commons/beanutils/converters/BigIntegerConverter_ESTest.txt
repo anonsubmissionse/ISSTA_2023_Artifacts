@@ -1,0 +1,24 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BigIntegerConverter bigIntegerConverter0 = new BigIntegerConverter((Object) null);
+      assertFalse(bigIntegerConverter0.isAllowDecimals());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BigIntegerConverter bigIntegerConverter0 = null;
+      try {
+        bigIntegerConverter0 = new BigIntegerConverter("");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error converting from 'String' to 'BigInteger' For input string: \"java.lang\"
+         //
+         verifyException("org.apache.commons.beanutils.converters.AbstractConverter", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BigIntegerConverter bigIntegerConverter0 = new BigIntegerConverter();
+      Class<BigInteger> class0 = bigIntegerConverter0.getDefaultType();
+      ;
+}

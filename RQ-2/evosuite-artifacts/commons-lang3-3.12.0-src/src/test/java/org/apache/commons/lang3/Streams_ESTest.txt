@@ -1,0 +1,10 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<Integer> class0 = Integer.class;
+      Collector<Integer, ?, Integer[]> collector0 = Streams.toArray(class0);
+      assertNotNull(collector0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Streams streams0 = new Streams();
+  }

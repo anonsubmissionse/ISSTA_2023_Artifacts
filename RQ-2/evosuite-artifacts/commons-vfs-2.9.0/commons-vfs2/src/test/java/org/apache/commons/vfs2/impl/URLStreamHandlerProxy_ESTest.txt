@@ -1,0 +1,67 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      URLStreamHandlerProxy uRLStreamHandlerProxy0 = new URLStreamHandlerProxy();
+      URL uRL0 = MockURL.getFileExample();
+      // Undeclared exception!
+      try { 
+        uRLStreamHandlerProxy0.parseURL(uRL0, (String) null, 0, 0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.impl.URLStreamHandlerProxy", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      URLStreamHandlerProxy uRLStreamHandlerProxy0 = new URLStreamHandlerProxy();
+      URL uRL0 = MockURL.URL("", " &ck4#7z)k", 0, "", (URLStreamHandler) uRLStreamHandlerProxy0);
+      try { 
+        uRLStreamHandlerProxy0.openConnection(uRL0);
+        fail("Expecting exception: MalformedURLException");
+      } catch(MalformedURLException e) {
+         //
+         // no protocol: :// &ck4#7z)k:0
+         //
+         verifyException("java.net.URL", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      URLStreamHandlerProxy uRLStreamHandlerProxy0 = new URLStreamHandlerProxy();
+      // Undeclared exception!
+      try { 
+        uRLStreamHandlerProxy0.openConnection((URL) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.net.MockURL", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      URLStreamHandlerProxy uRLStreamHandlerProxy0 = new URLStreamHandlerProxy();
+      MockFile mockFile0 = new MockFile("");
+      URL uRL0 = mockFile0.toURL();
+      // Undeclared exception!
+      try { 
+        uRLStreamHandlerProxy0.parseURL(uRL0, "", 264, 264);
+        fail("Expecting exception: SecurityException");
+      } catch(SecurityException e) {
+         //
+         // handler for url different from this handler
+         //
+         verifyException("java.net.URLStreamHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      URLStreamHandlerProxy uRLStreamHandlerProxy0 = new URLStreamHandlerProxy();
+      MockFile mockFile0 = new MockFile("");
+      URL uRL0 = mockFile0.toURL();
+      URLConnection uRLConnection0 = uRLStreamHandlerProxy0.openConnection(uRL0);
+      assertNotNull(uRLConnection0);
+}

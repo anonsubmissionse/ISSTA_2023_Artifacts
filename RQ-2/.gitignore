@@ -1,0 +1,4 @@
+**/toga_output/
+**/.evosuite/
+**/target
+/.idea/

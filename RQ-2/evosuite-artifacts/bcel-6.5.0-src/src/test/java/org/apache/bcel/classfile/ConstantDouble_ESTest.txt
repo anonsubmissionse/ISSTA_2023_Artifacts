@@ -1,0 +1,189 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(1.0);
+      BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream((OutputStream) null, 16);
+      DataOutputStream dataOutputStream0 = new DataOutputStream(bufferedOutputStream0);
+      constantDouble0.dump(dataOutputStream0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.0);
+      double double0 = constantDouble0.getBytes();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble((-1.0));
+      double double0 = constantDouble0.getBytes();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble((-1.0));
+      PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+      DataOutputStream dataOutputStream0 = new DataOutputStream(pipedOutputStream0);
+      try { 
+        constantDouble0.dump(dataOutputStream0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Pipe not connected
+         //
+         verifyException("java.io.PipedOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble((-979.5032));
+      // Undeclared exception!
+      try { 
+        constantDouble0.accept((Visitor) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantDouble", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ConstantDouble constantDouble0 = null;
+      try {
+        constantDouble0 = new ConstantDouble((ConstantDouble) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantDouble", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ConstantDouble constantDouble0 = null;
+      try {
+        constantDouble0 = new ConstantDouble((DataInput) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantDouble", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      byte[] byteArray0 = new byte[8];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (-1), (byte)99);
+      BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(bufferedInputStream0);
+      ConstantDouble constantDouble0 = null;
+      try {
+        constantDouble0 = new ConstantDouble(dataInputStream0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      PipedInputStream pipedInputStream0 = new PipedInputStream();
+      PushbackInputStream pushbackInputStream0 = new PushbackInputStream(pipedInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(pushbackInputStream0);
+      ConstantDouble constantDouble0 = null;
+      try {
+        constantDouble0 = new ConstantDouble(dataInputStream0);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // Pipe not connected
+         //
+         verifyException("java.io.PipedInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Enumeration<InputStream> enumeration0 = (Enumeration<InputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+      PushbackInputStream pushbackInputStream0 = new PushbackInputStream(sequenceInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(pushbackInputStream0);
+      ConstantDouble constantDouble0 = null;
+      try {
+        constantDouble0 = new ConstantDouble(dataInputStream0);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.75);
+      double double0 = constantDouble0.getBytes();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(1757.2);
+      Constant[] constantArray0 = new Constant[2];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      Object object0 = constantDouble0.getConstantValue(constantPool0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.75);
+      EmptyVisitor emptyVisitor0 = new EmptyVisitor();
+      constantDouble0.accept(emptyVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.0);
+      constantDouble0.setBytes(0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.0);
+      // Undeclared exception!
+      try { 
+        constantDouble0.dump((DataOutputStream) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.ConstantDouble", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      byte[] byteArray0 = new byte[9];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      ConstantDouble constantDouble0 = new ConstantDouble(dataInputStream0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.0);
+      ConstantDouble constantDouble1 = new ConstantDouble(constantDouble0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.0);
+      ConstantDouble constantDouble1 = new ConstantDouble(constantDouble0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      ConstantDouble constantDouble0 = new ConstantDouble(0.0);
+      String string0 = constantDouble0.toString();
+      ;
+}

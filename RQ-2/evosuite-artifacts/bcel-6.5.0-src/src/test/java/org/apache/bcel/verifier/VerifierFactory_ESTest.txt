@@ -1,0 +1,17 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      VerifierFactory.getVerifier("b");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      VerifierFactory.attach((VerifierFactoryObserver) null);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Verifier[] verifierArray0 = VerifierFactory.getVerifiers();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      VerifierFactory.detach((VerifierFactoryObserver) null);
+  }

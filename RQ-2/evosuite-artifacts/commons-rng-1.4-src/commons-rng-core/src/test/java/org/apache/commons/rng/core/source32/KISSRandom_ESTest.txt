@@ -1,0 +1,74 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      int[] intArray0 = new int[2];
+      intArray0[0] = (-4839);
+      KISSRandom kISSRandom0 = new KISSRandom(intArray0);
+      double double0 = kISSRandom0.nextDouble();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      KISSRandom kISSRandom0 = new KISSRandom(intArray0);
+      int int0 = kISSRandom0.next();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      int[] intArray0 = new int[5];
+      KISSRandom kISSRandom0 = new KISSRandom(intArray0);
+      // Undeclared exception!
+      try { 
+        kISSRandom0.setStateInternal((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      int[] intArray0 = new int[8];
+      KISSRandom kISSRandom0 = new KISSRandom(intArray0);
+      byte[] byteArray0 = new byte[4];
+      // Undeclared exception!
+      try { 
+        kISSRandom0.setStateInternal(byteArray0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // State size must be larger than 16 but was 4
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      int[] intArray0 = new int[0];
+      KISSRandom kISSRandom0 = new KISSRandom(intArray0);
+      int int0 = kISSRandom0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      int[] intArray0 = new int[0];
+      KISSRandom kISSRandom0 = new KISSRandom(intArray0);
+      byte[] byteArray0 = kISSRandom0.getStateInternal();
+      kISSRandom0.setStateInternal(byteArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      KISSRandom kISSRandom0 = null;
+      try {
+        kISSRandom0 = new KISSRandom((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }

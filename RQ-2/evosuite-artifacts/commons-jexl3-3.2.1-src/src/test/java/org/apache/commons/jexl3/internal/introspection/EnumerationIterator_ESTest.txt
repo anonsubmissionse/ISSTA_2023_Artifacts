@@ -1,0 +1,81 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Enumeration<String> enumeration0 = (Enumeration<String>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn((Object) null).when(enumeration0).nextElement();
+      EnumerationIterator<String> enumerationIterator0 = new EnumerationIterator<String>(enumeration0);
+      String string0 = enumerationIterator0.next();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      StringTokenizer stringTokenizer0 = new StringTokenizer("C[ y ZvVrA|:AZL[]0v", "};/`A0@{BV'vskn<}ET", false);
+      EnumerationIterator<Object> enumerationIterator0 = new EnumerationIterator<Object>(stringTokenizer0);
+      boolean boolean0 = enumerationIterator0.hasNext();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      StringTokenizer stringTokenizer0 = new StringTokenizer("4ky", "4ky", true);
+      EnumerationIterator<Object> enumerationIterator0 = new EnumerationIterator<Object>(stringTokenizer0);
+      Consumer<Object> consumer0 = (Consumer<Object>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+      enumerationIterator0.forEachRemaining(consumer0);
+      // Undeclared exception!
+      try { 
+        enumerationIterator0.next();
+        fail("Expecting exception: NoSuchElementException");
+      } catch(NoSuchElementException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.StringTokenizer", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      EnumerationIterator<String> enumerationIterator0 = new EnumerationIterator<String>((Enumeration<String>) null);
+      // Undeclared exception!
+      try { 
+        enumerationIterator0.next();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.EnumerationIterator", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      EnumerationIterator<String> enumerationIterator0 = new EnumerationIterator<String>((Enumeration<String>) null);
+      // Undeclared exception!
+      try { 
+        enumerationIterator0.hasNext();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.EnumerationIterator", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Enumeration<String> enumeration0 = (Enumeration<String>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(enumeration0).hasMoreElements();
+      EnumerationIterator<String> enumerationIterator0 = new EnumerationIterator<String>(enumeration0);
+      boolean boolean0 = enumerationIterator0.hasNext();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      StringTokenizer stringTokenizer0 = new StringTokenizer("4ky", "4ky", true);
+      EnumerationIterator<Object> enumerationIterator0 = new EnumerationIterator<Object>(stringTokenizer0);
+      Object object0 = enumerationIterator0.next();
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Enumeration<String> enumeration0 = (Enumeration<String>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+      EnumerationIterator<String> enumerationIterator0 = new EnumerationIterator<String>(enumeration0);
+      enumerationIterator0.remove();
+  }

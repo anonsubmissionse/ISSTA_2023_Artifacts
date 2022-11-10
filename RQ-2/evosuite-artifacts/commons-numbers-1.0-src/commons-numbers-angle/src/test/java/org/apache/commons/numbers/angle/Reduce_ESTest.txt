@@ -1,0 +1,18 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Reduce reduce0 = new Reduce((-1.0), (-351.171057452872));
+      double double0 = reduce0.applyAsDouble(0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Reduce reduce0 = new Reduce(42.58, (-1.0));
+      double double0 = reduce0.applyAsDouble((-1.0));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Reduce reduce0 = new Reduce((-1073.0221455012659), (-1073.0221455012659));
+      double double0 = reduce0.applyAsDouble((-1073.0221455012659));
+      ;
+}

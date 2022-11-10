@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException();
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LoadingException loadingException0 = new LoadingException("");
+  }

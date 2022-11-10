@@ -1,0 +1,68 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      Class<Answers> class0 = Answers.class;
+      Object object0 = stringEnumPropertyHandler0.apply(class0, "RETURNS_SMART_NULLS");
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      // Undeclared exception!
+      try { 
+        stringEnumPropertyHandler0.match((Class<?>) null, "RETURNS_MOCKS");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.properties.StringEnumPropertyHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      // Undeclared exception!
+      try { 
+        stringEnumPropertyHandler0.apply((Class<?>) null, (Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.properties.StringEnumPropertyHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      Class<String> class0 = String.class;
+      boolean boolean0 = stringEnumPropertyHandler0.match(class0, ":o-x8fpC)f");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      Class<Answers> class0 = Answers.class;
+      boolean boolean0 = stringEnumPropertyHandler0.match(class0, "$");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      Class<Integer> class0 = Integer.class;
+      boolean boolean0 = stringEnumPropertyHandler0.match(class0, stringEnumPropertyHandler0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      StringEnumPropertyHandler stringEnumPropertyHandler0 = new StringEnumPropertyHandler();
+      Class<Answers> class0 = Answers.class;
+      Class<Integer> class1 = Integer.class;
+      // Undeclared exception!
+      try { 
+        stringEnumPropertyHandler0.apply(class1, class0);
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+      }
+  }

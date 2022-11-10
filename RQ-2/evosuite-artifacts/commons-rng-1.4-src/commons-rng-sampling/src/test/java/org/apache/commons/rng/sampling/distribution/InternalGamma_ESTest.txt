@@ -1,0 +1,10 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = InternalGamma.logGamma(1.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = InternalGamma.logGamma(913.07505);
+      ;
+}

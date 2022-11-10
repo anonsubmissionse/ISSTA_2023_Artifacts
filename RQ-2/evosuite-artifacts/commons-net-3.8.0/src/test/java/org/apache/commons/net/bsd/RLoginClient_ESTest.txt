@@ -1,0 +1,42 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      RLoginClient rLoginClient0 = new RLoginClient();
+      // Undeclared exception!
+      try { 
+        rLoginClient0.rlogin((String) null, "org.apache.commons.io.filefilter.TrueFileFilter", (String) null, 1299);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.bsd.RExecClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      RLoginClient rLoginClient0 = new RLoginClient();
+      // Undeclared exception!
+      try { 
+        rLoginClient0.rlogin("At!`LOmNJaX[=", "", "UtwsP0TyL<,2Td[:");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.bsd.RExecClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      RLoginClient rLoginClient0 = new RLoginClient();
+      // Undeclared exception!
+      try { 
+        rLoginClient0.rlogin("/", "/", "H}:.N}", 513);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.bsd.RExecClient", e);
+      }
+  }

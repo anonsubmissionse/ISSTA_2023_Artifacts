@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IntegerConverter integerConverter0 = new IntegerConverter();
+      Class<Integer> class0 = integerConverter0.getDefaultType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Integer integer0 = new Integer((-890));
+      IntegerConverter integerConverter0 = new IntegerConverter(integer0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object object0 = new Object();
+      IntegerConverter integerConverter0 = null;
+      try {
+        integerConverter0 = new IntegerConverter(object0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error converting from 'Object' to 'Integer' For input string: \"java.lang.Object@0000000002\"
+         //
+         verifyException("org.apache.commons.beanutils.converters.AbstractConverter", e);
+      }
+  }

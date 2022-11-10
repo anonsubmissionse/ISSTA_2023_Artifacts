@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DynaBeanMapDecorator dynaBeanMapDecorator0 = null;
+      try {
+        dynaBeanMapDecorator0 = new DynaBeanMapDecorator((DynaBean) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // DynaBean is null
+         //
+         verifyException("org.apache.commons.beanutils.BaseDynaBeanMapDecorator", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DynaBeanMapDecorator dynaBeanMapDecorator0 = null;
+      try {
+        dynaBeanMapDecorator0 = new DynaBeanMapDecorator((DynaBean) null, true);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // DynaBean is null
+         //
+         verifyException("org.apache.commons.beanutils.BaseDynaBeanMapDecorator", e);
+      }
+  }

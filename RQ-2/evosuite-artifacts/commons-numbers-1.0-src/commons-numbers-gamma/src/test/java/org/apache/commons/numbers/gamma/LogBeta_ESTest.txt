@@ -1,0 +1,95 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = LogBeta.value(472.598, 14.136097974741746);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = LogBeta.value(47.672696327902905, 48.36584350846285);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      double double0 = LogBeta.value(33.37402430454192, 32.68087712398195);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      double double0 = LogBeta.value(134.502706, 0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      double double0 = LogBeta.value((-2.955065141253382E-16), 898.95723);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      double double0 = LogBeta.value(10.0, 10.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      double double0 = LogBeta.value(5.0E-5, 5.0E-5);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      double double0 = LogBeta.value(1.5, 2.054450534995776);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      double double0 = LogBeta.value(1.0, 1.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      double double0 = LogBeta.value(1.5, Double.POSITIVE_INFINITY);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      double double0 = LogBeta.value(2.2085410903653875, 10.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      double double0 = LogBeta.value(2.054450534995776, 2.054450534995776);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      double double0 = LogBeta.value(2.054450534995776, 1861.6986580687667);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      double double0 = LogBeta.value(2131.10004463302, 2779.977887);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      double double0 = LogBeta.value(2779.977887, 1.7964371635940225E-17);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      double double0 = LogBeta.value(898.95723, (-1.3922896466162779E-18));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      double double0 = LogBeta.value(0.0, 0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      double double0 = LogBeta.value(10.59663472898404, Double.NaN);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      double double0 = LogBeta.value(Double.NaN, Double.NaN);
+      ;
+}

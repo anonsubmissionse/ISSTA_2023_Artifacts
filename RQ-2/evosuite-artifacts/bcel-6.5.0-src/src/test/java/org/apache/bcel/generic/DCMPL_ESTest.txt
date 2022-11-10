@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DCMPL dCMPL0 = new DCMPL();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        dCMPL0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DCMPL dCMPL0 = new DCMPL();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      dCMPL0.setOpcode((short) (-35));
+      // Undeclared exception!
+      try { 
+        dCMPL0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -35
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DCMPL dCMPL0 = new DCMPL();
+      Type type0 = dCMPL0.getType((ConstantPoolGen) null);
+      assertNotNull(type0.getSignature());
+}

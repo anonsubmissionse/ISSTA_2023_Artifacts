@@ -1,0 +1,82 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      int[] intArray0 = new int[4];
+      intArray0[0] = Integer.MIN_VALUE;
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      int int0 = multiplyWithCarry256_0.nextInt();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      int int0 = multiplyWithCarry256_0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      intArray0[0] = 32767;
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      int int0 = multiplyWithCarry256_0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      int[] intArray0 = new int[7];
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      // Undeclared exception!
+      try { 
+        multiplyWithCarry256_0.setStateInternal((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      int[] intArray0 = new int[4];
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      byte[] byteArray0 = new byte[0];
+      // Undeclared exception!
+      try { 
+        multiplyWithCarry256_0.setStateInternal(byteArray0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // State size must be larger than 1032 but was 0
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MultiplyWithCarry256 multiplyWithCarry256_0 = null;
+      try {
+        multiplyWithCarry256_0 = new MultiplyWithCarry256((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      int[] intArray0 = new int[5];
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      int int0 = multiplyWithCarry256_0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      int[] intArray0 = new int[5];
+      MultiplyWithCarry256 multiplyWithCarry256_0 = new MultiplyWithCarry256(intArray0);
+      byte[] byteArray0 = multiplyWithCarry256_0.getStateInternal();
+      multiplyWithCarry256_0.setStateInternal(byteArray0);
+      ;
+}

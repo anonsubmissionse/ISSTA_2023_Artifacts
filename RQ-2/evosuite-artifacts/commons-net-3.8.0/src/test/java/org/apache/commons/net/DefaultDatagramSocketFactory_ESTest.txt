@@ -1,0 +1,48 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultDatagramSocketFactory defaultDatagramSocketFactory0 = new DefaultDatagramSocketFactory();
+      InetAddress inetAddress0 = MockInetAddress.getByName("");
+      // Undeclared exception!
+      try { 
+        defaultDatagramSocketFactory0.createDatagramSocket((-2502), inetAddress0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // port out of range:-2502
+         //
+         verifyException("java.net.InetSocketAddress", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DefaultDatagramSocketFactory defaultDatagramSocketFactory0 = new DefaultDatagramSocketFactory();
+      // Undeclared exception!
+      try { 
+        defaultDatagramSocketFactory0.createDatagramSocket((-2231));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // port out of range:-2231
+         //
+         verifyException("java.net.InetSocketAddress", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DefaultDatagramSocketFactory defaultDatagramSocketFactory0 = new DefaultDatagramSocketFactory();
+      DatagramSocket datagramSocket0 = defaultDatagramSocketFactory0.createDatagramSocket(1648);
+      assertTrue(datagramSocket0.isConnected());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DefaultDatagramSocketFactory defaultDatagramSocketFactory0 = new DefaultDatagramSocketFactory();
+      InetAddress inetAddress0 = MockInetAddress.getLocalHost();
+      DatagramSocket datagramSocket0 = defaultDatagramSocketFactory0.createDatagramSocket(1648, inetAddress0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DefaultDatagramSocketFactory defaultDatagramSocketFactory0 = new DefaultDatagramSocketFactory();
+      DatagramSocket datagramSocket0 = defaultDatagramSocketFactory0.createDatagramSocket();
+      ;
+}

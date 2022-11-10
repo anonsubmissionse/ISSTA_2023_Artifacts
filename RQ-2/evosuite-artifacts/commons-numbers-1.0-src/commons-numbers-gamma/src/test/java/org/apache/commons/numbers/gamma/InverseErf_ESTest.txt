@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = InverseErf.value(2.0972767875968562E-17);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = InverseErf.value((-1.0));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      double double0 = InverseErf.value(Double.POSITIVE_INFINITY);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      double double0 = InverseErf.value(0.99909);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      double double0 = InverseErf.value(0.0);
+      ;
+}

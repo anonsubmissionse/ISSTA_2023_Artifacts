@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultProviderConfiguration defaultProviderConfiguration0 = new DefaultProviderConfiguration();
+      boolean boolean0 = defaultProviderConfiguration0.isDefault();
+      assertTrue(boolean0);
+}

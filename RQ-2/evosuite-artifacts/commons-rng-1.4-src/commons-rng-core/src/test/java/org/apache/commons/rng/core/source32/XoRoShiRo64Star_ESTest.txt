@@ -1,0 +1,35 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      XoRoShiRo64Star xoRoShiRo64Star0 = new XoRoShiRo64Star(0, 0);
+      int int0 = xoRoShiRo64Star0.nextOutput();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      int[] intArray0 = new int[2];
+      intArray0[0] = 2500;
+      XoRoShiRo64Star xoRoShiRo64Star0 = new XoRoShiRo64Star(intArray0);
+      int int0 = xoRoShiRo64Star0.nextOutput();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      XoRoShiRo64Star xoRoShiRo64Star0 = null;
+      try {
+        xoRoShiRo64Star0 = new XoRoShiRo64Star((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractXoRoShiRo64", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      int[] intArray0 = new int[0];
+      XoRoShiRo64Star xoRoShiRo64Star0 = new XoRoShiRo64Star(intArray0);
+      xoRoShiRo64Star0.nextDouble();
+      int int0 = xoRoShiRo64Star0.nextOutput();
+      assertEquals(1, int0);
+}

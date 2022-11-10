@@ -1,0 +1,18 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        NNTPCommand.getCommand(3754);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 3754
+         //
+         verifyException("org.apache.commons.net.nntp.NNTPCommand", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = NNTPCommand.getCommand(0);
+      ;
+}

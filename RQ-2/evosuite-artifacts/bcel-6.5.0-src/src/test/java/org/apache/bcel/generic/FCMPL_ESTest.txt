@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FCMPL fCMPL0 = new FCMPL();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      LocalVariables localVariables0 = new LocalVariables(1245);
+      OperandStack operandStack0 = new OperandStack(1245);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      executionVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        fCMPL0.accept(executionVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FCMPL fCMPL0 = new FCMPL();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        fCMPL0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FCMPL fCMPL0 = new FCMPL();
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      Type type0 = fCMPL0.getType(constantPoolGen0);
+      assertEquals(0, type0.getSize());
+}

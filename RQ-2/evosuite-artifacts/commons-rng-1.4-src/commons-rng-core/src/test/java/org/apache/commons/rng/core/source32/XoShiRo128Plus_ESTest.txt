@@ -1,0 +1,58 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      XoShiRo128Plus xoShiRo128Plus0 = new XoShiRo128Plus(0, 2601, 2601, 0);
+      int int0 = xoShiRo128Plus0.nextOutput();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      int[] intArray0 = new int[2];
+      XoShiRo128Plus xoShiRo128Plus0 = new XoShiRo128Plus(intArray0);
+      int int0 = xoShiRo128Plus0.nextOutput();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      XoShiRo128Plus xoShiRo128Plus0 = new XoShiRo128Plus((-2247), (-2247), (-2247), 2);
+      int int0 = xoShiRo128Plus0.nextOutput();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      XoShiRo128Plus xoShiRo128Plus0 = null;
+      try {
+        xoShiRo128Plus0 = new XoShiRo128Plus((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractXoShiRo128", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      XoShiRo128Plus xoShiRo128Plus0 = null;
+      try {
+        xoShiRo128Plus0 = new XoShiRo128Plus((XoShiRo128Plus) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.IntProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      XoShiRo128Plus xoShiRo128Plus0 = new XoShiRo128Plus((-358), (-358), (-358), 0);
+      XoShiRo128Plus xoShiRo128Plus1 = new XoShiRo128Plus(xoShiRo128Plus0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      int[] intArray0 = new int[6];
+      XoShiRo128Plus xoShiRo128Plus0 = new XoShiRo128Plus(intArray0);
+      XoShiRo128Plus xoShiRo128Plus1 = xoShiRo128Plus0.copy();
+      ;
+}

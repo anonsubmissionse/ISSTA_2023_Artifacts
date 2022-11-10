@@ -1,0 +1,31 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      System.setCurrentTimeMillis((-1613L));
+      TestWeaveMojo testWeaveMojo0 = new TestWeaveMojo();
+      File file0 = MockFile.createTempFile("q/8aa", "]jvym)Hh#V! 7K@)X ");
+      testWeaveMojo0.target = file0;
+      File file1 = testWeaveMojo0.getTarget();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      TestWeaveMojo testWeaveMojo0 = new TestWeaveMojo();
+      MockFile mockFile0 = new MockFile((File) null, "");
+      testWeaveMojo0.target = (File) mockFile0;
+      File file0 = testWeaveMojo0.getTarget();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      TestWeaveMojo testWeaveMojo0 = new TestWeaveMojo();
+      MockFile mockFile0 = new MockFile(".dTU5d7&<W&)I");
+      testWeaveMojo0.target = (File) mockFile0;
+      File file0 = testWeaveMojo0.getTarget();
+      assertNotNull(file0.getName());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      TestWeaveMojo testWeaveMojo0 = new TestWeaveMojo();
+      File file0 = testWeaveMojo0.getTarget();
+      ;
+}

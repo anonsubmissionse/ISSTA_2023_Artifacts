@@ -1,0 +1,19 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      X509TrustManager x509TrustManager0 = TrustManagerUtils.getDefaultTrustManager((KeyStore) null);
+      assertNotNull(x509TrustManager0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      X509TrustManager x509TrustManager0 = TrustManagerUtils.getValidateServerCertificateTrustManager();
+      assertNotNull(x509TrustManager0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      X509TrustManager x509TrustManager0 = TrustManagerUtils.getAcceptAllTrustManager();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      TrustManagerUtils trustManagerUtils0 = new TrustManagerUtils();
+  }

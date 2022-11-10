@@ -1,0 +1,5 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LONG_Upper lONG_Upper0 = LONG_Upper.theInstance();
+      assertNotNull(lONG_Upper0.getType());
+}

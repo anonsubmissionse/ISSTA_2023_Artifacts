@@ -1,0 +1,204 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[3];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double[] doubleArray1 = boxSampler0.sample();
+      BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[2];
+      double[] doubleArray1 = new double[2];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[7];
+      double[] doubleArray1 = new double[7];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(1488L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[2];
+      double[] doubleArray1 = new double[5];
+      // Undeclared exception!
+      try { 
+        BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray1);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Mismatch of box dimensions: 2,5
+         //
+         verifyException("org.apache.commons.rng.sampling.shape.BoxSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom((-188L));
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[3];
+      mockRandom0.nextDouble();
+      doubleArray0[0] = (double) (-188L);
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double[] doubleArray1 = boxSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[5];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double double0 = boxSampler0.createSample(0.0, 3865.886604);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(3030L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[4];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double double0 = boxSampler0.createSample(3030L, 3030.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[4];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double double0 = boxSampler0.createSample((-1108.920899), 0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      double[] doubleArray0 = new double[4];
+      BoxSampler boxSampler0 = BoxSampler.of((UniformRandomProvider) null, doubleArray0, doubleArray0);
+      // Undeclared exception!
+      try { 
+        boxSampler0.sample();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.sampling.shape.BoxSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        BoxSampler.of((UniformRandomProvider) null, (double[]) null, (double[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.sampling.shape.BoxSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      double[] doubleArray0 = new double[8];
+      BoxSampler boxSampler0 = BoxSampler.of((UniformRandomProvider) null, doubleArray0, doubleArray0);
+      // Undeclared exception!
+      try { 
+        boxSampler0.createSample(0.0, 0.0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.sampling.shape.BoxSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      double[] doubleArray0 = new double[1];
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      // Undeclared exception!
+      try { 
+        BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Unsupported dimension: 1
+         //
+         verifyException("org.apache.commons.rng.sampling.shape.BoxSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[2];
+      double[] doubleArray1 = new double[15];
+      // Undeclared exception!
+      try { 
+        BoxSampler.of(jDKRandomWrapper0, doubleArray1, doubleArray0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Mismatch of box dimensions: 15,2
+         //
+         verifyException("org.apache.commons.rng.sampling.shape.BoxSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      double[] doubleArray0 = new double[4];
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double[] doubleArray1 = boxSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      double[] doubleArray0 = new double[3];
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      BoxSampler boxSampler1 = boxSampler0.withUniformRandomProvider(jDKRandomWrapper0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[2];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      BoxSampler boxSampler1 = boxSampler0.withUniformRandomProvider(jDKRandomWrapper0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      double[] doubleArray0 = new double[4];
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      BoxSampler boxSampler1 = boxSampler0.withUniformRandomProvider(jDKRandomWrapper0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      double[] doubleArray0 = new double[2];
+      BoxSampler boxSampler0 = BoxSampler.of(jDKRandomWrapper0, doubleArray0, doubleArray0);
+      double[] doubleArray1 = boxSampler0.sample();
+      ;
+}

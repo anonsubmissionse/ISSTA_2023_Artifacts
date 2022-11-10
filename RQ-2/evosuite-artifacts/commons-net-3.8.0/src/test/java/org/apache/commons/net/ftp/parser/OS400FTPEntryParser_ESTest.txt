@@ -1,0 +1,80 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FTPClientConfig fTPClientConfig0 = new FTPClientConfig();
+      OS400FTPEntryParser oS400FTPEntryParser0 = new OS400FTPEntryParser(fTPClientConfig0);
+      assertNotNull(fTPClientConfig0.getDefaultDateFormatStr());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OS400FTPEntryParser oS400FTPEntryParser0 = new OS400FTPEntryParser();
+      FTPClientConfig fTPClientConfig0 = oS400FTPEntryParser0.getDefaultConfiguration();
+      assertNotNull(fTPClientConfig0.getServerSystemKey());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      OS400FTPEntryParser oS400FTPEntryParser0 = new OS400FTPEntryParser();
+      FTPClientConfig fTPClientConfig0 = oS400FTPEntryParser0.getDefaultConfiguration();
+      assertNotNull(fTPClientConfig0.getDefaultDateFormatStr());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      OS400FTPEntryParser oS400FTPEntryParser0 = new OS400FTPEntryParser();
+      // Undeclared exception!
+      try { 
+        oS400FTPEntryParser0.parseFTPEntry((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FTPClientConfig fTPClientConfig0 = new FTPClientConfig("rXX$", "B", "B", "", "", "XMH+");
+      OS400FTPEntryParser oS400FTPEntryParser0 = null;
+      try {
+        oS400FTPEntryParser0 = new OS400FTPEntryParser(fTPClientConfig0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // expecting a pipe-delimited string containing 12 tokens
+         //
+         verifyException("org.apache.commons.net.ftp.FTPClientConfig", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      OS400FTPEntryParser oS400FTPEntryParser0 = new OS400FTPEntryParser();
+      oS400FTPEntryParser0.setRegex("MACOS PETER", 3);
+      // Undeclared exception!
+      try { 
+        oS400FTPEntryParser0.parseFTPEntry("MACOS PETER");
+        fail("Expecting exception: IndexOutOfBoundsException");
+      } catch(IndexOutOfBoundsException e) {
+         //
+         // No group 1
+         //
+         verifyException("java.util.regex.Matcher", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      OS400FTPEntryParser oS400FTPEntryParser0 = new OS400FTPEntryParser();
+      FTPFile fTPFile0 = oS400FTPEntryParser0.parseFTPEntry("UNIX");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      FTPClientConfig fTPClientConfig0 = new FTPClientConfig("R!o]a#py/Z", "R!o]a#py/Z", "R!o]a#py/Z");
+      OS400FTPEntryParser oS400FTPEntryParser0 = null;
+      try {
+        oS400FTPEntryParser0 = new OS400FTPEntryParser(fTPClientConfig0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Illegal pattern character 'R'
+         //
+         verifyException("java.text.SimpleDateFormat", e);
+      }
+  }

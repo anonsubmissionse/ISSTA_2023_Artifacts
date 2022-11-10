@@ -1,0 +1,93 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      defaultExceptionContext0.addContextValue("org.apache.commons.lang3.tuple.Pair", "org.apache.commons.lang3.tuple.Pair");
+      Object object0 = defaultExceptionContext0.getFirstContextValue("org.apache.commons.lang3.tuple.Pair");
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      defaultExceptionContext0.addContextValue((String) null, (Object) null);
+      List<Pair<String, Object>> list0 = defaultExceptionContext0.getContextEntries();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      DefaultExceptionContext defaultExceptionContext1 = defaultExceptionContext0.setContextValue("/ \nException Context:\n\t[1:null=null]\n---------------------------------", "/ \nException Context:\n\t[1:null=null]\n---------------------------------");
+      String string0 = defaultExceptionContext1.getFormattedExceptionMessage((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      DefaultExceptionContext defaultExceptionContext1 = defaultExceptionContext0.addContextValue((String) null, (Object) null);
+      String string0 = defaultExceptionContext1.getFormattedExceptionMessage((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      defaultExceptionContext0.addContextValue((String) null, (Object) null);
+      String string0 = defaultExceptionContext0.getFormattedExceptionMessage("/ ");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      String string0 = defaultExceptionContext0.getFormattedExceptionMessage("/ ");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      String string0 = defaultExceptionContext0.getFormattedExceptionMessage((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      DefaultExceptionContext defaultExceptionContext1 = defaultExceptionContext0.addContextValue((String) null, (Object) null);
+      Set<String> set0 = defaultExceptionContext1.getContextLabels();
+      assertTrue(set0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      Set<String> set0 = defaultExceptionContext0.getContextLabels();
+      assertEquals(1, set0.size());
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      defaultExceptionContext0.addContextValue((String) null, (Object) null);
+      Object object0 = defaultExceptionContext0.getFirstContextValue("/ ");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      defaultExceptionContext0.addContextValue((String) null, (Object) null);
+      List<Object> list0 = defaultExceptionContext0.getContextValues((String) null);
+      assertEquals(0, list0.size());
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      List<Object> list0 = defaultExceptionContext0.getContextValues((String) null);
+      assertEquals(0, list0.size());
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      List<Pair<String, Object>> list0 = defaultExceptionContext0.getContextEntries();
+      assertTrue(list0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      DefaultExceptionContext defaultExceptionContext0 = new DefaultExceptionContext();
+      defaultExceptionContext0.setContextValue("/ \nException Context:\n\t[1:null=null]\n---------------------------------", "/ \nException Context:\n\t[1:null=null]\n---------------------------------");
+      List<Object> list0 = defaultExceptionContext0.getContextValues((String) null);
+      ;
+}

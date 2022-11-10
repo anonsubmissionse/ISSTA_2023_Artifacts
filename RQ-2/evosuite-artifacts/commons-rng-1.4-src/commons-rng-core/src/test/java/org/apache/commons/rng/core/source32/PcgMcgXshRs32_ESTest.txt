@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Long long0 = new Long(2317L);
+      PcgMcgXshRs32 pcgMcgXshRs32_0 = new PcgMcgXshRs32(long0);
+      int int0 = pcgMcgXshRs32_0.transform(2317L);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Long long0 = new Long(2317L);
+      PcgMcgXshRs32 pcgMcgXshRs32_0 = new PcgMcgXshRs32(long0);
+      int int0 = pcgMcgXshRs32_0.transform(6364136223846793005L);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      PcgMcgXshRs32 pcgMcgXshRs32_0 = null;
+      try {
+        pcgMcgXshRs32_0 = new PcgMcgXshRs32((Long) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractPcgMcg6432", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Long long0 = new Long((-2710L));
+      PcgMcgXshRs32 pcgMcgXshRs32_0 = new PcgMcgXshRs32(long0);
+      int int0 = pcgMcgXshRs32_0.transform((-2710L));
+      assertEquals(1, int0);
+}

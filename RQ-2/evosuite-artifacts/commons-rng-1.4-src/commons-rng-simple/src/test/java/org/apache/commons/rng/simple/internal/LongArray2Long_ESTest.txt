@@ -1,0 +1,46 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      LongArray2Long longArray2Long0 = new LongArray2Long();
+      long[] longArray0 = new long[2];
+      longArray0[0] = (-944L);
+      longArray0[1] = 1180L;
+      Long long0 = longArray2Long0.convert(longArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LongArray2Long longArray2Long0 = new LongArray2Long();
+      long[] longArray0 = new long[1];
+      longArray0[0] = (-226L);
+      Long long0 = longArray2Long0.convert(longArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      LongArray2Long longArray2Long0 = new LongArray2Long();
+      long[] longArray0 = new long[2];
+      longArray0[1] = 1180L;
+      Long long0 = longArray2Long0.convert(longArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      LongArray2Long longArray2Long0 = new LongArray2Long();
+      // Undeclared exception!
+      try { 
+        longArray2Long0.convert((long[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.simple.internal.LongArray2Long", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      LongArray2Long longArray2Long0 = new LongArray2Long();
+      long[] longArray0 = new long[1];
+      Long long0 = longArray2Long0.convert(longArray0);
+      ;
+}

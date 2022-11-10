@@ -1,0 +1,59 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Integer integer0 = new Integer(1);
+      FindNodeVisitor<Object> findNodeVisitor0 = new FindNodeVisitor<Object>(integer0);
+      NodeHandler<Object> nodeHandler0 = (NodeHandler<Object>) mock(NodeHandler.class, new ViolatedAssumptionAnswer());
+      findNodeVisitor0.visitBeforeChildren(integer0, nodeHandler0);
+      boolean boolean0 = findNodeVisitor0.terminate();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Integer integer0 = new Integer(1);
+      FindNodeVisitor<Object> findNodeVisitor0 = new FindNodeVisitor<Object>(integer0);
+      NodeHandler<Object> nodeHandler0 = (NodeHandler<Object>) mock(NodeHandler.class, new ViolatedAssumptionAnswer());
+      findNodeVisitor0.visitBeforeChildren(integer0, nodeHandler0);
+      boolean boolean0 = findNodeVisitor0.isFound();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FindNodeVisitor<String> findNodeVisitor0 = new FindNodeVisitor<String>("qXY<gQ~;*%2xEu1d");
+      NodeHandler<String> nodeHandler0 = (NodeHandler<String>) mock(NodeHandler.class, new ViolatedAssumptionAnswer());
+      // Undeclared exception!
+      try { 
+        findNodeVisitor0.visitBeforeChildren((String) null, nodeHandler0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.FindNodeVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FindNodeVisitor<Object> findNodeVisitor0 = new FindNodeVisitor<Object>("");
+      Object object0 = new Object();
+      NodeHandler<Object> nodeHandler0 = (NodeHandler<Object>) mock(NodeHandler.class, new ViolatedAssumptionAnswer());
+      findNodeVisitor0.visitBeforeChildren(object0, nodeHandler0);
+      assertTrue(findNodeVisitor0.isFound());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FindNodeVisitor<Object> findNodeVisitor0 = new FindNodeVisitor<Object>("");
+      boolean boolean0 = findNodeVisitor0.isFound();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FindNodeVisitor<String> findNodeVisitor0 = new FindNodeVisitor<String>("");
+      boolean boolean0 = findNodeVisitor0.terminate();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FindNodeVisitor<Object> findNodeVisitor0 = new FindNodeVisitor<Object>("");
+      findNodeVisitor0.reset();
+      ;
+}

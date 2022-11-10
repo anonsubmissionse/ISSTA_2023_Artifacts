@@ -1,0 +1,39 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OsFamily osFamily0 = new OsFamily((String) null);
+      String string0 = osFamily0.getName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OsFamily[] osFamilyArray0 = new OsFamily[2];
+      OsFamily osFamily0 = new OsFamily("", osFamilyArray0);
+      osFamilyArray0[1] = osFamily0;
+      String string0 = osFamilyArray0[1].getName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      OsFamily[] osFamilyArray0 = new OsFamily[2];
+      OsFamily osFamily0 = new OsFamily("D.72CQ5", osFamilyArray0);
+      OsFamily[] osFamilyArray1 = osFamily0.getFamilies();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      OsFamily osFamily0 = new OsFamily("/~:%mfvHuq=GB\"i");
+      OsFamily[] osFamilyArray0 = osFamily0.getFamilies();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      OsFamily osFamily0 = new OsFamily("/~:%mfvHuq=GB\"i");
+      String string0 = osFamily0.getName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      OsFamily osFamily0 = new OsFamily("", (OsFamily[]) null);
+      OsFamily[] osFamilyArray0 = osFamily0.getFamilies();
+      ;
+}

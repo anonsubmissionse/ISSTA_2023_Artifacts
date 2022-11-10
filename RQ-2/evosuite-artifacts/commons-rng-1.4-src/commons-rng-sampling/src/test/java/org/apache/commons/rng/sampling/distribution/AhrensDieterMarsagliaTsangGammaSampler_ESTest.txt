@@ -1,0 +1,140 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom(1L);
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 1L, 1L);
+      JDKRandomWrapper jDKRandomWrapper1 = new JDKRandomWrapper(mockRandom0);
+      SharedStateContinuousSampler sharedStateContinuousSampler0 = ahrensDieterMarsagliaTsangGammaSampler0.withUniformRandomProvider(jDKRandomWrapper1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Random.setNextRandom((-2146479637));
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 5176.596, 1.5115823505412761E-19);
+      double double0 = ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 1.6408287335525592E-20, 1.6408287335525592E-20);
+      SharedStateContinuousSampler sharedStateContinuousSampler0 = ahrensDieterMarsagliaTsangGammaSampler0.withUniformRandomProvider((UniformRandomProvider) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      byte[] byteArray0 = new byte[3];
+      mockRandom0.nextBytes(byteArray0);
+      jDKRandomWrapper0.nextDouble();
+      mockRandom0.nextBytes(byteArray0);
+      jDKRandomWrapper0.nextLong();
+      jDKRandomWrapper0.nextLong();
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 0.9887451339365031, 2759.4);
+      double double0 = ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 1.6408287335525592E-20, 3.951094848074217E-20);
+      double double0 = ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      SharedStateContinuousSampler sharedStateContinuousSampler0 = AhrensDieterMarsagliaTsangGammaSampler.of((UniformRandomProvider) null, 1.0, 1.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler((UniformRandomProvider) null, 1865.22893, 1865.22893);
+      // Undeclared exception!
+      try { 
+        ahrensDieterMarsagliaTsangGammaSampler0.sample();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = null;
+      try {
+        ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 0.0, (-260.7194888));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // alpha is not strictly positive: 0.0
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.AhrensDieterMarsagliaTsangGammaSampler$BaseGammaSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 0.818022918642018, 0.818022918642018);
+      ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      mockRandom0.nextLong();
+      double double0 = ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 0.818022918642018, 0.818022918642018);
+      ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      mockRandom0.nextLong();
+      double double0 = ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      double double1 = ahrensDieterMarsagliaTsangGammaSampler0.sample();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      // Undeclared exception!
+      try { 
+        AhrensDieterMarsagliaTsangGammaSampler.of(jDKRandomWrapper0, 385.463594541, (-2138.280205192793));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // theta is not strictly positive: -2138.280205192793
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.AhrensDieterMarsagliaTsangGammaSampler$BaseGammaSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      // Undeclared exception!
+      try { 
+        AhrensDieterMarsagliaTsangGammaSampler.of(jDKRandomWrapper0, 0.0, 0.0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // alpha is not strictly positive: 0.0
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.AhrensDieterMarsagliaTsangGammaSampler$BaseGammaSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      AhrensDieterMarsagliaTsangGammaSampler ahrensDieterMarsagliaTsangGammaSampler0 = new AhrensDieterMarsagliaTsangGammaSampler(jDKRandomWrapper0, 0.3, 0.3);
+      String string0 = ahrensDieterMarsagliaTsangGammaSampler0.toString();
+      ;
+}

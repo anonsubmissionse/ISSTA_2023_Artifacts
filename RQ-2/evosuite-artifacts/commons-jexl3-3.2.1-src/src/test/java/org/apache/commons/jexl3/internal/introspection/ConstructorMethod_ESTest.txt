@@ -1,0 +1,104 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConstructorMethod constructorMethod0 = new ConstructorMethod((Constructor<?>) null);
+      Object[] objectArray0 = new Object[0];
+      // Undeclared exception!
+      try { 
+        constructorMethod0.tryInvoke("+F", (Object) null, objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ConstructorMethod", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConstructorMethod constructorMethod0 = new ConstructorMethod((Constructor<?>) null);
+      Object[] objectArray0 = new Object[14];
+      try { 
+        constructorMethod0.invoke("r[`Cj>KO}L@n<z?}-v", objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ConstructorMethod", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object[] objectArray0 = new Object[7];
+      // Undeclared exception!
+      try { 
+        ConstructorMethod.discover((Introspector) null, "", objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ConstructorMethod", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      NoOpLog noOpLog0 = new NoOpLog();
+      Introspector introspector0 = new Introspector(noOpLog0, (ClassLoader) null);
+      Object[] objectArray0 = new Object[1];
+      // Undeclared exception!
+      try { 
+        ConstructorMethod.discover(introspector0, introspector0, objectArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.Introspector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ConstructorMethod constructorMethod0 = new ConstructorMethod((Constructor<?>) null);
+      boolean boolean0 = constructorMethod0.tryFailed(constructorMethod0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Object[] objectArray0 = new Object[7];
+      SimpleLog simpleLog0 = new SimpleLog("qhA+MZ^xZ3yKMwY");
+      Introspector introspector0 = new Introspector(simpleLog0, classLoader0);
+      ConstructorMethod constructorMethod0 = ConstructorMethod.discover(introspector0, objectArray0[3], objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Object[] objectArray0 = new Object[7];
+      Class<Annotation> class0 = Annotation.class;
+      SimpleLog simpleLog0 = new SimpleLog("qhA+MZ^xZ3yKMwY");
+      Introspector introspector0 = new Introspector(simpleLog0, classLoader0);
+      ConstructorMethod constructorMethod0 = ConstructorMethod.discover(introspector0, class0, objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ConstructorMethod constructorMethod0 = new ConstructorMethod((Constructor<?>) null);
+      boolean boolean0 = constructorMethod0.isCacheable();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ConstructorMethod constructorMethod0 = new ConstructorMethod((Constructor<?>) null);
+      // Undeclared exception!
+      try { 
+        constructorMethod0.getReturnType();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ConstructorMethod", e);
+      }
+  }

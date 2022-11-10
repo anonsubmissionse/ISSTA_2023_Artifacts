@@ -1,0 +1,50 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SubnetUtils subnetUtils0 = null;
+      try {
+        subnetUtils0 = new SubnetUtils((String) null, "qUhzi?");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SubnetUtils subnetUtils0 = null;
+      try {
+        subnetUtils0 = new SubnetUtils((String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SubnetUtils subnetUtils0 = null;
+      try {
+        subnetUtils0 = new SubnetUtils("", "RBG OdbCzP@3O@3");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Could not parse []
+         //
+         verifyException("org.apache.commons.net.util.SubnetUtils", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      SubnetUtils subnetUtils0 = null;
+      try {
+        subnetUtils0 = new SubnetUtils("");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Could not parse []
+         //
+         verifyException("org.apache.commons.net.util.SubnetUtils", e);
+      }
+  }

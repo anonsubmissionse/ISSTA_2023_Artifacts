@@ -1,0 +1,31 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      I2B i2B0 = new I2B();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        i2B0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      I2B i2B0 = new I2B();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      i2B0.setOpcode((short) (-4443));
+      // Undeclared exception!
+      try { 
+        i2B0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -4443
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }

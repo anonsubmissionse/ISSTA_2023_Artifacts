@@ -1,0 +1,5 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Integer integer0 = new Integer(0);
+      WeavableConstructorParameter<Locale.FilteringMode> weavableConstructorParameter0 = new WeavableConstructorParameter<Locale.FilteringMode>(integer0, (WeavableConstructor<Locale.FilteringMode>) null);
+  }

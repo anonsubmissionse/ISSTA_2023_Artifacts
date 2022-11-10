@@ -1,0 +1,138 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 0, 0, 0, 0, 0);
+      ZonedDateTime zonedDateTime0 = mockGregorianCalendar0.toZonedDateTime();
+      GregorianCalendar gregorianCalendar0 = MockGregorianCalendar.from(zonedDateTime0);
+      CalendarUtils calendarUtils0 = new CalendarUtils(gregorianCalendar0);
+      int int0 = calendarUtils0.getMonth();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar();
+      mockGregorianCalendar0.setTimeZone((TimeZone) null);
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      // Undeclared exception!
+      try { 
+        calendarUtils0.getYear();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(4489, 4489, 1807, 0, (-1278), 0);
+      mockGregorianCalendar0.setLenient(false);
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      // Undeclared exception!
+      try { 
+        calendarUtils0.getYear();
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // MONTH
+         //
+         verifyException("java.util.GregorianCalendar", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar();
+      mockGregorianCalendar0.setTimeZone((TimeZone) null);
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      // Undeclared exception!
+      try { 
+        calendarUtils0.getMonth();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar();
+      mockGregorianCalendar0.set(0, (-1));
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      // Undeclared exception!
+      try { 
+        calendarUtils0.getMonth();
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Invalid era
+         //
+         verifyException("java.util.GregorianCalendar", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Locale locale0 = Locale.GERMAN;
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
+      mockGregorianCalendar0.setTimeZone((TimeZone) null);
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      // Undeclared exception!
+      try { 
+        calendarUtils0.getDayOfMonth();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(848, 848, 848, 848, 369);
+      mockGregorianCalendar0.setLenient(false);
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      // Undeclared exception!
+      try { 
+        calendarUtils0.getDayOfMonth();
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // MONTH
+         //
+         verifyException("java.util.GregorianCalendar", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar();
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      int int0 = calendarUtils0.getYear();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar();
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      int int0 = calendarUtils0.getMonth();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Locale locale0 = Locale.GERMAN;
+      MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
+      CalendarUtils calendarUtils0 = new CalendarUtils(mockGregorianCalendar0);
+      int int0 = calendarUtils0.getDayOfMonth();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      CalendarUtils calendarUtils0 = null;
+      try {
+        calendarUtils0 = new CalendarUtils((Calendar) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // calendar
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }

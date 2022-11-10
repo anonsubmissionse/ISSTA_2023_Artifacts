@@ -1,0 +1,57 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IntegerColumnHandler integerColumnHandler0 = new IntegerColumnHandler();
+      // Undeclared exception!
+      try { 
+        integerColumnHandler0.match((Class<?>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.IntegerColumnHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      IntegerColumnHandler integerColumnHandler0 = new IntegerColumnHandler();
+      // Undeclared exception!
+      try { 
+        integerColumnHandler0.apply((ResultSet) null, 2249);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.IntegerColumnHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      IntegerColumnHandler integerColumnHandler0 = new IntegerColumnHandler();
+      Class<Integer> class0 = Integer.class;
+      boolean boolean0 = integerColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      IntegerColumnHandler integerColumnHandler0 = new IntegerColumnHandler();
+      Class<Object> class0 = Object.class;
+      boolean boolean0 = integerColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      IntegerColumnHandler integerColumnHandler0 = new IntegerColumnHandler();
+      Class<Integer> class0 = Integer.TYPE;
+      boolean boolean0 = integerColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      IntegerColumnHandler integerColumnHandler0 = new IntegerColumnHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(0).when(resultSet0).getInt(anyInt());
+      Object object0 = integerColumnHandler0.apply(resultSet0, 1);
+      assertEquals(0, object0);
+}

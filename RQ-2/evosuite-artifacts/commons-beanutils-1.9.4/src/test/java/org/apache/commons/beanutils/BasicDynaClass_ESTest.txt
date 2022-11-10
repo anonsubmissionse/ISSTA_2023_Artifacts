@@ -1,0 +1,31 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<LazyDynaMap> class0 = LazyDynaMap.class;
+      BasicDynaClass basicDynaClass0 = new BasicDynaClass((String) null, class0);
+      assertNotNull(basicDynaClass0.getName());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DynaProperty[] dynaPropertyArray0 = new DynaProperty[0];
+      BasicDynaClass basicDynaClass0 = new BasicDynaClass("TIH=ls", (Class<?>) null, dynaPropertyArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Class<LazyDynaClass> class0 = LazyDynaClass.class;
+      BasicDynaClass basicDynaClass0 = null;
+      try {
+        basicDynaClass0 = new BasicDynaClass((String) null, class0, (DynaProperty[]) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Class org.apache.commons.beanutils.LazyDynaClass does not implement DynaBean
+         //
+         verifyException("org.apache.commons.beanutils.BasicDynaClass", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      BasicDynaClass basicDynaClass0 = new BasicDynaClass();
+      ;
+}

@@ -1,0 +1,61 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      long[] longArray0 = new long[3];
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus(longArray0);
+      long long0 = xoRoShiRo1024PlusPlus0.transform(0L, 0L);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      long[] longArray0 = new long[2];
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus(longArray0);
+      long long0 = xoRoShiRo1024PlusPlus0.transform(1296L, 1L);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      long[] longArray0 = new long[0];
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus(longArray0);
+      long long0 = xoRoShiRo1024PlusPlus0.transform((-1379L), 5L);
+      assertEquals(1, long0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = null;
+      try {
+        xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus((long[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      long[] longArray0 = new long[0];
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus(longArray0);
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus1 = new XoRoShiRo1024PlusPlus(xoRoShiRo1024PlusPlus0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      long[] longArray0 = new long[7];
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus(longArray0);
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus1 = xoRoShiRo1024PlusPlus0.copy();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      XoRoShiRo1024PlusPlus xoRoShiRo1024PlusPlus0 = null;
+      try {
+        xoRoShiRo1024PlusPlus0 = new XoRoShiRo1024PlusPlus((XoRoShiRo1024PlusPlus) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source64.LongProvider", e);
+      }
+  }

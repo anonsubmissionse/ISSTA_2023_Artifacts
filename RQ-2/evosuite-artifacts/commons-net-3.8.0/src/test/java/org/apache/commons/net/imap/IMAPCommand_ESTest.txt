@@ -1,0 +1,41 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IMAPCommand[] iMAPCommandArray0 = IMAPCommand.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      IMAPCommand iMAPCommand0 = IMAPCommand.valueOf("CAPABILITY");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        IMAPCommand.getCommand((IMAPCommand) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.imap.IMAPCommand", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      IMAPCommand iMAPCommand0 = IMAPCommand.LIST;
+      String string0 = iMAPCommand0.getIMAPCommand();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      IMAPCommand iMAPCommand0 = IMAPCommand.LIST;
+      String string0 = IMAPCommand.getCommand(iMAPCommand0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      IMAPCommand iMAPCommand0 = IMAPCommand.LIST;
+      String string0 = IMAPCommand.getCommand(iMAPCommand0);
+      ;
+}

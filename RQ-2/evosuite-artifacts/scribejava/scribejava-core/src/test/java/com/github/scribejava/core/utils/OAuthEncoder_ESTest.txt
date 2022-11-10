@@ -1,0 +1,59 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String string0 = OAuthEncoder.encode("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = OAuthEncoder.decode("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        OAuthEncoder.encode((String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Cannot encode null object
+         //
+         verifyException("com.github.scribejava.core.utils.Preconditions", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        OAuthEncoder.decode("`qQeXyBFI5u%");
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // URLDecoder: Incomplete trailing escape (%) pattern
+         //
+         verifyException("java.net.URLDecoder", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        OAuthEncoder.decode((String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Cannot decode null object
+         //
+         verifyException("com.github.scribejava.core.utils.Preconditions", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      String string0 = OAuthEncoder.encode(")^LWzu,j");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String string0 = OAuthEncoder.decode("{P.SjDggQ9D*Ab");
+      ;
+}

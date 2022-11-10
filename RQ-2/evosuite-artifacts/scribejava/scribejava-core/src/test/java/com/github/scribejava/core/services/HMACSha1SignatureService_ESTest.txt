@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      HMACSha1SignatureService hMACSha1SignatureService0 = new HMACSha1SignatureService();
+      // Undeclared exception!
+      try { 
+        hMACSha1SignatureService0.getSignature("", "[0!~t39jXn0e=Rf!Bm", "[0!~t39jXn0e=Rf!Bm");
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error while signing string: 
+         //
+         verifyException("com.github.scribejava.core.services.HMACSha1SignatureService", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      HMACSha1SignatureService hMACSha1SignatureService0 = new HMACSha1SignatureService();
+      String string0 = hMACSha1SignatureService0.getSignature("(0:k", "", "com.github.scribejava.core.services.HMACSha1SignatureService");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      HMACSha1SignatureService hMACSha1SignatureService0 = new HMACSha1SignatureService();
+      String string0 = hMACSha1SignatureService0.getSignatureMethod();
+      assertNotNull(string0);
+}

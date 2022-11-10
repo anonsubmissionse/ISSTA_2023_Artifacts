@@ -1,0 +1,47 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BinomialCoefficientDouble.value(67, 2);
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = BinomialCoefficientDouble.value(66, 33);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        BinomialCoefficientDouble.value(680, (-138));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Number -138 is out of range [0, 680]
+         //
+         verifyException("org.apache.commons.numbers.combinatorics.BinomialCoefficient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      double double0 = BinomialCoefficientDouble.value(1453, 815);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      double double0 = BinomialCoefficientDouble.value(48, 47);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      double double0 = BinomialCoefficientDouble.value(541, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      double double0 = BinomialCoefficientDouble.value(886, 1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      double double0 = BinomialCoefficientDouble.value(886, 886);
+      ;
+}

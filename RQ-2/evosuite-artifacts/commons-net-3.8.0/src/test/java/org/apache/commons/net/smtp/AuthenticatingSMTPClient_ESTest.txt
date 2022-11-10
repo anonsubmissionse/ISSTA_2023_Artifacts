@@ -1,0 +1,161 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient("");
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.getEnhancedReplyCode();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.smtp.AuthenticatingSMTPClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.XOAUTH;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.XOAUTH;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.LOGIN;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.LOGIN;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.CRAM_MD5;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.CRAM_MD5;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient((String) null);
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.ehlo("yRFr>M\rEolR!");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.smtp.SMTP", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.XOAUTH2;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.XOAUTH2;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.PLAIN;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.PLAIN;
+      String string0 = AuthenticatingSMTPClient.AUTH_METHOD.getAuthName(authenticatingSMTPClient_AUTH_METHOD0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient("./'B#6j8H", false);
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.XOAUTH;
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.auth(authenticatingSMTPClient_AUTH_METHOD0, "./'B#6j8H", "./'B#6j8H");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.smtp.SMTP", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient("", "");
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.elogin("");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.smtp.SMTP", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient();
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.LOGIN;
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.auth(authenticatingSMTPClient_AUTH_METHOD0, "t>+WEX?Ays", "t>+WEX?Ays");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.smtp.SMTP", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient(false, (SSLContext) null);
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.elogin();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.SocketClient", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      AuthenticatingSMTPClient authenticatingSMTPClient0 = new AuthenticatingSMTPClient("9JqR`O", false, "9JqR`O");
+      AuthenticatingSMTPClient.AUTH_METHOD authenticatingSMTPClient_AUTH_METHOD0 = AuthenticatingSMTPClient.AUTH_METHOD.CRAM_MD5;
+      // Undeclared exception!
+      try { 
+        authenticatingSMTPClient0.auth(authenticatingSMTPClient_AUTH_METHOD0, "\r\n", "\r\n");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.smtp.SMTP", e);
+      }
+  }

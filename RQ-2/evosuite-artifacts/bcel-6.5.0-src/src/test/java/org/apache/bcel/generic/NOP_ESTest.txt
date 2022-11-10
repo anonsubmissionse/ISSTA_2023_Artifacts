@@ -1,0 +1,21 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NOP nOP0 = new NOP();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      nOP0.accept(instConstraintVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NOP nOP0 = new NOP();
+      // Undeclared exception!
+      try { 
+        nOP0.accept((Visitor) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.NOP", e);
+      }
+  }

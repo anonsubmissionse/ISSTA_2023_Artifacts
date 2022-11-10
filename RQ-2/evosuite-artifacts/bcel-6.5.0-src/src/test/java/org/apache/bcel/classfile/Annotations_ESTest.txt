@@ -1,0 +1,15 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Constant[] constantArray0 = new Constant[4];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      RuntimeInvisibleAnnotations runtimeInvisibleAnnotations0 = null;
+      try {
+        runtimeInvisibleAnnotations0 = new RuntimeInvisibleAnnotations((-1519), (-1519), (DataInput) null, constantPool0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.Annotations", e);
+      }
+  }

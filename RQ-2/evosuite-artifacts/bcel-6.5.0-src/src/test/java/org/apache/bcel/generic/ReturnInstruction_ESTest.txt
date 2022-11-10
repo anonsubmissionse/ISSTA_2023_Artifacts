@@ -1,0 +1,61 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      RETURN rETURN0 = new RETURN();
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      Type type0 = rETURN0.getType(constantPoolGen0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      IRETURN iRETURN0 = (IRETURN)InstructionConstants.IRETURN;
+      Type type0 = iRETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DRETURN dRETURN0 = (DRETURN)InstructionConstants.DRETURN;
+      Type type0 = dRETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      RETURN rETURN0 = new RETURN();
+      Type type0 = rETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ARETURN aRETURN0 = new ARETURN();
+      ObjectType objectType0 = (ObjectType)aRETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DRETURN dRETURN0 = new DRETURN();
+      Type type0 = dRETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FRETURN fRETURN0 = new FRETURN();
+      Type type0 = fRETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      LRETURN lRETURN0 = new LRETURN();
+      Type type0 = lRETURN0.getType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      LRETURN lRETURN0 = (LRETURN)InstructionConstants.LRETURN;
+      Class<?>[] classArray0 = lRETURN0.getExceptions();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      IRETURN iRETURN0 = new IRETURN();
+      Type type0 = iRETURN0.getType((ConstantPoolGen) null);
+      ;
+}

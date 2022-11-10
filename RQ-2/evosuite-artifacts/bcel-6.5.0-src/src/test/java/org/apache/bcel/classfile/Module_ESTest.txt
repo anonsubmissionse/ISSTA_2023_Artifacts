@@ -1,0 +1,288 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte) (-89), dataInputStream0, (ConstantPool) null);
+      // Undeclared exception!
+      try { 
+        module0.toString();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.Module", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte)0, dataInputStream0, (ConstantPool) null);
+      MockFile mockFile0 = new MockFile("", "WL+[kO\"E`[SV|.X");
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockFileOutputStream0);
+      module0.setLength((byte)70);
+      module0.dump(dataOutputStream0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module((byte) (-89), (byte)70, dataInputStream0, (ConstantPool) null);
+      Attribute attribute0 = module0.copy((ConstantPool) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte) (-89), dataInputStream0, (ConstantPool) null);
+      Attribute attribute0 = module0.copy((ConstantPool) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte)70, dataInputStream0, (ConstantPool) null);
+      DataOutputStream dataOutputStream0 = new DataOutputStream((OutputStream) null);
+      // Undeclared exception!
+      try { 
+        module0.dump(dataOutputStream0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte)70, dataInputStream0, (ConstantPool) null);
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("]^0:BuQHT{`})b%", true);
+      mockFileOutputStream0.close();
+      DataOutputStream dataOutputStream0 = new DataOutputStream(mockFileOutputStream0);
+      try { 
+        module0.dump(dataOutputStream0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileOutputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module((byte)46, (byte)0, dataInputStream0, (ConstantPool) null);
+      // Undeclared exception!
+      try { 
+        module0.accept((Visitor) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.Module", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Constant[] constantArray0 = new Constant[2];
+      ConstantPool constantPool0 = new ConstantPool(constantArray0);
+      Module module0 = null;
+      try {
+        module0 = new Module(1400, 189, (DataInput) null, constantPool0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.classfile.Module", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      byte[] byteArray0 = new byte[3];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (-520), 2178);
+      PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
+      DataInputStream dataInputStream0 = new DataInputStream(pushbackInputStream0);
+      ConstantPool constantPool0 = new ConstantPool((Constant[]) null);
+      Module module0 = null;
+      try {
+        module0 = new Module(21674, 21674, dataInputStream0, constantPool0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+      }
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      PipedInputStream pipedInputStream0 = new PipedInputStream(47);
+      DataInputStream dataInputStream0 = new DataInputStream(pipedInputStream0);
+      Module module0 = null;
+      try {
+        module0 = new Module(47, 107, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: IOException");
+      } catch(Throwable e) {
+         //
+         // Pipe not connected
+         //
+         verifyException("java.io.PipedInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module((byte)0, (byte)0, dataInputStream0, (ConstantPool) null);
+      Attribute attribute0 = module0.copy((ConstantPool) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      byte[] byteArray0 = new byte[17];
+      byteArray0[15] = (byte)79;
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = null;
+      try {
+        module0 = new Module(1, (byte)79, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      byte[] byteArray0 = new byte[14];
+      byteArray0[12] = (byte)70;
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = null;
+      try {
+        module0 = new Module((byte)70, (byte)70, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      byte[] byteArray0 = new byte[12];
+      byteArray0[10] = (byte)70;
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = null;
+      try {
+        module0 = new Module((byte)70, (byte)0, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      byte[] byteArray0 = new byte[20];
+      byteArray0[8] = (byte)70;
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = null;
+      try {
+        module0 = new Module((byte)70, (byte)70, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      ClassPath classPath0 = ClassPath.SYSTEM_CLASS_PATH;
+      InputStream inputStream0 = classPath0.getInputStream("", "");
+      DataInputStream dataInputStream0 = new DataInputStream(inputStream0);
+      Module module0 = null;
+      try {
+        module0 = new Module(77, 77, dataInputStream0, (ConstantPool) null);
+        fail("Expecting exception: EOFException");
+      } catch(Throwable e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.DataInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module((byte)46, (byte)0, dataInputStream0, (ConstantPool) null);
+      ModuleRequires[] moduleRequiresArray0 = module0.getRequiresTable();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte)0, dataInputStream0, (ConstantPool) null);
+      ModuleOpens[] moduleOpensArray0 = module0.getOpensTable();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module((byte)46, (byte)0, dataInputStream0, (ConstantPool) null);
+      EmptyVisitor emptyVisitor0 = new EmptyVisitor();
+      module0.accept(emptyVisitor0);
+      assertEquals(1, module0.getLength());
+}
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module(19, (byte)0, dataInputStream0, (ConstantPool) null);
+      ModuleProvides[] moduleProvidesArray0 = module0.getProvidesTable();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      byte[] byteArray0 = new byte[16];
+      ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+      DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
+      Module module0 = new Module((byte)46, (byte)0, dataInputStream0, (ConstantPool) null);
+      ModuleExports[] moduleExportsArray0 = module0.getExportsTable();
+      ;
+}

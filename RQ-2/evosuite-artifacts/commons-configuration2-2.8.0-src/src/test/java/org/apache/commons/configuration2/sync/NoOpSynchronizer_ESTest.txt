@@ -1,0 +1,30 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NoOpSynchronizer[] noOpSynchronizerArray0 = NoOpSynchronizer.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NoOpSynchronizer noOpSynchronizer0 = NoOpSynchronizer.valueOf("INSTANCE");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      NoOpSynchronizer noOpSynchronizer0 = NoOpSynchronizer.INSTANCE;
+      noOpSynchronizer0.endWrite();
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      NoOpSynchronizer noOpSynchronizer0 = NoOpSynchronizer.INSTANCE;
+      noOpSynchronizer0.endRead();
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      NoOpSynchronizer noOpSynchronizer0 = NoOpSynchronizer.INSTANCE;
+      noOpSynchronizer0.beginRead();
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      NoOpSynchronizer noOpSynchronizer0 = NoOpSynchronizer.INSTANCE;
+      noOpSynchronizer0.beginWrite();
+  }

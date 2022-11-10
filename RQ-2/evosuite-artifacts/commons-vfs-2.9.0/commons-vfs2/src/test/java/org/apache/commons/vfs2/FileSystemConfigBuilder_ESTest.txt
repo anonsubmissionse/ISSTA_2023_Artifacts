@@ -1,0 +1,36 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultFileSystemConfigBuilder defaultFileSystemConfigBuilder0 = DefaultFileSystemConfigBuilder.getInstance();
+      FileSystemOptions fileSystemOptions0 = new FileSystemOptions();
+      defaultFileSystemConfigBuilder0.setRootURI(fileSystemOptions0, "");
+      String string0 = defaultFileSystemConfigBuilder0.getRootURI(fileSystemOptions0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DefaultFileSystemConfigBuilder defaultFileSystemConfigBuilder0 = new DefaultFileSystemConfigBuilder();
+      // Undeclared exception!
+      try { 
+        defaultFileSystemConfigBuilder0.setRootURI((FileSystemOptions) null, "V*osAa.L;21rH;tX+");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // fileSystemOptions
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DefaultFileSystemConfigBuilder defaultFileSystemConfigBuilder0 = new DefaultFileSystemConfigBuilder();
+      String string0 = defaultFileSystemConfigBuilder0.getRootURI((FileSystemOptions) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DefaultFileSystemConfigBuilder defaultFileSystemConfigBuilder0 = new DefaultFileSystemConfigBuilder();
+      FileSystemOptions fileSystemOptions0 = new FileSystemOptions();
+      defaultFileSystemConfigBuilder0.setRootURI(fileSystemOptions0, "PxM#iCDZTs>");
+      String string0 = defaultFileSystemConfigBuilder0.getRootURI(fileSystemOptions0);
+      ;
+}

@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeavableMethod<Integer> weavableMethod0 = null;
+      try {
+        weavableMethod0 = new WeavableMethod<Integer>((Method) null, (WeavableClass<Integer>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.model.WeavableMethod", e);
+      }
+  }

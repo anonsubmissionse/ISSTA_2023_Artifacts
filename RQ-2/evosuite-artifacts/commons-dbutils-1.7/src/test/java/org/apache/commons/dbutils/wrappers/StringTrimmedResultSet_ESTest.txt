@@ -1,0 +1,14 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Proxy proxy0 = (Proxy)StringTrimmedResultSet.wrap((ResultSet) null);
+      StringTrimmedResultSet stringTrimmedResultSet0 = new StringTrimmedResultSet((ResultSet) proxy0);
+      try { 
+        stringTrimmedResultSet0.invoke((Object) null, (Method) null, (Object[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.wrappers.StringTrimmedResultSet", e);
+      }
+  }

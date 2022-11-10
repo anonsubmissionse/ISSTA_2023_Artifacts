@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OAuth1RequestTokenExtractor oAuth1RequestTokenExtractor0 = new OAuth1RequestTokenExtractor();
+      OAuth1RequestToken oAuth1RequestToken0 = oAuth1RequestTokenExtractor0.createToken("JKux}?<>.V", "JKux}?<>.V", "|)H1.");
+      assertNotNull(oAuth1RequestToken0.getTokenSecret());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OAuth1RequestTokenExtractor oAuth1RequestTokenExtractor0 = new OAuth1RequestTokenExtractor();
+      OAuth1RequestToken oAuth1RequestToken0 = oAuth1RequestTokenExtractor0.createToken("JKux}?<>.V", "JKux}?<>.V", "|)H1.");
+      assertNotNull(oAuth1RequestToken0.getToken());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      OAuth1RequestTokenExtractor oAuth1RequestTokenExtractor0 = new OAuth1RequestTokenExtractor();
+      OAuth1RequestToken oAuth1RequestToken0 = oAuth1RequestTokenExtractor0.createToken("", "", "");
+      assertNotNull(oAuth1RequestToken0.getToken());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      OAuth1RequestTokenExtractor oAuth1RequestTokenExtractor0 = new OAuth1RequestTokenExtractor();
+      // Undeclared exception!
+      try { 
+        oAuth1RequestTokenExtractor0.createToken("com.github.scribejava.core.extractors.OAuth1RequestTokenExtractor", (String) null, (String) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // oauth_token_secret can't be null
+         //
+         verifyException("com.github.scribejava.core.utils.Preconditions", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      OAuth1RequestTokenExtractor oAuth1RequestTokenExtractor0 = OAuth1RequestTokenExtractor.instance();
+      assertNotNull(oAuth1RequestTokenExtractor0);
+}

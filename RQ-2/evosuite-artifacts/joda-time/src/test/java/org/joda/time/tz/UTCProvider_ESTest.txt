@@ -1,0 +1,18 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      UTCProvider uTCProvider0 = new UTCProvider();
+      DateTimeZone dateTimeZone0 = uTCProvider0.getZone("UTC");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      UTCProvider uTCProvider0 = new UTCProvider();
+      DateTimeZone dateTimeZone0 = uTCProvider0.getZone("uta");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      UTCProvider uTCProvider0 = new UTCProvider();
+      Set<String> set0 = uTCProvider0.getAvailableIDs();
+      assertTrue(set0.isEmpty());
+}

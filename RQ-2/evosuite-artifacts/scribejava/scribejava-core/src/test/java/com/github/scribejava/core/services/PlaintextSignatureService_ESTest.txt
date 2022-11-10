@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      PlaintextSignatureService plaintextSignatureService0 = new PlaintextSignatureService();
+      // Undeclared exception!
+      try { 
+        plaintextSignatureService0.getSignature("jZ%213&bcrI6", "jZ%213&bcrI6", (String) null);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error while signing string: jZ%213&bcrI6
+         //
+         verifyException("com.github.scribejava.core.services.PlaintextSignatureService", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      PlaintextSignatureService plaintextSignatureService0 = new PlaintextSignatureService();
+      String string0 = plaintextSignatureService0.getSignature("PLAINTEXT", "PLAINTEXT", "");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      PlaintextSignatureService plaintextSignatureService0 = new PlaintextSignatureService();
+      // Undeclared exception!
+      try { 
+        plaintextSignatureService0.getSignature((String) null, "PLAINTEXT", (String) null);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error while signing string: null
+         //
+         verifyException("com.github.scribejava.core.services.PlaintextSignatureService", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      PlaintextSignatureService plaintextSignatureService0 = new PlaintextSignatureService();
+      String string0 = plaintextSignatureService0.getSignatureMethod();
+      ;
+}

@@ -1,0 +1,60 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      intArray0[0] = 5667;
+      XoShiRo128StarStar xoShiRo128StarStar0 = new XoShiRo128StarStar(intArray0);
+      int int0 = xoShiRo128StarStar0.nextOutput();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      XoShiRo128StarStar xoShiRo128StarStar0 = new XoShiRo128StarStar((-2459), (-2459), (-2459), (-2459));
+      int int0 = xoShiRo128StarStar0.nextOutput();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      XoShiRo128StarStar xoShiRo128StarStar0 = null;
+      try {
+        xoShiRo128StarStar0 = new XoShiRo128StarStar((int[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.AbstractXoShiRo128", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      XoShiRo128StarStar xoShiRo128StarStar0 = null;
+      try {
+        xoShiRo128StarStar0 = new XoShiRo128StarStar((XoShiRo128StarStar) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.IntProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      int[] intArray0 = new int[1];
+      XoShiRo128StarStar xoShiRo128StarStar0 = new XoShiRo128StarStar(intArray0);
+      XoShiRo128StarStar xoShiRo128StarStar1 = new XoShiRo128StarStar(xoShiRo128StarStar0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      int[] intArray0 = new int[16];
+      XoShiRo128StarStar xoShiRo128StarStar0 = new XoShiRo128StarStar(intArray0);
+      XoShiRo128StarStar xoShiRo128StarStar1 = xoShiRo128StarStar0.copy();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      XoShiRo128StarStar xoShiRo128StarStar0 = new XoShiRo128StarStar(0, (-1), 0, 501);
+      int int0 = xoShiRo128StarStar0.nextOutput();
+      assertEquals(1, int0);
+}

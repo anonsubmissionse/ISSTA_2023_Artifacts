@@ -1,0 +1,60 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator1 = FailableLongUnaryOperator.nop();
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator2 = failableLongUnaryOperator0.andThen(failableLongUnaryOperator1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      long long0 = failableLongUnaryOperator0.applyAsLong(0L);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      long long0 = failableLongUnaryOperator0.applyAsLong(1L);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      long long0 = failableLongUnaryOperator0.applyAsLong((-36L));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      // Undeclared exception!
+      try { 
+        failableLongUnaryOperator0.compose((FailableLongUnaryOperator<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      // Undeclared exception!
+      try { 
+        failableLongUnaryOperator0.andThen((FailableLongUnaryOperator<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator0 = FailableLongUnaryOperator.identity();
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator1 = failableLongUnaryOperator0.andThen(failableLongUnaryOperator0);
+      FailableLongUnaryOperator<Throwable> failableLongUnaryOperator2 = failableLongUnaryOperator0.compose(failableLongUnaryOperator1);
+      ;
+}

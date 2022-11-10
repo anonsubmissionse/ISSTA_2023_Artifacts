@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SqlTimeConverter sqlTimeConverter0 = new SqlTimeConverter((Object) null);
+      Class<?> class0 = sqlTimeConverter0.getDefaultType();
+      assertTrue(class0.isInterface());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SqlTimeConverter sqlTimeConverter0 = new SqlTimeConverter((Object) null);
+      SimpleDateFormat simpleDateFormat0 = (SimpleDateFormat)sqlTimeConverter0.getFormat((Locale) null, (TimeZone) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SqlTimeConverter sqlTimeConverter0 = new SqlTimeConverter();
+      Locale locale0 = Locale.CHINA;
+      TimeZone timeZone0 = TimeZone.getDefault();
+      SimpleDateFormat simpleDateFormat0 = (SimpleDateFormat)sqlTimeConverter0.getFormat(locale0, timeZone0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Object object0 = new Object();
+      SqlTimeConverter sqlTimeConverter0 = null;
+      try {
+        sqlTimeConverter0 = new SqlTimeConverter(object0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // String must be in JDBC format [HH:mm:ss] to create a java.sql.Time
+         //
+         verifyException("org.apache.commons.beanutils.converters.DateTimeConverter", e);
+      }
+  }

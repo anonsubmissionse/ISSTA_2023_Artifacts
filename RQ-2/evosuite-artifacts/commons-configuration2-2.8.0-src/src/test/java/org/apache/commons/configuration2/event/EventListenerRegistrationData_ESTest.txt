@@ -1,0 +1,104 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      MergeCombiner mergeCombiner0 = new MergeCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(mergeCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      EventListener<? super ConfigurationEvent> eventListener0 = eventListenerRegistrationData0.getListener();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      MergeCombiner mergeCombiner0 = new MergeCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(mergeCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      EventType<ConfigurationEvent> eventType1 = eventListenerRegistrationData0.getEventType();
+      assertNotNull(eventType1.getName());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      MergeCombiner mergeCombiner0 = new MergeCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(mergeCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData1 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      boolean boolean0 = eventListenerRegistrationData0.equals(eventListenerRegistrationData1);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      EventType<ConfigurationErrorEvent> eventType0 = new EventType<ConfigurationErrorEvent>((EventType<? super ConfigurationErrorEvent>) null, "");
+      EventListener<ConfigurationErrorEvent> eventListener0 = (EventListener<ConfigurationErrorEvent>) mock(EventListener.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(eventListener0).toString();
+      EventListenerRegistrationData<ConfigurationErrorEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationErrorEvent>(eventType0, eventListener0);
+      EventType<ConfigurationEvent> eventType1 = ConfigurationEvent.ANY_HIERARCHICAL;
+      OverrideCombiner overrideCombiner0 = new OverrideCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(overrideCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData1 = new EventListenerRegistrationData<ConfigurationEvent>(eventType1, combinedConfiguration0);
+      boolean boolean0 = eventListenerRegistrationData0.equals(eventListenerRegistrationData1);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      MergeCombiner mergeCombiner0 = new MergeCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(mergeCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      boolean boolean0 = eventListenerRegistrationData0.equals(eventType0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      MergeCombiner mergeCombiner0 = new MergeCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(mergeCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      boolean boolean0 = eventListenerRegistrationData0.equals(eventListenerRegistrationData0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.SET_PROPERTY;
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = null;
+      try {
+        eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, (EventListener<? super ConfigurationEvent>) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Listener to be registered must not be null!
+         //
+         verifyException("org.apache.commons.configuration2.event.EventListenerRegistrationData", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration();
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = null;
+      try {
+        eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>((EventType<ConfigurationEvent>) null, combinedConfiguration0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Event type must not be null!
+         //
+         verifyException("org.apache.commons.configuration2.event.EventListenerRegistrationData", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      MergeCombiner mergeCombiner0 = new MergeCombiner();
+      CombinedConfiguration combinedConfiguration0 = new CombinedConfiguration(mergeCombiner0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, combinedConfiguration0);
+      eventListenerRegistrationData0.hashCode();
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      EventType<ConfigurationEvent> eventType0 = ConfigurationEvent.ANY_HIERARCHICAL;
+      DynamicCombinedConfiguration dynamicCombinedConfiguration0 = new DynamicCombinedConfiguration();
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData0 = new EventListenerRegistrationData<ConfigurationEvent>(eventType0, dynamicCombinedConfiguration0);
+      EventListenerRegistrationData<ConfigurationEvent> eventListenerRegistrationData1 = new EventListenerRegistrationData<ConfigurationEvent>(dynamicCombinedConfiguration0.COMBINED_INVALIDATE, dynamicCombinedConfiguration0);
+      boolean boolean0 = eventListenerRegistrationData0.equals(eventListenerRegistrationData1);
+      assertTrue(boolean0);
+}

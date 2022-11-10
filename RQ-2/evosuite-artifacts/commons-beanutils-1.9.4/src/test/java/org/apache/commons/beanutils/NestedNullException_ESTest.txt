@@ -1,0 +1,8 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NestedNullException nestedNullException0 = new NestedNullException("Tx97nEP7t_@/1");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      NestedNullException nestedNullException0 = new NestedNullException();
+  }

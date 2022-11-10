@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      HtmlTreeBuilderState[] htmlTreeBuilderStateArray0 = HtmlTreeBuilderState.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      HtmlTreeBuilderState.valueOf("BeforeHead");
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      HtmlTreeBuilderState.Constants htmlTreeBuilderState_Constants0 = new HtmlTreeBuilderState.Constants();
+  }

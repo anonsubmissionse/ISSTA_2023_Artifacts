@@ -1,0 +1,50 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileSelector fileSelector0 = mock(FileSelector.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileSelector0).traverseDescendents(any(org.apache.commons.vfs2.FileSelectInfo.class));
+      InvertIncludeFileSelector invertIncludeFileSelector0 = new InvertIncludeFileSelector(fileSelector0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = invertIncludeFileSelector0.traverseDescendents(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      InvertIncludeFileSelector invertIncludeFileSelector0 = null;
+      try {
+        invertIncludeFileSelector0 = new InvertIncludeFileSelector((FileSelector) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // delegateFileSelector
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileSelector fileSelector0 = mock(FileSelector.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(fileSelector0).includeFile(any(org.apache.commons.vfs2.FileSelectInfo.class));
+      InvertIncludeFileSelector invertIncludeFileSelector0 = new InvertIncludeFileSelector(fileSelector0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = invertIncludeFileSelector0.includeFile(fileSelectInfo0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FileSelector fileSelector0 = mock(FileSelector.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(fileSelector0).includeFile(any(org.apache.commons.vfs2.FileSelectInfo.class));
+      InvertIncludeFileSelector invertIncludeFileSelector0 = new InvertIncludeFileSelector(fileSelector0);
+      InvertIncludeFileSelector invertIncludeFileSelector1 = new InvertIncludeFileSelector(invertIncludeFileSelector0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = invertIncludeFileSelector1.includeFile(fileSelectInfo0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FileSelector fileSelector0 = mock(FileSelector.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(fileSelector0).traverseDescendents(any(org.apache.commons.vfs2.FileSelectInfo.class));
+      InvertIncludeFileSelector invertIncludeFileSelector0 = new InvertIncludeFileSelector(fileSelector0);
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      boolean boolean0 = invertIncludeFileSelector0.traverseDescendents(fileSelectInfo0);
+      assertTrue(boolean0);
+}

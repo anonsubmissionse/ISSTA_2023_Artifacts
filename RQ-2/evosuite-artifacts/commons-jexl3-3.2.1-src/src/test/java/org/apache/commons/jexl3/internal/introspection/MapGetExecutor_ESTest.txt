@@ -1,0 +1,18 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Permissions permissions0 = Permissions.DEFAULT;
+      Introspector introspector0 = new Introspector((Log) null, classLoader0, permissions0);
+      // Undeclared exception!
+      try { 
+        MapGetExecutor.discover(introspector0, (Class<?>) null, (Object) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<Object> class0 = Object.class;
+      MapGetExecutor mapGetExecutor0 = MapGetExecutor.discover((Introspector) null, class0, class0);
+      ;
+}

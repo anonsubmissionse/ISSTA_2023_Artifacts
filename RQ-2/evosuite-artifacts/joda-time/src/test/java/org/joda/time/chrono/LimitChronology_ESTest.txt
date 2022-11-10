@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        LimitChronology.getInstance((Chronology) null, (ReadableDateTime) null, (ReadableDateTime) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Must supply a chronology
+         //
+         verifyException("org.joda.time.chrono.LimitChronology", e);
+      }
+  }

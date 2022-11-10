@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableLongConsumer<Throwable> failableLongConsumer0 = FailableLongConsumer.nop();
+      failableLongConsumer0.accept((-696L));
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableLongConsumer<Throwable> failableLongConsumer0 = FailableLongConsumer.nop();
+      // Undeclared exception!
+      try { 
+        failableLongConsumer0.andThen((FailableLongConsumer<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableLongConsumer<Throwable> failableLongConsumer0 = FailableLongConsumer.nop();
+      FailableLongConsumer<Throwable> failableLongConsumer1 = failableLongConsumer0.andThen(failableLongConsumer0);
+      FailableLongConsumer<Throwable> failableLongConsumer2 = failableLongConsumer0.andThen(failableLongConsumer1);
+      ;
+}

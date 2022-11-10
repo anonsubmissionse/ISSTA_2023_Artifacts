@@ -1,0 +1,64 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      LocalVariables localVariables0 = new LocalVariables(98);
+      ObjectType objectType0 = Type.CLASS;
+      OperandStack operandStack0 = new OperandStack(98, objectType0);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      executionVisitor0.setFrame(frame0);
+      I2L i2L0 = new I2L();
+      i2L0.accept(executionVisitor0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      I2L i2L0 = new I2L();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      LocalVariables localVariables0 = new LocalVariables(220);
+      OperandStack operandStack0 = new OperandStack(2717);
+      Frame frame0 = new Frame(localVariables0, operandStack0);
+      instConstraintVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        i2L0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Instruction I2L constraint violated: Cannot consume 1 stack slots: only 0 slot(s) left on stack!
+         // Stack:
+         // Slots used: 0 MaxStack: 2717.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      I2L i2L0 = new I2L();
+      // Undeclared exception!
+      try { 
+        i2L0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      I2L i2L0 = new I2L();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      i2L0.setOpcode((short) (-190));
+      // Undeclared exception!
+      try { 
+        i2L0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -190
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }

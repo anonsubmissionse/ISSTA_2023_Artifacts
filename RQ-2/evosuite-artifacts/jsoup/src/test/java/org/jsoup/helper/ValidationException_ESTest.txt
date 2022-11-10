@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ValidationException validationException0 = new ValidationException(";C");
+      Throwable throwable0 = validationException0.fillInStackTrace();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ValidationException validationException0 = new ValidationException("0bvAg&&9n:nV^y`7K");
+      StackTraceElement[] stackTraceElementArray0 = new StackTraceElement[1];
+      StackTraceElement stackTraceElement0 = new StackTraceElement("org.jsoup.helper.Validate", "org.jsoup.helper.Validate", "oOE", (-2820));
+      stackTraceElementArray0[0] = stackTraceElement0;
+      validationException0.setStackTrace(stackTraceElementArray0);
+      Throwable throwable0 = validationException0.fillInStackTrace();
+      ;
+}

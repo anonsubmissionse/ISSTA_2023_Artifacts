@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      double double0 = Erf.value(40.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      double double0 = Erf.value(0.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      double double0 = Erf.value((-1.0));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      double double0 = Erf.value(Double.POSITIVE_INFINITY);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      double double0 = Erf.value((-3002.005066584602));
+      ;
+}

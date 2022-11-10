@@ -1,0 +1,48 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ASTORE aSTORE0 = new ASTORE();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        aSTORE0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ASTORE aSTORE0 = new ASTORE(58);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTORE aSTORE0 = null;
+      try {
+        aSTORE0 = new ASTORE((-436));
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Illegal value: -436
+         //
+         verifyException("org.apache.bcel.generic.LocalVariableInstruction", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ASTORE aSTORE0 = new ASTORE();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        aSTORE0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }

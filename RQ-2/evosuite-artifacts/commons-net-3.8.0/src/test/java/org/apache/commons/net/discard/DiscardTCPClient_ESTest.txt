@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DiscardTCPClient discardTCPClient0 = new DiscardTCPClient();
+      discardTCPClient0.getOutputStream();
+      ;
+}

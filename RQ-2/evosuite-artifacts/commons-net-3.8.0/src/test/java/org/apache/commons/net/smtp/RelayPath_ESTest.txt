@@ -1,0 +1,14 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      RelayPath relayPath0 = new RelayPath((String) null);
+      relayPath0.addRelay("<null>");
+      relayPath0.addRelay((String) null);
+      String string0 = relayPath0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      RelayPath relayPath0 = new RelayPath((String) null);
+      String string0 = relayPath0.toString();
+      ;
+}

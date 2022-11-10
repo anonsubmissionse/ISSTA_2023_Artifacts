@@ -1,0 +1,32 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WindowSizeOptionHandler windowSizeOptionHandler0 = new WindowSizeOptionHandler(65536, 65536, false, false, true, false);
+      int[] intArray0 = windowSizeOptionHandler0.startSubnegotiationLocal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      WindowSizeOptionHandler windowSizeOptionHandler0 = new WindowSizeOptionHandler(65511, 65511, true, false, false, false);
+      int[] intArray0 = windowSizeOptionHandler0.startSubnegotiationLocal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      WindowSizeOptionHandler windowSizeOptionHandler0 = new WindowSizeOptionHandler(255, 255);
+      int[] intArray0 = windowSizeOptionHandler0.startSubnegotiationLocal();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      WindowSizeOptionHandler windowSizeOptionHandler0 = new WindowSizeOptionHandler((-1), (-1));
+      // Undeclared exception!
+      try { 
+        windowSizeOptionHandler0.startSubnegotiationLocal();
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 5
+         //
+         verifyException("org.apache.commons.net.telnet.WindowSizeOptionHandler", e);
+      }
+  }

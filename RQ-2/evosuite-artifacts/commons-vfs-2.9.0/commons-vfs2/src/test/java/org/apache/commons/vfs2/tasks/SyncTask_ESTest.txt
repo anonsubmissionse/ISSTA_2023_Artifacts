@@ -1,0 +1,19 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SyncTask syncTask0 = new SyncTask();
+      boolean boolean0 = syncTask0.detectMissingSourceFiles();
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SyncTask syncTask0 = new SyncTask();
+      try { 
+        syncTask0.handleMissingSourceFile((FileObject) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.tasks.SyncTask", e);
+      }
+  }

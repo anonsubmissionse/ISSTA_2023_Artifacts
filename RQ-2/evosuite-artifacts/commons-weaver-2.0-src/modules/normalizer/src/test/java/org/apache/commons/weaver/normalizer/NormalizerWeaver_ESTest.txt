@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      NormalizerWeaver normalizerWeaver0 = new NormalizerWeaver();
+      WeaveEnvironment weaveEnvironment0 = mock(WeaveEnvironment.class, new ViolatedAssumptionAnswer());
+      Scanner scanner0 = mock(Scanner.class, new ViolatedAssumptionAnswer());
+      // Undeclared exception!
+      try { 
+        normalizerWeaver0.process(weaveEnvironment0, scanner0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.weaver.normalizer.Normalizer", e);
+      }
+  }

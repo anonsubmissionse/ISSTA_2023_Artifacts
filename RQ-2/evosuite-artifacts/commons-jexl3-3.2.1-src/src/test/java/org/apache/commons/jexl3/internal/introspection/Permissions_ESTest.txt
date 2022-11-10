@@ -1,0 +1,78 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Permissions permissions0 = Permissions.DEFAULT;
+      Class<Integer> class0 = Integer.class;
+      boolean boolean0 = permissions0.allow(class0, true);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Permissions permissions0 = Permissions.DEFAULT;
+      Class<String> class0 = String.class;
+      // Undeclared exception!
+      try { 
+        permissions0.allow(class0, (Method) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.Permissions", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Permissions permissions0 = new Permissions();
+      boolean boolean0 = permissions0.allow((Class<?>) null, (Method) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Permissions permissions0 = Permissions.DEFAULT;
+      Class<String> class0 = String.class;
+      boolean boolean0 = permissions0.allow(class0, false);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Permissions permissions0 = new Permissions();
+      boolean boolean0 = permissions0.allow((Class<?>) null, false);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Permissions permissions0 = Permissions.DEFAULT;
+      boolean boolean0 = permissions0.allow((Method) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      Permissions permissions0 = new Permissions();
+      boolean boolean0 = permissions0.allow((Field) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Permissions permissions0 = Permissions.DEFAULT;
+      boolean boolean0 = permissions0.allow((Constructor<?>) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      Permissions permissions0 = new Permissions();
+      boolean boolean0 = permissions0.allow((Class<?>) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Permissions permissions0 = Permissions.DEFAULT;
+      Class<String> class0 = String.class;
+      boolean boolean0 = permissions0.DEFAULT.allow(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Permissions permissions0 = new Permissions();
+      boolean boolean0 = permissions0.allow((Package) null);
+      assertTrue(boolean0);
+}

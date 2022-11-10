@@ -1,0 +1,24 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        SSLSocketUtils.enableEndpointNameVerification((SSLSocket) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SSLSocket sSLSocket0 = mock(SSLSocket.class, new ViolatedAssumptionAnswer());
+      doReturn((SSLParameters) null).when(sSLSocket0).getSSLParameters();
+      boolean boolean0 = SSLSocketUtils.enableEndpointNameVerification(sSLSocket0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SSLParameters sSLParameters0 = mock(SSLParameters.class, new ViolatedAssumptionAnswer());
+      SSLSocket sSLSocket0 = mock(SSLSocket.class, new ViolatedAssumptionAnswer());
+      doReturn(sSLParameters0).when(sSLSocket0).getSSLParameters();
+      boolean boolean0 = SSLSocketUtils.enableEndpointNameVerification(sSLSocket0);
+      ;
+}

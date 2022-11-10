@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      TokenTypeHint[] tokenTypeHintArray0 = TokenTypeHint.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      TokenTypeHint tokenTypeHint0 = TokenTypeHint.valueOf("ACCESS_TOKEN");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      TokenTypeHint tokenTypeHint0 = TokenTypeHint.REFRESH_TOKEN;
+      String string0 = tokenTypeHint0.getValue();
+      assertNotNull(string0);
+}

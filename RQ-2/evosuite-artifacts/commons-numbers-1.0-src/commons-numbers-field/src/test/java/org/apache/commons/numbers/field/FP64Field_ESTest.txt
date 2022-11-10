@@ -1,0 +1,12 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FP64Field fP64Field0 = FP64Field.get();
+      FP64 fP64_0 = fP64Field0.one();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FP64Field fP64Field0 = FP64Field.get();
+      FP64 fP64_0 = fP64Field0.zero();
+      ;
+}

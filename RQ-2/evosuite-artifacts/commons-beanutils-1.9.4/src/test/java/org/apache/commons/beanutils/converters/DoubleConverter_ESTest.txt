@@ -1,0 +1,25 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DoubleConverter doubleConverter0 = new DoubleConverter();
+      assertTrue(doubleConverter0.isUseDefault());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DoubleConverter doubleConverter0 = new DoubleConverter((Object) null);
+      Class<Double> class0 = doubleConverter0.getDefaultType();
+      assertTrue(class0.isPrimitive());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object object0 = new Object();
+      DoubleConverter doubleConverter0 = null;
+      try {
+        doubleConverter0 = new DoubleConverter(object0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Error converting from 'Object' to 'Double' For input string: \"java.lang.Object@0000000002\"
+         //
+         verifyException("org.apache.commons.beanutils.converters.AbstractConverter", e);
+      }
+  }

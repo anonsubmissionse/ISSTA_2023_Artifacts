@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<String> class0 = String.class;
+      // Undeclared exception!
+      try { 
+        MapSetExecutor.discover((Introspector) null, (Class<?>) null, class0, class0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<String> class0 = String.class;
+      MapSetExecutor mapSetExecutor0 = MapSetExecutor.discover((Introspector) null, class0, class0, class0);
+      ;
+}

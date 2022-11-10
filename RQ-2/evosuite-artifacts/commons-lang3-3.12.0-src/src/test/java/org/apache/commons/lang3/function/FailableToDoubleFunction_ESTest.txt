@@ -1,0 +1,7 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableToDoubleFunction<Integer, Throwable> failableToDoubleFunction0 = FailableToDoubleFunction.nop();
+      Integer integer0 = new Integer(2778);
+      double double0 = failableToDoubleFunction0.applyAsDouble(integer0);
+      ;
+}

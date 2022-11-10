@@ -1,0 +1,385 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.locateFromURL("file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/", (String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getPath((File) null, (URL) null, "(?I _N8fL:.*Z", "vfs.impl/already-inited.error");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getPath((File) null, (URL) null, "(?I _N8fL:.*Z", "vfs.impl/already-inited.error");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getFileName((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.locateFromURL((String) null, "file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/");
+      assertEquals(0, uRL0.getPort());
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      VfsComponentContext vfsComponentContext0 = mock(VfsComponentContext.class, new ViolatedAssumptionAnswer());
+      DefaultURLStreamHandler defaultURLStreamHandler0 = new DefaultURLStreamHandler(vfsComponentContext0);
+      URL uRL0 = MockURL.URL("", "MF", 1, "", (URLStreamHandler) defaultURLStreamHandler0);
+      String string0 = defaultFileSystem0.getPath((File) null, uRL0, "", "MF");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      VfsComponentContext vfsComponentContext0 = mock(VfsComponentContext.class, new ViolatedAssumptionAnswer());
+      DefaultURLStreamHandler defaultURLStreamHandler0 = new DefaultURLStreamHandler(vfsComponentContext0);
+      URL uRL0 = MockURL.URL("", "MF", 1, "", (URLStreamHandler) defaultURLStreamHandler0);
+      String string0 = defaultFileSystem0.getPath((File) null, uRL0, "", "MF");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn((InputStream) null).when(fileContent0).getInputStream();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      VfsComponentContext vfsComponentContext0 = mock(VfsComponentContext.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(vfsComponentContext0).resolveFile(anyString() , any(org.apache.commons.vfs2.FileSystemOptions.class));
+      FileSystemOptions fileSystemOptions0 = new FileSystemOptions();
+      DefaultURLStreamHandler defaultURLStreamHandler0 = new DefaultURLStreamHandler(vfsComponentContext0, fileSystemOptions0);
+      URL uRL0 = MockURL.URL("q|", "q|", 4727, "b/+", (URLStreamHandler) defaultURLStreamHandler0);
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URLConnectionOptions uRLConnectionOptions0 = new URLConnectionOptions();
+      InputStream inputStream0 = defaultFileSystem0.getInputStream(uRL0, uRLConnectionOptions0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = MockURL.getHttpExample();
+      URLConnectionOptions uRLConnectionOptions0 = new URLConnectionOptions();
+      EvoSuiteURL evoSuiteURL0 = new EvoSuiteURL("http://www.someFakeButWellFormedURL.org/fooExample");
+      NetworkHandling.createRemoteTextFile(evoSuiteURL0, "/fooExample");
+      InputStream inputStream0 = defaultFileSystem0.getInputStream(uRL0, uRLConnectionOptions0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      doReturn((InputStream) null).when(fileContent0).getInputStream();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileContent0).when(fileObject0).getContent();
+      VfsComponentContext vfsComponentContext0 = mock(VfsComponentContext.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(vfsComponentContext0).resolveFile(anyString() , any(org.apache.commons.vfs2.FileSystemOptions.class));
+      FileSystemOptions fileSystemOptions0 = new FileSystemOptions();
+      DefaultURLStreamHandler defaultURLStreamHandler0 = new DefaultURLStreamHandler(vfsComponentContext0, fileSystemOptions0);
+      URL uRL0 = MockURL.URL("q|", "q|", 4727, "b/+", (URLStreamHandler) defaultURLStreamHandler0);
+      InputStream inputStream0 = defaultFileSystem0.getInputStream(uRL0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = MockURL.getHttpExample();
+      EvoSuiteURL evoSuiteURL0 = new EvoSuiteURL("http://www.someFakeButWellFormedURL.org/fooExample");
+      NetworkHandling.createRemoteTextFile(evoSuiteURL0, "/fooExample");
+      InputStream inputStream0 = defaultFileSystem0.getInputStream(uRL0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("{%+Mv|LF,", "</body></html>");
+      defaultFileSystem0.getOutputStream(uRL0);
+      String string0 = defaultFileSystem0.getFileName("{%+Mv|LF,");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getBasePath((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.locateFromURL("file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/", "file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.net.URL", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      Log4JLogger log4JLogger0 = new Log4JLogger();
+      ConfigurationLogger configurationLogger0 = new ConfigurationLogger(log4JLogger0);
+      defaultFileSystem0.setLogger(configurationLogger0);
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.locateFromURL("", "");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.log4j.CategoryKey", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.getURL((String) null, (String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.File", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      ConfigurationLogger configurationLogger0 = new ConfigurationLogger();
+      defaultFileSystem0.setLogger(configurationLogger0);
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.getPath((File) null, (URL) null, "file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/", (String) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.io.ConfigurationLogger", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL((String) null, "");
+      assertNotNull(uRL0.getHost());
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("U}R6RP+x$3@!Q:xww-", "5?8s6");
+      try { 
+        defaultFileSystem0.getInputStream(uRL0, (URLConnectionOptions) null);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Unable to load the configuration from the URL file:/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/U%7DR6RP+x$3@!Q:xww-/5%3F8s6
+         //
+         verifyException("org.apache.commons.configuration2.io.DefaultFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      MockFile mockFile0 = new MockFile("");
+      URL uRL0 = mockFile0.toURL();
+      URLConnectionOptions uRLConnectionOptions0 = new URLConnectionOptions();
+      try { 
+        defaultFileSystem0.getInputStream(uRL0, uRLConnectionOptions0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Cannot load a configuration from a directory
+         //
+         verifyException("org.apache.commons.configuration2.io.DefaultFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("{%+M{dLen,", "</body></html>");
+      MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("{%+M{dLen,");
+      try { 
+        defaultFileSystem0.getOutputStream(uRL0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Cannot create path: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/{%+M{dLen,/</body><
+         //
+         verifyException("org.apache.commons.configuration2.io.DefaultFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      File file0 = MockFile.createTempFile("(nY- ", "");
+      MockFile mockFile0 = new MockFile(file0, "ELFTYfYk&");
+      try { 
+        defaultFileSystem0.getOutputStream((File) mockFile0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Unable to save to file /tmp/(nY- 0/ELFTYfYk&
+         //
+         verifyException("org.apache.commons.configuration2.io.DefaultFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      MockFile mockFile0 = new MockFile("%7DS*%60(hZeP62TX9Wt%5D");
+      OutputStream outputStream0 = defaultFileSystem0.getOutputStream((File) mockFile0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test23()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("{%+Mv|LF,", "</body></html>");
+      OutputStream outputStream0 = defaultFileSystem0.getOutputStream(uRL0);
+      OutputStream outputStream1 = defaultFileSystem0.getOutputStream(uRL0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test24()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.getOutputStream((File) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.File", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test25()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("", "/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test26()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getPath((File) null, (URL) null, "file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/", (String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test27()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      File file0 = MockFile.createTempFile("</body></html>", "1D/bnuWVd$_yqT;l8=");
+      URL uRL0 = defaultFileSystem0.getURL("{%+Mv|LF,", "</body></html>");
+      String string0 = defaultFileSystem0.getPath(file0, uRL0, "\"y%<@bQKq c\"E8:>", "1D/bnuWVd$_yqT;l8=");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test28()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/", "|24Etk");
+      String string0 = defaultFileSystem0.getPath((File) null, uRL0, "|24Etk", "file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test29()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.getURL("file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/", "|24Etk");
+      String string0 = defaultFileSystem0.getPath((File) null, uRL0, "|24Etk", "file:///media/ISSTA_USER/extradrive1/toga-eval-issta-2023/toga-eval/artifacts/commons-configuration2-2.8.0-src/");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test30()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = MockURL.getHttpExample();
+      try { 
+        defaultFileSystem0.getOutputStream(uRL0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Could not save to URL http://www.someFakeButWellFormedURL.org/fooExample
+         //
+         verifyException("org.apache.commons.configuration2.io.DefaultFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test31()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      FileContent fileContent0 = mock(FileContent.class, new ViolatedAssumptionAnswer());
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      VfsComponentContext vfsComponentContext0 = mock(VfsComponentContext.class, new ViolatedAssumptionAnswer());
+      doReturn((FileObject) null).when(vfsComponentContext0).resolveFile(anyString() , any(org.apache.commons.vfs2.FileSystemOptions.class));
+      FileSystemOptions fileSystemOptions0 = new FileSystemOptions();
+      DefaultURLStreamHandler defaultURLStreamHandler0 = new DefaultURLStreamHandler(vfsComponentContext0, fileSystemOptions0);
+      URL uRL0 = MockURL.URL("q|", "q|", 4727, "b/+", (URLStreamHandler) defaultURLStreamHandler0);
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.getOutputStream(uRL0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.provider.DefaultURLStreamHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test32()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      URL uRL0 = defaultFileSystem0.locateFromURL((String) null, ";'@j Od");
+      // Undeclared exception!
+      try { 
+        defaultFileSystem0.getOutputStream(uRL0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.net.MockURL", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test33()  throws Throwable  {
+      MockFile mockFile0 = new MockFile("");
+      URL uRL0 = mockFile0.toURL();
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      try { 
+        defaultFileSystem0.getInputStream(uRL0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Cannot load a configuration from a directory
+         //
+         verifyException("org.apache.commons.configuration2.io.DefaultFileSystem", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test34()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getBasePath("(nY- ");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test35()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getBasePath("(nY- ");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test36()  throws Throwable  {
+      DefaultFileSystem defaultFileSystem0 = new DefaultFileSystem();
+      String string0 = defaultFileSystem0.getFileName("{%+Mv|LF,");
+      ;
+}

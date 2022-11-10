@@ -1,0 +1,23 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SocketInputStream socketInputStream0 = new SocketInputStream((Socket) null, (InputStream) null);
+      // Undeclared exception!
+      try { 
+        socketInputStream0.close();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.FilterInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Proxy proxy0 = Proxy.NO_PROXY;
+      MockSocket mockSocket0 = new MockSocket(proxy0);
+      FileDescriptor fileDescriptor0 = new FileDescriptor();
+      MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
+      SocketInputStream socketInputStream0 = new SocketInputStream(mockSocket0, mockFileInputStream0);
+      socketInputStream0.close();
+  }

@@ -1,0 +1,30 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileType fileType0 = FileType.FOLDER;
+      VirtualFileName virtualFileName0 = new VirtualFileName("zMt}r[", "zMt}r[", fileType0);
+      StringBuilder stringBuilder0 = new StringBuilder((CharSequence) "zMt}r[");
+      virtualFileName0.appendRootUri(stringBuilder0, false);
+      assertNotNull(virtualFileName0.getScheme());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FileType fileType0 = FileType.FILE_OR_FOLDER;
+      VirtualFileName virtualFileName0 = new VirtualFileName("MxKc", "MxKc", fileType0);
+      // Undeclared exception!
+      try { 
+        virtualFileName0.appendRootUri((StringBuilder) null, true);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.impl.VirtualFileName", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileType fileType0 = FileType.IMAGINARY;
+      VirtualFileName virtualFileName0 = new VirtualFileName("org.^pache.log4j.helpers.Loader", "org.^pache.log4j.helpers.Loader", fileType0);
+      FileName fileName0 = virtualFileName0.createName("org.^pache.log4j.helpers.Loader", fileType0);
+      ;
+}

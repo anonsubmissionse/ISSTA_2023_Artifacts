@@ -1,0 +1,31 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConversionException conversionException0 = null;
+      try {
+        conversionException0 = new ConversionException((Throwable) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.beanutils.ConversionException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConversionException conversionException0 = new ConversionException("*^[8IWS@");
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ConversionException conversionException0 = new ConversionException("", (Throwable) null);
+      MockThrowable mockThrowable0 = new MockThrowable("", conversionException0);
+      ConversionException conversionException1 = new ConversionException(mockThrowable0);
+      Throwable throwable0 = conversionException1.getCause();
+      assertNotNull(throwable0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ConversionException conversionException0 = new ConversionException("", (Throwable) null);
+      Throwable throwable0 = conversionException0.getCause();
+      assertNotNull(throwable0);
+}

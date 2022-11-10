@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      IF_ACMPEQ iF_ACMPEQ0 = new IF_ACMPEQ();
+      IfInstruction ifInstruction0 = iF_ACMPEQ0.negate();
+      ;
+}

@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      SymbolicLinkFileFilter symbolicLinkFileFilter0 = (SymbolicLinkFileFilter)SymbolicLinkFileFilter.SYMBOLIC;
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileObject0).exists();
+      FileObject fileObject1 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileObject1).isSymbolicLink();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0, fileObject1).when(fileSelectInfo0).getFile();
+      boolean boolean0 = symbolicLinkFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SymbolicLinkFileFilter symbolicLinkFileFilter0 = new SymbolicLinkFileFilter();
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(false).when(fileObject0).exists();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSelectInfo0).getFile();
+      boolean boolean0 = symbolicLinkFileFilter0.accept(fileSelectInfo0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SymbolicLinkFileFilter symbolicLinkFileFilter0 = (SymbolicLinkFileFilter)SymbolicLinkFileFilter.SYMBOLIC;
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(true).when(fileObject0).exists();
+      FileSelectInfo fileSelectInfo0 = mock(FileSelectInfo.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0, (FileObject) null).when(fileSelectInfo0).getFile();
+      // Undeclared exception!
+      try { 
+        symbolicLinkFileFilter0.accept(fileSelectInfo0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.filter.SymbolicLinkFileFilter", e);
+      }
+  }

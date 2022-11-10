@@ -1,0 +1,50 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      L2I l2I0 = new L2I();
+      ExecutionVisitor executionVisitor0 = new ExecutionVisitor();
+      // Undeclared exception!
+      try { 
+        l2I0.accept(executionVisitor0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.ExecutionVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      L2I l2I0 = new L2I();
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      Frame frame0 = new Frame(0, (-1414));
+      instConstraintVisitor0.setFrame(frame0);
+      // Undeclared exception!
+      try { 
+        l2I0.accept(instConstraintVisitor0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // Instruction L2I constraint violated: Cannot consume 2 stack slots: only 0 slot(s) left on stack!
+         // Stack:
+         // Slots used: 0 MaxStack: -1414.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.InstConstraintVisitor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      L2I l2I0 = new L2I();
+      l2I0.setOpcode((short)1998);
+      InstConstraintVisitor instConstraintVisitor0 = new InstConstraintVisitor();
+      // Undeclared exception!
+      try { 
+        l2I0.accept(instConstraintVisitor0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 1998
+         //
+         verifyException("org.apache.bcel.Const", e);
+      }
+  }

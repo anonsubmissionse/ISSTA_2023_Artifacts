@@ -1,0 +1,17 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ISINValidator iSINValidator0 = ISINValidator.getInstance(true);
+      Object object0 = iSINValidator0.validate("+BWlh$yI-T!BY-$#");
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ISINValidator iSINValidator0 = ISINValidator.getInstance(true);
+      boolean boolean0 = iSINValidator0.isValid("+BWlh$yI-T!BY-$#");
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ISINValidator iSINValidator0 = ISINValidator.getInstance(false);
+      ;
+}

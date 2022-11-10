@@ -1,0 +1,5 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableObjLongConsumer<String, Throwable> failableObjLongConsumer0 = FailableObjLongConsumer.nop();
+      failableObjLongConsumer0.accept("", 3009L);
+  }

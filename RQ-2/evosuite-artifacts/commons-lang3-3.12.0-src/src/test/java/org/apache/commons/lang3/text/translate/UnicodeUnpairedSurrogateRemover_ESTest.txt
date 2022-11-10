@@ -1,0 +1,26 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      UnicodeUnpairedSurrogateRemover unicodeUnpairedSurrogateRemover0 = new UnicodeUnpairedSurrogateRemover();
+      StringWriter stringWriter0 = new StringWriter(55296);
+      boolean boolean0 = unicodeUnpairedSurrogateRemover0.translate(55296, (Writer) stringWriter0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      UnicodeUnpairedSurrogateRemover unicodeUnpairedSurrogateRemover0 = new UnicodeUnpairedSurrogateRemover();
+      boolean boolean0 = unicodeUnpairedSurrogateRemover0.translate(57343, (Writer) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      UnicodeUnpairedSurrogateRemover unicodeUnpairedSurrogateRemover0 = new UnicodeUnpairedSurrogateRemover();
+      boolean boolean0 = unicodeUnpairedSurrogateRemover0.translate(57367, (Writer) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      UnicodeUnpairedSurrogateRemover unicodeUnpairedSurrogateRemover0 = new UnicodeUnpairedSurrogateRemover();
+      StringWriter stringWriter0 = new StringWriter();
+      boolean boolean0 = unicodeUnpairedSurrogateRemover0.translate(2560, (Writer) stringWriter0);
+      assertTrue(boolean0);
+}

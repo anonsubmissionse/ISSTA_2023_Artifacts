@@ -1,0 +1,44 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      StringColumnHandler stringColumnHandler0 = new StringColumnHandler();
+      Class<String> class0 = String.class;
+      boolean boolean0 = stringColumnHandler0.match(class0);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      StringColumnHandler stringColumnHandler0 = new StringColumnHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn("=").when(resultSet0).getString(anyInt());
+      Object object0 = stringColumnHandler0.apply(resultSet0, (-12));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      StringColumnHandler stringColumnHandler0 = new StringColumnHandler();
+      // Undeclared exception!
+      try { 
+        stringColumnHandler0.apply((ResultSet) null, 0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.handlers.columns.StringColumnHandler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      StringColumnHandler stringColumnHandler0 = new StringColumnHandler();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(resultSet0).getString(anyInt());
+      Object object0 = stringColumnHandler0.apply(resultSet0, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      StringColumnHandler stringColumnHandler0 = new StringColumnHandler();
+      Class<Integer> class0 = Integer.class;
+      boolean boolean0 = stringColumnHandler0.match(class0);
+      ;
+}

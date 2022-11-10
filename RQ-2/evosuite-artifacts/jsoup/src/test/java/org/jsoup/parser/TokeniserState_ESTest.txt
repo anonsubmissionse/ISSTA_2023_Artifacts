@@ -1,0 +1,9 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      TokeniserState[] tokeniserStateArray0 = TokeniserState.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      TokeniserState.valueOf("BetweenDoctypePublicAndSystemIdentifiers");
+  }

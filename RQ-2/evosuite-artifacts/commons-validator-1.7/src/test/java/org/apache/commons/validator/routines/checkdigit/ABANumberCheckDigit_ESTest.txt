@@ -1,0 +1,32 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ABANumberCheckDigit aBANumberCheckDigit0 = new ABANumberCheckDigit();
+      int int0 = aBANumberCheckDigit0.weightedValue(0, 0, 0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ABANumberCheckDigit aBANumberCheckDigit0 = new ABANumberCheckDigit();
+      int int0 = aBANumberCheckDigit0.weightedValue(10, 0, 12);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ABANumberCheckDigit aBANumberCheckDigit0 = (ABANumberCheckDigit)ABANumberCheckDigit.ABAN_CHECK_DIGIT;
+      int int0 = aBANumberCheckDigit0.weightedValue((-941), (-941), 10);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ABANumberCheckDigit aBANumberCheckDigit0 = new ABANumberCheckDigit();
+      // Undeclared exception!
+      try { 
+        aBANumberCheckDigit0.weightedValue(1, (-1309), (-1309));
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -1
+         //
+         verifyException("org.apache.commons.validator.routines.checkdigit.ABANumberCheckDigit", e);
+      }
+  }

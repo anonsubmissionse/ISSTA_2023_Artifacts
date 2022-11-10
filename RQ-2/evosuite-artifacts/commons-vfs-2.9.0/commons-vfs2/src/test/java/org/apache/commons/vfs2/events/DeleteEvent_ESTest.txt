@@ -1,0 +1,20 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      DeleteEvent deleteEvent0 = new DeleteEvent(fileObject0);
+      try { 
+        deleteEvent0.notify((FileListener) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.events.DeleteEvent", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DeleteEvent deleteEvent0 = new DeleteEvent((FileObject) null);
+      FileListener fileListener0 = mock(FileListener.class, new ViolatedAssumptionAnswer());
+      deleteEvent0.notify(fileListener0);
+  }

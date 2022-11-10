@@ -1,0 +1,27 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      byte[] byteArray0 = new byte[1];
+      RandomProviderDefaultState randomProviderDefaultState0 = new RandomProviderDefaultState(byteArray0);
+      byte[] byteArray1 = randomProviderDefaultState0.getState();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      byte[] byteArray0 = new byte[0];
+      RandomProviderDefaultState randomProviderDefaultState0 = new RandomProviderDefaultState(byteArray0);
+      byte[] byteArray1 = randomProviderDefaultState0.getState();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      RandomProviderDefaultState randomProviderDefaultState0 = null;
+      try {
+        randomProviderDefaultState0 = new RandomProviderDefaultState((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.RandomProviderDefaultState", e);
+      }
+  }

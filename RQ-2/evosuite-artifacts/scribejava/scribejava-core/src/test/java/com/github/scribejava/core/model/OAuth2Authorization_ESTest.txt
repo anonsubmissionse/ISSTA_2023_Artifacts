@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      OAuth2Authorization oAuth2Authorization0 = new OAuth2Authorization();
+      oAuth2Authorization0.setState("*le\"pB}3}VUZ{T");
+      String string0 = oAuth2Authorization0.getState();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      OAuth2Authorization oAuth2Authorization0 = new OAuth2Authorization();
+      oAuth2Authorization0.setState("");
+      String string0 = oAuth2Authorization0.getState();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      OAuth2Authorization oAuth2Authorization0 = new OAuth2Authorization();
+      oAuth2Authorization0.setCode("$:3>s");
+      String string0 = oAuth2Authorization0.getCode();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      OAuth2Authorization oAuth2Authorization0 = new OAuth2Authorization();
+      oAuth2Authorization0.setCode("");
+      String string0 = oAuth2Authorization0.getCode();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      OAuth2Authorization oAuth2Authorization0 = new OAuth2Authorization();
+      String string0 = oAuth2Authorization0.getState();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      OAuth2Authorization oAuth2Authorization0 = new OAuth2Authorization();
+      String string0 = oAuth2Authorization0.getCode();
+      assertNotNull(string0);
+}

@@ -1,0 +1,49 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FileSystemManager fileSystemManager0 = VFS.getManager();
+      VFS.reset();
+      VFS.setManager(fileSystemManager0);
+      String[] stringArray0 = new String[2];
+      try { 
+        AgeFileFilterExample.main(stringArray0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Could not find a file provider which can handle local files.
+         //
+         verifyException("org.apache.commons.vfs2.FileSystemException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String[] stringArray0 = new String[5];
+      FileObject[] fileObjectArray0 = new FileObject[7];
+      FileSystemManager fileSystemManager0 = mock(FileSystemManager.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObjectArray0[4]).when(fileSystemManager0).toFileObject(any(java.io.File.class));
+      VFS.setManager(fileSystemManager0);
+      try { 
+        AgeFileFilterExample.main(stringArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.example.filter.AgeFileFilterExample", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FileObject[] fileObjectArray0 = new FileObject[28];
+      FileObject fileObject0 = mock(FileObject.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObjectArray0).when(fileObject0).findFiles(any(org.apache.commons.vfs2.FileSelector.class));
+      FileSystemManager fileSystemManager0 = mock(FileSystemManager.class, new ViolatedAssumptionAnswer());
+      doReturn(fileObject0).when(fileSystemManager0).toFileObject(any(java.io.File.class));
+      VFS.setManager(fileSystemManager0);
+      String[] stringArray0 = new String[2];
+      AgeFileFilterExample.main(stringArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      AgeFileFilterExample ageFileFilterExample0 = new AgeFileFilterExample();
+  }

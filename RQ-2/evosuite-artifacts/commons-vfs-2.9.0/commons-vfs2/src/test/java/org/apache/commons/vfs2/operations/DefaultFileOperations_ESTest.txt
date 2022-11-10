@@ -1,0 +1,13 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultFileOperations defaultFileOperations0 = null;
+      try {
+        defaultFileOperations0 = new DefaultFileOperations((FileObject) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.vfs2.operations.DefaultFileOperations", e);
+      }
+  }

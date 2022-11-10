@@ -1,0 +1,10 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      EchoOptionHandler echoOptionHandler0 = new EchoOptionHandler(false, false, false, true);
+      assertFalse(echoOptionHandler0.getAcceptLocal());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      EchoOptionHandler echoOptionHandler0 = new EchoOptionHandler();
+      assertTrue(echoOptionHandler0.getAcceptRemote());
+}

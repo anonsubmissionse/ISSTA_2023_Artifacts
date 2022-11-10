@@ -1,0 +1,212 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.setHeader("\">");
+      String string0 = xMLPropertiesConfiguration0.getHeader();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.setHeader("");
+      String string0 = xMLPropertiesConfiguration0.getHeader();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      // Undeclared exception!
+      try { 
+        xMLPropertiesConfiguration0.write((Writer) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.io.Writer", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("D9,");
+      // Undeclared exception!
+      try { 
+        xMLPropertiesConfiguration0.save((Document) null, iIOMetadataNode0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      // Undeclared exception!
+      try { 
+        xMLPropertiesConfiguration0.load((Element) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = null;
+      try {
+        xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration(iIOMetadataNode0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("properties");
+      iIOMetadataNode0.appendChild(iIOMetadataNode0);
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      try { 
+        xMLPropertiesConfiguration0.load(iIOMetadataNode0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Malformed XML
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("k\"+Jef%lYAMp");
+      try { 
+        xMLPropertiesConfiguration0.load(iIOMetadataNode0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Malformed XML
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      String string0 = xMLPropertiesConfiguration0.getHeader();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      StringReader stringReader0 = new StringReader("  <comnt>");
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      try { 
+        xMLPropertiesConfiguration0.read(stringReader0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Unable to parse the configuration file
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.addPropertyDirect("UTF-8", (Object) null);
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter("UTF-8", "UTF-8");
+      xMLPropertiesConfiguration0.write(mockPrintWriter0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.setProperty("UTF-8", "UTF-8");
+      xMLPropertiesConfiguration0.addPropertyDirect("UTF-8", "UTF-8");
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter("UTF-8", "UTF-8");
+      xMLPropertiesConfiguration0.write(mockPrintWriter0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("properties");
+      iIOMetadataNode0.appendChild(iIOMetadataNode0);
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = null;
+      try {
+        xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration(iIOMetadataNode0);
+        fail("Expecting exception: Exception");
+      } catch(Throwable e) {
+         //
+         // Malformed XML
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("properties");
+      iIOMetadataNode0.insertBefore(iIOMetadataNode0, iIOMetadataNode0);
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration(iIOMetadataNode0);
+      xMLPropertiesConfiguration0.load(iIOMetadataNode0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+      EnvironmentConfiguration environmentConfiguration0 = new EnvironmentConfiguration();
+      xMLPropertiesConfiguration0.append(environmentConfiguration0);
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter(pipedOutputStream0, true);
+      // Undeclared exception!
+      xMLPropertiesConfiguration0.write(mockPrintWriter0);
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      StringReader stringReader0 = new StringReader("  <comment>");
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      try { 
+        xMLPropertiesConfiguration0.read(stringReader0);
+        fail("Expecting exception: Exception");
+      } catch(Exception e) {
+         //
+         // Unable to parse the configuration file
+         //
+         verifyException("org.apache.commons.configuration2.XMLPropertiesConfiguration", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      FileLocator.FileLocatorBuilder fileLocator_FileLocatorBuilder0 = mock(FileLocator.FileLocatorBuilder.class, new ViolatedAssumptionAnswer());
+      FileLocator fileLocator0 = new FileLocator(fileLocator_FileLocatorBuilder0);
+      xMLPropertiesConfiguration0.initFileLocator(fileLocator0);
+      File file0 = MockFile.createTempFile("org.apache.commons.configuration2.XMLPropertiesConfiguration$1", "org.apache.commons.configuration2.XMLPropertiesConfiguration$1");
+      MockPrintStream mockPrintStream0 = new MockPrintStream(file0, "UTF-8");
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockPrintStream0);
+      xMLPropertiesConfiguration0.write(mockPrintWriter0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.setHeader("FileLocator [basePath=null, encoding=null, fileName=null, fileSystem=null, locationStrategy=null, sourceURL=null, urlConnectionOptions=null]");
+      File file0 = MockFile.createTempFile("org.apache.commons.configuration2.XMLPropertiesConfiguration$1", "org.apache.commons.configuration2.XMLPropertiesConfiguration$1");
+      MockPrintStream mockPrintStream0 = new MockPrintStream(file0, "UTF-8");
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockPrintStream0);
+      xMLPropertiesConfiguration0.write(mockPrintWriter0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      XMLPropertiesConfiguration xMLPropertiesConfiguration0 = new XMLPropertiesConfiguration();
+      xMLPropertiesConfiguration0.setHeader("FileLocator [basePath=null, encoding=null, fileName=null, fileSystem=null, locationStrategy=null, sourceURL=null, urlConnectionOptions=null]");
+      File file0 = MockFile.createTempFile("org.apache.commons.configuration2.XMLPropertiesConfiguration$1", "org.apache.commons.configuration2.XMLPropertiesConfiguration$1");
+      MockPrintStream mockPrintStream0 = new MockPrintStream(file0, "UTF-8");
+      MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockPrintStream0);
+      xMLPropertiesConfiguration0.write(mockPrintWriter0);
+      ;
+}

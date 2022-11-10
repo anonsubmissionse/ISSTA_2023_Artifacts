@@ -1,0 +1,95 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      long[] longArray0 = new long[1];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      byte[] byteArray0 = middleSquareWeylSequence0.getStateInternal();
+      middleSquareWeylSequence0.setStateInternal(byteArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      long[] longArray0 = new long[3];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      long long0 = middleSquareWeylSequence0.nextLong();
+      assertEquals(1, long0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      long[] longArray0 = new long[3];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      int int0 = middleSquareWeylSequence0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      long[] longArray0 = new long[0];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      int int0 = middleSquareWeylSequence0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      long[] longArray0 = new long[8];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      // Undeclared exception!
+      try { 
+        middleSquareWeylSequence0.setStateInternal((byte[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = null;
+      try {
+        middleSquareWeylSequence0 = new MiddleSquareWeylSequence((long[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.rng.core.source32.MiddleSquareWeylSequence", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      long[] longArray0 = new long[7];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      byte[] byteArray0 = new byte[1];
+      // Undeclared exception!
+      try { 
+        middleSquareWeylSequence0.setStateInternal(byteArray0);
+        fail("Expecting exception: IllegalStateException");
+      } catch(IllegalStateException e) {
+         //
+         // State size must be larger than 24 but was 1
+         //
+         verifyException("org.apache.commons.rng.core.BaseProvider", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      long[] longArray0 = new long[1];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      long long0 = middleSquareWeylSequence0.nextLong();
+      assertEquals(1, long0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      long[] longArray0 = new long[1];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      int int0 = middleSquareWeylSequence0.next();
+      assertEquals(1, int0);
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      long[] longArray0 = new long[1];
+      MiddleSquareWeylSequence middleSquareWeylSequence0 = new MiddleSquareWeylSequence(longArray0);
+      int int0 = middleSquareWeylSequence0.next();
+      long long0 = middleSquareWeylSequence0.nextLong();
+      assertEquals(1, long0);
+}

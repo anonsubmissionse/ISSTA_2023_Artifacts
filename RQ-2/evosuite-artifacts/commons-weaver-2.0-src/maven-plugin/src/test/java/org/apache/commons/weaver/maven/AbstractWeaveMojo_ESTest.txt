@@ -1,0 +1,27 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      WeaveMojo weaveMojo0 = new WeaveMojo();
+      MockFile mockFile0 = new MockFile("Ow(d/$#^;Jp=+");
+      MavenProject mavenProject0 = new MavenProject();
+      List<String> list0 = mavenProject0.getCompileClasspathElements();
+      Properties properties0 = new Properties();
+      weaveMojo0.doExecute(mockFile0, list0, properties0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      TestWeaveMojo testWeaveMojo0 = new TestWeaveMojo();
+      ArtifactRepositoryPolicy artifactRepositoryPolicy0 = new ArtifactRepositoryPolicy(true, "", ".cZ(Md0_%");
+      MavenArtifactRepository mavenArtifactRepository0 = new MavenArtifactRepository("Gk", "", (ArtifactRepositoryLayout) null, artifactRepositoryPolicy0, artifactRepositoryPolicy0);
+      List<String> list0 = mavenArtifactRepository0.findVersions((Artifact) null);
+      Properties properties0 = new Properties();
+      try { 
+        testWeaveMojo0.doExecute((File) null, list0, properties0);
+        fail("Expecting exception: MojoExecutionException");
+      } catch(MojoExecutionException e) {
+         //
+         // weaving failed due to target
+         //
+         verifyException("org.apache.commons.weaver.maven.AbstractWeaveMojo", e);
+      }
+  }

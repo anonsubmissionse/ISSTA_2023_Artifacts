@@ -1,0 +1,12 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      AllFileSelector allFileSelector0 = new AllFileSelector();
+      boolean boolean0 = allFileSelector0.includeFile((FileSelectInfo) null);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      AllFileSelector allFileSelector0 = new AllFileSelector();
+      boolean boolean0 = allFileSelector0.traverseDescendents((FileSelectInfo) null);
+      assertTrue(boolean0);
+}

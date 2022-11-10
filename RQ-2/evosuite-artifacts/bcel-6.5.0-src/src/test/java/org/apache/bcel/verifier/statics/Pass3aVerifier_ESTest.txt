@@ -1,0 +1,43 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Pass3aVerifier pass3aVerifier0 = new Pass3aVerifier((Verifier) null, 2750);
+      int int0 = pass3aVerifier0.getMethodNo();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Verifier verifier0 = mock(Verifier.class, new ViolatedAssumptionAnswer());
+      Pass3aVerifier pass3aVerifier0 = new Pass3aVerifier(verifier0, (-108));
+      int int0 = pass3aVerifier0.getMethodNo();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Pass3aVerifier pass3aVerifier0 = new Pass3aVerifier((Verifier) null, 2267);
+      // Undeclared exception!
+      try { 
+        pass3aVerifier0.do_verify();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.statics.Pass3aVerifier", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      VerificationResult verificationResult0 = mock(VerificationResult.class, new ViolatedAssumptionAnswer());
+      Verifier verifier0 = mock(Verifier.class, new ViolatedAssumptionAnswer());
+      doReturn(verificationResult0).when(verifier0).doPass2();
+      Pass3aVerifier pass3aVerifier0 = new Pass3aVerifier(verifier0, 0);
+      pass3aVerifier0.do_verify();
+      assertEquals(0, pass3aVerifier0.getMethodNo());
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      Verifier verifier0 = mock(Verifier.class, new ViolatedAssumptionAnswer());
+      Pass3aVerifier pass3aVerifier0 = new Pass3aVerifier(verifier0, 0);
+      int int0 = pass3aVerifier0.getMethodNo();
+      assertEquals(1, int0);
+}

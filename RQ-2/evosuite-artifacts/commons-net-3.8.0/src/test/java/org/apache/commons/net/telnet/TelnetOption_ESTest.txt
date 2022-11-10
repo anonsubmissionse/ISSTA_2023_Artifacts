@@ -1,0 +1,43 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      boolean boolean0 = TelnetOption.isValidOption(255);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = TelnetOption.getOption(7);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        TelnetOption.getOption(825);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 825
+         //
+         verifyException("org.apache.commons.net.telnet.TelnetOption", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      boolean boolean0 = TelnetOption.isValidOption(2);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      boolean boolean0 = TelnetOption.isValidOption(1953);
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      String string0 = TelnetOption.getOption(203);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String string0 = TelnetOption.getOption(2);
+      ;
+}

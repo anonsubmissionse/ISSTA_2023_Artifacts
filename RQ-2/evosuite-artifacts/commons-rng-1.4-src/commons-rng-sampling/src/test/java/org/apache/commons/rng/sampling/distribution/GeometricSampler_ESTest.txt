@@ -1,0 +1,53 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        GeometricSampler.of((UniformRandomProvider) null, 0.0);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Probability of success (p) must be in the range [0 < p <= 1]: 0.0
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.GeometricSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      SharedStateDiscreteSampler sharedStateDiscreteSampler0 = GeometricSampler.of((UniformRandomProvider) null, 1.0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      // Undeclared exception!
+      try { 
+        GeometricSampler.of(jDKRandomWrapper0, 1570.224);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Probability of success (p) must be in the range [0 < p <= 1]: 1570.224
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.GeometricSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      // Undeclared exception!
+      try { 
+        GeometricSampler.of((UniformRandomProvider) null, (-426.377629135));
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Probability of success (p) must be in the range [0 < p <= 1]: -426.377629135
+         //
+         verifyException("org.apache.commons.rng.sampling.distribution.GeometricSampler", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockRandom mockRandom0 = new MockRandom();
+      JDKRandomWrapper jDKRandomWrapper0 = new JDKRandomWrapper(mockRandom0);
+      SharedStateDiscreteSampler sharedStateDiscreteSampler0 = GeometricSampler.of(jDKRandomWrapper0, 0.04779091967506745);
+      ;
+}

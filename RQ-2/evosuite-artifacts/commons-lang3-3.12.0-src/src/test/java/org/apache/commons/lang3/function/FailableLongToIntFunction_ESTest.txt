@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableLongToIntFunction<Throwable> failableLongToIntFunction0 = FailableLongToIntFunction.nop();
+      int int0 = failableLongToIntFunction0.applyAsInt(0L);
+      ;
+}

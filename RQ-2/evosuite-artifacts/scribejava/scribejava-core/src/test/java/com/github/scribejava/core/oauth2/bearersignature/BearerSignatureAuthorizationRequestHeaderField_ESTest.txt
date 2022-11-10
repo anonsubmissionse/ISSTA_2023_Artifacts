@@ -1,0 +1,22 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      BearerSignatureAuthorizationRequestHeaderField bearerSignatureAuthorizationRequestHeaderField0 = new BearerSignatureAuthorizationRequestHeaderField();
+      Verb verb0 = Verb.POST;
+      OAuthRequest oAuthRequest0 = new OAuthRequest(verb0, "");
+      bearerSignatureAuthorizationRequestHeaderField0.signRequest("", oAuthRequest0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      BearerSignatureAuthorizationRequestHeaderField bearerSignatureAuthorizationRequestHeaderField0 = BearerSignatureAuthorizationRequestHeaderField.instance();
+      // Undeclared exception!
+      try { 
+        bearerSignatureAuthorizationRequestHeaderField0.signRequest("B?fPPCx,hN:Z]ei", (OAuthRequest) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.github.scribejava.core.oauth2.bearersignature.BearerSignatureAuthorizationRequestHeaderField", e);
+      }
+  }

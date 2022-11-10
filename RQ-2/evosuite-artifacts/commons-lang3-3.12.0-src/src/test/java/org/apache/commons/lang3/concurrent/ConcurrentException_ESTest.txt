@@ -1,0 +1,40 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConcurrentException concurrentException0 = null;
+      try {
+        concurrentException0 = new ConcurrentException((Throwable) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Not a checked exception: null
+         //
+         verifyException("org.apache.commons.lang3.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConcurrentException concurrentException0 = null;
+      try {
+        concurrentException0 = new ConcurrentException("", (Throwable) null);
+        fail("Expecting exception: IllegalArgumentException");
+      } catch(IllegalArgumentException e) {
+         //
+         // Not a checked exception: null
+         //
+         verifyException("org.apache.commons.lang3.Validate", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ConcurrentException concurrentException0 = new ConcurrentException();
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      MockThrowable mockThrowable0 = new MockThrowable();
+      ConcurrentException concurrentException0 = new ConcurrentException("", mockThrowable0);
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MockThrowable mockThrowable0 = new MockThrowable();
+      ConcurrentException concurrentException0 = new ConcurrentException(mockThrowable0);
+  }

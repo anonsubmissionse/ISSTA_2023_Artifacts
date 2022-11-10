@@ -1,0 +1,34 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Class<String> class0 = String.class;
+      BasicRowProcessor basicRowProcessor0 = new BasicRowProcessor();
+      BeanListHandler<Object> beanListHandler0 = new BeanListHandler<Object>(class0, basicRowProcessor0);
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(0).when(resultSetMetaData0).getColumnCount();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      doReturn(true, false).when(resultSet0).next();
+      List<Object> list0 = beanListHandler0.handle(resultSet0);
+      assertTrue(list0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Class<String> class0 = String.class;
+      BasicRowProcessor basicRowProcessor0 = new BasicRowProcessor();
+      BeanListHandler<Object> beanListHandler0 = new BeanListHandler<Object>(class0, basicRowProcessor0);
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn((-1254)).when(resultSetMetaData0).getColumnCount();
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      doReturn(true).when(resultSet0).next();
+      // Undeclared exception!
+      try { 
+        beanListHandler0.handle(resultSet0);
+        fail("Expecting exception: NegativeArraySizeException");
+      } catch(NegativeArraySizeException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.BeanProcessor", e);
+      }
+  }

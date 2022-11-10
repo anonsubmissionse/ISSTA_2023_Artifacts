@@ -1,0 +1,83 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      UnixFTPEntryParser unixFTPEntryParser0 = new UnixFTPEntryParser();
+      StringReader stringReader0 = new StringReader("");
+      BufferedReader bufferedReader0 = new BufferedReader(stringReader0, 16);
+      String string0 = unixFTPEntryParser0.readNextEntry(bufferedReader0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      MacOsPeterFTPEntryParser macOsPeterFTPEntryParser0 = new MacOsPeterFTPEntryParser();
+      StringReader stringReader0 = new StringReader("gdNm9");
+      BufferedReader bufferedReader0 = new BufferedReader(stringReader0);
+      String string0 = macOsPeterFTPEntryParser0.readNextEntry(bufferedReader0);
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      MVSFTPEntryParser mVSFTPEntryParser0 = new MVSFTPEntryParser();
+      LinkedList<String> linkedList0 = new LinkedList<String>();
+      List<String> list0 = mVSFTPEntryParser0.preParse(linkedList0);
+      assertTrue(list0.isEmpty());
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FTPClientConfig fTPClientConfig0 = new FTPClientConfig();
+      OS2FTPEntryParser oS2FTPEntryParser0 = new OS2FTPEntryParser(fTPClientConfig0);
+      LinkedList<String> linkedList0 = new LinkedList<String>();
+      linkedList0.offerLast("UNIX_LTRIM");
+      List<String> list0 = oS2FTPEntryParser0.preParse(linkedList0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      MacOsPeterFTPEntryParser macOsPeterFTPEntryParser0 = new MacOsPeterFTPEntryParser();
+      StringReader stringReader0 = new StringReader("~M");
+      stringReader0.close();
+      BufferedReader bufferedReader0 = new BufferedReader(stringReader0, 3425);
+      try { 
+        macOsPeterFTPEntryParser0.readNextEntry(bufferedReader0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Stream closed
+         //
+         verifyException("java.io.StringReader", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      UnixFTPEntryParser unixFTPEntryParser0 = new UnixFTPEntryParser((FTPClientConfig) null, true);
+      // Undeclared exception!
+      try { 
+        unixFTPEntryParser0.preParse((List<String>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.ftp.parser.UnixFTPEntryParser", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      NetwareFTPEntryParser netwareFTPEntryParser0 = new NetwareFTPEntryParser((FTPClientConfig) null);
+      // Undeclared exception!
+      try { 
+        netwareFTPEntryParser0.readNextEntry((BufferedReader) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.net.ftp.FTPFileEntryParserImpl", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      FTPClientConfig fTPClientConfig0 = UnixFTPEntryParser.NUMERIC_DATE_CONFIG;
+      VMSFTPEntryParser vMSFTPEntryParser0 = new VMSFTPEntryParser(fTPClientConfig0);
+      List<String> list0 = vMSFTPEntryParser0.preParse((List<String>) null);
+      assertNotNull(list0);
+}

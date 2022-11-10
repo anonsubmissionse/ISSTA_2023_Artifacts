@@ -1,0 +1,348 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ObjectType objectType0 = new ObjectType("&gT!?v7PxV{dnbOK ");
+      IDIV iDIV0 = new IDIV();
+      InstructionList instructionList0 = new InstructionList(iDIV0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen(0, objectType0, objectType0.NO_ARGS, (String[]) null, "&gT!?v7PxV{dnbOK ", "&gT!?v7PxV{dnbOK ", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      InstructionHandle instructionHandle0 = instructionList0.append((Instruction) iDIV0);
+      Subroutine subroutine0 = subroutines0.subroutineOf(instructionHandle0);
+      assertNotNull(subroutine0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Type type0 = Type.UNKNOWN;
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[5];
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen(1932, type0, type0.NO_ARGS, stringArray0, "d_|RjL-", "d_|RjL-", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0, true);
+      instructionList0.dispose();
+      // Undeclared exception!
+      try { 
+        subroutines0.toString();
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.generic.InstructionHandle", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      BasicType basicType0 = Type.DOUBLE;
+      String[] stringArray0 = new String[0];
+      InstructionList instructionList0 = new InstructionList();
+      JSR jSR0 = new JSR((InstructionHandle) null);
+      BranchHandle branchHandle0 = instructionList0.insert((BranchInstruction) jSR0);
+      jSR0.setTarget(branchHandle0);
+      MethodGen methodGen0 = new MethodGen(0, basicType0, basicType0.NO_ARGS, stringArray0, "^FM8/MsCVZN>V&", "^FM8/MsCVZN>V&", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = null;
+      try {
+        subroutines0 = new Subroutines(methodGen0, false);
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+         //
+         // org.apache.bcel.generic.JSR cannot be cast to org.apache.bcel.generic.ASTORE
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      D2F d2F0 = new D2F();
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      Type type0 = d2F0.getType(constantPoolGen0);
+      String[] stringArray0 = new String[0];
+      InstructionList instructionList0 = new InstructionList();
+      MethodGen methodGen0 = new MethodGen(1, type0, type0.NO_ARGS, stringArray0, "", (String) null, instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = null;
+      try {
+        subroutines0 = new Subroutines(methodGen0, true);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 0
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      IINC iINC0 = new IINC(0, 0);
+      Type type0 = iINC0.getType((ConstantPoolGen) null);
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[9];
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      JSR jSR0 = new JSR((InstructionHandle) null);
+      instructionList0.insert((BranchInstruction) jSR0);
+      MethodGen methodGen0 = new MethodGen((byte) (-82), type0, type0.NO_ARGS, stringArray0, "2e/;5yRV<%BXk^|vJ", "2e/;5yRV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = null;
+      try {
+        subroutines0 = new Subroutines(methodGen0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      IINC iINC0 = new IINC(0, 0);
+      Type type0 = iINC0.getType((ConstantPoolGen) null);
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[9];
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      MethodGen methodGen0 = new MethodGen((byte) (-82), type0, type0.NO_ARGS, stringArray0, "2e/;5yRV<%BXk^|vJ", "2e/;5yRV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      PUSH pUSH0 = new PUSH((ConstantPoolGen) null, (int) (byte) (-82));
+      InstructionHandle instructionHandle0 = instructionList0.insert((CompoundInstruction) pUSH0);
+      JSR jSR0 = new JSR(instructionHandle0);
+      instructionList0.insert((BranchInstruction) jSR0);
+      Subroutines subroutines0 = null;
+      try {
+        subroutines0 = new Subroutines(methodGen0);
+        fail("Expecting exception: ClassCastException");
+      } catch(ClassCastException e) {
+         //
+         // org.apache.bcel.generic.BIPUSH cannot be cast to org.apache.bcel.generic.ASTORE
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ICONST iCONST0 = new ICONST(0);
+      Constant[] constantArray0 = new Constant[0];
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen(constantArray0);
+      Type type0 = iCONST0.getType(constantPoolGen0);
+      String[] stringArray0 = new String[3];
+      InstructionList instructionList0 = new InstructionList();
+      MethodGen methodGen0 = new MethodGen(0, type0, (Type[]) null, stringArray0, "/F{AyF8T-", "", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = null;
+      try {
+        subroutines0 = new Subroutines(methodGen0);
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // 0
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      IINC iINC0 = new IINC(0, 0);
+      Type type0 = iINC0.getType((ConstantPoolGen) null);
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[9];
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      MethodGen methodGen0 = new MethodGen((byte) (-56), type0, type0.NO_ARGS, stringArray0, "2e/;5yRV<%BXk^|vJ", "2e/;5yRV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      Subroutine subroutine0 = subroutines0.getTopLevel();
+      assertNotNull(subroutine0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ObjectType objectType0 = Type.STRINGBUFFER;
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      int[] intArray0 = new int[9];
+      InstructionHandle[] instructionHandleArray0 = new InstructionHandle[9];
+      SWITCH sWITCH0 = new SWITCH(intArray0, instructionHandleArray0, instructionHandleArray0[7]);
+      InstructionList instructionList0 = sWITCH0.getInstructionList();
+      MethodGen methodGen0 = new MethodGen((-4261), objectType0, objectType0.NO_ARGS, (String[]) null, "yU638hsQ<tHjUZ", "yU638hsQ<tHjUZ", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+  }
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      Constant[] constantArray0 = new Constant[0];
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen(constantArray0);
+      BasicType basicType0 = Type.BOOLEAN;
+      String[] stringArray0 = new String[3];
+      InstructionList instructionList0 = new InstructionList();
+      Character character0 = Character.valueOf('V');
+      PUSH pUSH0 = new PUSH(constantPoolGen0, character0);
+      InstructionHandle instructionHandle0 = instructionList0.insert((CompoundInstruction) pUSH0);
+      IF_ACMPEQ iF_ACMPEQ0 = new IF_ACMPEQ(instructionHandle0);
+      instructionList0.insert(instructionHandle0, (BranchInstruction) iF_ACMPEQ0);
+      MethodGen methodGen0 = new MethodGen(0, basicType0, (Type[]) null, stringArray0, stringArray0[2], "", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+  }
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      IINC iINC0 = new IINC(0, 0);
+      Type type0 = iINC0.getType((ConstantPoolGen) null);
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[9];
+      byteArray0[1] = (byte) (-56);
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      MethodGen methodGen0 = new MethodGen((byte) (-56), type0, type0.NO_ARGS, stringArray0, "2e/;5yRV<%BXk^|vJ", "2e/;5yRV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+  }
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      IINC iINC0 = new IINC(19, 19);
+      Type type0 = iINC0.getType((ConstantPoolGen) null);
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[10];
+      byteArray0[1] = (byte) (-65);
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      MethodGen methodGen0 = new MethodGen((byte) (-65), type0, type0.NO_ARGS, stringArray0, "2e/;5RV<%BXk^|vJ", "2e/;5RV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+  }
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[7];
+      byteArray0[1] = (byte) (-82);
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      ASTORE aSTORE0 = new ASTORE((byte)0);
+      Type type0 = aSTORE0.getType((ConstantPoolGen) null);
+      MethodGen methodGen0 = new MethodGen((byte)0, type0, type0.NO_ARGS, stringArray0, "2e/;5yRV<%BXk^|vJ", "2e/;5yRV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = new Subroutines(methodGen0, false);
+  }
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      ObjectType objectType0 = new ObjectType("&gT!?v7PxV{dnbOK ");
+      IDIV iDIV0 = new IDIV();
+      InstructionList instructionList0 = new InstructionList(iDIV0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen(0, objectType0, objectType0.NO_ARGS, (String[]) null, "&gT!?v7PxV{dnbOK ", "&gT!?v7PxV{dnbOK ", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      InstructionHandle instructionHandle0 = instructionList0.append((Instruction) iDIV0);
+      // Undeclared exception!
+      try { 
+        subroutines0.getSubroutine(instructionHandle0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // INTERNAL ERROR: Subroutine requested for an InstructionHandle that is not a leader of a subroutine.
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      ObjectType objectType0 = new ObjectType("IgT!?v7PxV{dpOK ");
+      IDIV iDIV0 = new IDIV();
+      InstructionList instructionList0 = new InstructionList(iDIV0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      InstructionHandle instructionHandle0 = instructionList0.getEnd();
+      MethodGen methodGen0 = new MethodGen(0, objectType0, objectType0.NO_ARGS, (String[]) null, "IgT!?v7PxV{dpOK ", "IgT!?v7PxV{dpOK ", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      // Undeclared exception!
+      try { 
+        subroutines0.getSubroutine(instructionHandle0);
+        fail("Expecting exception: RuntimeException");
+      } catch(RuntimeException e) {
+         //
+         // INTERNAL ERROR: TOPLEVEL special subroutine requested; use getTopLevel().
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      ObjectType objectType0 = new ObjectType("IgT!?v7PxV{dpOK ");
+      IDIV iDIV0 = new IDIV();
+      InstructionList instructionList0 = new InstructionList(iDIV0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen((-10), objectType0, objectType0.NO_ARGS, (String[]) null, "org.apache.bcel.generic.MONITORENTER", "org.apache.bcel.generic.MONITORENTER", instructionList0, constantPoolGen0);
+      InstructionHandle instructionHandle0 = instructionList0.append((Instruction) iDIV0);
+      methodGen0.addExceptionHandler(instructionHandle0, instructionHandle0, instructionHandle0, objectType0);
+      Subroutines subroutines0 = new Subroutines(methodGen0, true);
+  }
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      BasicType basicType0 = Type.BYTE;
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[9];
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      JSR jSR0 = new JSR((InstructionHandle) null);
+      instructionList0.insert((BranchInstruction) jSR0);
+      MethodGen methodGen0 = new MethodGen((-8), basicType0, basicType0.NO_ARGS, stringArray0, "^FM8/MsCVZN>V&", "^FM8/MsCVZN>V&", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = null;
+      try {
+        subroutines0 = new Subroutines(methodGen0, true);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      Type type0 = Type.UNKNOWN;
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[1];
+      byteArray0[0] = (byte)28;
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen(1932, type0, type0.NO_ARGS, stringArray0, "d_6RjNL#", "d_6RjNL#", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0, false);
+      String string0 = subroutines0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      Type type0 = Type.UNKNOWN;
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[16];
+      byteArray0[4] = (byte)39;
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen(1932, type0, type0.NO_ARGS, stringArray0, "d_|RjL-", "d_|RjL-", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      String string0 = subroutines0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      IINC iINC0 = new IINC(0, 0);
+      Type type0 = iINC0.getType((ConstantPoolGen) null);
+      String[] stringArray0 = new String[0];
+      byte[] byteArray0 = new byte[9];
+      byteArray0[1] = (byte) (-87);
+      InstructionList instructionList0 = new InstructionList(byteArray0);
+      MethodGen methodGen0 = new MethodGen((byte) (-87), type0, type0.NO_ARGS, stringArray0, "2e/;5yRV<%BXk^|vJ", "2e/;5yRV<%BXk^|vJ", instructionList0, (ConstantPoolGen) null);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      String string0 = subroutines0.toString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      ObjectType objectType0 = new ObjectType("IgT!?v7PxV{dpOK ");
+      IDIV iDIV0 = new IDIV();
+      InstructionList instructionList0 = new InstructionList(iDIV0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      InstructionHandle instructionHandle0 = instructionList0.getEnd();
+      MethodGen methodGen0 = new MethodGen(0, objectType0, objectType0.NO_ARGS, (String[]) null, "IgT!?v7PxV{dpOK ", "IgT!?v7PxV{dpOK ", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0);
+      Subroutine subroutine0 = subroutines0.subroutineOf(instructionHandle0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      ObjectType objectType0 = new ObjectType("IgT!?v7PxV{dpOK ");
+      IDIV iDIV0 = new IDIV();
+      InstructionList instructionList0 = new InstructionList(iDIV0);
+      ConstantPoolGen constantPoolGen0 = new ConstantPoolGen();
+      MethodGen methodGen0 = new MethodGen((-10), objectType0, objectType0.NO_ARGS, (String[]) null, "org.apache.bcel.generic.MONITORENTER", "org.apache.bcel.generic.MONITORENTER", instructionList0, constantPoolGen0);
+      Subroutines subroutines0 = new Subroutines(methodGen0, true);
+      // Undeclared exception!
+      try { 
+        subroutines0.subroutineOf((InstructionHandle) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.bcel.verifier.structurals.Subroutines", e);
+      }
+  }

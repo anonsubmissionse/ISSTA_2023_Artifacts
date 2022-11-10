@@ -1,0 +1,97 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String[] stringArray0 = new String[5];
+      SystemInUtil.addInputLine("aY#%2{.n/4");
+      try { 
+        Main.main(stringArray0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Simulated exception in System.in
+         //
+         verifyException("org.evosuite.runtime.util.SystemInUtil", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Charset charset0 = Charset.defaultCharset();
+      try { 
+        Main.read(charset0, "");
+        fail("Expecting exception: FileNotFoundException");
+      } catch(FileNotFoundException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      String[] stringArray0 = new String[1];
+      Main.main(stringArray0);
+      try { 
+        Main.main(stringArray0);
+        fail("Expecting exception: ScriptException");
+      } catch(ScriptException e) {
+         //
+         // java.io.IOException: Simulated exception in System.in
+         //
+         verifyException("org.apache.commons.jexl3.scripting.JexlScriptEngine", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      try { 
+        Main.main((String[]) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.scripting.Main", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      String[] stringArray0 = new String[12];
+      SystemInUtil.addInputLine("");
+      try { 
+        Main.main(stringArray0);
+        fail("Expecting exception: IOException");
+      } catch(IOException e) {
+         //
+         // Simulated exception in System.in
+         //
+         verifyException("org.evosuite.runtime.util.SystemInUtil", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      Charset charset0 = Charset.defaultCharset();
+      BufferedReader bufferedReader0 = Main.read(charset0, (String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String[] stringArray0 = new String[6];
+      Main.main(stringArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      String[] stringArray0 = new String[1];
+      stringArray0[0] = "3beHtB&V)";
+      try { 
+        Main.main(stringArray0);
+        fail("Expecting exception: FileNotFoundException");
+      } catch(FileNotFoundException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.evosuite.runtime.mock.java.io.MockFileInputStream", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      Main main0 = new Main();
+  }

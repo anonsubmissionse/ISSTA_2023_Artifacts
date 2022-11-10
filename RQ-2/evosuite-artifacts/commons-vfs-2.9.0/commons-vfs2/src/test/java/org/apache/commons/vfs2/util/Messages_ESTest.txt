@@ -1,0 +1,37 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      String string0 = Messages.getString(",h*O.%z?yBb\":", (Object) ",h*O.%z?yBb\":");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      String string0 = Messages.getString((String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      Object[] objectArray0 = new Object[2];
+      String string0 = Messages.getString((String) null, objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Object[] objectArray0 = new Object[1];
+      String string0 = Messages.getString(",h*O.%z?yBb\":", objectArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      String string0 = Messages.getString((String) null, (Object) "");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      String string0 = Messages.getString("");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      String string0 = Messages.getString("");
+      ;
+}

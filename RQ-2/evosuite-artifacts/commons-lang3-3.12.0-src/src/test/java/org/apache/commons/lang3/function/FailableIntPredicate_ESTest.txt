@@ -1,0 +1,54 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FailableIntPredicate<Throwable> failableIntPredicate0 = FailableIntPredicate.truePredicate();
+      boolean boolean0 = failableIntPredicate0.test((-1));
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FailableIntPredicate<Throwable> failableIntPredicate0 = FailableIntPredicate.falsePredicate();
+      boolean boolean0 = failableIntPredicate0.test((-1420));
+      assertTrue(boolean0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FailableIntPredicate<Throwable> failableIntPredicate0 = FailableIntPredicate.falsePredicate();
+      // Undeclared exception!
+      try { 
+        failableIntPredicate0.and((FailableIntPredicate<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      FailableIntPredicate<Throwable> failableIntPredicate0 = FailableIntPredicate.falsePredicate();
+      FailableIntPredicate<Throwable> failableIntPredicate1 = failableIntPredicate0.negate();
+      FailableIntPredicate<Throwable> failableIntPredicate2 = failableIntPredicate0.or(failableIntPredicate1);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      FailableIntPredicate<Throwable> failableIntPredicate0 = FailableIntPredicate.truePredicate();
+      // Undeclared exception!
+      try { 
+        failableIntPredicate0.or((FailableIntPredicate<Throwable>) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      FailableIntPredicate<Throwable> failableIntPredicate0 = FailableIntPredicate.falsePredicate();
+      FailableIntPredicate<Throwable> failableIntPredicate1 = failableIntPredicate0.or(failableIntPredicate0);
+      FailableIntPredicate<Throwable> failableIntPredicate2 = failableIntPredicate0.and(failableIntPredicate1);
+      ;
+}

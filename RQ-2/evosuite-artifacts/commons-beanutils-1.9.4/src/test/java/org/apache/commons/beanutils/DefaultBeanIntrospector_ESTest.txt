@@ -1,0 +1,21 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DefaultBeanIntrospector defaultBeanIntrospector0 = (DefaultBeanIntrospector)DefaultBeanIntrospector.INSTANCE;
+      // Undeclared exception!
+      try { 
+        defaultBeanIntrospector0.introspect((IntrospectionContext) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.beanutils.DefaultBeanIntrospector", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DefaultBeanIntrospector defaultBeanIntrospector0 = (DefaultBeanIntrospector)DefaultBeanIntrospector.INSTANCE;
+      Class<Object> class0 = Object.class;
+      DefaultIntrospectionContext defaultIntrospectionContext0 = new DefaultIntrospectionContext(class0);
+      defaultBeanIntrospector0.introspect(defaultIntrospectionContext0);
+  }

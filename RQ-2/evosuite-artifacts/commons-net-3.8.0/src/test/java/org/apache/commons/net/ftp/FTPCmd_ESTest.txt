@@ -1,0 +1,16 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FTPCmd[] fTPCmdArray0 = FTPCmd.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FTPCmd fTPCmd0 = FTPCmd.valueOf("DELE");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      FTPCmd fTPCmd0 = FTPCmd.REST;
+      String string0 = fTPCmd0.getCommand();
+      assertNotNull(string0);
+}

@@ -1,0 +1,6 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DUP_X1 dUP_X1_0 = new DUP_X1();
+      Type type0 = dUP_X1_0.getType((ConstantPoolGen) null);
+      assertNotNull(type0);
+}

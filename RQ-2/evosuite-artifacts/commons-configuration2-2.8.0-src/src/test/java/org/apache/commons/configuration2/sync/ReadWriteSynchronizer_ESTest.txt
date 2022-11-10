@@ -1,0 +1,51 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ReentrantReadWriteLock reentrantReadWriteLock0 = new ReentrantReadWriteLock();
+      ReadWriteSynchronizer readWriteSynchronizer0 = new ReadWriteSynchronizer(reentrantReadWriteLock0);
+      readWriteSynchronizer0.beginWrite();
+      readWriteSynchronizer0.endWrite();
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ReadWriteSynchronizer readWriteSynchronizer0 = new ReadWriteSynchronizer((ReadWriteLock) null);
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ReentrantReadWriteLock reentrantReadWriteLock0 = new ReentrantReadWriteLock();
+      ReadWriteSynchronizer readWriteSynchronizer0 = new ReadWriteSynchronizer(reentrantReadWriteLock0);
+      readWriteSynchronizer0.beginRead();
+      readWriteSynchronizer0.endRead();
+  }
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ReadWriteSynchronizer readWriteSynchronizer0 = new ReadWriteSynchronizer();
+      readWriteSynchronizer0.beginRead();
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ReadWriteSynchronizer readWriteSynchronizer0 = new ReadWriteSynchronizer();
+      // Undeclared exception!
+      try { 
+        readWriteSynchronizer0.endWrite();
+        fail("Expecting exception: IllegalMonitorStateException");
+      } catch(IllegalMonitorStateException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("java.util.concurrent.locks.ReentrantReadWriteLock$Sync", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ReadWriteSynchronizer readWriteSynchronizer0 = new ReadWriteSynchronizer();
+      // Undeclared exception!
+      try { 
+        readWriteSynchronizer0.endRead();
+        fail("Expecting exception: IllegalMonitorStateException");
+      } catch(IllegalMonitorStateException e) {
+         //
+         // attempt to unlock read lock, not locked by current thread
+         //
+         verifyException("java.util.concurrent.locks.ReentrantReadWriteLock$Sync", e);
+      }
+  }

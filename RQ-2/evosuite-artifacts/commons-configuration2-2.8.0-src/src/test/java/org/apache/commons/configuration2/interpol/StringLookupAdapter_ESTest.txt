@@ -1,0 +1,29 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      StringLookup stringLookup0 = mock(StringLookup.class, new ViolatedAssumptionAnswer());
+      doReturn((String) null).when(stringLookup0).lookup(anyString());
+      StringLookupAdapter stringLookupAdapter0 = new StringLookupAdapter(stringLookup0);
+      Object object0 = stringLookupAdapter0.lookup("");
+      assertNotNull(object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      StringLookupAdapter stringLookupAdapter0 = null;
+      try {
+        stringLookupAdapter0 = new StringLookupAdapter((StringLookup) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // stringLookup
+         //
+         verifyException("java.util.Objects", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      StringLookup stringLookup0 = mock(StringLookup.class, new ViolatedAssumptionAnswer());
+      doReturn("").when(stringLookup0).lookup(anyString());
+      StringLookupAdapter stringLookupAdapter0 = new StringLookupAdapter(stringLookup0);
+      Object object0 = stringLookupAdapter0.lookup("");
+      assertNotNull(object0);
+}

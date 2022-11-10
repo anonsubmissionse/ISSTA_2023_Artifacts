@@ -1,0 +1,9 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      StaticCodeInstructionOperandConstraintException staticCodeInstructionOperandConstraintException0 = new StaticCodeInstructionOperandConstraintException("");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      LinkingConstraintException linkingConstraintException0 = new LinkingConstraintException();
+      ClassConstraintException classConstraintException0 = new ClassConstraintException("org.apache.bcel.verifier.exc.ClassConstraintException", linkingConstraintException0);
+  }

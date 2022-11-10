@@ -1,0 +1,88 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      GenerousBeanProcessor generousBeanProcessor0 = new GenerousBeanProcessor();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(593).when(resultSetMetaData0).getColumnCount();
+      doReturn("lf'*|7=a}il-&", "lf'*|7=a}il-&", "_", "_", "Gh`").when(resultSetMetaData0).getColumnLabel(anyInt());
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      Class<Object> class0 = Object.class;
+      Object object0 = generousBeanProcessor0.toBean(resultSet0, (Class<?>) class0);
+      assertEquals(generousBeanProcessor0, object0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(1).when(resultSetMetaData0).getColumnCount();
+      doReturn("I24MD").when(resultSetMetaData0).getColumnLabel(anyInt());
+      PropertyDescriptor[] propertyDescriptorArray0 = new PropertyDescriptor[7];
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("K53OG", (Method) null, (Method) null);
+      propertyDescriptorArray0[0] = propertyDescriptor0;
+      PropertyDescriptor propertyDescriptor1 = new PropertyDescriptor("I24MD", (Method) null, (Method) null);
+      propertyDescriptorArray0[1] = propertyDescriptor1;
+      GenerousBeanProcessor generousBeanProcessor0 = new GenerousBeanProcessor();
+      int[] intArray0 = generousBeanProcessor0.mapColumnsToProperties(resultSetMetaData0, propertyDescriptorArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      GenerousBeanProcessor generousBeanProcessor0 = new GenerousBeanProcessor();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn((-1)).when(resultSetMetaData0).getColumnCount();
+      PropertyDescriptor[] propertyDescriptorArray0 = new PropertyDescriptor[8];
+      int[] intArray0 = generousBeanProcessor0.mapColumnsToProperties(resultSetMetaData0, propertyDescriptorArray0);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      GenerousBeanProcessor generousBeanProcessor0 = new GenerousBeanProcessor();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn((-11)).when(resultSetMetaData0).getColumnCount();
+      PropertyDescriptor[] propertyDescriptorArray0 = new PropertyDescriptor[2];
+      // Undeclared exception!
+      try { 
+        generousBeanProcessor0.mapColumnsToProperties(resultSetMetaData0, propertyDescriptorArray0);
+        fail("Expecting exception: NegativeArraySizeException");
+      } catch(NegativeArraySizeException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.GenerousBeanProcessor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      GenerousBeanProcessor generousBeanProcessor0 = new GenerousBeanProcessor();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(29).when(resultSetMetaData0).getColumnCount();
+      doReturn("e%l$i", (String) null).when(resultSetMetaData0).getColumnLabel(anyInt());
+      doReturn((String) null).when(resultSetMetaData0).getColumnName(anyInt());
+      PropertyDescriptor[] propertyDescriptorArray0 = new PropertyDescriptor[8];
+      PropertyDescriptor propertyDescriptor0 = new PropertyDescriptor("cH*!LR]#B", (Method) null, (Method) null);
+      propertyDescriptorArray0[0] = propertyDescriptor0;
+      PropertyDescriptor propertyDescriptor1 = new PropertyDescriptor("e%l$i", (Method) null, (Method) null);
+      propertyDescriptorArray0[1] = propertyDescriptor1;
+      // Undeclared exception!
+      try { 
+        generousBeanProcessor0.mapColumnsToProperties(resultSetMetaData0, propertyDescriptorArray0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.dbutils.GenerousBeanProcessor", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      GenerousBeanProcessor generousBeanProcessor0 = new GenerousBeanProcessor();
+      ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+      doReturn(1).when(resultSetMetaData0).getColumnCount();
+      doReturn("").when(resultSetMetaData0).getColumnLabel(anyInt());
+      doReturn("").when(resultSetMetaData0).getColumnName(anyInt());
+      ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+      doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+      Class<Object> class0 = Object.class;
+      Object object0 = generousBeanProcessor0.toBean(resultSet0, (Class<?>) class0);
+      ;
+}

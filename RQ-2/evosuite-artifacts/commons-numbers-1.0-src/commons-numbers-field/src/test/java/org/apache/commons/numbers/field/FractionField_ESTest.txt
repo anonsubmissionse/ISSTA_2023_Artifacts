@@ -1,0 +1,12 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      FractionField fractionField0 = FractionField.get();
+      Fraction fraction0 = fractionField0.one();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      FractionField fractionField0 = FractionField.get();
+      Fraction fraction0 = fractionField0.zero();
+      ;
+}

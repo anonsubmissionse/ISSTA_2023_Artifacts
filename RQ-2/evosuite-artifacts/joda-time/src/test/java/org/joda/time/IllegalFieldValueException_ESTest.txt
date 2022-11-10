@@ -1,0 +1,296 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.clockhourOfHalfday();
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, "");
+      illegalFieldValueException0.getUpperBound();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      DurationFieldType durationFieldType0 = DurationFieldType.MILLIS_TYPE;
+      Double double0 = new Double(0.0);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(durationFieldType0, (Number) null, (Number) null, double0);
+      illegalFieldValueException0.getUpperBound();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfDay();
+      Long long0 = new Long(1L);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, long0, long0, long0, "org.joda.time.IllegalFieldValueException");
+      illegalFieldValueException0.getUpperBound();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Float float0 = new Float((-1.0));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("sV2T(", float0, float0, float0);
+      illegalFieldValueException0.getUpperBound();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("a#xR#?5IT{~*c", "$ewSN~7DD");
+      illegalFieldValueException0.getLowerBound();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfDay();
+      Double double0 = new Double(0.0);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, double0, double0, (Number) null);
+      illegalFieldValueException0.getLowerBound();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+      Double double0 = new Double((-4334.81348));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, double0, double0, double0, "must be in the range [");
+      illegalFieldValueException0.getLowerBound();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      Integer integer0 = new Integer(2245);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("yfh9FlsABN", integer0, integer0, integer0);
+      illegalFieldValueException0.getLowerBound();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("`eYYBm$OU[ls8d{OPS", "");
+      String string0 = illegalFieldValueException0.getIllegalValueAsString();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test9()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("`eYYBm$OU[ls8d{OPS", "");
+      String string0 = illegalFieldValueException0.getIllegalValueAsString();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.millisOfSecond();
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, "tIi85I/LcMqr");
+      illegalFieldValueException0.getIllegalStringValue();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("EcRb5", "");
+      illegalFieldValueException0.getIllegalStringValue();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      DurationFieldType durationFieldType0 = DurationFieldType.HOURS_TYPE;
+      Short short0 = new Short((short)0);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(durationFieldType0, short0, short0, short0);
+      illegalFieldValueException0.getIllegalNumberValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+      Double double0 = new Double((-4334.81348));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, double0, double0, double0, "must be in the range [");
+      illegalFieldValueException0.getIllegalNumberValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.year();
+      Double double0 = new Double(3570.34);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, double0, "is not supported");
+      illegalFieldValueException0.getIllegalNumberValue();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException((String) null, (String) null);
+      illegalFieldValueException0.getFieldName();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      Float float0 = new Float(1925.83F);
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("", float0, float0, float0);
+      illegalFieldValueException0.getFieldName();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      Months months0 = Months.months((-1935));
+      DurationFieldType durationFieldType0 = months0.getFieldType();
+      Float float0 = new Float((double) (-1935));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(durationFieldType0, float0, float0, float0);
+      illegalFieldValueException0.getDurationFieldType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+      Double double0 = new Double((-4334.81348));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, double0, double0, double0, "must be in the range [");
+      illegalFieldValueException0.getDateTimeFieldType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = null;
+      try {
+        illegalFieldValueException0 = new IllegalFieldValueException((DurationFieldType) null, "-RVS%cz&");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.joda.time.IllegalFieldValueException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      Short short0 = new Short((short) (-1563));
+      IllegalFieldValueException illegalFieldValueException0 = null;
+      try {
+        illegalFieldValueException0 = new IllegalFieldValueException((DurationFieldType) null, short0, short0, (Number) null);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.joda.time.IllegalFieldValueException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = null;
+      try {
+        illegalFieldValueException0 = new IllegalFieldValueException((DateTimeFieldType) null, "must not be smaller than ");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.joda.time.IllegalFieldValueException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      Float float0 = new Float(0.0F);
+      IllegalFieldValueException illegalFieldValueException0 = null;
+      try {
+        illegalFieldValueException0 = new IllegalFieldValueException((DateTimeFieldType) null, float0, "org.joda.time.IllegalFieldValueException");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.joda.time.IllegalFieldValueException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test23()  throws Throwable  {
+      Short short0 = new Short((short)3105);
+      IllegalFieldValueException illegalFieldValueException0 = null;
+      try {
+        illegalFieldValueException0 = new IllegalFieldValueException((DateTimeFieldType) null, short0, short0, short0, "");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.joda.time.IllegalFieldValueException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test24()  throws Throwable  {
+      Long long0 = new Long(0L);
+      IllegalFieldValueException illegalFieldValueException0 = null;
+      try {
+        illegalFieldValueException0 = new IllegalFieldValueException((DateTimeFieldType) null, long0, long0, long0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.joda.time.IllegalFieldValueException", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test25()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.centuryOfEra();
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, (String) null);
+      illegalFieldValueException0.prependMessage((String) null);
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test26()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("a#xR#?5IT{~*c", "$ewSN~7DD");
+      illegalFieldValueException0.prependMessage("$ewSN~7DD");
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test27()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfHour();
+      Float float0 = new Float((-0.27542654F));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, float0, float0, float0, "e2");
+      String string0 = illegalFieldValueException0.getIllegalValueAsString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test28()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfHour();
+      Float float0 = new Float((-0.27542654F));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, float0, float0, float0, "e2");
+      String string0 = illegalFieldValueException0.getIllegalValueAsString();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test29()  throws Throwable  {
+      DurationFieldType durationFieldType0 = DurationFieldType.MINUTES_TYPE;
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(durationFieldType0, "f5");
+  }
+ @Test(timeout = 4000)
+  public void test30()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfHour();
+      Float float0 = new Float((-0.27542654F));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, float0, float0, float0, "e2");
+      illegalFieldValueException0.getIllegalStringValue();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test31()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfHour();
+      Float float0 = new Float((-0.27542654F));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, float0, float0, float0, "e2");
+      String string0 = illegalFieldValueException0.getMessage();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test32()  throws Throwable  {
+      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfHour();
+      Float float0 = new Float((-0.27542654F));
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException(dateTimeFieldType0, float0, float0, float0, "e2");
+      illegalFieldValueException0.getDurationFieldType();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test33()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("K7xFS:gS5|Dn", (String) null);
+      illegalFieldValueException0.getFieldName();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test34()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("K7xFS:gS5|Dn", (String) null);
+      illegalFieldValueException0.getIllegalNumberValue();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}
+ @Test(timeout = 4000)
+  public void test35()  throws Throwable  {
+      IllegalFieldValueException illegalFieldValueException0 = new IllegalFieldValueException("K7xFS:gS5|Dn", (String) null);
+      illegalFieldValueException0.getDateTimeFieldType();
+      assertNotNull(illegalFieldValueException0.getMessage());
+}

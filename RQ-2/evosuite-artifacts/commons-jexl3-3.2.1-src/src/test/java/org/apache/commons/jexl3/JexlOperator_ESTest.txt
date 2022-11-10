@@ -1,0 +1,45 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      JexlOperator[] jexlOperatorArray0 = JexlOperator.values();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.valueOf("PROPERTY_SET");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.ASSIGN;
+      String string0 = jexlOperator0.getMethodName();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.SELF_AND;
+      JexlOperator jexlOperator1 = jexlOperator0.getBaseOperator();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.AND;
+      String string0 = jexlOperator0.getOperatorSymbol();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.AND;
+      int int0 = jexlOperator0.getArity();
+      assertEquals(0, int0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.AND;
+      jexlOperator0.getBaseOperator();
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      JexlOperator jexlOperator0 = JexlOperator.AND;
+      String string0 = jexlOperator0.getMethodName();
+      ;
+}

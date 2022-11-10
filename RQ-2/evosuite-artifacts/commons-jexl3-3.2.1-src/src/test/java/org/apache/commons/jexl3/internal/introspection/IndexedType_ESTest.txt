@@ -1,0 +1,54 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Object object0 = new Object();
+      // Undeclared exception!
+      try { 
+        IndexedType.discover((Introspector) null, object0, "NOQn8.&e:oy]@C?Dc#");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.IndexedType", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector((Log) null, classLoader0);
+      // Undeclared exception!
+      try { 
+        IndexedType.discover(introspector0, introspector0, "&qRFo<I,RPcCqUgNi2");
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.internal.introspection.ClassMap", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      SimpleLog simpleLog0 = new SimpleLog("B");
+      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+      Introspector introspector0 = new Introspector(simpleLog0, classLoader0);
+      Object object0 = new Object();
+      JexlPropertyGet jexlPropertyGet0 = IndexedType.discover(introspector0, object0, "B");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      Object object0 = new Object();
+      JexlPropertyGet jexlPropertyGet0 = IndexedType.discover((Introspector) null, object0, (String) null);
+      ;
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      JexlPropertyGet jexlPropertyGet0 = IndexedType.discover((Introspector) null, "", "");
+      ;
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      JexlPropertyGet jexlPropertyGet0 = IndexedType.discover((Introspector) null, (Object) null, "");
+      ;
+}

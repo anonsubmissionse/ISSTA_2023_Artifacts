@@ -1,0 +1,14 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ConversionException conversionException0 = new ConversionException("(XyKO%8j?");
+  }
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ConversionException conversionException0 = new ConversionException();
+  }
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ConversionException conversionException0 = new ConversionException((Throwable) null);
+      ConversionException conversionException1 = new ConversionException("(XyKO%8j?", conversionException0);
+      ;
+}

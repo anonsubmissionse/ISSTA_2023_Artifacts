@@ -1,0 +1,69 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(1);
+      aSTJxltLiteral0.setLiteral("org.apache.commons.jexl3.parser.ASTJxltLiteral");
+      String string0 = aSTJxltLiteral0.toString();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(0);
+      aSTJxltLiteral0.setLiteral("");
+      String string0 = aSTJxltLiteral0.toString();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test2()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(0);
+      OperatorController operatorController0 = OperatorController.INSTANCE;
+      Object object0 = aSTJxltLiteral0.jjtAccept(operatorController0, operatorController0);
+      assertTrue(object0);
+}
+ @Test(timeout = 4000)
+  public void test3()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(1);
+      aSTJxltLiteral0.setLiteral("org.apache.commons.jexl3.parser.ASTJxltLiteral");
+      String string0 = aSTJxltLiteral0.getLiteral();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test4()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(0);
+      aSTJxltLiteral0.setLiteral("");
+      String string0 = aSTJxltLiteral0.getLiteral();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test5()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(374);
+      String string0 = aSTJxltLiteral0.toString();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test6()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(374);
+      JexlFeatures jexlFeatures0 = JexlEngine.DEFAULT_FEATURES;
+      FeatureController featureController0 = new FeatureController(jexlFeatures0);
+      Object object0 = aSTJxltLiteral0.jjtAccept(featureController0, (Object) null);
+      // Undeclared exception!
+      try { 
+        aSTJxltLiteral0.jjtAccept((ParserVisitor) null, object0);
+        fail("Expecting exception: NullPointerException");
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("org.apache.commons.jexl3.parser.ASTJxltLiteral", e);
+      }
+  }
+ @Test(timeout = 4000)
+  public void test7()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral(15);
+      String string0 = aSTJxltLiteral0.getLiteral();
+      assertNotNull(string0);
+}
+ @Test(timeout = 4000)
+  public void test8()  throws Throwable  {
+      ASTJxltLiteral aSTJxltLiteral0 = new ASTJxltLiteral((Parser) null, 1868);
+      assertEquals(0, aSTJxltLiteral0.jjtGetNumChildren());
+}

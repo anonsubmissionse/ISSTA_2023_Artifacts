@@ -1,0 +1,11 @@
+ @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
+      Cryptor cryptor0 = CryptorFactory.getCryptor();
+      Cryptor cryptor1 = CryptorFactory.getCryptor();
+      ;
+}
+ @Test(timeout = 4000)
+  public void test1()  throws Throwable  {
+      Cryptor cryptor0 = CryptorFactory.getCryptor();
+      CryptorFactory.setCryptor(cryptor0);
+  }
