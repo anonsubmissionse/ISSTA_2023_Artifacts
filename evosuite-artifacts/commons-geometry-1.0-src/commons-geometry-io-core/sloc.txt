@@ -1,0 +1,56 @@
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                          | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.input       | FileGeometryInput.java                             | src      |       11 |       17 |       16 |       37 |       81 |
+| core.input       | FileGeometryInput_ESTest.java                      | test     |       12 |        0 |       12 |       74 |       98 |
+| core.input       | FileGeometryInput_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       89 |      110 |
+| core.input       | GeometryInput.java                                 | src      |        4 |        6 |       16 |        6 |       32 |
+| core.input       | StreamGeometryInput.java                           | src      |        9 |       17 |       16 |       24 |       66 |
+| core.input       | StreamGeometryInput_ESTest.java                    | test     |        6 |        0 |        4 |       35 |       45 |
+| core.input       | StreamGeometryInput_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |       82 |      103 |
+| core.input       | UrlGeometryInput.java                              | src      |       11 |       17 |       16 |       36 |       80 |
+| core.input       | UrlGeometryInput_ESTest.java                       | test     |       13 |        0 |       12 |       88 |      113 |
+| core.input       | UrlGeometryInput_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       94 |      115 |
+| core.input       | package-info.java                                  | src      |        0 |        2 |       16 |        1 |       19 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.internal    | CharReadBuffer.java                                | src      |       50 |      117 |       18 |      183 |      368 |
+| core.internal    | CharReadBuffer_ESTest.java                         | test     |       71 |        0 |       75 |      413 |      559 |
+| core.internal    | CharReadBuffer_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       87 |      108 |
+| core.internal    | GeometryIOUtils.java                               | src      |       32 |      104 |       16 |      136 |      288 |
+| core.internal    | GeometryIOUtils_ESTest.java                        | test     |       56 |        0 |       60 |      386 |      502 |
+| core.internal    | GeometryIOUtils_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      107 |      128 |
+| core.internal    | IOConsumer.java                                    | src      |        3 |        8 |       16 |        6 |       33 |
+| core.internal    | IOFunction.java                                    | src      |        3 |       10 |       16 |        6 |       35 |
+| core.internal    | IOSupplier.java                                    | src      |        3 |        8 |       16 |        6 |       33 |
+| core.internal    | IOToIntFunction.java                               | src      |        3 |        9 |       16 |        6 |       34 |
+| core.internal    | SimpleTextParser.java                              | src      |      162 |      520 |       20 |      501 |     1203 |
+| core.internal    | SimpleTextParser_ESTest.java                       | test     |      274 |        0 |      259 |     2043 |     2576 |
+| core.internal    | SimpleTextParser_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       96 |      117 |
+| core.internal    | package-info.java                                  | src      |        0 |        4 |       16 |        1 |       21 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.output      | FileGeometryOutput.java                            | src      |       11 |       16 |       16 |       37 |       80 |
+| core.output      | FileGeometryOutput_ESTest.java                     | test     |        9 |        0 |        8 |       52 |       69 |
+| core.output      | FileGeometryOutput_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |       89 |      110 |
+| core.output      | GeometryOutput.java                                | src      |        4 |        6 |       16 |        6 |       32 |
+| core.output      | StreamGeometryOutput.java                          | src      |        9 |       17 |       16 |       24 |       66 |
+| core.output      | StreamGeometryOutput_ESTest.java                   | test     |        7 |        0 |        4 |       41 |       52 |
+| core.output      | StreamGeometryOutput_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |       82 |      103 |
+| core.output      | package-info.java                                  | src      |        0 |        2 |       16 |        1 |       19 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.utils       | AbstractTextFormatWriter.java                      | src      |       20 |       45 |       16 |       66 |      147 |
+| core.utils       | AbstractTextFormatWriter_ESTest.java               | test     |        3 |        0 |        5 |       12 |       20 |
+| core.utils       | AbstractTextFormatWriter_ESTest_scaffolding.java   | test     |       14 |        5 |        0 |       61 |       80 |
+| core.utils       | package-info.java                                  | src      |        0 |        2 |       16 |        1 |       19 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core             | AbstractGeometryIOMetadata.java                    | src      |        9 |        6 |       16 |       32 |       63 |
+| core             | AbstractGeometryIOMetadata_ESTest.java             | test     |        9 |        0 |        4 |       51 |       64 |
+| core             | AbstractGeometryIOMetadata_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       79 |      100 |
+| core             | BoundaryIOManager.java                             | src      |       48 |      229 |       18 |      193 |      488 |
+| core             | BoundaryReadHandler.java                           | src      |        6 |       53 |       16 |       11 |       86 |
+| core             | BoundaryWriteHandler.java                          | src      |        4 |       21 |       16 |        8 |       49 |
+| core             | GeometryFormat.java                                | src      |        5 |       12 |       16 |        7 |       40 |
+| core             | GeometryIOMetadata.java                            | src      |        4 |       10 |       16 |        6 |       36 |
+| core             | package-info.java                                  | src      |        0 |        3 |       16 |        1 |       20 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 5 package(s)     | 46 file(s)                                         | java     |     1029 |     1311 |      867 |     5403 |     8610 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+

@@ -1,0 +1,12 @@
++------------------+----------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                                | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+----------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| guava            | ListenableFutureAdapter.java                             | src      |       11 |        5 |       12 |       30 |       58 |
+| guava            | ListenableFutureAdapter_ESTest.java                      | test     |        4 |        0 |        4 |       17 |       25 |
+| guava            | ListenableFutureAdapter_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      276 |      297 |
+| guava            | RateLimitedThrottleRequestFilter.java                    | src      |       15 |       12 |        4 |       59 |       90 |
+| guava            | RateLimitedThrottleRequestFilter_ESTest.java             | test     |       13 |        0 |       21 |       83 |      117 |
+| guava            | RateLimitedThrottleRequestFilter_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      519 |      540 |
++------------------+----------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 6 file(s)                                                | java     |       75 |       27 |       41 |      984 |     1127 |
++------------------+----------------------------------------------------------+----------+----------+----------+----------+----------+----------+

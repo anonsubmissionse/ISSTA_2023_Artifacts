@@ -1,0 +1,29 @@
+async-http-client , 16299 , 3288 , 69889
+bcel-6.5.0-src , 35571 , 15569 , 263796
+commons-beanutils-1.9.4 , 11725 , 15074 , 29939
+commons-collections4-4.4-src , 6697 , 6532 , 2149
+commons-configuration2-2.8.0-src , 4553 , 4882 , 2858
+commons-dbutils-1.7 , 3079 , 4158 , 10144
+commons-geometry-1.0-src , 14168 , 12195 , 48862
+commons-imaging-1.0-alpha3-src , 32275 , 5003 , 103120
+commons-jcs3-3.1-src , 14328 , 6045 , 33542
+commons-jexl3-3.2.1-src , 2295 , 2267 , 5613
+commons-lang3-3.12.0-src , 5321 , 6671 , 8131
+commons-net-3.8.0 , 19407 , 16574 , 42841
+commons-numbers-1.0-src , 5502 , 5566 , 56339
+commons-pool2-2.11.1-src , 1197 , 1335 , 2688
+commons-rng-1.4-src , 9654 , 161553 , 16241
+commons-validator-1.7 , 7829 , 7338 , 22352
+commons-vfs-2.9.0 , 7751 , 4966 , 13890
+commons-weaver-2.0-src , 4527 , 1546 , 14462
+http-request , 1395 , 1511 , 10450
+joda-time , 32312 , 31127 , 156345
+JSON-java , 4220 , 3549 , 27351
+jsoup , 13905 , 4627 , 186371
+scribejava , 2173 , 1303 , 14094
+scripts , 0 , 0 , 0
+spark , 6124 , 4361 , 39273
+
+
+
+springside4 , 9336 , 4387 , 33357

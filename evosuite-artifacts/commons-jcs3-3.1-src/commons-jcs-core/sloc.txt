@@ -1,0 +1,602 @@
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name                               | File Name                                                   | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.access.behavior                       | ICacheAccess.java                                           | src      |       15 |      116 |       18 |       29 |      178 |
+| jcs3.access.behavior                       | ICacheAccessManagement.java                                 | src      |       11 |       63 |       18 |       19 |      111 |
+| jcs3.access.behavior                       | IGroupCacheAccess.java                                      | src      |        9 |       46 |       18 |       16 |       89 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.access.exception                      | CacheException.java                                         | src      |        6 |       19 |       18 |       22 |       65 |
+| jcs3.access.exception                      | CacheException_ESTest.java                                  | test     |        6 |        0 |        4 |       26 |       36 |
+| jcs3.access.exception                      | CacheException_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.access.exception                      | ConfigurationException.java                                 | src      |        4 |        5 |       18 |       16 |       43 |
+| jcs3.access.exception                      | ConfigurationException_ESTest.java                          | test     |        5 |        0 |        4 |       18 |       27 |
+| jcs3.access.exception                      | ConfigurationException_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.access.exception                      | InvalidArgumentException.java                               | src      |        4 |        9 |       18 |       15 |       46 |
+| jcs3.access.exception                      | InvalidArgumentException_ESTest.java                        | test     |        5 |        0 |        4 |       18 |       27 |
+| jcs3.access.exception                      | InvalidArgumentException_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.access.exception                      | InvalidGroupException.java                                  | src      |        5 |        8 |       18 |       15 |       46 |
+| jcs3.access.exception                      | InvalidGroupException_ESTest.java                           | test     |        5 |        0 |        4 |       18 |       27 |
+| jcs3.access.exception                      | InvalidGroupException_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.access.exception                      | InvalidHandleException.java                                 | src      |        6 |        8 |       19 |       15 |       48 |
+| jcs3.access.exception                      | InvalidHandleException_ESTest.java                          | test     |        5 |        0 |        4 |       18 |       27 |
+| jcs3.access.exception                      | InvalidHandleException_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.access.exception                      | ObjectExistsException.java                                  | src      |        5 |       14 |       18 |       15 |       52 |
+| jcs3.access.exception                      | ObjectExistsException_ESTest.java                           | test     |        5 |        0 |        4 |       18 |       27 |
+| jcs3.access.exception                      | ObjectExistsException_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.access.exception                      | ObjectNotFoundException.java                                | src      |        5 |       12 |       18 |       15 |       50 |
+| jcs3.access.exception                      | ObjectNotFoundException_ESTest.java                         | test     |        5 |        0 |        4 |       18 |       27 |
+| jcs3.access.exception                      | ObjectNotFoundException_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       80 |      101 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.access                                | AbstractCacheAccess.java                                    | src      |       16 |       83 |       18 |       86 |      203 |
+| jcs3.access                                | AbstractCacheAccess_ESTest.java                             | test     |       34 |        0 |       40 |      238 |      312 |
+| jcs3.access                                | AbstractCacheAccess_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      342 |      363 |
+| jcs3.access                                | CacheAccess.java                                            | src      |       31 |      131 |       26 |      145 |      333 |
+| jcs3.access                                | CacheAccess_ESTest.java                                     | test     |       69 |        0 |      131 |      686 |      886 |
+| jcs3.access                                | CacheAccess_ESTest_scaffolding.java                         | test     |       16 |        5 |        0 |      330 |      351 |
+| jcs3.access                                | GroupCacheAccess.java                                       | src      |       18 |       75 |       20 |       93 |      206 |
+| jcs3.access                                | GroupCacheAccess_ESTest.java                                | test     |       37 |        0 |       57 |      259 |      353 |
+| jcs3.access                                | GroupCacheAccess_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      259 |      280 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.admin                                 | CacheElementInfo.java                                       | src      |       16 |       32 |       18 |       57 |      123 |
+| jcs3.admin                                 | CacheElementInfo_ESTest.java                                | test     |       18 |        0 |        4 |      122 |      144 |
+| jcs3.admin                                 | CacheElementInfo_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.admin                                 | CacheRegionInfo.java                                        | src      |       25 |       48 |       18 |       88 |      179 |
+| jcs3.admin                                 | CacheRegionInfo_ESTest.java                                 | test     |       32 |        0 |        4 |      347 |      383 |
+| jcs3.admin                                 | CacheRegionInfo_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.admin                                 | CountingOnlyOutputStream.java                               | src      |        7 |       28 |       18 |       31 |       84 |
+| jcs3.admin                                 | CountingOnlyOutputStream_ESTest.java                        | test     |        9 |        0 |        8 |       49 |       66 |
+| jcs3.admin                                 | CountingOnlyOutputStream_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.admin                                 | JCSAdminBean.java                                           | src      |       38 |       68 |       43 |      236 |      385 |
+| jcs3.admin                                 | JCSJMXBean.java                                             | src      |        9 |       50 |       18 |       14 |       91 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.behavior               | IDiskCacheAttributes.java                                   | src      |       15 |       73 |       18 |       25 |      131 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.block                  | BlockDisk.java                                              | src      |       67 |      136 |       39 |      275 |      517 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCache.java                                         | src      |       87 |      136 |       40 |      442 |      705 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCacheAttributes.java                               | src      |       15 |       30 |       18 |       55 |      118 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCacheAttributes_ESTest.java                        | test     |       15 |        0 |        4 |       82 |      101 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCacheAttributes_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       99 |      120 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCacheFactory.java                                  | src      |        6 |       14 |       18 |       24 |       62 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCacheFactory_ESTest.java                           | test     |        7 |        0 |       12 |       46 |       65 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCacheFactory_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      340 |      361 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCache_ESTest.java                                  | test     |       11 |        0 |       65 |       82 |      158 |
+| jcs3.auxiliary.disk.block                  | BlockDiskCache_ESTest_scaffolding.java                      | test     |       17 |        5 |        0 |      202 |      224 |
+| jcs3.auxiliary.disk.block                  | BlockDiskElementDescriptor.java                             | src      |       14 |       49 |       18 |       72 |      153 |
+| jcs3.auxiliary.disk.block                  | BlockDiskElementDescriptor_ESTest.java                      | test     |       17 |        0 |       12 |      111 |      140 |
+| jcs3.auxiliary.disk.block                  | BlockDiskElementDescriptor_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.auxiliary.disk.block                  | BlockDiskKeyStore.java                                      | src      |       65 |      128 |       33 |      381 |      607 |
+| jcs3.auxiliary.disk.block                  | BlockDiskKeyStore_ESTest.java                               | test     |      289 |        0 |      440 |     3333 |     4062 |
+| jcs3.auxiliary.disk.block                  | BlockDiskKeyStore_ESTest_scaffolding.java                   | test     |       17 |        5 |        0 |      219 |      241 |
+| jcs3.auxiliary.disk.block                  | BlockDisk_ESTest.java                                       | test     |       11 |        0 |       41 |       71 |      123 |
+| jcs3.auxiliary.disk.block                  | BlockDisk_ESTest_scaffolding.java                           | test     |       17 |        5 |        0 |      111 |      133 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.indexed                | IndexedDisk.java                                            | src      |       33 |       74 |       23 |      160 |      290 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCache.java                                       | src      |      196 |      344 |       75 |     1033 |     1648 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCacheAttributes.java                             | src      |       20 |       44 |       18 |       71 |      153 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCacheAttributes_ESTest.java                      | test     |       24 |        0 |        4 |      133 |      161 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCacheAttributes_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       99 |      120 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCacheFactory.java                                | src      |        6 |       14 |       18 |       24 |       62 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCacheFactory_ESTest.java                         | test     |        7 |        0 |       12 |       45 |       64 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCacheFactory_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      345 |      366 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCache_ESTest.java                                | test     |       13 |        0 |       97 |      103 |      213 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskCache_ESTest_scaffolding.java                    | test     |       17 |        5 |        0 |      211 |      233 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskDumper.java                                      | src      |        7 |       13 |       18 |       19 |       57 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskDumper_ESTest.java                               | test     |       10 |        0 |       43 |       56 |      109 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskDumper_ESTest_scaffolding.java                   | test     |       17 |        5 |        0 |      190 |      212 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskElementDescriptor.java                           | src      |       13 |       25 |       18 |       60 |      116 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskElementDescriptor_ESTest.java                    | test     |       17 |        0 |        4 |      104 |      125 |
+| jcs3.auxiliary.disk.indexed                | IndexedDiskElementDescriptor_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.auxiliary.disk.indexed                | IndexedDisk_ESTest.java                                     | test     |        7 |        0 |       34 |       50 |       91 |
+| jcs3.auxiliary.disk.indexed                | IndexedDisk_ESTest_scaffolding.java                         | test     |       17 |        5 |        0 |      113 |      135 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.jdbc.dsfactory         | DataSourceFactory.java                                      | src      |       11 |       41 |       18 |       15 |       85 |
+| jcs3.auxiliary.disk.jdbc.dsfactory         | JndiDataSourceFactory.java                                  | src      |       23 |       37 |       19 |       94 |      173 |
+| jcs3.auxiliary.disk.jdbc.dsfactory         | JndiDataSourceFactory_ESTest.java                           | test     |       19 |        0 |       19 |      145 |      183 |
+| jcs3.auxiliary.disk.jdbc.dsfactory         | JndiDataSourceFactory_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      115 |      136 |
+| jcs3.auxiliary.disk.jdbc.dsfactory         | SharedPoolDataSourceFactory.java                            | src      |       18 |       36 |       18 |       80 |      152 |
+| jcs3.auxiliary.disk.jdbc.dsfactory         | SharedPoolDataSourceFactory_ESTest.java                     | test     |       14 |        0 |        8 |       93 |      115 |
+| jcs3.auxiliary.disk.jdbc.dsfactory         | SharedPoolDataSourceFactory_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      133 |      154 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.jdbc.hsql              | HSQLDiskCacheFactory.java                                   | src      |       12 |       28 |       20 |       69 |      129 |
+| jcs3.auxiliary.disk.jdbc.hsql              | HSQLDiskCacheFactory_ESTest.java                            | test     |       13 |        0 |       24 |       86 |      123 |
+| jcs3.auxiliary.disk.jdbc.hsql              | HSQLDiskCacheFactory_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      511 |      532 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.jdbc.mysql.util        | ScheduleParser.java                                         | src      |        9 |       21 |       20 |       43 |       93 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCache.java                                         | src      |       15 |       50 |       18 |       72 |      155 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCacheAttributes.java                               | src      |       11 |       41 |       18 |       37 |      107 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCacheAttributes_ESTest.java                        | test     |       10 |        0 |        4 |       53 |       67 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCacheAttributes_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      101 |      122 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCacheFactory.java                                  | src      |       17 |       33 |       22 |       87 |      159 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCacheFactory_ESTest.java                           | test     |       28 |        0 |       44 |      274 |      346 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCacheFactory_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      512 |      533 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCache_ESTest.java                                  | test     |       29 |        0 |       39 |      244 |      312 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLDiskCache_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      234 |      255 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLTableOptimizer.java                                    | src      |       28 |       84 |       26 |      149 |      287 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLTableOptimizer_ESTest.java                             | test     |       19 |        0 |       27 |      127 |      173 |
+| jcs3.auxiliary.disk.jdbc.mysql             | MySQLTableOptimizer_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      260 |      281 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCache.java                                          | src      |      104 |      163 |       37 |      504 |      808 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCacheAttributes.java                                | src      |       47 |      104 |       18 |      162 |      331 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCacheAttributes_ESTest.java                         | test     |       47 |        0 |        4 |      395 |      446 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCacheAttributes_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       98 |      119 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCacheFactory.java                                   | src      |       33 |       57 |       20 |      154 |      264 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCacheFactory_ESTest.java                            | test     |       23 |        0 |       33 |      192 |      248 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCacheFactory_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      493 |      514 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCache_ESTest.java                                   | test     |      109 |        0 |      166 |     1136 |     1411 |
+| jcs3.auxiliary.disk.jdbc                   | JDBCDiskCache_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |      335 |      356 |
+| jcs3.auxiliary.disk.jdbc                   | ShrinkerThread.java                                         | src      |       17 |       37 |       23 |       71 |      148 |
+| jcs3.auxiliary.disk.jdbc                   | ShrinkerThread_ESTest.java                                  | test     |        8 |        0 |        4 |       59 |       71 |
+| jcs3.auxiliary.disk.jdbc                   | ShrinkerThread_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      335 |      356 |
+| jcs3.auxiliary.disk.jdbc                   | TableState.java                                             | src      |       14 |       36 |       18 |       46 |      114 |
+| jcs3.auxiliary.disk.jdbc                   | TableState_ESTest.java                                      | test     |       12 |        0 |        4 |       61 |       77 |
+| jcs3.auxiliary.disk.jdbc                   | TableState_ESTest_scaffolding.java                          | test     |       16 |        5 |        0 |       78 |       99 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.disk                        | AbstractDiskCache.java                                      | src      |       85 |      261 |       80 |      367 |      793 |
+| jcs3.auxiliary.disk                        | AbstractDiskCacheAttributes.java                            | src      |       25 |       72 |       18 |      106 |      221 |
+| jcs3.auxiliary.disk                        | AbstractDiskCacheAttributes_ESTest.java                     | test     |       30 |        0 |       16 |      204 |      250 |
+| jcs3.auxiliary.disk                        | AbstractDiskCacheAttributes_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      103 |      124 |
+| jcs3.auxiliary.disk                        | AbstractDiskCache_ESTest.java                               | test     |       81 |        0 |      110 |      719 |      910 |
+| jcs3.auxiliary.disk                        | AbstractDiskCache_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      252 |      273 |
+| jcs3.auxiliary.disk                        | PurgatoryElement.java                                       | src      |       16 |       49 |       20 |       70 |      155 |
+| jcs3.auxiliary.disk                        | PurgatoryElement_ESTest.java                                | test     |       30 |        0 |        7 |      266 |      303 |
+| jcs3.auxiliary.disk                        | PurgatoryElement_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |       88 |      109 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.lateral.behavior            | ILateralCacheAttributes.java                                | src      |       30 |      122 |       18 |       50 |      220 |
+| jcs3.auxiliary.lateral.behavior            | ILateralCacheListener.java                                  | src      |        6 |       16 |       18 |       11 |       51 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.lateral.socket.tcp.behavior | ITCPLateralCacheAttributes.java                             | src      |       30 |      167 |       18 |       34 |      249 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPCacheFactory.java                                 | src      |       56 |      109 |       42 |      238 |      445 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPCacheFactory_ESTest.java                          | test     |       22 |        0 |       61 |      162 |      245 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPCacheFactory_ESTest_scaffolding.java              | test     |       17 |        5 |        0 |      335 |      357 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPDiscoveryListener.java                            | src      |       35 |      115 |       30 |      183 |      363 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPDiscoveryListener_ESTest.java                     | test     |       35 |        0 |       36 |      311 |      382 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPDiscoveryListener_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      340 |      361 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPListener.java                                     | src      |       92 |      165 |       26 |      481 |      764 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPListener_ESTest.java                              | test     |       76 |        0 |      224 |      537 |      837 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPListener_ESTest_scaffolding.java                  | test     |       17 |        5 |        0 |      333 |      355 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPSender.java                                       | src      |       30 |       49 |       25 |      136 |      240 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPSender_ESTest.java                                | test     |       23 |        0 |       34 |      137 |      194 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPSender_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      135 |      156 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPService.java                                      | src      |       39 |      135 |       37 |      249 |      460 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPService_ESTest.java                               | test     |       15 |        0 |       22 |       95 |      132 |
+| jcs3.auxiliary.lateral.socket.tcp          | LateralTCPService_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      142 |      163 |
+| jcs3.auxiliary.lateral.socket.tcp          | TCPLateralCacheAttributes.java                              | src      |       55 |      160 |       18 |      201 |      434 |
+| jcs3.auxiliary.lateral.socket.tcp          | TCPLateralCacheAttributes_ESTest.java                       | test     |       51 |        0 |        4 |      470 |      525 |
+| jcs3.auxiliary.lateral.socket.tcp          | TCPLateralCacheAttributes_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       88 |      109 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.lateral                     | LateralCache.java                                           | src      |       36 |      111 |       24 |      245 |      416 |
+| jcs3.auxiliary.lateral                     | LateralCacheAttributes.java                                 | src      |       34 |       94 |       23 |      138 |      289 |
+| jcs3.auxiliary.lateral                     | LateralCacheAttributes_ESTest.java                          | test     |       41 |        0 |       12 |      306 |      359 |
+| jcs3.auxiliary.lateral                     | LateralCacheAttributes_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       85 |      106 |
+| jcs3.auxiliary.lateral                     | LateralCacheMonitor.java                                    | src      |       16 |       38 |       23 |       58 |      135 |
+| jcs3.auxiliary.lateral                     | LateralCacheMonitor_ESTest.java                             | test     |        8 |        0 |        8 |       47 |       63 |
+| jcs3.auxiliary.lateral                     | LateralCacheMonitor_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      294 |      315 |
+| jcs3.auxiliary.lateral                     | LateralCacheNoWait.java                                     | src      |       40 |      104 |       25 |      291 |      460 |
+| jcs3.auxiliary.lateral                     | LateralCacheNoWaitFacade.java                               | src      |       55 |      145 |       23 |      271 |      494 |
+| jcs3.auxiliary.lateral                     | LateralCacheNoWaitFacade_ESTest.java                        | test     |       40 |        0 |       22 |      359 |      421 |
+| jcs3.auxiliary.lateral                     | LateralCacheNoWaitFacade_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      327 |      348 |
+| jcs3.auxiliary.lateral                     | LateralCacheNoWait_ESTest.java                              | test     |       38 |        0 |       19 |      385 |      442 |
+| jcs3.auxiliary.lateral                     | LateralCacheNoWait_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      327 |      348 |
+| jcs3.auxiliary.lateral                     | LateralCache_ESTest.java                                    | test     |       49 |        0 |       38 |      412 |      499 |
+| jcs3.auxiliary.lateral                     | LateralCache_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |      321 |      342 |
+| jcs3.auxiliary.lateral                     | LateralCommand.java                                         | src      |        8 |        3 |       18 |       18 |       47 |
+| jcs3.auxiliary.lateral                     | LateralElementDescriptor.java                               | src      |       17 |       57 |       18 |       60 |      152 |
+| jcs3.auxiliary.lateral                     | LateralElementDescriptor_ESTest.java                        | test     |       13 |        0 |        4 |       82 |       99 |
+| jcs3.auxiliary.lateral                     | LateralElementDescriptor_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       92 |      113 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.behavior             | ICommonRemoteCacheAttributes.java                           | src      |       22 |      103 |       18 |       29 |      172 |
+| jcs3.auxiliary.remote.behavior             | IRemoteCacheAttributes.java                                 | src      |       21 |      118 |       18 |       25 |      182 |
+| jcs3.auxiliary.remote.behavior             | IRemoteCacheClient.java                                     | src      |        5 |       28 |       18 |       10 |       61 |
+| jcs3.auxiliary.remote.behavior             | IRemoteCacheConstants.java                                  | src      |       15 |       26 |       18 |       27 |       86 |
+| jcs3.auxiliary.remote.behavior             | IRemoteCacheDispatcher.java                                 | src      |        4 |       14 |       18 |       10 |       46 |
+| jcs3.auxiliary.remote.behavior             | IRemoteCacheListener.java                                   | src      |        8 |       34 |       18 |       21 |       81 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.http.behavior        | IRemoteHttpCacheConstants.java                              | src      |        3 |        0 |       18 |       10 |       31 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.http.client.behavior | IRemoteHttpCacheClient.java                                 | src      |        6 |       16 |       18 |       11 |       51 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.http.client          | AbstractHttpClient.java                                     | src      |       17 |       43 |       19 |       75 |      154 |
+| jcs3.auxiliary.remote.http.client          | AbstractHttpClient_ESTest.java                              | test     |        7 |        0 |        4 |       36 |       47 |
+| jcs3.auxiliary.remote.http.client          | AbstractHttpClient_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      454 |      475 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCache.java                                        | src      |       14 |       28 |       19 |       52 |      113 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheAttributes.java                              | src      |       33 |       57 |       18 |      120 |      228 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheAttributes_ESTest.java                       | test     |       56 |        0 |        4 |     1271 |     1331 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheAttributes_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      122 |      143 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheClient.java                                  | src      |       60 |      148 |       20 |      256 |      484 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheClient_ESTest.java                           | test     |       76 |        0 |      117 |      431 |      624 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheClient_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      474 |      495 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheDispatcher.java                              | src      |       18 |       39 |       20 |      118 |      195 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheDispatcher_ESTest.java                       | test     |        6 |        0 |        7 |       27 |       40 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheDispatcher_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      400 |      421 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheFactory.java                                 | src      |       17 |       32 |       20 |       77 |      146 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheFactory_ESTest.java                          | test     |       15 |        0 |       23 |       97 |      135 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheFactory_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      563 |      584 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheMonitor.java                                 | src      |       13 |       18 |       31 |       74 |      136 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheMonitor_ESTest.java                          | test     |        9 |        0 |       10 |       60 |       79 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCacheMonitor_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      436 |      457 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCache_ESTest.java                                 | test     |       16 |        0 |       14 |      128 |      158 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpCache_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |      437 |      458 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpClientListener.java                               | src      |        4 |       10 |       19 |       19 |       52 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpClientListener_ESTest.java                        | test     |        4 |        0 |        4 |       22 |       30 |
+| jcs3.auxiliary.remote.http.client          | RemoteHttpClientListener_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      300 |      321 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.http.server          | AbstractRemoteCacheService.java                             | src      |       48 |      259 |       19 |      275 |      601 |
+| jcs3.auxiliary.remote.http.server          | AbstractRemoteCacheService_ESTest.java                      | test     |       66 |        0 |       78 |      516 |      660 |
+| jcs3.auxiliary.remote.http.server          | AbstractRemoteCacheService_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      336 |      357 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheServerAttributes.java                        | src      |       10 |       27 |       18 |       40 |       95 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheServerAttributes_ESTest.java                 | test     |       10 |        0 |        4 |       46 |       60 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheServerAttributes_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |       82 |      103 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheService.java                                 | src      |       21 |       98 |       19 |      122 |      260 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheServlet.java                                 | src      |       37 |       77 |       21 |      219 |      354 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheServlet_ESTest.java                          | test     |       64 |        0 |      109 |      471 |      644 |
+| jcs3.auxiliary.remote.http.server          | RemoteHttpCacheServlet_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      431 |      452 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.server.behavior      | IRemoteCacheServer.java                                     | src      |        4 |        6 |       19 |        9 |       38 |
+| jcs3.auxiliary.remote.server.behavior      | IRemoteCacheServerAttributes.java                           | src      |       14 |       70 |       18 |       20 |      122 |
+| jcs3.auxiliary.remote.server.behavior      | RemoteType.java                                             | src      |        3 |        3 |       18 |        8 |       32 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.server               | RegistryKeepAliveRunner.java                                | src      |       17 |       39 |       20 |       87 |      163 |
+| jcs3.auxiliary.remote.server               | RegistryKeepAliveRunner_ESTest.java                         | test     |        4 |        0 |        4 |       14 |       22 |
+| jcs3.auxiliary.remote.server               | RegistryKeepAliveRunner_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      160 |      181 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServer.java                                      | src      |      147 |      442 |      112 |      812 |     1513 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServerAttributes.java                            | src      |       25 |       64 |       18 |      106 |      213 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServerAttributes_ESTest.java                     | test     |       23 |        0 |        4 |      145 |      172 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServerAttributes_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      114 |      135 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServerFactory.java                               | src      |       56 |       92 |       36 |      307 |      491 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServer_ESTest.java                               | test     |       11 |        0 |       16 |       68 |       95 |
+| jcs3.auxiliary.remote.server               | RemoteCacheServer_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      314 |      335 |
+| jcs3.auxiliary.remote.server               | RemoteCacheStartupServlet.java                              | src      |       31 |       57 |       19 |      181 |      288 |
+| jcs3.auxiliary.remote.server               | RemoteCacheStartupServlet_ESTest.java                       | test     |       15 |        0 |       24 |      103 |      142 |
+| jcs3.auxiliary.remote.server               | RemoteCacheStartupServlet_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      285 |      306 |
+| jcs3.auxiliary.remote.server               | TimeoutConfigurableRMISocketFactory.java                    | src      |       11 |       32 |       18 |       50 |      111 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.util                 | RemoteCacheRequestFactory.java                              | src      |       25 |       77 |       18 |       78 |      198 |
+| jcs3.auxiliary.remote.util                 | RemoteCacheRequestFactory_ESTest.java                       | test     |       30 |        0 |        4 |      160 |      194 |
+| jcs3.auxiliary.remote.util                 | RemoteCacheRequestFactory_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      104 |      125 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote.value                | RemoteCacheRequest.java                                     | src      |       26 |       48 |       18 |       95 |      187 |
+| jcs3.auxiliary.remote.value                | RemoteCacheRequest_ESTest.java                              | test     |       28 |        0 |        4 |      337 |      369 |
+| jcs3.auxiliary.remote.value                | RemoteCacheRequest_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |       87 |      108 |
+| jcs3.auxiliary.remote.value                | RemoteCacheResponse.java                                    | src      |       13 |       26 |       18 |       48 |      105 |
+| jcs3.auxiliary.remote.value                | RemoteCacheResponse_ESTest.java                             | test     |       21 |        0 |        4 |      121 |      146 |
+| jcs3.auxiliary.remote.value                | RemoteCacheResponse_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.auxiliary.remote.value                | RemoteRequestType.java                                      | src      |       10 |        3 |       18 |       22 |       53 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary.remote                      | AbstractRemoteAuxiliaryCache.java                           | src      |       58 |      149 |       38 |      401 |      646 |
+| jcs3.auxiliary.remote                      | AbstractRemoteAuxiliaryCache_ESTest.java                    | test     |       48 |        0 |       40 |      418 |      506 |
+| jcs3.auxiliary.remote                      | AbstractRemoteAuxiliaryCache_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      332 |      353 |
+| jcs3.auxiliary.remote                      | AbstractRemoteCacheListener.java                            | src      |       25 |       77 |       23 |      141 |      266 |
+| jcs3.auxiliary.remote                      | AbstractRemoteCacheListener_ESTest.java                     | test     |        5 |        0 |       32 |       51 |       88 |
+| jcs3.auxiliary.remote                      | AbstractRemoteCacheListener_ESTest_scaffolding.java         | test     |       17 |        5 |        0 |      331 |      353 |
+| jcs3.auxiliary.remote                      | AbstractRemoteCacheNoWaitFacade.java                        | src      |       38 |      104 |       21 |      194 |      357 |
+| jcs3.auxiliary.remote                      | AbstractRemoteCacheNoWaitFacade_ESTest.java                 | test     |       40 |        0 |       24 |      468 |      532 |
+| jcs3.auxiliary.remote                      | AbstractRemoteCacheNoWaitFacade_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      332 |      353 |
+| jcs3.auxiliary.remote                      | CommonRemoteCacheAttributes.java                            | src      |       32 |       97 |       18 |      143 |      290 |
+| jcs3.auxiliary.remote                      | CommonRemoteCacheAttributes_ESTest.java                     | test     |       32 |        0 |        4 |      211 |      247 |
+| jcs3.auxiliary.remote                      | CommonRemoteCacheAttributes_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      111 |      132 |
+| jcs3.auxiliary.remote                      | RemoteCache.java                                            | src      |       26 |       56 |       30 |       97 |      209 |
+| jcs3.auxiliary.remote                      | RemoteCacheAttributes.java                                  | src      |       30 |       95 |       18 |      119 |      262 |
+| jcs3.auxiliary.remote                      | RemoteCacheAttributes_ESTest.java                           | test     |       34 |        0 |        4 |      222 |      260 |
+| jcs3.auxiliary.remote                      | RemoteCacheAttributes_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      114 |      135 |
+| jcs3.auxiliary.remote                      | RemoteCacheFactory.java                                     | src      |       28 |       49 |       30 |      131 |      238 |
+| jcs3.auxiliary.remote                      | RemoteCacheFailoverRunner.java                              | src      |        9 |       46 |       22 |       27 |      104 |
+| jcs3.auxiliary.remote                      | RemoteCacheFailoverRunner_ESTest.java                       | test     |        8 |        0 |        9 |       73 |       90 |
+| jcs3.auxiliary.remote                      | RemoteCacheFailoverRunner_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      297 |      318 |
+| jcs3.auxiliary.remote                      | RemoteCacheListener.java                                    | src      |        9 |       27 |       20 |       62 |      118 |
+| jcs3.auxiliary.remote                      | RemoteCacheListener_ESTest.java                             | test     |        7 |        0 |       10 |       54 |       71 |
+| jcs3.auxiliary.remote                      | RemoteCacheListener_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      318 |      339 |
+| jcs3.auxiliary.remote                      | RemoteCacheManager.java                                     | src      |       35 |       69 |       29 |      204 |      337 |
+| jcs3.auxiliary.remote                      | RemoteCacheManager_ESTest.java                              | test     |       23 |        0 |       30 |      194 |      247 |
+| jcs3.auxiliary.remote                      | RemoteCacheManager_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      325 |      346 |
+| jcs3.auxiliary.remote                      | RemoteCacheMonitor.java                                     | src      |        9 |       21 |       27 |       42 |       99 |
+| jcs3.auxiliary.remote                      | RemoteCacheMonitor_ESTest.java                              | test     |        7 |        0 |        9 |       33 |       49 |
+| jcs3.auxiliary.remote                      | RemoteCacheMonitor_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      265 |      286 |
+| jcs3.auxiliary.remote                      | RemoteCacheNoWait.java                                      | src      |       50 |      140 |       30 |      296 |      516 |
+| jcs3.auxiliary.remote                      | RemoteCacheNoWaitFacade.java                                | src      |       46 |       53 |       69 |      235 |      403 |
+| jcs3.auxiliary.remote                      | RemoteCacheNoWaitFacade_ESTest.java                         | test     |       14 |        0 |       15 |      155 |      184 |
+| jcs3.auxiliary.remote                      | RemoteCacheNoWaitFacade_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      336 |      357 |
+| jcs3.auxiliary.remote                      | RemoteLocation.java                                         | src      |       17 |       32 |       18 |       73 |      140 |
+| jcs3.auxiliary.remote                      | RemoteLocation_ESTest.java                                  | test     |       27 |        0 |        8 |      169 |      204 |
+| jcs3.auxiliary.remote                      | RemoteLocation_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |       90 |      111 |
+| jcs3.auxiliary.remote                      | RemoteUtils.java                                            | src      |       22 |       48 |       31 |      160 |      261 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.auxiliary                             | AbstractAuxiliaryCache.java                                 | src      |       22 |       86 |       18 |      132 |      258 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheAttributes.java                       | src      |       16 |       44 |       18 |       68 |      146 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheAttributes_ESTest.java                | test     |       18 |        0 |        4 |      112 |      134 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheAttributes_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |      105 |      126 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheEventLogging.java                     | src      |       23 |      143 |       18 |      158 |      342 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheFactory.java                          | src      |        4 |       13 |       18 |       17 |       52 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheFactory_ESTest.java                   | test     |        6 |        0 |        4 |       31 |       41 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheFactory_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |      321 |      342 |
+| jcs3.auxiliary                             | AbstractAuxiliaryCacheMonitor.java                          | src      |       24 |       38 |       28 |      107 |      197 |
+| jcs3.auxiliary                             | AuxiliaryCache.java                                         | src      |        8 |       35 |       18 |       16 |       77 |
+| jcs3.auxiliary                             | AuxiliaryCacheAttributes.java                               | src      |       12 |       47 |       18 |       16 |       93 |
+| jcs3.auxiliary                             | AuxiliaryCacheConfigurator.java                             | src      |       10 |       28 |       22 |       54 |      114 |
+| jcs3.auxiliary                             | AuxiliaryCacheConfigurator_ESTest.java                      | test     |        8 |        0 |       12 |       40 |       60 |
+| jcs3.auxiliary                             | AuxiliaryCacheConfigurator_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      117 |      138 |
+| jcs3.auxiliary                             | AuxiliaryCacheFactory.java                                  | src      |        7 |       31 |       18 |       15 |       71 |
+| jcs3.auxiliary                             | AuxiliaryCacheFactory_ESTest.java                           | test     |       16 |        0 |       14 |      107 |      137 |
+| jcs3.auxiliary                             | AuxiliaryCacheFactory_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      330 |      351 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.behavior                       | ICache.java                                                 | src      |       16 |       79 |       18 |       31 |      144 |
+| jcs3.engine.behavior                       | ICacheElement.java                                          | src      |        8 |       37 |       18 |       11 |       74 |
+| jcs3.engine.behavior                       | ICacheElementSerialized.java                                | src      |        2 |       15 |       18 |        6 |       41 |
+| jcs3.engine.behavior                       | ICacheEventQueue.java                                       | src      |       16 |       62 |       18 |       29 |      125 |
+| jcs3.engine.behavior                       | ICacheListener.java                                         | src      |        8 |       43 |       18 |       17 |       86 |
+| jcs3.engine.behavior                       | ICacheObserver.java                                         | src      |        6 |       39 |       18 |       14 |       77 |
+| jcs3.engine.behavior                       | ICacheService.java                                          | src      |       11 |       63 |       18 |       25 |      117 |
+| jcs3.engine.behavior                       | ICacheServiceAdmin.java                                     | src      |        6 |       16 |       18 |       11 |       51 |
+| jcs3.engine.behavior                       | ICacheServiceNonLocal.java                                  | src      |        9 |       69 |       18 |       22 |      118 |
+| jcs3.engine.behavior                       | ICacheType.java                                             | src      |        7 |        9 |       18 |       15 |       49 |
+| jcs3.engine.behavior                       | ICompositeCacheAttributes.java                              | src      |       30 |      158 |       18 |       38 |      244 |
+| jcs3.engine.behavior                       | ICompositeCacheManager.java                                 | src      |        7 |       28 |       18 |       11 |       64 |
+| jcs3.engine.behavior                       | IElementAttributes.java                                     | src      |       27 |      127 |       18 |       32 |      204 |
+| jcs3.engine.behavior                       | IElementSerializer.java                                     | src      |       23 |       96 |       18 |      147 |      284 |
+| jcs3.engine.behavior                       | IElementSerializer_ESTest.java                              | test     |      203 |        0 |      211 |     1045 |     1459 |
+| jcs3.engine.behavior                       | IElementSerializer_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      110 |      131 |
+| jcs3.engine.behavior                       | IProvideScheduler.java                                      | src      |        4 |       10 |       18 |        6 |       38 |
+| jcs3.engine.behavior                       | IRequireScheduler.java                                      | src      |        4 |       11 |       18 |        6 |       39 |
+| jcs3.engine.behavior                       | IShutdownObservable.java                                    | src      |        5 |       26 |       18 |        6 |       55 |
+| jcs3.engine.behavior                       | IShutdownObserver.java                                      | src      |        2 |       16 |       18 |        5 |       41 |
+| jcs3.engine.behavior                       | IZombie.java                                                | src      |        2 |        4 |       20 |        4 |       30 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.control.event.behavior         | ElementEventType.java                                       | src      |        9 |        6 |       20 |       19 |       54 |
+| jcs3.engine.control.event.behavior         | IElementEvent.java                                          | src      |        4 |       12 |       18 |        8 |       42 |
+| jcs3.engine.control.event.behavior         | IElementEventHandler.java                                   | src      |        2 |       15 |       18 |        5 |       40 |
+| jcs3.engine.control.event.behavior         | IElementEventQueue.java                                     | src      |        4 |       18 |       18 |        8 |       48 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.control.event                  | ElementEvent.java                                           | src      |        9 |       18 |       18 |       29 |       74 |
+| jcs3.engine.control.event                  | ElementEventQueue.java                                      | src      |       16 |       27 |       23 |       70 |      136 |
+| jcs3.engine.control.event                  | ElementEventQueue_ESTest.java                               | test     |        6 |        0 |        4 |       41 |       51 |
+| jcs3.engine.control.event                  | ElementEventQueue_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      116 |      137 |
+| jcs3.engine.control.event                  | ElementEvent_ESTest.java                                    | test     |        7 |        0 |        7 |       39 |       53 |
+| jcs3.engine.control.event                  | ElementEvent_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |       81 |      102 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.control.group                  | GroupAttrName.java                                          | src      |       13 |       19 |       18 |       46 |       96 |
+| jcs3.engine.control.group                  | GroupAttrName_ESTest.java                                   | test     |       11 |        0 |        7 |       67 |       85 |
+| jcs3.engine.control.group                  | GroupAttrName_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.engine.control.group                  | GroupId.java                                                | src      |       10 |       22 |       18 |       46 |       96 |
+| jcs3.engine.control.group                  | GroupId_ESTest.java                                         | test     |       13 |        0 |       10 |       70 |       93 |
+| jcs3.engine.control.group                  | GroupId_ESTest_scaffolding.java                             | test     |       16 |        5 |        0 |       78 |       99 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.control                        | CompositeCache.java                                         | src      |      191 |      449 |       94 |      962 |     1696 |
+| jcs3.engine.control                        | CompositeCacheConfigurator.java                             | src      |       75 |      112 |       54 |      270 |      511 |
+| jcs3.engine.control                        | CompositeCacheConfigurator_ESTest.java                      | test     |       81 |        0 |       52 |      675 |      808 |
+| jcs3.engine.control                        | CompositeCacheConfigurator_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      332 |      353 |
+| jcs3.engine.control                        | CompositeCacheManager.java                                  | src      |      121 |      248 |       41 |      508 |      918 |
+| jcs3.engine.control                        | CompositeCacheManager_ESTest.java                           | test     |      111 |        0 |      116 |      719 |      946 |
+| jcs3.engine.control                        | CompositeCacheManager_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      342 |      363 |
+| jcs3.engine.control                        | CompositeCache_ESTest.java                                  | test     |      143 |        0 |      242 |     1065 |     1450 |
+| jcs3.engine.control                        | CompositeCache_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      350 |      371 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.logging.behavior               | ICacheEvent.java                                            | src      |       12 |       30 |       18 |       17 |       77 |
+| jcs3.engine.logging.behavior               | ICacheEventLogger.java                                      | src      |       12 |       36 |       20 |       24 |       92 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.logging                        | CacheEvent.java                                             | src      |       22 |       38 |       18 |       99 |      177 |
+| jcs3.engine.logging                        | CacheEventLoggerDebugLogger.java                            | src      |       10 |       28 |       18 |       48 |      104 |
+| jcs3.engine.logging                        | CacheEvent_ESTest.java                                      | test     |       25 |        0 |        4 |      158 |      187 |
+| jcs3.engine.logging                        | CacheEvent_ESTest_scaffolding.java                          | test     |       16 |        5 |        0 |       79 |      100 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.match.behavior                 | IKeyMatcher.java                                            | src      |        3 |        7 |       18 |        8 |       36 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.match                          | KeyMatcherPatternImpl.java                                  | src      |        6 |        7 |       18 |       20 |       51 |
+| jcs3.engine.match                          | KeyMatcherPatternImpl_ESTest.java                           | test     |        8 |        0 |       14 |       44 |       66 |
+| jcs3.engine.match                          | KeyMatcherPatternImpl_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       79 |      100 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.behavior                | IMemoryCache.java                                           | src      |       19 |      113 |       18 |       37 |      187 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.fifo                    | FIFOMemoryCache.java                                        | src      |        5 |       16 |       19 |       19 |       59 |
+| jcs3.engine.memory.fifo                    | FIFOMemoryCache_ESTest.java                                 | test     |        6 |        0 |        8 |       33 |       47 |
+| jcs3.engine.memory.fifo                    | FIFOMemoryCache_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |      301 |      322 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.lru                     | LHMLRUMemoryCache.java                                      | src      |       22 |       64 |       24 |       89 |      199 |
+| jcs3.engine.memory.lru                     | LHMLRUMemoryCache_ESTest.java                               | test     |       24 |        0 |       28 |      174 |      226 |
+| jcs3.engine.memory.lru                     | LHMLRUMemoryCache_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      322 |      343 |
+| jcs3.engine.memory.lru                     | LRUMemoryCache.java                                         | src      |        5 |       24 |       18 |       20 |       67 |
+| jcs3.engine.memory.lru                     | LRUMemoryCache_ESTest.java                                  | test     |        7 |        0 |       12 |       35 |       54 |
+| jcs3.engine.memory.lru                     | LRUMemoryCache_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      287 |      308 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.mru                     | MRUMemoryCache.java                                         | src      |        5 |       19 |       18 |       20 |       62 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.shrinking               | ShrinkerThread.java                                         | src      |       34 |       28 |       31 |      107 |      200 |
+| jcs3.engine.memory.shrinking               | ShrinkerThread_ESTest.java                                  | test     |       10 |        0 |        7 |       99 |      116 |
+| jcs3.engine.memory.shrinking               | ShrinkerThread_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      331 |      352 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.soft                    | SoftReferenceMemoryCache.java                               | src      |       23 |       69 |       19 |      129 |      240 |
+| jcs3.engine.memory.soft                    | SoftReferenceMemoryCache_ESTest.java                        | test     |       21 |        0 |       36 |      129 |      186 |
+| jcs3.engine.memory.soft                    | SoftReferenceMemoryCache_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      302 |      323 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory.util                    | MemoryElementDescriptor.java                                | src      |        5 |       13 |       18 |       17 |       53 |
+| jcs3.engine.memory.util                    | MemoryElementDescriptor_ESTest.java                         | test     |        5 |        0 |        4 |       27 |       36 |
+| jcs3.engine.memory.util                    | MemoryElementDescriptor_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       92 |      113 |
+| jcs3.engine.memory.util                    | SoftReferenceElementDescriptor.java                         | src      |        8 |       11 |       18 |       25 |       62 |
+| jcs3.engine.memory.util                    | SoftReferenceElementDescriptor_ESTest.java                  | test     |        5 |        0 |        4 |       27 |       36 |
+| jcs3.engine.memory.util                    | SoftReferenceElementDescriptor_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       94 |      115 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.memory                         | AbstractDoubleLinkedListMemoryCache.java                    | src      |       52 |      126 |       34 |      304 |      516 |
+| jcs3.engine.memory                         | AbstractDoubleLinkedListMemoryCache_ESTest.java             | test     |       99 |        0 |      183 |     1066 |     1348 |
+| jcs3.engine.memory                         | AbstractDoubleLinkedListMemoryCache_ESTest_scaffolding.java | test     |       17 |        5 |        0 |      337 |      359 |
+| jcs3.engine.memory                         | AbstractMemoryCache.java                                    | src      |       60 |      132 |       23 |      299 |      514 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.stats.behavior                 | ICacheStats.java                                            | src      |        6 |       17 |       18 |       10 |       51 |
+| jcs3.engine.stats.behavior                 | IStatElement.java                                           | src      |        6 |       21 |       18 |        9 |       54 |
+| jcs3.engine.stats.behavior                 | IStats.java                                                 | src      |        7 |       27 |       18 |       11 |       63 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine.stats                          | CacheStats.java                                             | src      |       15 |       24 |       18 |       59 |      116 |
+| jcs3.engine.stats                          | StatElement.java                                            | src      |       11 |       30 |       18 |       44 |      103 |
+| jcs3.engine.stats                          | StatElement_ESTest.java                                     | test     |       11 |        0 |        4 |       58 |       73 |
+| jcs3.engine.stats                          | StatElement_ESTest_scaffolding.java                         | test     |       16 |        5 |        0 |       79 |      100 |
+| jcs3.engine.stats                          | Stats.java                                                  | src      |       14 |       18 |       18 |       49 |       99 |
+| jcs3.engine.stats                          | Stats_ESTest.java                                           | test     |        8 |        0 |        4 |       45 |       57 |
+| jcs3.engine.stats                          | Stats_ESTest_scaffolding.java                               | test     |       16 |        5 |        0 |       82 |      103 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.engine                                | AbstractCacheEventQueue.java                                | src      |       46 |      161 |       19 |      206 |      432 |
+| jcs3.engine                                | CacheAdaptor.java                                           | src      |       12 |       47 |       19 |       59 |      137 |
+| jcs3.engine                                | CacheElement.java                                           | src      |       18 |       60 |       21 |       82 |      181 |
+| jcs3.engine                                | CacheElementSerialized.java                                 | src      |        9 |       13 |       18 |       37 |       77 |
+| jcs3.engine                                | CacheElementSerialized_ESTest.java                          | test     |        7 |        0 |        4 |       42 |       53 |
+| jcs3.engine                                | CacheElementSerialized_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       88 |      109 |
+| jcs3.engine                                | CacheElement_ESTest.java                                    | test     |       29 |        0 |        4 |      233 |      266 |
+| jcs3.engine                                | CacheElement_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |       90 |      111 |
+| jcs3.engine                                | CacheEventQueue.java                                        | src      |        7 |       30 |       19 |       32 |       88 |
+| jcs3.engine                                | CacheEventQueueFactory.java                                 | src      |        7 |       28 |       18 |       32 |       85 |
+| jcs3.engine                                | CacheEventQueueFactory_ESTest.java                          | test     |       15 |        0 |       18 |      147 |      180 |
+| jcs3.engine                                | CacheEventQueueFactory_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      325 |      346 |
+| jcs3.engine                                | CacheEventQueue_ESTest.java                                 | test     |        9 |        0 |       10 |       75 |       94 |
+| jcs3.engine                                | CacheEventQueue_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |      317 |      338 |
+| jcs3.engine                                | CacheGroup.java                                             | src      |        6 |       15 |       18 |       20 |       59 |
+| jcs3.engine                                | CacheGroup_ESTest.java                                      | test     |       18 |        0 |        4 |      145 |      167 |
+| jcs3.engine                                | CacheGroup_ESTest_scaffolding.java                          | test     |       16 |        5 |        0 |       84 |      105 |
+| jcs3.engine                                | CacheInfo.java                                              | src      |        5 |       11 |       18 |       12 |       46 |
+| jcs3.engine                                | CacheListeners.java                                         | src      |        7 |        9 |       18 |       35 |       69 |
+| jcs3.engine                                | CacheListeners_ESTest.java                                  | test     |        8 |        0 |       11 |       58 |       77 |
+| jcs3.engine                                | CacheListeners_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      331 |      352 |
+| jcs3.engine                                | CacheStatus.java                                            | src      |        4 |        5 |       18 |       10 |       37 |
+| jcs3.engine                                | CacheWatchRepairable.java                                   | src      |       14 |       35 |       26 |       81 |      156 |
+| jcs3.engine                                | CompositeCacheAttributes.java                               | src      |       55 |      149 |       19 |      219 |      442 |
+| jcs3.engine                                | CompositeCacheAttributes_ESTest.java                        | test     |       73 |        0 |        4 |      539 |      616 |
+| jcs3.engine                                | CompositeCacheAttributes_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       81 |      102 |
+| jcs3.engine                                | ElementAttributes.java                                      | src      |       51 |      175 |       23 |      210 |      459 |
+| jcs3.engine                                | ElementAttributes_ESTest.java                               | test     |       75 |        0 |       11 |      575 |      661 |
+| jcs3.engine                                | ElementAttributes_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |       87 |      108 |
+| jcs3.engine                                | PooledCacheEventQueue.java                                  | src      |       22 |       62 |       19 |       93 |      196 |
+| jcs3.engine                                | PooledCacheEventQueue_ESTest.java                           | test     |       21 |        0 |       20 |      221 |      262 |
+| jcs3.engine                                | PooledCacheEventQueue_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      329 |      350 |
+| jcs3.engine                                | ZombieCacheService.java                                     | src      |       14 |       51 |       25 |       61 |      151 |
+| jcs3.engine                                | ZombieCacheServiceNonLocal.java                             | src      |       27 |      104 |       23 |      164 |      318 |
+| jcs3.engine                                | ZombieCacheServiceNonLocal_ESTest.java                      | test     |       31 |        0 |        7 |      331 |      369 |
+| jcs3.engine                                | ZombieCacheServiceNonLocal_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      120 |      141 |
+| jcs3.engine                                | ZombieCacheService_ESTest.java                              | test     |       13 |        0 |        4 |       74 |       91 |
+| jcs3.engine                                | ZombieCacheService_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      105 |      126 |
+| jcs3.engine                                | ZombieCacheWatch.java                                       | src      |        6 |       21 |       22 |       24 |       73 |
+| jcs3.engine                                | ZombieCacheWatch_ESTest.java                                | test     |        7 |        0 |        4 |       58 |       69 |
+| jcs3.engine                                | ZombieCacheWatch_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      303 |      324 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.io                                    | ObjectInputStreamClassLoaderAware.java                      | src      |       13 |        0 |       18 |       64 |       95 |
+| jcs3.io                                    | ObjectInputStreamClassLoaderAware_ESTest.java               | test     |       13 |        0 |       16 |       84 |      113 |
+| jcs3.io                                    | ObjectInputStreamClassLoaderAware_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |       85 |      106 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.log                                   | JulLogAdapter.java                                          | src      |       46 |      250 |       16 |      260 |      572 |
+| jcs3.log                                   | JulLogFactory.java                                          | src      |        6 |       27 |       17 |       26 |       76 |
+| jcs3.log                                   | JulLogFactory_ESTest.java                                   | test     |       11 |        0 |       12 |       56 |       79 |
+| jcs3.log                                   | JulLogFactory_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |       82 |      103 |
+| jcs3.log                                   | Log.java                                                    | src      |       39 |      244 |       16 |       42 |      341 |
+| jcs3.log                                   | Log4j2Factory.java                                          | src      |        7 |       34 |       16 |       31 |       88 |
+| jcs3.log                                   | Log4j2Factory_ESTest.java                                   | test     |       13 |        0 |       16 |       79 |      108 |
+| jcs3.log                                   | Log4j2Factory_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |      181 |      202 |
+| jcs3.log                                   | Log4j2LogAdapter.java                                       | src      |       43 |      237 |       16 |      234 |      530 |
+| jcs3.log                                   | LogFactory.java                                             | src      |        6 |       33 |       16 |        9 |       64 |
+| jcs3.log                                   | LogManager.java                                             | src      |       15 |       56 |       16 |       57 |      144 |
+| jcs3.log                                   | MessageFormatter.java                                       | src      |       11 |       36 |       16 |       67 |      130 |
+| jcs3.log                                   | MessageFormatter_ESTest.java                                | test     |       25 |        0 |       31 |      142 |      198 |
+| jcs3.log                                   | MessageFormatter_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |       78 |       99 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.access                          | AbstractJCSWorkerHelper.java                                | src      |        6 |       15 |       18 |       20 |       59 |
+| jcs3.utils.access                          | AbstractJCSWorkerHelper_ESTest.java                         | test     |        3 |        0 |        5 |       12 |       20 |
+| jcs3.utils.access                          | AbstractJCSWorkerHelper_ESTest_scaffolding.java             | test     |       14 |        5 |        0 |       62 |       81 |
+| jcs3.utils.access                          | JCSWorker.java                                              | src      |       16 |      127 |       28 |      115 |      286 |
+| jcs3.utils.access                          | JCSWorkerHelper.java                                        | src      |        4 |       31 |       18 |        7 |       60 |
+| jcs3.utils.access                          | JCSWorker_ESTest.java                                       | test     |       20 |        0 |       25 |      125 |      170 |
+| jcs3.utils.access                          | JCSWorker_ESTest_scaffolding.java                           | test     |       16 |        5 |        0 |      207 |      228 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.config                          | OptionConverter.java                                        | src      |       34 |      109 |       23 |      254 |      420 |
+| jcs3.utils.config                          | OptionConverter_ESTest.java                                 | test     |       50 |        0 |       27 |      263 |      340 |
+| jcs3.utils.config                          | OptionConverter_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |       90 |      111 |
+| jcs3.utils.config                          | PropertySetter.java                                         | src      |       26 |       73 |       23 |      172 |      294 |
+| jcs3.utils.config                          | PropertySetterException.java                                | src      |        6 |       22 |       18 |       28 |       74 |
+| jcs3.utils.config                          | PropertySetterException_ESTest.java                         | test     |        7 |        0 |        4 |       35 |       46 |
+| jcs3.utils.config                          | PropertySetterException_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.utils.config                          | PropertySetter_ESTest.java                                  | test     |       38 |        0 |       33 |      249 |      320 |
+| jcs3.utils.config                          | PropertySetter_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      100 |      121 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.discovery.behavior              | IDiscoveryListener.java                                     | src      |        4 |       15 |       18 |        7 |       44 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.discovery                       | DiscoveredService.java                                      | src      |       20 |       52 |       19 |       99 |      190 |
+| jcs3.utils.discovery                       | DiscoveredService_ESTest.java                               | test     |       26 |        0 |        7 |      183 |      216 |
+| jcs3.utils.discovery                       | DiscoveredService_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |       82 |      103 |
+| jcs3.utils.discovery                       | MyByteArrayOutputStream_ESTest.java                         | test     |        4 |        0 |        4 |       16 |       24 |
+| jcs3.utils.discovery                       | MyByteArrayOutputStream_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.utils.discovery                       | UDPCleanupRunner.java                                       | src      |        4 |       17 |       18 |       17 |       56 |
+| jcs3.utils.discovery                       | UDPCleanupRunner_ESTest.java                                | test     |        7 |        0 |       11 |       36 |       54 |
+| jcs3.utils.discovery                       | UDPCleanupRunner_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      272 |      293 |
+| jcs3.utils.discovery                       | UDPDiscoveryAttributes.java                                 | src      |       37 |       73 |       18 |      141 |      269 |
+| jcs3.utils.discovery                       | UDPDiscoveryAttributes_ESTest.java                          | test     |       51 |        0 |        4 |      333 |      388 |
+| jcs3.utils.discovery                       | UDPDiscoveryAttributes_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.utils.discovery                       | UDPDiscoveryManager.java                                    | src      |       19 |       41 |       21 |       59 |      140 |
+| jcs3.utils.discovery                       | UDPDiscoveryManager_ESTest.java                             | test     |        7 |        0 |       12 |       40 |       59 |
+| jcs3.utils.discovery                       | UDPDiscoveryManager_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      320 |      341 |
+| jcs3.utils.discovery                       | UDPDiscoveryMessage.java                                    | src      |       22 |       46 |       18 |       80 |      166 |
+| jcs3.utils.discovery                       | UDPDiscoveryMessage_ESTest.java                             | test     |       22 |        0 |        8 |      130 |      160 |
+| jcs3.utils.discovery                       | UDPDiscoveryMessage_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.utils.discovery                       | UDPDiscoveryReceiver.java                                   | src      |       50 |       68 |       29 |      288 |      435 |
+| jcs3.utils.discovery                       | UDPDiscoveryReceiver_ESTest.java                            | test     |       11 |        0 |        4 |       62 |       77 |
+| jcs3.utils.discovery                       | UDPDiscoveryReceiver_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      323 |      344 |
+| jcs3.utils.discovery                       | UDPDiscoverySender.java                                     | src      |       32 |      108 |       21 |      162 |      323 |
+| jcs3.utils.discovery                       | UDPDiscoverySenderThread.java                               | src      |       18 |       26 |       25 |       80 |      149 |
+| jcs3.utils.discovery                       | UDPDiscoverySenderThread_ESTest.java                        | test     |        7 |        0 |       10 |       37 |       54 |
+| jcs3.utils.discovery                       | UDPDiscoverySenderThread_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      101 |      122 |
+| jcs3.utils.discovery                       | UDPDiscoverySender_ESTest.java                              | test     |       13 |        0 |       41 |       82 |      136 |
+| jcs3.utils.discovery                       | UDPDiscoverySender_ESTest_scaffolding.java                  | test     |       17 |        5 |        0 |      119 |      141 |
+| jcs3.utils.discovery                       | UDPDiscoveryService.java                                    | src      |       59 |      106 |       48 |      310 |      523 |
+| jcs3.utils.discovery                       | UDPDiscoveryService_ESTest.java                             | test     |       28 |        0 |        7 |      227 |      262 |
+| jcs3.utils.discovery                       | UDPDiscoveryService_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      287 |      308 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.net                             | HostNameUtil.java                                           | src      |       13 |       57 |       48 |      102 |      220 |
+| jcs3.utils.net                             | HostNameUtil_ESTest.java                                    | test     |        8 |        0 |        4 |       37 |       49 |
+| jcs3.utils.net                             | HostNameUtil_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |       88 |      109 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.serialization                   | CompressingSerializer.java                                  | src      |       10 |       29 |       18 |       35 |       92 |
+| jcs3.utils.serialization                   | EncryptingSerializer.java                                   | src      |       32 |       43 |       20 |      155 |      250 |
+| jcs3.utils.serialization                   | EncryptingSerializer_ESTest.java                            | test     |       18 |        0 |       25 |      136 |      179 |
+| jcs3.utils.serialization                   | EncryptingSerializer_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      110 |      131 |
+| jcs3.utils.serialization                   | SerializationConversionUtil.java                            | src      |       13 |       26 |       22 |       71 |      132 |
+| jcs3.utils.serialization                   | SerializationConversionUtil_ESTest.java                     | test     |       24 |        0 |       32 |      175 |      231 |
+| jcs3.utils.serialization                   | SerializationConversionUtil_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      123 |      144 |
+| jcs3.utils.serialization                   | StandardSerializer.java                                     | src      |        7 |       22 |       18 |       36 |       83 |
+| jcs3.utils.serialization                   | StandardSerializer_ESTest.java                              | test     |       12 |        0 |       17 |       81 |      110 |
+| jcs3.utils.serialization                   | StandardSerializer_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |       88 |      109 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.servlet                         | JCSServletContextListener.java                              | src      |        7 |       25 |       18 |       23 |       73 |
+| jcs3.utils.servlet                         | JCSServletContextListener_ESTest.java                       | test     |        5 |        0 |        4 |       28 |       37 |
+| jcs3.utils.servlet                         | JCSServletContextListener_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      141 |      162 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.struct                          | AbstractLRUMap.java                                         | src      |       59 |      103 |       27 |      346 |      535 |
+| jcs3.utils.struct                          | AbstractLRUMap_ESTest.java                                  | test     |       43 |        0 |       28 |      293 |      364 |
+| jcs3.utils.struct                          | AbstractLRUMap_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      113 |      134 |
+| jcs3.utils.struct                          | DoubleLinkedList.java                                       | src      |       23 |       59 |       36 |      171 |      289 |
+| jcs3.utils.struct                          | DoubleLinkedListNode.java                                   | src      |        8 |       14 |       18 |       22 |       62 |
+| jcs3.utils.struct                          | DoubleLinkedListNode_ESTest.java                            | test     |        5 |        0 |        4 |       22 |       31 |
+| jcs3.utils.struct                          | DoubleLinkedListNode_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.utils.struct                          | DoubleLinkedList_ESTest.java                                | test     |        3 |        0 |        5 |       12 |       20 |
+| jcs3.utils.struct                          | DoubleLinkedList_ESTest_scaffolding.java                    | test     |       14 |        5 |        0 |       71 |       90 |
+| jcs3.utils.struct                          | LRUElementDescriptor.java                                   | src      |        6 |       14 |       18 |       22 |       60 |
+| jcs3.utils.struct                          | LRUElementDescriptor_ESTest.java                            | test     |        5 |        0 |        4 |       24 |       33 |
+| jcs3.utils.struct                          | LRUElementDescriptor_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.utils.struct                          | LRUMap.java                                                 | src      |        5 |       14 |       18 |       19 |       56 |
+| jcs3.utils.struct                          | LRUMap_ESTest.java                                          | test     |        7 |        0 |        4 |       36 |       47 |
+| jcs3.utils.struct                          | LRUMap_ESTest_scaffolding.java                              | test     |       16 |        5 |        0 |      102 |      123 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.threadpool                      | DaemonThreadFactory.java                                    | src      |        6 |       22 |       18 |       28 |       74 |
+| jcs3.utils.threadpool                      | DaemonThreadFactory_ESTest.java                             | test     |        6 |        0 |        8 |       29 |       43 |
+| jcs3.utils.threadpool                      | DaemonThreadFactory_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       78 |       99 |
+| jcs3.utils.threadpool                      | PoolConfiguration.java                                      | src      |       39 |       80 |       20 |      154 |      293 |
+| jcs3.utils.threadpool                      | PoolConfiguration_ESTest.java                               | test     |       35 |        0 |        4 |      330 |      369 |
+| jcs3.utils.threadpool                      | PoolConfiguration_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |       80 |      101 |
+| jcs3.utils.threadpool                      | ThreadPoolManager.java                                      | src      |       40 |       98 |       20 |      175 |      333 |
+| jcs3.utils.threadpool                      | ThreadPoolManager_ESTest.java                               | test     |       28 |        0 |       64 |      198 |      290 |
+| jcs3.utils.threadpool                      | ThreadPoolManager_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      101 |      122 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.timing                          | ElapsedTimer.java                                           | src      |        5 |       17 |       18 |       18 |       58 |
+| jcs3.utils.timing                          | ElapsedTimer_ESTest.java                                    | test     |        7 |        0 |        4 |       34 |       45 |
+| jcs3.utils.timing                          | ElapsedTimer_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |       78 |       99 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3.utils.zip                             | CompressionUtil.java                                        | src      |       30 |       46 |       30 |       97 |      203 |
+| jcs3.utils.zip                             | CompressionUtil_ESTest.java                                 | test     |       34 |        0 |       51 |      172 |      257 |
+| jcs3.utils.zip                             | CompressionUtil_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |       88 |      109 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jcs3                                       | JCS.java                                                    | src      |       19 |       83 |       18 |      103 |      223 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 62 package(s)                              | 535 file(s)                                                 | java     |    11769 |    15378 |     9509 |    85276 |   121932 |
++--------------------------------------------+-------------------------------------------------------------+----------+----------+----------+----------+----------+----------+

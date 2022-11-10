@@ -1,0 +1,22 @@
++--------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name       | File Name                                | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++--------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| normalizer.example | Assertions.java                          | src      |        8 |        3 |       18 |       41 |       70 |
+| normalizer.example | ContrivedWrapper.java                    | src      |        6 |        0 |       18 |       25 |       49 |
+| normalizer.example | InstanceMembers.java                     | src      |        3 |        0 |       18 |       12 |       33 |
+| normalizer.example | StaticMembers.java                       | src      |        4 |        0 |       18 |       14 |       36 |
++--------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| normalizer         | Normalizer.java                          | src      |       68 |      115 |       25 |      405 |      613 |
+| normalizer         | NormalizerWeaver.java                    | src      |        3 |        7 |       18 |       10 |       38 |
+| normalizer         | NormalizerWeaver_ESTest.java             | test     |        5 |        0 |        8 |       27 |       40 |
+| normalizer         | NormalizerWeaver_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      148 |      169 |
+| normalizer         | Normalizer_ESTest.java                   | test     |       12 |        0 |       12 |       69 |       93 |
+| normalizer         | Normalizer_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |      167 |      188 |
+| normalizer         | Utils.java                               | src      |        7 |       18 |       16 |       48 |       89 |
+| normalizer         | UtilsTest.java                           | test     |       12 |        0 |       16 |       72 |      100 |
+| normalizer         | Utils_ESTest.java                        | test     |       14 |        0 |       16 |       68 |       98 |
+| normalizer         | Utils_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       87 |      108 |
+| normalizer         | package-info.java                        | src      |        0 |        4 |       16 |        1 |       21 |
++--------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 2 package(s)       | 15 file(s)                               | java     |      190 |      162 |      199 |     1194 |     1745 |
++--------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+

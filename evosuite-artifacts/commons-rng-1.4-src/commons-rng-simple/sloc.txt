@@ -1,0 +1,71 @@
++------------------+-------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                       | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+-------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| simple.internal  | ByteArray2IntArray.java                         | src      |        5 |        5 |       16 |       15 |       41 |
+| simple.internal  | ByteArray2IntArray_ESTest.java                  | test     |        7 |        0 |        8 |       35 |       50 |
+| simple.internal  | ByteArray2IntArray_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       81 |      102 |
+| simple.internal  | ByteArray2LongArray.java                        | src      |        5 |        5 |       16 |       15 |       41 |
+| simple.internal  | ByteArray2LongArray_ESTest.java                 | test     |        8 |        0 |        8 |       42 |       58 |
+| simple.internal  | ByteArray2LongArray_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |       81 |      102 |
+| simple.internal  | Int2Long.java                                   | src      |        2 |        5 |       16 |       10 |       33 |
+| simple.internal  | Int2Long_ESTest.java                            | test     |        8 |        0 |        8 |       42 |       58 |
+| simple.internal  | Int2Long_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       81 |      102 |
+| simple.internal  | IntArray2Int.java                               | src      |        2 |        5 |       16 |       12 |       35 |
+| simple.internal  | IntArray2Int_ESTest.java                        | test     |        9 |        0 |        8 |       53 |       70 |
+| simple.internal  | IntArray2Int_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       79 |      100 |
+| simple.internal  | IntArray2LongArray.java                         | src      |        3 |        5 |       16 |       16 |       40 |
+| simple.internal  | IntArray2LongArray_ESTest.java                  | test     |        9 |        0 |        8 |       50 |       67 |
+| simple.internal  | IntArray2LongArray_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       81 |      102 |
+| simple.internal  | Long2Int.java                                   | src      |        2 |        5 |       16 |       10 |       33 |
+| simple.internal  | Long2IntArray.java                              | src      |        6 |       22 |       19 |       32 |       79 |
+| simple.internal  | Long2IntArray_ESTest.java                       | test     |       16 |        0 |       22 |       90 |      128 |
+| simple.internal  | Long2IntArray_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       92 |      113 |
+| simple.internal  | Long2Int_ESTest.java                            | test     |        8 |        0 |        8 |       42 |       58 |
+| simple.internal  | Long2Int_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       81 |      102 |
+| simple.internal  | Long2LongArray.java                             | src      |        8 |       22 |       16 |       26 |       72 |
+| simple.internal  | Long2LongArray_ESTest.java                      | test     |       15 |        0 |       22 |       81 |      118 |
+| simple.internal  | Long2LongArray_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       90 |      111 |
+| simple.internal  | LongArray2IntArray.java                         | src      |        3 |        5 |       16 |       15 |       39 |
+| simple.internal  | LongArray2IntArray_ESTest.java                  | test     |        7 |        0 |        8 |       35 |       50 |
+| simple.internal  | LongArray2IntArray_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       81 |      102 |
+| simple.internal  | LongArray2Long.java                             | src      |        2 |        5 |       16 |       12 |       35 |
+| simple.internal  | LongArray2Long_ESTest.java                      | test     |        9 |        0 |        8 |       53 |       70 |
+| simple.internal  | LongArray2Long_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       79 |      100 |
+| simple.internal  | NativeSeedType.java                             | src      |       19 |      102 |       22 |      184 |      327 |
+| simple.internal  | NativeSeedType_ESTest.java                      | test     |       31 |        0 |       27 |      184 |      242 |
+| simple.internal  | NativeSeedType_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      124 |      145 |
+| simple.internal  | NoOpConverter.java                              | src      |        2 |        8 |       16 |        8 |       34 |
+| simple.internal  | NoOpConverter_ESTest.java                       | test     |        5 |        0 |        4 |       23 |       32 |
+| simple.internal  | NoOpConverter_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       79 |      100 |
+| simple.internal  | ProviderBuilder.java                            | src      |       32 |      203 |       39 |      380 |      654 |
+| simple.internal  | ProviderBuilder_ESTest.java                     | test     |       30 |        0 |       30 |      180 |      240 |
+| simple.internal  | ProviderBuilder_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      243 |      264 |
+| simple.internal  | Seed2ArrayConverter.java                        | src      |        1 |       14 |       16 |        4 |       35 |
+| simple.internal  | SeedConverter.java                              | src      |        1 |       14 |       16 |        4 |       35 |
+| simple.internal  | SeedConverterComposer.java                      | src      |        3 |       13 |       16 |       18 |       50 |
+| simple.internal  | SeedConverterComposer_ESTest.java               | test     |        7 |        0 |        8 |       44 |       59 |
+| simple.internal  | SeedConverterComposer_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |       92 |      113 |
+| simple.internal  | SeedFactory.java                                | src      |       20 |      124 |       32 |      141 |      317 |
+| simple.internal  | SeedFactory_ESTest.java                         | test     |       32 |        0 |       39 |      183 |      254 |
+| simple.internal  | SeedFactory_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      146 |      167 |
+| simple.internal  | SeedUtils.java                                  | src      |       20 |       60 |       52 |       81 |      213 |
+| simple.internal  | SeedUtils_ESTest.java                           | test     |       12 |        0 |       12 |       54 |       78 |
+| simple.internal  | SeedUtils_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       85 |      106 |
+| simple.internal  | package-info.java                               | src      |        2 |        3 |       16 |        1 |       22 |
++------------------+-------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| simple           | JDKRandomBridge.java                            | src      |       10 |       45 |       29 |       57 |      141 |
+| simple           | JDKRandomBridge_ESTest.java                     | test     |       13 |        0 |       19 |       75 |      107 |
+| simple           | JDKRandomBridge_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      234 |      255 |
+| simple           | JDKRandomWrapper.java                           | src      |       15 |       23 |       17 |       68 |      123 |
+| simple           | JDKRandomWrapper_ESTest.java                    | test     |       52 |        0 |       57 |      299 |      408 |
+| simple           | JDKRandomWrapper_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |       79 |      100 |
+| simple           | RandomSource.java                               | src      |       29 |      805 |       16 |      166 |     1016 |
+| simple           | RandomSource_ESTest.java                        | test     |       51 |        0 |       58 |      276 |      385 |
+| simple           | RandomSource_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      249 |      270 |
+| simple           | ThreadLocalRandomSource.java                    | src      |        9 |       68 |       21 |       36 |      134 |
+| simple           | ThreadLocalRandomSource_ESTest.java             | test     |        8 |        0 |        9 |       37 |       54 |
+| simple           | ThreadLocalRandomSource_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      249 |      270 |
+| simple           | package-info.java                               | src      |        2 |       74 |       16 |        1 |       93 |
++------------------+-------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 2 package(s)     | 64 file(s)                                      | java     |      860 |     1740 |      858 |     5596 |     9054 |
++------------------+-------------------------------------------------+----------+----------+----------+----------+----------+----------+

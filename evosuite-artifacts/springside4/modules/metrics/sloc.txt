@@ -1,0 +1,54 @@
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| metrics.exporter | JmxExporter.java                         | src      |       76 |       28 |        3 |      286 |      393 |
+| metrics.exporter | JmxExporter_ESTest.java                  | test     |       82 |        0 |      102 |      575 |      759 |
+| metrics.exporter | JmxExporter_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |      125 |      146 |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| metrics.metric   | CachedGauge.java                         | src      |       12 |        0 |        1 |       36 |       49 |
+| metrics.metric   | CachedGauge_ESTest.java                  | test     |        3 |        0 |        5 |       12 |       20 |
+| metrics.metric   | CachedGauge_ESTest_scaffolding.java      | test     |       14 |        5 |        0 |       67 |       86 |
+| metrics.metric   | Counter.java                             | src      |       21 |       16 |        0 |       55 |       92 |
+| metrics.metric   | CounterMetric.java                       | src      |        2 |        8 |        0 |       12 |       22 |
+| metrics.metric   | CounterMetric_ESTest.java                | test     |        6 |        0 |        4 |       31 |       41 |
+| metrics.metric   | CounterMetric_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |       78 |       99 |
+| metrics.metric   | Counter_ESTest.java                      | test     |       20 |        0 |       19 |      121 |      160 |
+| metrics.metric   | Counter_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       86 |      107 |
+| metrics.metric   | Gauge.java                               | src      |        5 |        0 |        9 |       12 |       26 |
+| metrics.metric   | Gauge_ESTest.java                        | test     |        3 |        0 |        5 |       12 |       20 |
+| metrics.metric   | Gauge_ESTest_scaffolding.java            | test     |       14 |        5 |        0 |       61 |       80 |
+| metrics.metric   | Histogram.java                           | src      |       28 |       29 |        5 |      110 |      172 |
+| metrics.metric   | HistogramMetric.java                     | src      |        3 |        8 |        0 |       13 |       24 |
+| metrics.metric   | HistogramMetric_ESTest.java              | test     |        4 |        0 |        4 |       17 |       25 |
+| metrics.metric   | HistogramMetric_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |       78 |       99 |
+| metrics.metric   | Histogram_ESTest.java                    | test     |       27 |        0 |       22 |      253 |      302 |
+| metrics.metric   | Histogram_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |       80 |      101 |
+| metrics.metric   | Timer.java                               | src      |       15 |       35 |        2 |       49 |      101 |
+| metrics.metric   | TimerMetric.java                         | src      |        2 |        8 |        0 |        9 |       19 |
+| metrics.metric   | TimerMetric_ESTest.java                  | test     |        4 |        0 |        4 |       16 |       24 |
+| metrics.metric   | TimerMetric_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       82 |      103 |
+| metrics.metric   | Timer_ESTest.java                        | test     |       20 |        0 |       26 |      160 |      206 |
+| metrics.metric   | Timer_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       96 |      117 |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| metrics.reporter | ConsoleReporter.java                     | src      |       15 |        8 |        0 |       93 |      116 |
+| metrics.reporter | ConsoleReporter_ESTest.java              | test     |        5 |        0 |        5 |       29 |       39 |
+| metrics.reporter | ConsoleReporter_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |      100 |      121 |
+| metrics.reporter | GraphiteReporter.java                    | src      |       38 |        8 |        1 |      172 |      219 |
+| metrics.reporter | GraphiteReporter_ESTest.java             | test     |        6 |        0 |        8 |       37 |       51 |
+| metrics.reporter | GraphiteReporter_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      102 |      123 |
+| metrics.reporter | Slf4jReporter.java                       | src      |       20 |       12 |        0 |       71 |      103 |
+| metrics.reporter | Slf4jReporter_ESTest.java                | test     |        7 |        0 |        7 |       31 |       45 |
+| metrics.reporter | Slf4jReporter_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |      103 |      124 |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| metrics.utils    | Clock.java                               | src      |       13 |       25 |        0 |       33 |       71 |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| metrics          | Exporter.java                            | src      |        1 |       10 |        0 |        3 |       14 |
+| metrics          | MetricRegistry.java                      | src      |       27 |       58 |        3 |      125 |      213 |
+| metrics          | MetricRegistryListener.java              | src      |        9 |        8 |        0 |       15 |       32 |
+| metrics          | ReportScheduler.java                     | src      |       22 |       22 |        5 |      109 |      158 |
+| metrics          | ReportScheduler_ESTest.java              | test     |       28 |        0 |       43 |      217 |      288 |
+| metrics          | ReportScheduler_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |      137 |      158 |
+| metrics          | Reporter.java                            | src      |        4 |        8 |        0 |       10 |       22 |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 5 package(s)     | 44 file(s)                               | java     |      732 |      356 |      283 |     3919 |     5290 |
++------------------+------------------------------------------+----------+----------+----------+----------+----------+----------+

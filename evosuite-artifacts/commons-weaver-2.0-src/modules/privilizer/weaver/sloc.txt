@@ -1,0 +1,64 @@
++--------------------+-----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name       | File Name                                           | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++--------------------+-----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| privilizer.example | MethodReferencesUsingBlueprints.java                | src      |       10 |        0 |       18 |       39 |       67 |
+| privilizer.example | MethodReferencesUsingBlueprintsTest.java            | test     |       13 |        0 |       18 |       50 |       81 |
+| privilizer.example | NoArgs.java                                         | src      |       10 |        0 |       18 |       38 |       66 |
+| privilizer.example | NoArgsTest.java                                     | test     |       10 |        0 |       18 |       51 |       79 |
+| privilizer.example | Overloading.java                                    | src      |        5 |        0 |       18 |       16 |       39 |
+| privilizer.example | OverloadingTest.java                                | test     |        7 |        0 |       18 |       26 |       51 |
+| privilizer.example | PrivateMethods.java                                 | src      |        3 |        0 |       18 |       11 |       32 |
+| privilizer.example | PrivateMethodsTest.java                             | test     |        5 |        0 |       18 |       20 |       43 |
+| privilizer.example | Setup.java                                          | src      |        3 |        6 |       15 |       15 |       39 |
+| privilizer.example | StaticNoArgs.java                                   | src      |       10 |        0 |       18 |       40 |       68 |
+| privilizer.example | StaticNoArgsTest.java                               | test     |        9 |        0 |       18 |       49 |       76 |
+| privilizer.example | StaticOverloading.java                              | src      |        5 |        0 |       18 |       18 |       41 |
+| privilizer.example | StaticOverloadingTest.java                          | test     |        7 |        0 |       18 |       24 |       49 |
+| privilizer.example | StaticPrivateMethods.java                           | src      |        4 |        0 |       18 |       13 |       35 |
+| privilizer.example | StaticPrivateMethodsTest.java                       | test     |        5 |        0 |       18 |       18 |       41 |
+| privilizer.example | StaticUsingArgs.java                                | src      |       13 |        0 |       20 |       48 |       81 |
+| privilizer.example | StaticUsingArgsTest.java                            | test     |       10 |        0 |       18 |       52 |       80 |
+| privilizer.example | UsingArgs.java                                      | src      |       10 |        0 |       20 |       46 |       76 |
+| privilizer.example | UsingArgsTest.java                                  | test     |       10 |        0 |       18 |       54 |       82 |
+| privilizer.example | UsingBlueprints.java                                | src      |        9 |        0 |       18 |       27 |       54 |
+| privilizer.example | UsingBlueprintsTest.java                            | test     |       14 |        0 |       18 |       50 |       82 |
+| privilizer.example | Utils.java                                          | src      |       11 |        0 |       18 |       39 |       68 |
++--------------------+-----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| privilizer         | AccessLevel.java                                    | src      |       13 |       41 |       18 |       54 |      126 |
+| privilizer         | AccessLevel_ESTest.java                             | test     |       13 |        0 |        8 |       64 |       85 |
+| privilizer         | AccessLevel_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       82 |      103 |
+| privilizer         | ActionGenerator.java                                | src      |       27 |       21 |       21 |      159 |      228 |
+| privilizer         | ActionGenerator_ESTest.java                         | test     |        5 |        0 |        7 |       23 |       35 |
+| privilizer         | ActionGenerator_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      235 |      256 |
+| privilizer         | BlueprintingVisitor.java                            | src      |       86 |       54 |       41 |      436 |      617 |
+| privilizer         | BlueprintingVisitor_ESTest.java                     | test     |       11 |        0 |       12 |       62 |       85 |
+| privilizer         | BlueprintingVisitor_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      301 |      322 |
+| privilizer         | Field.java                                          | src      |        8 |       27 |       18 |       31 |       84 |
+| privilizer         | FieldAccess.java                                    | src      |        5 |       23 |       18 |       24 |       70 |
+| privilizer         | FieldAccess_ESTest.java                             | test     |       14 |        0 |       11 |       99 |      124 |
+| privilizer         | FieldAccess_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       86 |      107 |
+| privilizer         | Field_ESTest.java                                   | test     |       11 |        0 |        7 |       75 |       93 |
+| privilizer         | Field_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |       84 |      105 |
+| privilizer         | InlineNestedPrivilegedCalls.java                    | src      |       12 |       21 |       18 |       60 |      111 |
+| privilizer         | InlineNestedPrivilegedCalls_ESTest.java             | test     |        9 |        0 |       12 |       59 |       80 |
+| privilizer         | InlineNestedPrivilegedCalls_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      216 |      237 |
+| privilizer         | Policy.java                                         | src      |        9 |       29 |       18 |       22 |       78 |
+| privilizer         | Policy_ESTest.java                                  | test     |       11 |        0 |        4 |       53 |       68 |
+| privilizer         | Policy_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |       80 |      101 |
+| privilizer         | Privilized.java                                     | src      |        2 |        7 |       18 |        7 |       34 |
+| privilizer         | Privilizer.java                                     | src      |       34 |       28 |       18 |      174 |      254 |
+| privilizer         | PrivilizerCleaner.java                              | src      |       11 |        3 |       18 |       61 |       93 |
+| privilizer         | PrivilizerCleaner_ESTest.java                       | test     |        5 |        0 |        8 |       27 |       40 |
+| privilizer         | PrivilizerCleaner_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      195 |      216 |
+| privilizer         | PrivilizerWeaver.java                               | src      |       10 |       10 |       20 |       42 |       82 |
+| privilizer         | PrivilizerWeaver_ESTest.java                        | test     |        5 |        0 |        8 |       26 |       39 |
+| privilizer         | PrivilizerWeaver_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |      191 |      212 |
+| privilizer         | Privilizer_ESTest.java                              | test     |       16 |        0 |       11 |       90 |      117 |
+| privilizer         | Privilizer_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      190 |      211 |
+| privilizer         | PrivilizingVisitor.java                             | src      |       23 |       13 |       29 |      170 |      235 |
+| privilizer         | PrivilizingVisitor_ESTest.java                      | test     |        8 |        0 |       11 |       51 |       70 |
+| privilizer         | PrivilizingVisitor_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      278 |      299 |
+| privilizer         | package-info.java                                   | src      |        0 |        3 |       16 |        1 |       20 |
++--------------------+-----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 2 package(s)       | 57 file(s)                                          | java     |      707 |      341 |      767 |     4552 |     6367 |
++--------------------+-----------------------------------------------------+----------+----------+----------+----------+----------+----------+

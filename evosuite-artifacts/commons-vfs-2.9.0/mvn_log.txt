@@ -1,0 +1,732 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.commons:commons-vfs2:jar:2.9.0
+[[1;33mWARNING[m] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.12 vs 4.13.2 @ org.apache.commons:commons-vfs2-project:2.9.0, /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/pom.xml, line 639, column 19
+[[1;33mWARNING[m] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ org.apache.commons:commons-vfs2-project:2.9.0, /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/pom.xml, line 357, column 15
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.commons:commons-vfs2-project:pom:2.9.0
+[[1;33mWARNING[m] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.12 vs 4.13.2 @ line 639, column 19
+[[1;33mWARNING[m] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 357, column 15
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Apache Commons VFS Project                                         [pom]
+[[1;34mINFO[m] Apache Commons VFS                                                 [jar]
+[[1;34mINFO[m] Apache Commons VFS Jackrabbit 1                                    [jar]
+[[1;34mINFO[m] Apache Commons VFS Jackrabbit 2                                    [jar]
+[[1;34mINFO[m] Apache Commons VFS Examples                                        [jar]
+[[1;34mINFO[m] Apache Commons VFS Distribution                                    [pom]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.commons:commons-vfs2-project[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons VFS Project 2.9.0                          [1/6][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.2.0:parse-version[m [1m(parse-version)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(vfs-jar-manifest)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+    [mkdir] Created dir: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/target/osgi
+    [touch] Creating /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/target/osgi/MANIFEST.MF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Skipping remote resources execution.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1667750136944
+[[1;33mWARNING[m] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository (or any parent up to mount point /media/ISSTA_USER)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:5.1.2:manifest[m [1m(bundle-manifest)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;33mWARNING[m] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mevosuite-maven-plugin:1.0.6:prepare[m [1m(default)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Preparing EvoSuite tests for execution
+[[1;34mINFO[m] Analyzing test folder: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/target/test-classes
+[[1;33mWARNING[m] Target folder for compiled tests does not exist: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.19:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-vfs2-project[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.commons:commons-vfs2[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons VFS 2.9.0                                  [2/6][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.2.0:parse-version[m [1m(parse-version)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(vfs-jar-manifest)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+    [mkdir] Created dir: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/osgi
+    [touch] Creating /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/osgi/MANIFEST.MF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Skipping remote resources execution.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1667750137988
+[[1;33mWARNING[m] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository (or any parent up to mount point /media/ISSTA_USER)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 4 resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 293 source files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/classes
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/main/java/org/apache/commons/vfs2/provider/https/HttpsFileNameParser.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/main/java/org/apache/commons/vfs2/provider/https/HttpsFileNameParser.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/main/java/org/apache/commons/vfs2/FileSystemOptions.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/main/java/org/apache/commons/vfs2/FileSystemOptions.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:5.1.2:manifest[m [1m(bundle-manifest)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;33mWARNING[m] Manifest org.apache.commons:commons-vfs2:jar:2.9.0 : Unused Import-Package instructions: [org.apache.jackrabbit.*] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/test/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 188 source files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/test-classes
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/test/java/org/apache/commons/vfs2/util/Os_ESTest.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/test/java/org/apache/commons/vfs2/util/Os_ESTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/test/java/org/apache/commons/vfs2/util/DelegatingFileSystemOptionsBuilder_ESTest.java: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/test/java/org/apache/commons/vfs2/util/DelegatingFileSystemOptionsBuilder_ESTest.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/src/test/java/org/apache/commons/vfs2/util/DelegatingFileSystemOptionsBuilder_ESTest.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(default)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mevosuite-maven-plugin:1.0.6:prepare[m [1m(default)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Preparing EvoSuite tests for execution
+[[1;34mINFO[m] Analyzing test folder: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/test-classes
+[[1;34mINFO[m] Found 94 EvoSuite scaffolding files
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.19:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.17:test[m [1m(default-test)[m @ [36mcommons-vfs2[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.vfs2.NameScope_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.apache.commons.vfs2.NameScope_ESTest
+Running org.apache.commons.vfs2.FileNotFoundException_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 sec - in org.apache.commons.vfs2.FileNotFoundException_ESTest
+Running org.apache.commons.vfs2.FileDepthSelector_ESTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 sec - in org.apache.commons.vfs2.FileDepthSelector_ESTest
+Running org.apache.commons.vfs2.FileContent_ESTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.288 sec - in org.apache.commons.vfs2.FileContent_ESTest
+Running org.apache.commons.vfs2.InvertIncludeFileSelector_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.vfs2.InvertIncludeFileSelector_ESTest
+Running org.apache.commons.vfs2.operations.AbstractFileOperation_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.vfs2.operations.AbstractFileOperation_ESTest
+Running org.apache.commons.vfs2.operations.vcs.VcsLogEntry_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.commons.vfs2.operations.vcs.VcsLogEntry_ESTest
+Running org.apache.commons.vfs2.operations.vcs.VcsStatus_ESTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.vfs2.operations.vcs.VcsStatus_ESTest
+Running org.apache.commons.vfs2.operations.DefaultFileOperations_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.938 sec - in org.apache.commons.vfs2.operations.DefaultFileOperations_ESTest
+Running org.apache.commons.vfs2.operations.AbstractFileOperationProvider_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.commons.vfs2.operations.AbstractFileOperationProvider_ESTest
+Running org.apache.commons.vfs2.FileTypeSelector_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.apache.commons.vfs2.FileTypeSelector_ESTest
+Running org.apache.commons.vfs2.VfsLog_ESTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.217 sec - in org.apache.commons.vfs2.VfsLog_ESTest
+Running org.apache.commons.vfs2.FileSystemOptions_ESTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.163 sec - in org.apache.commons.vfs2.FileSystemOptions_ESTest
+Running org.apache.commons.vfs2.function.VfsConsumer_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.vfs2.function.VfsConsumer_ESTest
+Running org.apache.commons.vfs2.FileExtensionSelector_ESTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.062 sec - in org.apache.commons.vfs2.FileExtensionSelector_ESTest
+Running org.apache.commons.vfs2.impl.FileContentInfoFilenameFactory_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.apache.commons.vfs2.impl.FileContentInfoFilenameFactory_ESTest
+Running org.apache.commons.vfs2.impl.Resource_ESTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.apache.commons.vfs2.impl.Resource_ESTest
+Running org.apache.commons.vfs2.impl.DefaultVfsComponentContext_ESTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.122 sec - in org.apache.commons.vfs2.impl.DefaultVfsComponentContext_ESTest
+Running org.apache.commons.vfs2.impl.URLStreamHandlerProxy_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in org.apache.commons.vfs2.impl.URLStreamHandlerProxy_ESTest
+Running org.apache.commons.vfs2.impl.VFSClassLoader_ESTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.691 sec - in org.apache.commons.vfs2.impl.VFSClassLoader_ESTest
+Running org.apache.commons.vfs2.impl.ProviderConfiguration_ESTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.vfs2.impl.ProviderConfiguration_ESTest
+Running org.apache.commons.vfs2.impl.DefaultFileReplicator_ESTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.53 sec - in org.apache.commons.vfs2.impl.DefaultFileReplicator_ESTest
+Running org.apache.commons.vfs2.impl.DefaultFileContentInfo_ESTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.vfs2.impl.DefaultFileContentInfo_ESTest
+Running org.apache.commons.vfs2.impl.StandardFileSystemManager_ESTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.476 sec - in org.apache.commons.vfs2.impl.StandardFileSystemManager_ESTest
+Running org.apache.commons.vfs2.impl.FileTypeMap_ESTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.commons.vfs2.impl.FileTypeMap_ESTest
+Running org.apache.commons.vfs2.impl.PrivilegedFileReplicator_ESTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.445 sec - in org.apache.commons.vfs2.impl.PrivilegedFileReplicator_ESTest
+Running org.apache.commons.vfs2.impl.DefaultFileSystemManager_ESTest
+Tests run: 124, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.129 sec - in org.apache.commons.vfs2.impl.DefaultFileSystemManager_ESTest
+Running org.apache.commons.vfs2.impl.VirtualFileProvider_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.apache.commons.vfs2.impl.VirtualFileProvider_ESTest
+Running org.apache.commons.vfs2.impl.VirtualFileName_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.vfs2.impl.VirtualFileName_ESTest
+Running org.apache.commons.vfs2.impl.DefaultFileMonitor_ESTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.324 sec - in org.apache.commons.vfs2.impl.DefaultFileMonitor_ESTest
+Running org.apache.commons.vfs2.impl.DefaultProviderConfiguration_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.vfs2.impl.DefaultProviderConfiguration_ESTest
+Running org.apache.commons.vfs2.UserAuthenticationData_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.vfs2.UserAuthenticationData_ESTest
+Running org.apache.commons.vfs2.AllFileSelector_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.vfs2.AllFileSelector_ESTest
+Running org.apache.commons.vfs2.FileTypeHasNoContentException_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 sec - in org.apache.commons.vfs2.FileTypeHasNoContentException_ESTest
+Running org.apache.commons.vfs2.FileType_ESTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.vfs2.FileType_ESTest
+Running org.apache.commons.vfs2.util.CryptorFactory_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.vfs2.util.CryptorFactory_ESTest
+Running org.apache.commons.vfs2.util.CombinedResources_ESTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.703 sec - in org.apache.commons.vfs2.util.CombinedResources_ESTest
+Running org.apache.commons.vfs2.util.DefaultCryptor_ESTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.apache.commons.vfs2.util.DefaultCryptor_ESTest
+Running org.apache.commons.vfs2.util.WeakRefFileListener_ESTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.166 sec - in org.apache.commons.vfs2.util.WeakRefFileListener_ESTest
+Running org.apache.commons.vfs2.util.RandomAccessMode_ESTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.vfs2.util.RandomAccessMode_ESTest
+Running org.apache.commons.vfs2.util.MonitorRandomAccessContent_ESTest
+Tests run: 78, Failures: 0, Errors: 0, Skipped: 13, Time elapsed: 0.079 sec - in org.apache.commons.vfs2.util.MonitorRandomAccessContent_ESTest
+Running org.apache.commons.vfs2.util.OsFamily_ESTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.vfs2.util.OsFamily_ESTest
+Running org.apache.commons.vfs2.util.Messages_ESTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.apache.commons.vfs2.util.Messages_ESTest
+Running org.apache.commons.vfs2.util.EncryptUtil_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.vfs2.util.EncryptUtil_ESTest
+Running org.apache.commons.vfs2.util.Os_ESTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.vfs2.util.Os_ESTest
+Running org.apache.commons.vfs2.util.DelegatingFileSystemOptionsBuilder_ESTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.757 sec - in org.apache.commons.vfs2.util.DelegatingFileSystemOptionsBuilder_ESTest
+Running org.apache.commons.vfs2.util.PosixPermissions_ESTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.apache.commons.vfs2.util.PosixPermissions_ESTest
+Running org.apache.commons.vfs2.util.FileObjectUtils_ESTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.261 sec - in org.apache.commons.vfs2.util.FileObjectUtils_ESTest
+Running org.apache.commons.vfs2.util.UserAuthenticatorUtils_ESTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.apache.commons.vfs2.util.UserAuthenticatorUtils_ESTest
+Running org.apache.commons.vfs2.util.URIUtils_ESTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.vfs2.util.URIUtils_ESTest
+Running org.apache.commons.vfs2.cache.DefaultFilesCache_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.953 sec - in org.apache.commons.vfs2.cache.DefaultFilesCache_ESTest
+Running org.apache.commons.vfs2.cache.FileSystemAndNameKey_ESTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.074 sec - in org.apache.commons.vfs2.cache.FileSystemAndNameKey_ESTest
+Running org.apache.commons.vfs2.cache.AbstractFilesCache_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.vfs2.cache.AbstractFilesCache_ESTest
+Running org.apache.commons.vfs2.cache.SoftRefFilesCache_ESTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.143 sec - in org.apache.commons.vfs2.cache.SoftRefFilesCache_ESTest
+Running org.apache.commons.vfs2.cache.WeakRefFilesCache_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.vfs2.cache.WeakRefFilesCache_ESTest
+Running org.apache.commons.vfs2.cache.NullFilesCache_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.commons.vfs2.cache.NullFilesCache_ESTest
+Running org.apache.commons.vfs2.FileNotFolderException_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec - in org.apache.commons.vfs2.FileNotFolderException_ESTest
+Running org.apache.commons.vfs2.tasks.ShowFileTask_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.533 sec - in org.apache.commons.vfs2.tasks.ShowFileTask_ESTest
+Running org.apache.commons.vfs2.tasks.MkdirTask_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in org.apache.commons.vfs2.tasks.MkdirTask_ESTest
+Running org.apache.commons.vfs2.tasks.SyncTask_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.apache.commons.vfs2.tasks.SyncTask_ESTest
+Running org.apache.commons.vfs2.FileObject_ESTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.commons.vfs2.FileObject_ESTest
+Running org.apache.commons.vfs2.VFS_ESTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.303 sec - in org.apache.commons.vfs2.VFS_ESTest
+Running org.apache.commons.vfs2.FileFilterSelector_ESTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.944 sec - in org.apache.commons.vfs2.FileFilterSelector_ESTest
+Running org.apache.commons.vfs2.auth.StaticUserAuthenticator_ESTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.apache.commons.vfs2.auth.StaticUserAuthenticator_ESTest
+Running org.apache.commons.vfs2.PatternFileSelector_ESTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.apache.commons.vfs2.PatternFileSelector_ESTest
+Running org.apache.commons.vfs2.events.DeleteEvent_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.apache.commons.vfs2.events.DeleteEvent_ESTest
+Running org.apache.commons.vfs2.events.CreateEvent_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.apache.commons.vfs2.events.CreateEvent_ESTest
+Running org.apache.commons.vfs2.events.ChangedEvent_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.apache.commons.vfs2.events.ChangedEvent_ESTest
+Running org.apache.commons.vfs2.events.AbstractFileChangeEvent_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.vfs2.events.AbstractFileChangeEvent_ESTest
+Running org.apache.commons.vfs2.filter.CanExecuteFileFilter_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.vfs2.filter.CanExecuteFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.PrefixFileFilter_ESTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.859 sec - in org.apache.commons.vfs2.filter.PrefixFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.WildcardFileFilter_ESTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.24 sec - in org.apache.commons.vfs2.filter.WildcardFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.NotFileFilter_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.commons.vfs2.filter.NotFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.OrFileFilter_ESTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.724 sec - in org.apache.commons.vfs2.filter.OrFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.AndFileFilter_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.133 sec - in org.apache.commons.vfs2.filter.AndFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.SuffixFileFilter_ESTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.991 sec - in org.apache.commons.vfs2.filter.SuffixFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.DirectoryFileFilter_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.apache.commons.vfs2.filter.DirectoryFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.SizeRangeFileFilter_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.vfs2.filter.SizeRangeFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.FileFileFilter_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.apache.commons.vfs2.filter.FileFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.HiddenFileFilter_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.vfs2.filter.HiddenFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.SymbolicLinkFileFilter_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.vfs2.filter.SymbolicLinkFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.CanReadFileFilter_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.apache.commons.vfs2.filter.CanReadFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.RegexFileFilter_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.vfs2.filter.RegexFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.FalseFileFilter_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.commons.vfs2.filter.FalseFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.NameFileFilter_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.481 sec - in org.apache.commons.vfs2.filter.NameFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.IOCase_ESTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.apache.commons.vfs2.filter.IOCase_ESTest
+Running org.apache.commons.vfs2.filter.TrueFileFilter_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.commons.vfs2.filter.TrueFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.SizeFileFilter_ESTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.commons.vfs2.filter.SizeFileFilter_ESTest
+Running org.apache.commons.vfs2.filter.AgeFileFilter_ESTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.039 sec - in org.apache.commons.vfs2.filter.AgeFileFilter_ESTest
+Running org.apache.commons.vfs2.FileUtil_ESTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.apache.commons.vfs2.FileUtil_ESTest
+Running org.apache.commons.vfs2.FileChangeEvent_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.commons.vfs2.FileChangeEvent_ESTest
+Running org.apache.commons.vfs2.FileSystemConfigBuilder_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.299 sec - in org.apache.commons.vfs2.FileSystemConfigBuilder_ESTest
+Running org.apache.commons.vfs2.CacheStrategy_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.vfs2.CacheStrategy_ESTest
+Running org.apache.commons.vfs2.FileSystemManager_ESTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.02 sec - in org.apache.commons.vfs2.FileSystemManager_ESTest
+
+Results :
+
+Tests run: 1092, Failures: 0, Errors: 0, Skipped: 15
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.apache.commons:commons-vfs2-jackrabbit1[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons VFS Jackrabbit 1 2.9.0                     [3/6][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.2.0:parse-version[m [1m(parse-version)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(vfs-jar-manifest)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+    [mkdir] Created dir: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/target/osgi
+    [touch] Creating /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/target/osgi/MANIFEST.MF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Skipping remote resources execution.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1667750203929
+[[1;33mWARNING[m] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository (or any parent up to mount point /media/ISSTA_USER)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 8 source files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/target/classes
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/src/main/java/org/apache/commons/vfs2/provider/webdav/WebdavFileObject.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/src/main/java/org/apache/commons/vfs2/provider/webdav/WebdavFileObject.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:5.1.2:manifest[m [1m(bundle-manifest)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;33mWARNING[m] Manifest org.apache.commons:commons-vfs2-jackrabbit1:jar:2.9.0 : Unused Import-Package instructions: [org.apache.hadoop.*, org.apache.tools.ant.*] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/src/test/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(default)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mevosuite-maven-plugin:1.0.6:prepare[m [1m(default)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Preparing EvoSuite tests for execution
+[[1;34mINFO[m] Analyzing test folder: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit1/target/test-classes
+[[1;34mINFO[m] Found 0 EvoSuite scaffolding files
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.19:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.17:test[m [1m(default-test)[m @ [36mcommons-vfs2-jackrabbit1[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.apache.commons:commons-vfs2-jackrabbit2[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons VFS Jackrabbit 2 2.9.0                     [4/6][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.2.0:parse-version[m [1m(parse-version)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(vfs-jar-manifest)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+    [mkdir] Created dir: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/target/osgi
+    [touch] Creating /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/target/osgi/MANIFEST.MF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Skipping remote resources execution.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1667750205516
+[[1;33mWARNING[m] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository (or any parent up to mount point /media/ISSTA_USER)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/target/classes
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/src/main/java/org/apache/commons/vfs2/provider/webdav4s/Webdav4sFileProvider.java: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/src/main/java/org/apache/commons/vfs2/provider/webdav4s/Webdav4sFileProvider.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/src/main/java/org/apache/commons/vfs2/provider/webdav4s/Webdav4sFileProvider.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:5.1.2:manifest[m [1m(bundle-manifest)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;33mWARNING[m] Manifest org.apache.commons:commons-vfs2-jackrabbit2:jar:2.9.0 : Unused Import-Package instructions: [org.apache.hadoop.*, org.apache.tools.ant.*, org.apache.commons.httpclient.*] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/src/test/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(default)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mevosuite-maven-plugin:1.0.6:prepare[m [1m(default)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Preparing EvoSuite tests for execution
+[[1;34mINFO[m] Analyzing test folder: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-jackrabbit2/target/test-classes
+[[1;34mINFO[m] Found 0 EvoSuite scaffolding files
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.19:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.17:test[m [1m(default-test)[m @ [36mcommons-vfs2-jackrabbit2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.commons:commons-vfs2-examples[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons VFS Examples 2.9.0                         [5/6][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.2.0:parse-version[m [1m(parse-version)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(vfs-jar-manifest)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+    [mkdir] Created dir: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/osgi
+    [touch] Creating /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/osgi/MANIFEST.MF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Skipping remote resources execution.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1667750208209
+[[1;33mWARNING[m] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository (or any parent up to mount point /media/ISSTA_USER)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 18 source files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:5.1.2:manifest[m [1m(bundle-manifest)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;33mWARNING[m] Manifest org.apache.commons:commons-vfs2-examples:jar:2.9.0 : Unused Import-Package instructions: [org.apache.hadoop.*, org.apache.jackrabbit.*, org.apache.tools.ant.*, org.apache.commons.httpclient.*] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/src/test/resources
+[[1;34mINFO[m] Copying 0 resource to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 36 source files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mevosuite-maven-plugin:1.0.6:prepare[m [1m(default)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Preparing EvoSuite tests for execution
+[[1;34mINFO[m] Analyzing test folder: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/test-classes
+[[1;34mINFO[m] Found 18 EvoSuite scaffolding files
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.19:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.17:test[m [1m(default-test)[m @ [36mcommons-vfs2-examples[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-examples/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.vfs2.example.ChangeLastModificationTime_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec - in org.apache.commons.vfs2.example.ChangeLastModificationTime_ESTest
+Running org.apache.commons.vfs2.example.Shell_ESTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec - in org.apache.commons.vfs2.example.Shell_ESTest
+Running org.apache.commons.vfs2.example.ShowProperties_ESTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in org.apache.commons.vfs2.example.ShowProperties_ESTest
+Running org.apache.commons.vfs2.example.filter.AgeFileFilterExample_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.816 sec - in org.apache.commons.vfs2.example.filter.AgeFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.HiddenFileFilterExample_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec - in org.apache.commons.vfs2.example.filter.HiddenFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.SuffixFileFilterExample_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 sec - in org.apache.commons.vfs2.example.filter.SuffixFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.CanWriteFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 sec - in org.apache.commons.vfs2.example.filter.CanWriteFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.CanReadFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 sec - in org.apache.commons.vfs2.example.filter.CanReadFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.PrefixFileFilterExample_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.32 sec - in org.apache.commons.vfs2.example.filter.PrefixFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.EmptyFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 sec - in org.apache.commons.vfs2.example.filter.EmptyFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.NameFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec - in org.apache.commons.vfs2.example.filter.NameFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.DirectoryFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in org.apache.commons.vfs2.example.filter.DirectoryFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.WildcardFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec - in org.apache.commons.vfs2.example.filter.WildcardFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.FileFileFilterExample_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in org.apache.commons.vfs2.example.filter.FileFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.SizeFileFilterExample_ESTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 sec - in org.apache.commons.vfs2.example.filter.SizeFileFilterExample_ESTest
+Running org.apache.commons.vfs2.example.filter.RegexFileFilterExample_ESTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 sec - in org.apache.commons.vfs2.example.filter.RegexFileFilterExample_ESTest
+Running org.apache.commons.vfs2.libcheck.SftpCheck_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.apache.commons.vfs2.libcheck.SftpCheck_ESTest
+Running org.apache.commons.vfs2.libcheck.FtpCheck_ESTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.035 sec - in org.apache.commons.vfs2.libcheck.FtpCheck_ESTest
+
+Results :
+
+Tests run: 89, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.apache.commons:commons-vfs2-distribution[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons VFS Distribution 2.9.0                     [6/6][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.2.0:parse-version[m [1m(parse-version)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(vfs-jar-manifest)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+    [mkdir] Created dir: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution/target/osgi
+    [touch] Creating /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution/target/osgi/MANIFEST.MF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Skipping remote resources execution.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1667750220060
+[[1;33mWARNING[m] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository (or any parent up to mount point /media/ISSTA_USER)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:5.1.2:manifest[m [1m(bundle-manifest)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;33mWARNING[m] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mevosuite-maven-plugin:1.0.6:prepare[m [1m(default)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Preparing EvoSuite tests for execution
+[[1;34mINFO[m] Analyzing test folder: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution/target/test-classes
+[[1;33mWARNING[m] Target folder for compiled tests does not exist: /media/ISSTA_USER/extradrive1/toga-eval-issta-2023/backup_issta_paper/final-evosuite-tests/evosuite-artifacts/commons-vfs-2.9.0/commons-vfs2-distribution/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.19:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-vfs2-distribution[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Apache Commons VFS Project 2.9.0:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Apache Commons VFS Project ......................... [1;32mSUCCESS[m [  1.629 s]
+[[1;34mINFO[m] Apache Commons VFS ................................. [1;32mSUCCESS[m [01:06 min]
+[[1;34mINFO[m] Apache Commons VFS Jackrabbit 1 .................... [1;32mSUCCESS[m [  1.426 s]
+[[1;34mINFO[m] Apache Commons VFS Jackrabbit 2 .................... [1;32mSUCCESS[m [  2.870 s]
+[[1;34mINFO[m] Apache Commons VFS Examples ........................ [1;32mSUCCESS[m [ 11.856 s]
+[[1;34mINFO[m] Apache Commons VFS Distribution .................... [1;32mSUCCESS[m [  0.307 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:24 min
+[[1;34mINFO[m] Finished at: 2022-11-06T10:57:00-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

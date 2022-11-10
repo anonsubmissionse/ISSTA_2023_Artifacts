@@ -1,0 +1,118 @@
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name       | File Name                                            | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.lifecycle   | WeaveLifecycle.java                                  | src      |        3 |       11 |       18 |        5 |       37 |
+| weaver.lifecycle   | WeaveLifecycleToken.java                             | src      |        4 |       18 |       18 |       20 |       60 |
+| weaver.lifecycle   | WeaveLifecycleToken_ESTest.java                      | test     |        6 |        0 |        4 |       22 |       32 |
+| weaver.lifecycle   | WeaveLifecycleToken_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       85 |      106 |
+| weaver.lifecycle   | package-info.java                                    | src      |        0 |        4 |       18 |        1 |       23 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.model       | AnnotatedElements.java                               | src      |        2 |       12 |       18 |        7 |       39 |
+| weaver.model       | NestedWeavable.java                                  | src      |        6 |       26 |       18 |       22 |       72 |
+| weaver.model       | NestedWeavable_ESTest.java                           | test     |        7 |        0 |        8 |       41 |       56 |
+| weaver.model       | NestedWeavable_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      102 |      123 |
+| weaver.model       | ScanRequest.java                                     | src      |       10 |       28 |       18 |       33 |       89 |
+| weaver.model       | ScanRequest_ESTest.java                              | test     |       17 |        0 |       16 |       94 |      127 |
+| weaver.model       | ScanRequest_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |       84 |      105 |
+| weaver.model       | ScanResult.java                                      | src      |       53 |       85 |       18 |      252 |      408 |
+| weaver.model       | ScanResult_ESTest.java                               | test     |       23 |        0 |       24 |      135 |      182 |
+| weaver.model       | ScanResult_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      119 |      140 |
+| weaver.model       | Scanner.java                                         | src      |        2 |        9 |       18 |        4 |       33 |
+| weaver.model       | Weavable.java                                        | src      |       15 |       54 |       18 |       93 |      180 |
+| weaver.model       | WeavableClass.java                                   | src      |       14 |       40 |       18 |       45 |      117 |
+| weaver.model       | WeavableClass_ESTest.java                            | test     |       17 |        0 |       20 |      114 |      151 |
+| weaver.model       | WeavableClass_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       99 |      120 |
+| weaver.model       | WeavableConstructor.java                             | src      |        5 |       16 |       18 |       16 |       55 |
+| weaver.model       | WeavableConstructorParameter.java                    | src      |        3 |       10 |       18 |        8 |       39 |
+| weaver.model       | WeavableConstructorParameter_ESTest.java             | test     |        4 |        0 |        4 |       17 |       25 |
+| weaver.model       | WeavableConstructorParameter_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       97 |      118 |
+| weaver.model       | WeavableConstructor_ESTest.java                      | test     |        5 |        0 |        7 |       28 |       40 |
+| weaver.model       | WeavableConstructor_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       97 |      118 |
+| weaver.model       | WeavableExecutable.java                              | src      |       10 |       34 |       18 |       35 |       97 |
+| weaver.model       | WeavableExecutable_ESTest.java                       | test     |        5 |        0 |        7 |       24 |       36 |
+| weaver.model       | WeavableExecutable_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       98 |      119 |
+| weaver.model       | WeavableField.java                                   | src      |        4 |       13 |       18 |       11 |       46 |
+| weaver.model       | WeavableField_ESTest.java                            | test     |        5 |        0 |        8 |       27 |       40 |
+| weaver.model       | WeavableField_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       96 |      117 |
+| weaver.model       | WeavableMethod.java                                  | src      |        6 |       19 |       18 |       20 |       63 |
+| weaver.model       | WeavableMethodParameter.java                         | src      |        3 |       10 |       18 |        8 |       39 |
+| weaver.model       | WeavableMethodParameter_ESTest.java                  | test     |        4 |        0 |        4 |       16 |       24 |
+| weaver.model       | WeavableMethodParameter_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       97 |      118 |
+| weaver.model       | WeavableMethod_ESTest.java                           | test     |        5 |        0 |        7 |       23 |       35 |
+| weaver.model       | WeavableMethod_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       97 |      118 |
+| weaver.model       | WeavablePackage.java                                 | src      |        8 |       25 |       18 |       31 |       82 |
+| weaver.model       | WeavablePackage_ESTest.java                          | test     |       10 |        0 |        8 |       54 |       72 |
+| weaver.model       | WeavablePackage_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       98 |      119 |
+| weaver.model       | WeavableParameter.java                               | src      |        4 |       16 |       18 |       16 |       54 |
+| weaver.model       | WeavableParameter_ESTest.java                        | test     |        3 |        0 |        5 |       12 |       20 |
+| weaver.model       | WeavableParameter_ESTest_scaffolding.java            | test     |       14 |        5 |        0 |       66 |       85 |
+| weaver.model       | Weavable_ESTest.java                                 | test     |       25 |        0 |       20 |      170 |      215 |
+| weaver.model       | Weavable_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |      105 |      126 |
+| weaver.model       | WeaveEnvironment.java                                | src      |       27 |      111 |       18 |       78 |      234 |
+| weaver.model       | WeaveEnvironment_ESTest.java                         | test     |       11 |        0 |       12 |       61 |       84 |
+| weaver.model       | WeaveEnvironment_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       85 |      106 |
+| weaver.model       | WeaveInterest.java                                   | src      |        7 |       15 |       18 |       15 |       55 |
+| weaver.model       | WeaveInterest_ESTest.java                            | test     |        4 |        0 |        4 |       19 |       27 |
+| weaver.model       | WeaveInterest_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       78 |       99 |
+| weaver.model       | package-info.java                                    | src      |        0 |        3 |       16 |        1 |       20 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.spi         | Cleaner.java                                         | src      |        2 |       11 |       18 |        8 |       39 |
+| weaver.spi         | WeaveLifecycleProvider.java                          | src      |        2 |        5 |       18 |        5 |       30 |
+| weaver.spi         | Weaver.java                                          | src      |        2 |       11 |       18 |        8 |       39 |
+| weaver.spi         | package-info.java                                    | src      |        0 |        3 |       16 |        1 |       20 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.test.beans  | AbstractTestBean.java                                | test     |        2 |        0 |       18 |        3 |       23 |
+| weaver.test.beans  | ComplexAnnotations.java                              | test     |        8 |        0 |       17 |      237 |      262 |
+| weaver.test.beans  | TestAnnotation.java                                  | test     |        2 |        3 |       18 |        9 |       32 |
+| weaver.test.beans  | TestBeanInterface.java                               | test     |        2 |        0 |       18 |        3 |       23 |
+| weaver.test.beans  | TestBeanWithClassAnnotation.java                     | test     |        1 |        3 |       18 |        8 |       30 |
+| weaver.test.beans  | TestBeanWithMethodAnnotation.java                    | test     |        2 |        3 |       18 |       11 |       34 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.test.weaver | TestCleaner.java                                     | test     |        7 |        0 |       18 |       26 |       51 |
+| weaver.test.weaver | TestWeaver.java                                      | test     |       10 |        3 |       18 |       57 |       88 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.test        | CleanProcessorTest.java                              | test     |        7 |        3 |       18 |       25 |       53 |
+| weaver.test        | WeaveProcessorTest.java                              | test     |       13 |        3 |       18 |       31 |       65 |
+| weaver.test        | WeaverTestBase.java                                  | test     |       19 |       11 |       18 |       73 |      121 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver.utils       | Annotations.java                                     | src      |        5 |       10 |       18 |       46 |       79 |
+| weaver.utils       | Annotations_ESTest.java                              | test     |       11 |        0 |       17 |       62 |       90 |
+| weaver.utils       | Annotations_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      105 |      126 |
+| weaver.utils       | Args.java                                            | src      |        3 |       12 |       18 |       22 |       55 |
+| weaver.utils       | ArgsTest.java                                        | test     |        6 |        3 |       18 |       19 |       46 |
+| weaver.utils       | Args_ESTest.java                                     | test     |       10 |        0 |        8 |       69 |       87 |
+| weaver.utils       | Args_ESTest_scaffolding.java                         | test     |       16 |        5 |        0 |       78 |       99 |
+| weaver.utils       | Providers.java                                       | src      |       24 |       51 |       18 |      111 |      204 |
+| weaver.utils       | ProvidersTest.java                                   | test     |       19 |        0 |       18 |       56 |       93 |
+| weaver.utils       | Providers_ESTest.java                                | test     |        9 |        0 |       16 |       47 |       72 |
+| weaver.utils       | Providers_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      108 |      129 |
+| weaver.utils       | URLArray.java                                        | src      |        6 |       13 |       19 |       36 |       74 |
+| weaver.utils       | URLArray_ESTest.java                                 | test     |       15 |        0 |       20 |       90 |      125 |
+| weaver.utils       | URLArray_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |       78 |       99 |
+| weaver.utils       | package-info.java                                    | src      |        0 |        3 |       16 |        1 |       20 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| weaver             | CleanProcessor.java                                  | src      |        6 |       21 |       18 |       28 |       73 |
+| weaver             | CleanProcessor_ESTest.java                           | test     |       14 |        0 |       16 |      108 |      138 |
+| weaver             | CleanProcessor_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      228 |      249 |
+| weaver             | Consumes.java                                        | src      |        3 |        8 |       18 |       15 |       44 |
+| weaver             | Finder.java                                          | src      |       76 |       82 |       24 |      535 |      717 |
+| weaver             | FinderTest.java                                      | test     |       23 |        6 |       18 |      268 |      315 |
+| weaver             | Finder_ESTest.java                                   | test     |       66 |        0 |       63 |      642 |      771 |
+| weaver             | Finder_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |      285 |      306 |
+| weaver             | Inflater.java                                        | src      |       17 |        3 |       18 |      150 |      188 |
+| weaver             | Inflater_ESTest.java                                 | test     |       10 |        0 |       11 |       77 |       98 |
+| weaver             | Inflater_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |      254 |      275 |
+| weaver             | LocalWeaveEnvironment.java                           | src      |        7 |        0 |       18 |       33 |       58 |
+| weaver             | LocalWeaveEnvironment_ESTest.java                    | test     |       19 |        0 |       25 |      173 |      217 |
+| weaver             | LocalWeaveEnvironment_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |       84 |      105 |
+| weaver             | ProcessorBase.java                                   | src      |       13 |       41 |       18 |       56 |      128 |
+| weaver             | ProcessorBase_ESTest.java                            | test     |       13 |        0 |       17 |       91 |      121 |
+| weaver             | ProcessorBase_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      267 |      288 |
+| weaver             | Produces.java                                        | src      |        3 |        8 |       18 |       15 |       44 |
+| weaver             | WeaveProcessor.java                                  | src      |        6 |       21 |       18 |       28 |       73 |
+| weaver             | WeaveProcessor_ESTest.java                           | test     |       16 |        0 |       23 |      115 |      154 |
+| weaver             | WeaveProcessor_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      263 |      284 |
+| weaver             | package-info.java                                    | src      |        0 |        3 |       16 |        1 |       20 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 8 package(s)       | 105 file(s)                                          | java     |     1230 |     1033 |     1326 |     8230 |    11819 |
++--------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+

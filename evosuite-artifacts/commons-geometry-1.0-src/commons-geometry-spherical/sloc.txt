@@ -1,0 +1,69 @@
++------------------+--------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                              | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+--------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| oned             | AngularInterval.java                                   | src      |       78 |      218 |       32 |      294 |      622 |
+| oned             | AngularInterval_ESTest.java                            | test     |       98 |        0 |       56 |      830 |      984 |
+| oned             | AngularInterval_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      294 |      315 |
+| oned             | CutAngle.java                                          | src      |       49 |      111 |       16 |      204 |      380 |
+| oned             | CutAngle_ESTest.java                                   | test     |       59 |        0 |       32 |      502 |      593 |
+| oned             | CutAngle_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |      159 |      180 |
+| oned             | CutAngles.java                                         | src      |        9 |       40 |       16 |       27 |       92 |
+| oned             | CutAngles_ESTest.java                                  | test     |       25 |        0 |        4 |      157 |      186 |
+| oned             | CutAngles_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      154 |      175 |
+| oned             | Point1S.java                                           | src      |       44 |      145 |       16 |      156 |      361 |
+| oned             | Point1S_ESTest.java                                    | test     |       85 |        0 |       56 |      593 |      734 |
+| oned             | Point1S_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |      139 |      160 |
+| oned             | RegionBSPTree1S.java                                   | src      |       85 |      116 |       32 |      282 |      515 |
+| oned             | RegionBSPTree1S_ESTest.java                            | test     |       51 |        0 |       40 |      443 |      534 |
+| oned             | RegionBSPTree1S_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      246 |      267 |
+| oned             | Transform1S.java                                       | src      |       32 |       78 |       17 |      100 |      227 |
+| oned             | Transform1S_ESTest.java                                | test     |       40 |        0 |       16 |      304 |      360 |
+| oned             | Transform1S_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      133 |      154 |
+| oned             | package-info.java                                      | src      |        0 |       13 |       16 |        1 |       30 |
++------------------+--------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| twod             | AbstractGreatArcConnector.java                         | src      |       45 |       72 |       19 |      159 |      295 |
+| twod             | AbstractGreatArcConnector_ESTest.java                  | test     |       41 |        0 |       28 |      321 |      390 |
+| twod             | AbstractGreatArcConnector_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |      289 |      310 |
+| twod             | BoundaryList2S.java                                    | src      |        5 |       13 |       16 |       13 |       47 |
+| twod             | BoundaryList2S_ESTest.java                             | test     |        7 |        0 |        7 |       40 |       54 |
+| twod             | BoundaryList2S_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      273 |      294 |
+| twod             | BoundarySource2S.java                                  | src      |        9 |       20 |       16 |       24 |       69 |
+| twod             | BoundarySource2S_ESTest.java                           | test     |       12 |        0 |       16 |       68 |       96 |
+| twod             | BoundarySource2S_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      333 |      354 |
+| twod             | ConvexArea2S.java                                      | src      |       64 |      139 |       25 |      224 |      452 |
+| twod             | ConvexArea2S_ESTest.java                               | test     |       77 |        0 |       98 |      715 |      890 |
+| twod             | ConvexArea2S_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      301 |      322 |
+| twod             | EmbeddedTreeGreatCircleSubset.java                     | src      |       25 |       40 |       16 |       87 |      168 |
+| twod             | EmbeddedTreeGreatCircleSubset_ESTest.java              | test     |       34 |        0 |       44 |      291 |      369 |
+| twod             | EmbeddedTreeGreatCircleSubset_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |      300 |      321 |
+| twod             | GreatArc.java                                          | src      |       26 |       47 |       18 |      101 |      192 |
+| twod             | GreatArcPath.java                                      | src      |       90 |      234 |       30 |      315 |      669 |
+| twod             | GreatArcPath_ESTest.java                               | test     |       69 |        0 |       84 |      630 |      783 |
+| twod             | GreatArcPath_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      286 |      307 |
+| twod             | GreatArc_ESTest.java                                   | test     |       44 |        0 |       44 |      389 |      477 |
+| twod             | GreatArc_ESTest_scaffolding.java                       | test     |       16 |        5 |        0 |      265 |      286 |
+| twod             | GreatCircle.java                                       | src      |       43 |      147 |       17 |      169 |      376 |
+| twod             | GreatCircleSubset.java                                 | src      |       17 |       14 |       16 |       77 |      124 |
+| twod             | GreatCircleSubset_ESTest.java                          | test     |       48 |        0 |       40 |      353 |      441 |
+| twod             | GreatCircleSubset_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      301 |      322 |
+| twod             | GreatCircle_ESTest.java                                | test     |      124 |        0 |      108 |      980 |     1212 |
+| twod             | GreatCircle_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      260 |      281 |
+| twod             | GreatCircles.java                                      | src      |       19 |       48 |       16 |       60 |      143 |
+| twod             | GreatCircles_ESTest.java                               | test     |       33 |        0 |       56 |      208 |      297 |
+| twod             | GreatCircles_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      261 |      282 |
+| twod             | InteriorAngleGreatArcConnector.java                    | src      |       12 |       41 |       17 |       43 |      113 |
+| twod             | InteriorAngleGreatArcConnector_ESTest.java             | test     |       24 |        0 |       24 |      166 |      214 |
+| twod             | InteriorAngleGreatArcConnector_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      296 |      317 |
+| twod             | Point2S.java                                           | src      |       41 |      109 |       16 |      143 |      309 |
+| twod             | Point2S_ESTest.java                                    | test     |       68 |        0 |       40 |      426 |      534 |
+| twod             | Point2S_ESTest_scaffolding.java                        | test     |       16 |        5 |        0 |      172 |      193 |
+| twod             | RegionBSPTree2S.java                                   | src      |       50 |       71 |       27 |      176 |      324 |
+| twod             | RegionBSPTree2S_ESTest.java                            | test     |       35 |        0 |       24 |      249 |      308 |
+| twod             | RegionBSPTree2S_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      315 |      336 |
+| twod             | Transform2S.java                                       | src      |       32 |       98 |       16 |      107 |      253 |
+| twod             | Transform2S_ESTest.java                                | test     |       59 |        0 |       80 |      344 |      483 |
+| twod             | Transform2S_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      168 |      189 |
+| twod             | package-info.java                                      | src      |        0 |       13 |       16 |        1 |       30 |
++------------------+--------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 2 package(s)     | 62 file(s)                                             | java     |     2128 |     1927 |     1323 |    15717 |    21095 |
++------------------+--------------------------------------------------------+----------+----------+----------+----------+----------+----------+

@@ -1,0 +1,237 @@
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name              | File Name                                        | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| base.annotation           | NotNull.java                                     | src      |        2 |        0 |        0 |        3 |        5 |
+| base.annotation           | Nullable.java                                    | src      |        2 |        0 |        0 |        3 |        5 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| base                      | BooleanUtil.java                                 | src      |       12 |       27 |        0 |       31 |       70 |
+| base                      | BooleanUtil_ESTest.java                          | test     |       30 |        0 |       16 |      153 |      199 |
+| base                      | BooleanUtil_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |       80 |      101 |
+| base                      | EnumUtil.java                                    | src      |        7 |       14 |        0 |       14 |       35 |
+| base                      | EnumUtil_ESTest.java                             | test     |       15 |        0 |       16 |       91 |      122 |
+| base                      | EnumUtil_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       84 |      105 |
+| base                      | ExceptionUtil.java                               | src      |       47 |      100 |        1 |      171 |      319 |
+| base                      | ExceptionUtil_ESTest.java                        | test     |       56 |        0 |       39 |      317 |      412 |
+| base                      | ExceptionUtil_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       93 |      114 |
+| base                      | MoreValidate.java                                | src      |       12 |       40 |        0 |       64 |      116 |
+| base                      | MoreValidate_ESTest.java                         | test     |       63 |        0 |       81 |      310 |      454 |
+| base                      | MoreValidate_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       78 |       99 |
+| base                      | ObjectUtil.java                                  | src      |       13 |        6 |        0 |       65 |       84 |
+| base                      | ObjectUtil_ESTest.java                           | test     |       14 |        0 |       18 |      131 |      163 |
+| base                      | ObjectUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       81 |      102 |
+| base                      | Platforms.java                                   | src      |       11 |       12 |       10 |       43 |       76 |
+| base                      | PropertiesUtil.java                              | src      |       15 |       17 |        2 |       53 |       87 |
+| base                      | PropertiesUtil_ESTest.java                       | test     |       42 |        0 |       40 |      237 |      319 |
+| base                      | PropertiesUtil_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      197 |      218 |
+| base                      | SystemPropertiesUtil.java                        | src      |       34 |       75 |        2 |      131 |      242 |
+| base                      | SystemPropertiesUtil_ESTest.java                 | test     |      102 |        0 |       47 |      503 |      652 |
+| base                      | SystemPropertiesUtil_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |       93 |      114 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| collection.type.primitive | IntObjectHashMap.java                            | src      |      102 |       80 |       60 |      492 |      734 |
+| collection.type.primitive | IntObjectHashMap_ESTest.java                     | test     |       86 |        0 |       60 |      590 |      736 |
+| collection.type.primitive | IntObjectHashMap_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      109 |      130 |
+| collection.type.primitive | IntObjectMap.java                                | src      |       11 |       46 |       14 |       14 |       85 |
+| collection.type.primitive | LongObjectHashMap.java                           | src      |      102 |       80 |       60 |      494 |      736 |
+| collection.type.primitive | LongObjectHashMap_ESTest.java                    | test     |      424 |        0 |      129 |     2718 |     3271 |
+| collection.type.primitive | LongObjectHashMap_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      110 |      131 |
+| collection.type.primitive | LongObjectMap.java                               | src      |       10 |       46 |       14 |       14 |       84 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| collection.type           | ConcurrentHashSet.java                           | src      |       22 |        7 |        0 |       61 |       90 |
+| collection.type           | ConcurrentHashSet_ESTest.java                    | test     |       45 |        0 |       38 |      287 |      370 |
+| collection.type           | ConcurrentHashSet_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      185 |      206 |
+| collection.type           | Pair.java                                        | src      |       10 |       14 |        0 |       63 |       87 |
+| collection.type           | SortedArrayList.java                             | src      |       24 |       54 |       27 |       80 |      185 |
+| collection.type           | SortedArrayList_ESTest.java                      | test     |      116 |        0 |       69 |      635 |      820 |
+| collection.type           | SortedArrayList_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       84 |      105 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| collection                | ArrayUtil.java                                   | src      |       17 |       64 |        1 |       53 |      135 |
+| collection                | ArrayUtil_ESTest.java                            | test     |       47 |        0 |       65 |      251 |      363 |
+| collection                | ArrayUtil_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |      157 |      178 |
+| collection                | CollectionUtil.java                              | src      |       27 |       61 |        2 |       92 |      182 |
+| collection                | CollectionUtil_ESTest.java                       | test     |       91 |        0 |      124 |      589 |      804 |
+| collection                | CollectionUtil_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      308 |      329 |
+| collection                | CommonCollections.java                           | src      |        7 |       31 |        0 |       22 |       60 |
+| collection                | CommonCollections_ESTest.java                    | test     |       11 |        0 |       12 |       59 |       82 |
+| collection                | CommonCollections_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      119 |      140 |
+| collection                | ListUtil.java                                    | src      |       45 |      181 |        6 |      141 |      373 |
+| collection                | ListUtil_ESTest.java                             | test     |      103 |        0 |      124 |      624 |      851 |
+| collection                | ListUtil_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      163 |      184 |
+| collection                | MapUtil.java                                     | src      |       48 |      200 |        4 |      169 |      421 |
+| collection                | MapUtil_ESTest.java                              | test     |       90 |        0 |      143 |      784 |     1017 |
+| collection                | MapUtil_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      779 |      800 |
+| collection                | QueueUtil.java                                   | src      |       18 |       59 |        2 |       49 |      128 |
+| collection                | QueueUtil_ESTest.java                            | test     |       24 |        0 |       20 |      120 |      164 |
+| collection                | QueueUtil_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       88 |      109 |
+| collection                | SetUtil.java                                     | src      |       22 |       93 |        2 |       62 |      179 |
+| collection                | SetUtil_ESTest.java                              | test     |       58 |        0 |       73 |      411 |      542 |
+| collection                | SetUtil_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      379 |      400 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| concurrent.jsr166e        | ConcurrentHashMapV8.java                         | src      |      432 |     1497 |      291 |     4427 |     6647 |
+| concurrent.jsr166e        | ConcurrentHashMapV8_ESTest.java                  | test     |        5 |        0 |        5 |       13 |       23 |
+| concurrent.jsr166e        | ConcurrentHashMapV8_ESTest_scaffolding.java      | test     |       14 |        5 |        0 |      131 |      150 |
+| concurrent.jsr166e        | CountedCompleter.java                            | src      |       31 |      563 |        6 |      163 |      763 |
+| concurrent.jsr166e        | ForkJoinPool.java                                | src      |      161 |     1031 |      455 |     1792 |     3439 |
+| concurrent.jsr166e        | ForkJoinPool_ESTest.java                         | test     |        3 |        0 |        5 |       12 |       20 |
+| concurrent.jsr166e        | ForkJoinPool_ESTest_scaffolding.java             | test     |       14 |        5 |        0 |       80 |       99 |
+| concurrent.jsr166e        | ForkJoinTask.java                                | src      |      107 |      709 |       46 |      760 |     1622 |
+| concurrent.jsr166e        | ForkJoinWorkerThread.java                        | src      |        9 |       59 |       18 |       38 |      124 |
+| concurrent.jsr166e        | ForkJoinWorkerThread_ESTest.java                 | test     |        8 |        0 |        5 |       51 |       64 |
+| concurrent.jsr166e        | ForkJoinWorkerThread_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      107 |      128 |
+| concurrent.jsr166e        | LongAdder.java                                   | src      |       19 |       94 |        5 |       93 |      211 |
+| concurrent.jsr166e        | LongAdder_ESTest.java                            | test     |       35 |        0 |        7 |      254 |      296 |
+| concurrent.jsr166e        | LongAdder_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       84 |      105 |
+| concurrent.jsr166e        | RecursiveAction.java                             | src      |        7 |      143 |        5 |       14 |      169 |
+| concurrent.jsr166e        | RecursiveAction_ESTest.java                      | test     |        5 |        0 |        5 |       13 |       23 |
+| concurrent.jsr166e        | RecursiveAction_ESTest_scaffolding.java          | test     |       14 |        5 |        0 |       69 |       88 |
+| concurrent.jsr166e        | RecursiveTask.java                               | src      |        8 |       43 |        5 |       16 |       72 |
+| concurrent.jsr166e        | RecursiveTask_ESTest.java                        | test     |        3 |        0 |        5 |       12 |       20 |
+| concurrent.jsr166e        | RecursiveTask_ESTest_scaffolding.java            | test     |       14 |        5 |        0 |       69 |       88 |
+| concurrent.jsr166e        | Striped64.java                                   | src      |       25 |       76 |       69 |      175 |      345 |
+| concurrent.jsr166e        | Striped64_ESTest.java                            | test     |       15 |        0 |        9 |       99 |      123 |
+| concurrent.jsr166e        | Striped64_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       84 |      105 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| concurrent.threadpool     | QueuableCachedThreadPool.java                    | src      |       17 |       33 |        5 |       79 |      134 |
+| concurrent.threadpool     | QueuableCachedThreadPool_ESTest.java             | test     |       31 |        0 |       38 |      283 |      352 |
+| concurrent.threadpool     | QueuableCachedThreadPool_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       86 |      107 |
+| concurrent.threadpool     | ThreadPoolBuilder.java                           | src      |       62 |      119 |        3 |      206 |      390 |
+| concurrent.threadpool     | ThreadPoolBuilder_ESTest.java                    | test     |       22 |        0 |        8 |      164 |      194 |
+| concurrent.threadpool     | ThreadPoolBuilder_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      103 |      124 |
+| concurrent.threadpool     | ThreadPoolUtil.java                              | src      |       14 |       51 |        1 |       48 |      114 |
+| concurrent.threadpool     | ThreadPoolUtil_ESTest.java                       | test     |       28 |        0 |       32 |      147 |      207 |
+| concurrent.threadpool     | ThreadPoolUtil_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      101 |      122 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| concurrent.throttle       | Sampler.java                                     | src      |       11 |       22 |        0 |       39 |       72 |
+| concurrent.throttle       | Sampler_ESTest.java                              | test     |       15 |        0 |       15 |       77 |      107 |
+| concurrent.throttle       | Sampler_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |       86 |      107 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| concurrent                | BasicFuture.java                                 | src      |       20 |        3 |       18 |       98 |      139 |
+| concurrent                | BasicFuture_ESTest.java                          | test     |        3 |        0 |        5 |       12 |       20 |
+| concurrent                | BasicFuture_ESTest_scaffolding.java              | test     |       14 |        5 |        0 |       61 |       80 |
+| concurrent                | ConcurrentTools.java                             | src      |       10 |       21 |        1 |       23 |       55 |
+| concurrent                | ConcurrentTools_ESTest.java                      | test     |       17 |        0 |       20 |       81 |      118 |
+| concurrent                | ConcurrentTools_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      158 |      179 |
+| concurrent                | ThreadDumpper.java                               | src      |       22 |       29 |        1 |       69 |      121 |
+| concurrent                | ThreadDumpper_ESTest.java                        | test     |        9 |        0 |        4 |       43 |       56 |
+| concurrent                | ThreadDumpper_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       78 |       99 |
+| concurrent                | ThreadLocalContext.java                          | src      |        6 |       27 |        1 |       21 |       55 |
+| concurrent                | ThreadLocalContext_ESTest.java                   | test     |        7 |        0 |        4 |       29 |       40 |
+| concurrent                | ThreadLocalContext_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |       80 |      101 |
+| concurrent                | ThreadUtil.java                                  | src      |       11 |       31 |        0 |       58 |      100 |
+| concurrent                | ThreadUtil_ESTest.java                           | test     |       17 |        0 |       19 |       74 |      110 |
+| concurrent                | ThreadUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       78 |       99 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| io.type                   | StringBuilderWriter.java                         | src      |       16 |       77 |       18 |       56 |      167 |
+| io.type                   | StringBuilderWriter_ESTest.java                  | test     |       21 |        0 |       15 |      118 |      154 |
+| io.type                   | StringBuilderWriter_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       78 |       99 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| io                        | FilePathUtil.java                                | src      |       16 |       20 |        0 |       52 |       88 |
+| io                        | FilePathUtil_ESTest.java                         | test     |       23 |        0 |       16 |      112 |      151 |
+| io                        | FilePathUtil_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      332 |      353 |
+| io                        | FileTreeWalker.java                              | src      |       23 |       49 |        0 |       74 |      146 |
+| io                        | FileTreeWalker_ESTest.java                       | test     |       37 |        0 |       44 |      203 |      284 |
+| io                        | FileTreeWalker_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      378 |      399 |
+| io                        | FileUtil.java                                    | src      |       47 |      122 |        3 |      184 |      356 |
+| io                        | FileUtil_ESTest.java                             | test     |      268 |        0 |      434 |     1890 |     2592 |
+| io                        | FileUtil_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      370 |      391 |
+| io                        | IOUtil.java                                      | src      |       16 |       44 |        0 |       86 |      146 |
+| io                        | IOUtil_ESTest.java                               | test     |       75 |        0 |      105 |      591 |      771 |
+| io                        | IOUtil_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |       82 |      103 |
+| io                        | ResourceUtil.java                                | src      |       17 |       46 |        3 |       52 |      118 |
+| io                        | ResourceUtil_ESTest.java                         | test     |       32 |        0 |       48 |      145 |      225 |
+| io                        | ResourceUtil_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      216 |      237 |
+| io                        | URLResourceUtil.java                             | src      |       10 |       15 |        5 |       52 |       82 |
+| io                        | URLResourceUtil_ESTest.java                      | test     |       25 |        0 |       30 |      122 |      177 |
+| io                        | URLResourceUtil_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      190 |      211 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| log                       | ThrottledSlf4jLogger.java                        | src      |       70 |       10 |        0 |      372 |      452 |
+| log                       | ThrottledSlf4jLogger_ESTest.java                 | test     |      316 |        0 |      431 |     2328 |     3075 |
+| log                       | ThrottledSlf4jLogger_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |       90 |      111 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| mapper                    | BeanMapper.java                                  | src      |       13 |       45 |        0 |       35 |       93 |
+| mapper                    | JsonMapper.java                                  | src      |       24 |       62 |        2 |       94 |      182 |
+| mapper                    | JsonMapper_ESTest.java                           | test     |       28 |        0 |       20 |      163 |      211 |
+| mapper                    | JsonMapper_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |     1094 |     1115 |
+| mapper                    | XmlMapper.java                                   | src      |       23 |       42 |        0 |      100 |      165 |
+| mapper                    | XmlMapper_ESTest.java                            | test     |       22 |        0 |       40 |      104 |      166 |
+| mapper                    | XmlMapper_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       90 |      111 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| misc                      | IdGenerator.java                                 | src      |        9 |       20 |        0 |       24 |       53 |
+| misc                      | IdGenerator_ESTest.java                          | test     |       12 |        0 |       10 |       52 |       74 |
+| misc                      | IdGenerator_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      219 |      240 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| net                       | IPUtil.java                                      | src      |       14 |       51 |        0 |       64 |      129 |
+| net                       | IPUtil_ESTest.java                               | test     |       43 |        0 |       32 |      215 |      290 |
+| net                       | IPUtil_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      225 |      246 |
+| net                       | NetUtil.java                                     | src      |       31 |       34 |       12 |      139 |      216 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| number                    | MathUtil.java                                    | src      |       24 |       91 |        2 |       60 |      177 |
+| number                    | MathUtil_ESTest.java                             | test     |       89 |        0 |      100 |      434 |      623 |
+| number                    | MathUtil_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       90 |      111 |
+| number                    | NumberUtil.java                                  | src      |       43 |       75 |        7 |      143 |      268 |
+| number                    | NumberUtil_ESTest.java                           | test     |      115 |        0 |       49 |      595 |      759 |
+| number                    | NumberUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      100 |      121 |
+| number                    | RandomUtil.java                                  | src      |       46 |      130 |        5 |      137 |      318 |
+| number                    | RandomUtil_ESTest.java                           | test     |      142 |        0 |      213 |      927 |     1282 |
+| number                    | RandomUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       84 |      105 |
+| number                    | UnitConverter.java                               | src      |       12 |       22 |       13 |       62 |      109 |
+| number                    | UnitConverter_ESTest.java                        | test     |       14 |        0 |       32 |       65 |      111 |
+| number                    | UnitConverter_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       78 |       99 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| reflect                   | ClassUtil.java                                   | src      |       62 |      145 |       18 |      268 |      493 |
+| reflect                   | ClassUtil_ESTest.java                            | test     |       54 |        0 |       58 |      283 |      395 |
+| reflect                   | ClassUtil_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       97 |      118 |
+| reflect                   | FastMethodInvoker.java                           | src      |       13 |       21 |        1 |       56 |       91 |
+| reflect                   | FastMethodInvoker_ESTest.java                    | test     |       11 |        0 |       20 |       52 |       83 |
+| reflect                   | FastMethodInvoker_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      396 |      417 |
+| reflect                   | MethodInvoker.java                               | src      |       10 |        3 |        0 |       39 |       52 |
+| reflect                   | MethodInvoker_ESTest.java                        | test     |       11 |        0 |       20 |       52 |       83 |
+| reflect                   | MethodInvoker_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       89 |      110 |
+| reflect                   | ReflectionUtil.java                              | src      |       21 |       64 |        4 |      124 |      213 |
+| reflect                   | ReflectionUtil_ESTest.java                       | test     |       68 |        0 |      124 |      354 |      546 |
+| reflect                   | ReflectionUtil_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      105 |      126 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| security                  | CryptoUtil.java                                  | src      |       21 |       78 |        2 |       98 |      199 |
+| security                  | CryptoUtil_ESTest.java                           | test     |       39 |        0 |       56 |      195 |      290 |
+| security                  | CryptoUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |       84 |      105 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| text                      | Charsets.java                                    | src      |        3 |        9 |        0 |        8 |       20 |
+| text                      | Charsets_ESTest.java                             | test     |        4 |        0 |        4 |       14 |       22 |
+| text                      | Charsets_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       78 |       99 |
+| text                      | CsvUtil.java                                     | src      |       14 |       11 |       29 |       85 |      139 |
+| text                      | CsvUtil_ESTest.java                              | test     |       17 |        0 |       12 |       82 |      111 |
+| text                      | CsvUtil_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |       82 |      103 |
+| text                      | EncodeUtil.java                                  | src      |        8 |       32 |        0 |       22 |       62 |
+| text                      | EncodeUtil_ESTest.java                           | test     |       39 |        0 |       56 |      245 |      340 |
+| text                      | EncodeUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      217 |      238 |
+| text                      | EscapeUtil.java                                  | src      |        9 |       39 |        0 |       33 |       81 |
+| text                      | EscapeUtil_ESTest.java                           | test     |       26 |        0 |       16 |      122 |      164 |
+| text                      | EscapeUtil_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      112 |      133 |
+| text                      | HashUtil.java                                    | src      |       37 |       90 |        8 |      114 |      249 |
+| text                      | HashUtil_ESTest.java                             | test     |      164 |        0 |      124 |     1141 |     1429 |
+| text                      | HashUtil_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      119 |      140 |
+| text                      | MoreStringUtil.java                              | src      |       12 |       44 |        0 |       86 |      142 |
+| text                      | MoreStringUtil_ESTest.java                       | test     |       33 |        0 |       13 |      171 |      217 |
+| text                      | MoreStringUtil_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       85 |      106 |
+| text                      | StringBuilderHolder.java                         | src      |        7 |       30 |        2 |       29 |       68 |
+| text                      | StringBuilderHolder_ESTest.java                  | test     |        7 |        0 |        8 |       32 |       47 |
+| text                      | StringBuilderHolder_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |       82 |      103 |
+| text                      | TextValidator.java                               | src      |       22 |       73 |        1 |       51 |      147 |
+| text                      | WildcardMatcher.java                             | src      |       27 |       37 |       33 |      176 |      273 |
+| text                      | WildcardMatcher_ESTest.java                      | test     |       32 |        0 |       22 |      218 |      272 |
+| text                      | WildcardMatcher_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       90 |      111 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| time                      | CachingDateFormatter.java                        | src      |       12 |        7 |        0 |       38 |       57 |
+| time                      | CachingDateFormatter_ESTest.java                 | test     |       15 |        0 |       13 |       77 |      105 |
+| time                      | CachingDateFormatter_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      166 |      187 |
+| time                      | ClockUtil.java                                   | src      |       32 |       64 |        0 |       92 |      188 |
+| time                      | ClockUtil_ESTest.java                            | test     |       37 |        0 |        8 |      214 |      259 |
+| time                      | ClockUtil_ESTest_scaffolding.java                | test     |       16 |        5 |        0 |       83 |      104 |
+| time                      | DateFormatUtil.java                              | src      |       19 |       67 |       11 |       64 |      161 |
+| time                      | DateFormatUtil_ESTest.java                       | test     |       59 |        0 |       79 |      294 |      432 |
+| time                      | DateFormatUtil_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      184 |      205 |
+| time                      | DateUtil.java                                    | src      |       68 |      159 |        7 |      190 |      424 |
+| time                      | DateUtil_ESTest.java                             | test     |      200 |        0 |      284 |     1021 |     1505 |
+| time                      | DateUtil_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       85 |      106 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 20 package(s)             | 212 file(s)                                      | java     |     7223 |     8121 |     5159 |    47179 |    67682 |
++---------------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+

@@ -1,0 +1,14 @@
++------------------+------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                          | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+------------------------------------+----------+----------+----------+----------+----------+----------+
+| webdav           | ExceptionConverter.java            | src      |        7 |        5 |       17 |       44 |       73 |
+| webdav           | WebdavFileContentInfoFactory.java  | src      |        7 |        5 |       16 |       32 |       60 |
+| webdav           | WebdavFileNameParser.java          | src      |        5 |        5 |       16 |       11 |       37 |
+| webdav           | WebdavFileObject.java              | src      |       48 |       90 |       20 |      479 |      637 |
+| webdav           | WebdavFileProvider.java            | src      |       12 |       21 |       17 |       60 |      110 |
+| webdav           | WebdavFileSystem.java              | src      |        9 |       21 |       17 |       32 |       79 |
+| webdav           | WebdavFileSystemConfigBuilder.java | src      |       12 |       45 |       16 |       34 |      107 |
+| webdav           | WebdavMethodRetryHandler.java      | src      |        7 |        8 |       16 |       16 |       47 |
++------------------+------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 8 file(s)                          | java     |      107 |      200 |      135 |      708 |     1150 |
++------------------+------------------------------------+----------+----------+----------+----------+----------+----------+

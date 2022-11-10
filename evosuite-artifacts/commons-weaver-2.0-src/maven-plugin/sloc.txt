@@ -1,0 +1,29 @@
++------------------+---------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                   | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+---------------------------------------------+----------+----------+----------+----------+----------+----------+
+| maven            | AbstractCWMojo.java                         | src      |       18 |       23 |       19 |       87 |      147 |
+| maven            | AbstractPrepareMojo.java                    | src      |        4 |        3 |       18 |       20 |       45 |
+| maven            | AbstractPrepareMojo_ESTest.java             | test     |        9 |        0 |       11 |       66 |       86 |
+| maven            | AbstractPrepareMojo_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      559 |      580 |
+| maven            | AbstractWeaveMojo.java                      | src      |        4 |        3 |       18 |       17 |       42 |
+| maven            | AbstractWeaveMojo_ESTest.java               | test     |        6 |        0 |        7 |       46 |       59 |
+| maven            | AbstractWeaveMojo_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |      565 |      586 |
+| maven            | HelpMojo_ESTest.java                        | test     |        5 |        0 |        5 |       40 |       50 |
+| maven            | HelpMojo_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       78 |       99 |
+| maven            | JavaLoggingToMojoLoggingRedirector.java     | src      |       14 |       18 |       24 |       99 |      155 |
+| maven            | PrepareMojo.java                            | src      |        4 |        9 |       18 |       21 |       52 |
+| maven            | PrepareMojo_ESTest.java                     | test     |        7 |        0 |        4 |       50 |       61 |
+| maven            | PrepareMojo_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |      561 |      582 |
+| maven            | TestPrepareMojo.java                        | src      |        4 |        9 |       18 |       23 |       54 |
+| maven            | TestPrepareMojo_ESTest.java                 | test     |        9 |        0 |        4 |       66 |       79 |
+| maven            | TestPrepareMojo_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      572 |      593 |
+| maven            | TestWeaveMojo.java                          | src      |        6 |       12 |       18 |       27 |       63 |
+| maven            | TestWeaveMojo_ESTest.java                   | test     |        8 |        0 |        5 |       53 |       66 |
+| maven            | TestWeaveMojo_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |      581 |      602 |
+| maven            | WeaveMojo.java                              | src      |        5 |        9 |       18 |       21 |       53 |
+| maven            | WeaveMojo_ESTest.java                       | test     |        7 |        0 |        4 |       47 |       58 |
+| maven            | WeaveMojo_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |      534 |      555 |
+| maven            | package-info.java                           | src      |        0 |        3 |       16 |        1 |       20 |
++------------------+---------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 23 file(s)                                  | java     |      222 |      124 |      207 |     4134 |     4687 |
++------------------+---------------------------------------------+----------+----------+----------+----------+----------+----------+

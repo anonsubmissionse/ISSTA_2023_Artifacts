@@ -1,0 +1,37 @@
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name                      | File Name                            | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.http.broadcast  | LateralCacheMulticaster.java         | src      |       12 |       12 |       24 |       36 |       84 |
+| auxiliary.lateral.http.broadcast  | LateralCacheThread.java              | src      |       31 |        8 |       30 |      143 |      212 |
+| auxiliary.lateral.http.broadcast  | LateralCacheUnicaster.java           | src      |       30 |       30 |       22 |      128 |      210 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.http.remove     | DeleteLateralCacheMulticaster.java   | src      |       12 |        8 |       25 |       39 |       84 |
+| auxiliary.lateral.http.remove     | DeleteLateralCacheUnicaster.java     | src      |       22 |       21 |       21 |       88 |      152 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.http.server     | AbstractDeleteCacheServlet.java      | src      |       30 |        0 |       35 |      212 |      277 |
+| auxiliary.lateral.http.server     | DeleteCacheServlet.java              | src      |       13 |       11 |      146 |       18 |      188 |
+| auxiliary.lateral.http.server     | LateralCacheServletReciever.java     | src      |       32 |       10 |       24 |      126 |      192 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.socket.udp      | LateralCacheUDPListener.java         | src      |       34 |       31 |       27 |      142 |      234 |
+| auxiliary.lateral.socket.udp      | LateralGroupCacheUDPListener.java    | src      |       17 |       14 |       35 |       86 |      152 |
+| auxiliary.lateral.socket.udp      | LateralUDPReceiver.java              | src      |       26 |       22 |       21 |      113 |      182 |
+| auxiliary.lateral.socket.udp      | LateralUDPSender.java                | src      |       43 |       17 |       25 |      146 |      231 |
+| auxiliary.lateral.socket.udp      | LateralUDPService.java               | src      |       47 |       23 |       30 |      154 |      254 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.xmlrpc.behavior | ILateralCacheXMLRPCListener.java     | src      |        7 |        6 |       18 |       12 |       43 |
+| auxiliary.lateral.xmlrpc.behavior | IXMLRPCConstants.java                | src      |        4 |        0 |       18 |        5 |       27 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.xmlrpc.utils    | XMLRPCSocketOpener.java              | src      |       14 |       12 |       20 |       52 |       98 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| auxiliary.lateral.xmlrpc          | LateralCacheXMLRPCListener.java      | src      |       29 |       33 |       30 |      156 |      248 |
+| auxiliary.lateral.xmlrpc          | LateralGroupCacheXMLRPCListener.java | src      |        9 |       18 |       21 |       65 |      113 |
+| auxiliary.lateral.xmlrpc          | LateralXMLRPCReceiver.java           | src      |       13 |       18 |       32 |       56 |      119 |
+| auxiliary.lateral.xmlrpc          | LateralXMLRPCReceiverConnection.java | src      |       18 |       32 |       25 |      123 |      198 |
+| auxiliary.lateral.xmlrpc          | LateralXMLRPCSender.java             | src      |       52 |      105 |       34 |      238 |      429 |
+| auxiliary.lateral.xmlrpc          | LateralXMLRPCService.java            | src      |       32 |       86 |       39 |      152 |      309 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| engine.memory.arc                 | ARCMemoryCache.java                  | src      |       82 |      142 |       69 |      509 |      802 |
+| engine.memory.arc                 | ARCMemoryCacheUnitTest.java          | src      |       55 |       43 |       23 |      168 |      289 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+
+| 8 package(s)                      | 24 file(s)                           | java     |      664 |      702 |      794 |     2967 |     5127 |
++-----------------------------------+--------------------------------------+----------+----------+----------+----------+----------+----------+

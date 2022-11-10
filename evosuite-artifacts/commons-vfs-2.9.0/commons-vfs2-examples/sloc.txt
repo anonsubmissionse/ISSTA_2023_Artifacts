@@ -1,0 +1,62 @@
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                          | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| example.filter   | AgeFileFilterExample.java                          | src      |       10 |        3 |       19 |       19 |       51 |
+| example.filter   | AgeFileFilterExample_ESTest.java                   | test     |        9 |        0 |       10 |       60 |       79 |
+| example.filter   | AgeFileFilterExample_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |      653 |      674 |
+| example.filter   | CanReadFileFilterExample.java                      | src      |       10 |        3 |       24 |       39 |       76 |
+| example.filter   | CanReadFileFilterExample_ESTest.java               | test     |        7 |        0 |        7 |       51 |       65 |
+| example.filter   | CanReadFileFilterExample_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |      660 |      681 |
+| example.filter   | CanWriteFileFilterExample.java                     | src      |        9 |        3 |       22 |       31 |       65 |
+| example.filter   | CanWriteFileFilterExample_ESTest.java              | test     |        7 |        0 |        7 |       56 |       70 |
+| example.filter   | CanWriteFileFilterExample_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |      655 |      676 |
+| example.filter   | DirectoryFileFilterExample.java                    | src      |        6 |        3 |       20 |       17 |       46 |
+| example.filter   | DirectoryFileFilterExample_ESTest.java             | test     |        7 |        0 |        7 |       42 |       56 |
+| example.filter   | DirectoryFileFilterExample_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      610 |      631 |
+| example.filter   | EmptyFileFilterExample.java                        | src      |        8 |        3 |       22 |       29 |       62 |
+| example.filter   | EmptyFileFilterExample_ESTest.java                 | test     |        7 |        0 |        7 |       56 |       70 |
+| example.filter   | EmptyFileFilterExample_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      655 |      676 |
+| example.filter   | FileFileFilterExample.java                         | src      |        6 |        3 |       20 |       17 |       46 |
+| example.filter   | FileFileFilterExample_ESTest.java                  | test     |        9 |        0 |       10 |       59 |       78 |
+| example.filter   | FileFileFilterExample_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |      653 |      674 |
+| example.filter   | HiddenFileFilterExample.java                       | src      |        8 |        3 |       22 |       29 |       62 |
+| example.filter   | HiddenFileFilterExample_ESTest.java                | test     |       10 |        0 |       10 |       79 |       99 |
+| example.filter   | HiddenFileFilterExample_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |      655 |      676 |
+| example.filter   | NameFileFilterExample.java                         | src      |        7 |        3 |       20 |       17 |       47 |
+| example.filter   | NameFileFilterExample_ESTest.java                  | test     |        7 |        0 |        7 |       43 |       57 |
+| example.filter   | NameFileFilterExample_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |      612 |      633 |
+| example.filter   | PrefixFileFilterExample.java                       | src      |        7 |        3 |       20 |       17 |       47 |
+| example.filter   | PrefixFileFilterExample_ESTest.java                | test     |        9 |        0 |       10 |       51 |       70 |
+| example.filter   | PrefixFileFilterExample_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |      654 |      675 |
+| example.filter   | RegexFileFilterExample.java                        | src      |        7 |        3 |       20 |       18 |       48 |
+| example.filter   | RegexFileFilterExample_ESTest.java                 | test     |        7 |        0 |        7 |       36 |       50 |
+| example.filter   | RegexFileFilterExample_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      652 |      673 |
+| example.filter   | SizeFileFilterExample.java                         | src      |        8 |        3 |       20 |       18 |       49 |
+| example.filter   | SizeFileFilterExample_ESTest.java                  | test     |        9 |        0 |       10 |       59 |       78 |
+| example.filter   | SizeFileFilterExample_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |      653 |      674 |
+| example.filter   | SuffixFileFilterExample.java                       | src      |        7 |        3 |       20 |       17 |       47 |
+| example.filter   | SuffixFileFilterExample_ESTest.java                | test     |        9 |        0 |       10 |       60 |       79 |
+| example.filter   | SuffixFileFilterExample_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |      655 |      676 |
+| example.filter   | WildcardFileFilterExample.java                     | src      |        7 |        3 |       20 |       18 |       48 |
+| example.filter   | WildcardFileFilterExample_ESTest.java              | test     |        7 |        0 |        7 |       42 |       56 |
+| example.filter   | WildcardFileFilterExample_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |      612 |      633 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| example          | ChangeLastModificationTime.java                    | src      |        5 |        3 |       16 |       19 |       43 |
+| example          | ChangeLastModificationTime_ESTest.java             | test     |       10 |        0 |       13 |       48 |       71 |
+| example          | ChangeLastModificationTime_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      642 |      663 |
+| example          | Shell.java                                         | src      |       32 |       41 |       21 |      277 |      371 |
+| example          | Shell_ESTest.java                                  | test     |       49 |        0 |       96 |      274 |      419 |
+| example          | Shell_ESTest_scaffolding.java                      | test     |       16 |        5 |        0 |      671 |      692 |
+| example          | ShowProperties.java                                | src      |        6 |        3 |       16 |       65 |       90 |
+| example          | ShowProperties_ESTest.java                         | test     |       11 |        0 |       12 |       63 |       86 |
+| example          | ShowProperties_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      645 |      666 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| libcheck         | FtpCheck.java                                      | src      |        9 |        3 |       16 |       56 |       84 |
+| libcheck         | FtpCheck_ESTest.java                               | test     |       13 |        0 |       85 |       89 |      187 |
+| libcheck         | FtpCheck_ESTest_scaffolding.java                   | test     |       17 |        5 |        0 |      122 |      144 |
+| libcheck         | SftpCheck.java                                     | src      |       10 |        3 |       16 |       59 |       88 |
+| libcheck         | SftpCheck_ESTest.java                              | test     |       13 |        0 |       19 |       63 |       95 |
+| libcheck         | SftpCheck_ESTest_scaffolding.java                  | test     |       16 |        5 |        0 |      169 |      190 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 3 package(s)     | 54 file(s)                                         | java     |      651 |      182 |      688 |    12621 |    14142 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+

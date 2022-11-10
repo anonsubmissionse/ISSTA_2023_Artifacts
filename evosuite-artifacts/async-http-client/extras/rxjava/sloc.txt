@@ -1,0 +1,18 @@
++------------------+-----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                     | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+-----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| rxjava.single    | AbstractProgressSingleSubscriberBridge.java   | src      |        8 |        0 |       12 |       22 |       42 |
+| rxjava.single    | AbstractSingleSubscriberBridge.java           | src      |       23 |        0 |       14 |       83 |      120 |
+| rxjava.single    | AsyncHttpSingle.java                          | src      |       14 |       62 |       12 |       45 |      133 |
+| rxjava.single    | AsyncSingleSubscriberBridge.java              | src      |        7 |        0 |       12 |       15 |       34 |
+| rxjava.single    | ProgressAsyncSingleSubscriberBridge.java      | src      |        7 |        0 |       12 |       15 |       34 |
++------------------+-----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| rxjava           | AsyncHttpObservable.java                      | src      |        9 |       17 |       18 |       40 |       84 |
+| rxjava           | AsyncHttpObservable_ESTest.java               | test     |        8 |        0 |        8 |       93 |      109 |
+| rxjava           | AsyncHttpObservable_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |     1164 |     1185 |
+| rxjava           | UnsubscribedException.java                    | src      |        4 |        3 |       12 |       10 |       29 |
+| rxjava           | UnsubscribedException_ESTest.java             | test     |        4 |        0 |        4 |       16 |       24 |
+| rxjava           | UnsubscribedException_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       80 |      101 |
++------------------+-----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 2 package(s)     | 11 file(s)                                    | java     |      116 |       92 |      104 |     1583 |     1895 |
++------------------+-----------------------------------------------+----------+----------+----------+----------+----------+----------+

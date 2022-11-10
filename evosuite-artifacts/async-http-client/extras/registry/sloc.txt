@@ -1,0 +1,19 @@
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                            | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| registry         | AsyncHttpClientFactory.java                          | src      |        9 |       13 |       12 |       55 |       89 |
+| registry         | AsyncHttpClientFactory_ESTest.java                   | test     |        6 |        0 |        8 |       31 |       45 |
+| registry         | AsyncHttpClientFactory_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |      866 |      887 |
+| registry         | AsyncHttpClientImplException.java                    | src      |        3 |        0 |       12 |       10 |       25 |
+| registry         | AsyncHttpClientImplException_ESTest.java             | test     |        4 |        0 |        4 |       16 |       24 |
+| registry         | AsyncHttpClientImplException_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       78 |       99 |
+| registry         | AsyncHttpClientRegistry.java                         | src      |       13 |       45 |       12 |       11 |       81 |
+| registry         | AsyncHttpClientRegistryImpl.java                     | src      |       11 |        5 |       47 |       56 |      119 |
+| registry         | AsyncHttpClientRegistryImpl_ESTest.java              | test     |       16 |        0 |       20 |       82 |      118 |
+| registry         | AsyncHttpClientRegistryImpl_ESTest_scaffolding.java  | test     |       16 |        5 |        0 |      886 |      907 |
+| registry         | AsyncImplHelper.java                                 | src      |        7 |        0 |       18 |       38 |       63 |
+| registry         | AsyncImplHelper_ESTest.java                          | test     |       11 |        0 |       13 |       47 |       71 |
+| registry         | AsyncImplHelper_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      794 |      815 |
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 13 file(s)                                           | java     |      144 |       83 |      146 |     2970 |     3343 |
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+

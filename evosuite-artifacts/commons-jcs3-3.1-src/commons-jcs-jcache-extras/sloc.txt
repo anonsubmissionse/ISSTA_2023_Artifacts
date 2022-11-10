@@ -1,0 +1,47 @@
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                    | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| cdi              | AnyLiteral.java                              | src      |        3 |        0 |       18 |       12 |       33 |
+| cdi              | AnyLiteral_ESTest.java                       | test     |        4 |        0 |        4 |       16 |       24 |
+| cdi              | AnyLiteral_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       82 |      103 |
+| cdi              | CacheManagerBean.java                        | src      |       18 |        0 |       18 |       90 |      126 |
+| cdi              | CacheManagerBean_ESTest.java                 | test     |       18 |        0 |        9 |      152 |      179 |
+| cdi              | CacheManagerBean_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      774 |      795 |
+| cdi              | CacheProviderBean.java                       | src      |       18 |        0 |       18 |       90 |      126 |
+| cdi              | CacheProviderBean_ESTest.java                | test     |       18 |        0 |        8 |      119 |      145 |
+| cdi              | CacheProviderBean_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |      772 |      793 |
+| cdi              | DefaultLiteral.java                          | src      |        3 |        0 |       18 |       12 |       33 |
+| cdi              | DefaultLiteral_ESTest.java                   | test     |        4 |        0 |        4 |       16 |       24 |
+| cdi              | DefaultLiteral_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |       82 |      103 |
+| cdi              | ExtraJCacheExtension.java                    | src      |       11 |        0 |       19 |       77 |      107 |
+| cdi              | ExtraJCacheExtension_ESTest.java             | test     |       15 |        0 |       28 |      155 |      198 |
+| cdi              | ExtraJCacheExtension_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      745 |      766 |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| closeable        | Closeables.java                              | src      |        3 |        0 |       19 |       32 |       54 |
+| closeable        | Closeables_ESTest.java                       | test     |        6 |        0 |        8 |       26 |       40 |
+| closeable        | Closeables_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       78 |       99 |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| loader           | CacheLoaderAdapter.java                      | src      |        3 |        0 |       18 |       28 |       49 |
+| loader           | CacheLoaderAdapter_ESTest.java               | test     |        3 |        0 |        5 |       12 |       20 |
+| loader           | CacheLoaderAdapter_ESTest_scaffolding.java   | test     |       14 |        5 |        0 |       61 |       80 |
+| loader           | CompositeCacheLoader.java                    | src      |       11 |        0 |       18 |       66 |       95 |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| web              | InMemoryResponse.java                        | src      |       32 |        0 |       18 |      221 |      271 |
+| web              | InMemoryResponse_ESTest.java                 | test     |      110 |        0 |      138 |     1141 |     1389 |
+| web              | InMemoryResponse_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      100 |      121 |
+| web              | JCacheFilter.java                            | src      |       29 |        0 |       18 |      294 |      341 |
+| web              | JCacheFilter_ESTest.java                     | test     |       47 |        0 |       53 |      416 |      516 |
+| web              | JCacheFilter_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |       95 |      116 |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| writer           | AsyncCacheWriter.java                        | src      |       15 |        0 |       19 |      122 |      156 |
+| writer           | AsyncCacheWriter_ESTest.java                 | test     |       15 |        0 |       18 |      100 |      133 |
+| writer           | AsyncCacheWriter_ESTest_scaffolding.java     | test     |       16 |        5 |        0 |      332 |      353 |
+| writer           | CacheWriterAdapter.java                      | src      |        4 |        0 |       18 |       30 |       52 |
+| writer           | CacheWriterAdapter_ESTest.java               | test     |        3 |        0 |        5 |       12 |       20 |
+| writer           | CacheWriterAdapter_ESTest_scaffolding.java   | test     |       14 |        5 |        0 |       61 |       80 |
+| writer           | CompositeCacheWriter.java                    | src      |       11 |        0 |       18 |      119 |      148 |
+| writer           | CompositeCacheWriter_ESTest.java             | test     |       20 |        0 |       24 |      286 |      330 |
+| writer           | CompositeCacheWriter_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      346 |      367 |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 5 package(s)     | 37 file(s)                                   | java     |      612 |       60 |      541 |     7172 |     8385 |
++------------------+----------------------------------------------+----------+----------+----------+----------+----------+----------+

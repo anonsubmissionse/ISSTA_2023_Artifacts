@@ -1,0 +1,25 @@
++------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                        | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| simple           | AppendableBodyConsumer.java                      | src      |        8 |        3 |       12 |       29 |       52 |
+| simple           | AppendableBodyConsumer_ESTest.java               | test     |       13 |        0 |       16 |       95 |      124 |
+| simple           | AppendableBodyConsumer_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |       83 |      104 |
+| simple           | BodyConsumer.java                                | src      |        4 |        9 |       12 |        7 |       32 |
+| simple           | ByteBufferBodyConsumer.java                      | src      |        6 |        9 |       12 |       17 |       44 |
+| simple           | ByteBufferBodyConsumer_ESTest.java               | test     |       12 |        0 |       20 |       62 |       94 |
+| simple           | ByteBufferBodyConsumer_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |       79 |      100 |
+| simple           | FileBodyConsumer.java                            | src      |        8 |       15 |       13 |       26 |       62 |
+| simple           | FileBodyConsumer_ESTest.java                     | test     |       26 |        0 |       40 |      169 |      235 |
+| simple           | FileBodyConsumer_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |       82 |      103 |
+| simple           | OutputStreamBodyConsumer.java                    | src      |        6 |        9 |       12 |       18 |       45 |
+| simple           | OutputStreamBodyConsumer_ESTest.java             | test     |       13 |        0 |       19 |       81 |      113 |
+| simple           | OutputStreamBodyConsumer_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       81 |      102 |
+| simple           | ResumableBodyConsumer.java                       | src      |        5 |       14 |       12 |        6 |       37 |
+| simple           | SimpleAHCTransferListener.java                   | src      |        9 |       49 |       12 |       10 |       80 |
+| simple           | SimpleAsyncHttpClient.java                       | src      |      147 |      104 |       12 |      576 |      839 |
+| simple           | SimpleAsyncHttpClient_ESTest.java                | test     |       56 |        0 |       16 |      376 |      448 |
+| simple           | SimpleAsyncHttpClient_ESTest_scaffolding.java    | test     |       16 |        5 |        0 |     1117 |     1138 |
+| simple           | ThrowableHandler.java                            | src      |        4 |        3 |       12 |        4 |       23 |
++------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 19 file(s)                                       | java     |      397 |      240 |      220 |     2918 |     3775 |
++------------------+--------------------------------------------------+----------+----------+----------+----------+----------+----------+

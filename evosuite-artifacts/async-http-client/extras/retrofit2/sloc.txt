@@ -1,0 +1,12 @@
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                          | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| retrofit         | AsyncHttpClientCall.java                           | src      |       42 |       66 |       24 |      206 |      338 |
+| retrofit         | AsyncHttpClientCallFactory.java                    | src      |       11 |       29 |       14 |       36 |       90 |
+| retrofit         | AsyncHttpClientCallFactory_ESTest.java             | test     |       27 |        0 |       20 |      219 |      266 |
+| retrofit         | AsyncHttpClientCallFactory_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      696 |      717 |
+| retrofit         | AsyncHttpClientCall_ESTest.java                    | test     |       34 |        0 |       31 |      242 |      307 |
+| retrofit         | AsyncHttpClientCall_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |      788 |      809 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 6 file(s)                                          | java     |      146 |      105 |       89 |     2187 |     2527 |
++------------------+----------------------------------------------------+----------+----------+----------+----------+----------+----------+

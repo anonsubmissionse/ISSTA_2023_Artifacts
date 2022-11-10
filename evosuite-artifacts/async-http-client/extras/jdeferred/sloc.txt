@@ -1,0 +1,16 @@
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                            | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| jdeferred        | AsyncHttpDeferredObject.java                         | src      |        7 |        0 |       15 |       33 |       55 |
+| jdeferred        | AsyncHttpDeferredObject_ESTest.java                  | test     |        7 |        0 |       11 |       31 |       49 |
+| jdeferred        | AsyncHttpDeferredObject_ESTest_scaffolding.java      | test     |       16 |        5 |        0 |      936 |      957 |
+| jdeferred        | ContentWriteProgress.java                            | src      |        6 |        0 |       15 |       24 |       45 |
+| jdeferred        | ContentWriteProgress_ESTest.java                     | test     |       13 |        0 |        4 |       82 |       99 |
+| jdeferred        | ContentWriteProgress_ESTest_scaffolding.java         | test     |       16 |        5 |        0 |       79 |      100 |
+| jdeferred        | HttpProgress.java                                    | src      |        1 |        0 |       15 |        3 |       19 |
+| jdeferred        | HttpResponseBodyPartProgress.java                    | src      |        5 |        0 |       15 |       15 |       35 |
+| jdeferred        | HttpResponseBodyPartProgress_ESTest.java             | test     |        6 |        0 |        4 |       32 |       42 |
+| jdeferred        | HttpResponseBodyPartProgress_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      469 |      490 |
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 10 file(s)                                           | java     |       93 |       15 |       79 |     1704 |     1891 |
++------------------+------------------------------------------------------+----------+----------+----------+----------+----------+----------+

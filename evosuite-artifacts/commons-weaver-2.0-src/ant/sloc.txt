@@ -1,0 +1,20 @@
++------------------+--------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                  | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+--------------------------------------------+----------+----------+----------+----------+----------+----------+
+| ant              | AbstractWeaverTask.java                    | src      |        6 |       19 |       18 |       26 |       69 |
+| ant              | AbstractWeaverTask_ESTest.java             | test     |        9 |        0 |       12 |       52 |       73 |
+| ant              | AbstractWeaverTask_ESTest_scaffolding.java | test     |       16 |        5 |        0 |      115 |      136 |
+| ant              | CleanTask.java                             | src      |        3 |       10 |       18 |       19 |       50 |
+| ant              | CleanTask_ESTest.java                      | test     |        5 |        0 |        8 |       24 |       37 |
+| ant              | CleanTask_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      111 |      132 |
+| ant              | InlineProperties.java                      | src      |        7 |       27 |       18 |       26 |       78 |
+| ant              | InlineProperties_ESTest.java               | test     |        5 |        0 |        4 |       23 |       32 |
+| ant              | InlineProperties_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |       82 |      103 |
+| ant              | WeaveTask.java                             | src      |        3 |       10 |       18 |       19 |       50 |
+| ant              | WeaveTask_ESTest.java                      | test     |        6 |        0 |        8 |       36 |       50 |
+| ant              | WeaveTask_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |      192 |      213 |
+| ant              | WeaverSettings.java                        | src      |       16 |       63 |       18 |      132 |      229 |
+| ant              | package-info.java                          | src      |        0 |        3 |       16 |        1 |       20 |
++------------------+--------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 14 file(s)                                 | java     |      124 |      152 |      138 |      858 |     1272 |
++------------------+--------------------------------------------+----------+----------+----------+----------+----------+----------+

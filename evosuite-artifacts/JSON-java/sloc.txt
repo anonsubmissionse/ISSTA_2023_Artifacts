@@ -1,0 +1,64 @@
++------------------+------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                      | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| json             | CDL.java                                       | src      |       13 |       96 |        5 |      153 |      267 |
+| json             | CDL_ESTest.java                                | test     |      159 |        0 |       73 |      954 |     1186 |
+| json             | CDL_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      100 |      121 |
+| json             | Cookie.java                                    | src      |       17 |       58 |       13 |      116 |      204 |
+| json             | CookieList.java                                | src      |        4 |       27 |        4 |       31 |       66 |
+| json             | CookieList_ESTest.java                         | test     |       14 |        0 |       15 |       65 |       94 |
+| json             | CookieList_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |      104 |      125 |
+| json             | Cookie_ESTest.java                             | test     |       36 |        0 |       31 |      180 |      247 |
+| json             | Cookie_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       96 |      117 |
+| json             | HTTP.java                                      | src      |       15 |       57 |        7 |       63 |      142 |
+| json             | HTTPTokener.java                               | src      |        5 |       15 |        3 |       34 |       57 |
+| json             | HTTPTokener_ESTest.java                        | test     |        9 |        0 |       10 |       43 |       62 |
+| json             | HTTPTokener_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       91 |      112 |
+| json             | HTTP_ESTest.java                               | test     |       18 |        0 |       21 |       85 |      124 |
+| json             | HTTP_ESTest_scaffolding.java                   | test     |       16 |        5 |        0 |      102 |      123 |
+| json             | JSONArray.java                                 | src      |       96 |      911 |       28 |      662 |     1697 |
+| json             | JSONArray_ESTest.java                          | test     |     2005 |        0 |     1646 |    16957 |    20608 |
+| json             | JSONArray_ESTest_scaffolding.java              | test     |       16 |        5 |        0 |      197 |      218 |
+| json             | JSONException.java                             | src      |        6 |       26 |        3 |       14 |       49 |
+| json             | JSONException_ESTest.java                      | test     |        7 |        0 |        7 |       35 |       49 |
+| json             | JSONException_ESTest_scaffolding.java          | test     |       16 |        5 |        0 |       78 |       99 |
+| json             | JSONML.java                                    | src      |       50 |      147 |       23 |      302 |      522 |
+| json             | JSONML_ESTest.java                             | test     |       73 |        0 |      104 |      391 |      568 |
+| json             | JSONML_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |      109 |      130 |
+| json             | JSONObject.java                                | src      |      159 |     1198 |       98 |     1261 |     2716 |
+| json             | JSONObject_ESTest.java                         | test     |      587 |        0 |      233 |     3993 |     4813 |
+| json             | JSONObject_ESTest_scaffolding.java             | test     |       17 |        5 |        0 |      204 |      226 |
+| json             | JSONPointer.java                               | src      |       21 |      107 |       13 |      134 |      275 |
+| json             | JSONPointerException.java                      | src      |        5 |        7 |        3 |       10 |       25 |
+| json             | JSONPointerException_ESTest.java               | test     |        5 |        0 |        4 |       20 |       29 |
+| json             | JSONPointerException_ESTest_scaffolding.java   | test     |       16 |        5 |        0 |       80 |      101 |
+| json             | JSONPointer_ESTest.java                        | test     |       36 |        0 |       43 |      212 |      291 |
+| json             | JSONPointer_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       94 |      115 |
+| json             | JSONPropertyIgnore.java                        | src      |        4 |        6 |        3 |       10 |       23 |
+| json             | JSONPropertyName.java                          | src      |        4 |        8 |        3 |       12 |       27 |
+| json             | JSONString.java                                | src      |        2 |       14 |        3 |        4 |       23 |
+| json             | JSONStringer.java                              | src      |        4 |       41 |        3 |       11 |       59 |
+| json             | JSONStringer_ESTest.java                       | test     |        8 |        0 |        8 |       46 |       62 |
+| json             | JSONStringer_ESTest_scaffolding.java           | test     |       16 |        5 |        0 |       90 |      111 |
+| json             | JSONTokener.java                               | src      |       44 |      146 |       15 |      320 |      525 |
+| json             | JSONTokener_ESTest.java                        | test     |      112 |        0 |      108 |      681 |      901 |
+| json             | JSONTokener_ESTest_scaffolding.java            | test     |       16 |        5 |        0 |       89 |      110 |
+| json             | JSONWriter.java                                | src      |       27 |      165 |       17 |      185 |      394 |
+| json             | JSONWriter_ESTest.java                         | test     |       73 |        0 |      106 |      486 |      665 |
+| json             | JSONWriter_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       93 |      114 |
+| json             | Property.java                                  | src      |        4 |       17 |        6 |       28 |       55 |
+| json             | Property_ESTest.java                           | test     |       10 |        0 |        8 |       52 |       70 |
+| json             | Property_ESTest_scaffolding.java               | test     |       16 |        5 |        0 |      101 |      122 |
+| json             | XML.java                                       | src      |       71 |      232 |       69 |      491 |      863 |
+| json             | XMLParserConfiguration.java                    | src      |       25 |      160 |        8 |      107 |      300 |
+| json             | XMLParserConfiguration_ESTest.java             | test     |       35 |        0 |       38 |      228 |      301 |
+| json             | XMLParserConfiguration_ESTest_scaffolding.java | test     |       16 |        5 |        0 |       79 |      100 |
+| json             | XMLTokener.java                                | src      |       34 |       73 |       21 |      268 |      396 |
+| json             | XMLTokener_ESTest.java                         | test     |       83 |        0 |       78 |      473 |      634 |
+| json             | XMLTokener_ESTest_scaffolding.java             | test     |       16 |        5 |        0 |       95 |      116 |
+| json             | XMLXsiTypeConverter.java                       | src      |        1 |       38 |        3 |        4 |       46 |
+| json             | XML_ESTest.java                                | test     |      105 |        0 |       91 |      534 |      730 |
+| json             | XML_ESTest_scaffolding.java                    | test     |       16 |        5 |        0 |      114 |      135 |
++------------------+------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 58 file(s)                                     | java     |     4275 |     3639 |     2975 |    31571 |    42460 |
++------------------+------------------------------------------------+----------+----------+----------+----------+----------+----------+

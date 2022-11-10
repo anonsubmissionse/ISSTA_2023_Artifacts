@@ -1,0 +1,92 @@
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name          | File Name                                                     | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.internal         | DoubleFunction1N.java                                         | src      |        2 |        8 |       16 |        5 |       31 |
+| core.internal         | DoubleFunction2N.java                                         | src      |        2 |        9 |       16 |        5 |       32 |
+| core.internal         | DoubleFunction3N.java                                         | src      |        2 |       10 |       16 |        5 |       33 |
+| core.internal         | GeometryInternalError.java                                    | src      |        4 |        6 |       16 |       12 |       38 |
+| core.internal         | GeometryInternalError_ESTest.java                             | test     |        4 |        0 |        4 |       14 |       22 |
+| core.internal         | GeometryInternalError_ESTest_scaffolding.java                 | test     |       16 |        5 |        0 |       78 |       99 |
+| core.internal         | HyperplaneSubsets.java                                        | src      |       12 |       23 |       16 |       38 |       89 |
+| core.internal         | HyperplaneSubsets_ESTest.java                                 | test     |        3 |        0 |        5 |       12 |       20 |
+| core.internal         | HyperplaneSubsets_ESTest_scaffolding.java                     | test     |       14 |        5 |        0 |       62 |       81 |
+| core.internal         | IteratorTransform.java                                        | src      |       13 |       22 |       16 |       41 |       92 |
+| core.internal         | IteratorTransform_ESTest.java                                 | test     |        3 |        0 |        5 |       12 |       20 |
+| core.internal         | IteratorTransform_ESTest_scaffolding.java                     | test     |       14 |        5 |        0 |       61 |       80 |
+| core.internal         | SimpleTupleFormat.java                                        | src      |       66 |      159 |       17 |      214 |      456 |
+| core.internal         | SimpleTupleFormat_ESTest.java                                 | test     |       48 |        0 |       44 |      287 |      379 |
+| core.internal         | SimpleTupleFormat_ESTest_scaffolding.java                     | test     |       16 |        5 |        0 |       90 |      111 |
+| core.internal         | package-info.java                                             | src      |        0 |        7 |       16 |        1 |       24 |
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.partitioning.bsp | AbstractBSPTree.java                                          | src      |      163 |      354 |       47 |      559 |     1123 |
+| core.partitioning.bsp | AbstractBSPTreeMergeOperator.java                             | src      |       20 |       56 |       20 |       40 |      136 |
+| core.partitioning.bsp | AbstractBSPTreeMergeOperator_ESTest.java                      | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | AbstractBSPTreeMergeOperator_ESTest_scaffolding.java          | test     |       14 |        5 |        0 |       61 |       80 |
+| core.partitioning.bsp | AbstractBSPTree_ESTest.java                                   | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | AbstractBSPTree_ESTest_scaffolding.java                       | test     |       14 |        5 |        0 |       73 |       92 |
+| core.partitioning.bsp | AbstractPartitionedRegionBuilder.java                         | src      |       49 |       81 |       28 |      149 |      307 |
+| core.partitioning.bsp | AbstractPartitionedRegionBuilder_ESTest.java                  | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | AbstractPartitionedRegionBuilder_ESTest_scaffolding.java      | test     |       14 |        5 |        0 |       67 |       86 |
+| core.partitioning.bsp | AbstractRegionBSPTree.java                                    | src      |      163 |      365 |       49 |      561 |     1138 |
+| core.partitioning.bsp | AbstractRegionBSPTree_ESTest.java                             | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | AbstractRegionBSPTree_ESTest_scaffolding.java                 | test     |       14 |        5 |        0 |       91 |      110 |
+| core.partitioning.bsp | BSPSubtree.java                                               | src      |        6 |       21 |       16 |        8 |       51 |
+| core.partitioning.bsp | BSPTree.java                                                  | src      |       25 |      129 |       16 |       35 |      205 |
+| core.partitioning.bsp | BSPTreePrinter.java                                           | src      |       20 |       16 |       16 |       71 |      123 |
+| core.partitioning.bsp | BSPTreePrinter_ESTest.java                                    | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | BSPTreePrinter_ESTest_scaffolding.java                        | test     |       14 |        5 |        0 |       64 |       83 |
+| core.partitioning.bsp | BSPTreeVisitor.java                                           | src      |       22 |       78 |       16 |       62 |      178 |
+| core.partitioning.bsp | BSPTreeVisitor_ESTest.java                                    | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | BSPTreeVisitor_ESTest_scaffolding.java                        | test     |       14 |        5 |        0 |       62 |       81 |
+| core.partitioning.bsp | BSPTree_ESTest.java                                           | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | BSPTree_ESTest_scaffolding.java                               | test     |       14 |        5 |        0 |       62 |       81 |
+| core.partitioning.bsp | RegionCutBoundary.java                                        | src      |       25 |       61 |       16 |       80 |      182 |
+| core.partitioning.bsp | RegionCutBoundary_ESTest.java                                 | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning.bsp | RegionCutBoundary_ESTest_scaffolding.java                     | test     |       14 |        5 |        0 |       62 |       81 |
+| core.partitioning.bsp | RegionCutRule.java                                            | src      |        4 |       15 |       16 |        6 |       41 |
+| core.partitioning.bsp | package-info.java                                             | src      |        0 |        7 |       16 |        1 |       24 |
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core.partitioning     | AbstractConvexHyperplaneBoundedRegion.java                    | src      |       81 |      128 |       40 |      250 |      499 |
+| core.partitioning     | AbstractConvexHyperplaneBoundedRegion_ESTest.java             | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning     | AbstractConvexHyperplaneBoundedRegion_ESTest_scaffolding.java | test     |       14 |        5 |        0 |       68 |       87 |
+| core.partitioning     | AbstractHyperplane.java                                       | src      |        7 |       10 |       16 |       31 |       64 |
+| core.partitioning     | AbstractHyperplane_ESTest.java                                | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning     | AbstractHyperplane_ESTest_scaffolding.java                    | test     |       14 |        5 |        0 |       63 |       82 |
+| core.partitioning     | BoundaryList.java                                             | src      |       10 |       20 |       18 |       34 |       82 |
+| core.partitioning     | BoundaryList_ESTest.java                                      | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning     | BoundaryList_ESTest_scaffolding.java                          | test     |       14 |        5 |        0 |       62 |       81 |
+| core.partitioning     | BoundarySource.java                                           | src      |        4 |        7 |       16 |        7 |       34 |
+| core.partitioning     | EmbeddingHyperplane.java                                      | src      |        2 |        6 |       16 |        6 |       30 |
+| core.partitioning     | Hyperplane.java                                               | src      |       10 |       61 |       16 |       13 |      100 |
+| core.partitioning     | HyperplaneBoundedRegion.java                                  | src      |        2 |        6 |       16 |        6 |       30 |
+| core.partitioning     | HyperplaneConvexSubset.java                                   | src      |        5 |       19 |       16 |       10 |       50 |
+| core.partitioning     | HyperplaneLocation.java                                       | src      |        4 |       12 |       16 |        6 |       38 |
+| core.partitioning     | HyperplaneSubset.java                                         | src      |       12 |       83 |       16 |       20 |      131 |
+| core.partitioning     | HyperplaneSubset_ESTest.java                                  | test     |        3 |        0 |        5 |       12 |       20 |
+| core.partitioning     | HyperplaneSubset_ESTest_scaffolding.java                      | test     |       14 |        5 |        0 |       63 |       82 |
+| core.partitioning     | Split.java                                                    | src      |        9 |       35 |       16 |       37 |       97 |
+| core.partitioning     | SplitLocation.java                                            | src      |        5 |       17 |       16 |        7 |       45 |
+| core.partitioning     | Split_ESTest.java                                             | test     |       11 |        0 |        4 |       68 |       83 |
+| core.partitioning     | Split_ESTest_scaffolding.java                                 | test     |       16 |        5 |        0 |       80 |      101 |
+| core.partitioning     | Splittable.java                                               | src      |        3 |        8 |       16 |        5 |       32 |
+| core.partitioning     | package-info.java                                             | src      |        0 |       18 |       16 |        1 |       35 |
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| core                  | Embedding.java                                                | src      |        6 |       35 |       16 |       14 |       71 |
+| core                  | Embedding_ESTest.java                                         | test     |        3 |        0 |        5 |       12 |       20 |
+| core                  | Embedding_ESTest_scaffolding.java                             | test     |       13 |        5 |        0 |       57 |       75 |
+| core                  | Point.java                                                    | src      |        2 |       24 |       16 |        4 |       46 |
+| core                  | Region.java                                                   | src      |        8 |       46 |       16 |       13 |       83 |
+| core                  | RegionEmbedding.java                                          | src      |        2 |        9 |       16 |        5 |       32 |
+| core                  | RegionLocation.java                                           | src      |        4 |       13 |       16 |        6 |       39 |
+| core                  | Region_ESTest.java                                            | test     |        3 |        0 |        5 |       12 |       20 |
+| core                  | Region_ESTest_scaffolding.java                                | test     |       14 |        5 |        0 |       62 |       81 |
+| core                  | Sized.java                                                    | src      |        4 |       13 |       16 |       10 |       43 |
+| core                  | Sized_ESTest.java                                             | test     |        3 |        0 |        5 |       12 |       20 |
+| core                  | Sized_ESTest_scaffolding.java                                 | test     |       13 |        5 |        0 |       57 |       75 |
+| core                  | Spatial.java                                                  | src      |        5 |       19 |       16 |        7 |       47 |
+| core                  | Transform.java                                                | src      |        4 |       44 |       16 |        6 |       70 |
+| core                  | Vector.java                                                   | src      |       17 |       93 |       16 |       19 |      145 |
+| core                  | package-info.java                                             | src      |        0 |        9 |       16 |        1 |       26 |
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 4 package(s)          | 83 file(s)                                                    | java     |     1202 |     2262 |      932 |     4329 |     8725 |
++-----------------------+---------------------------------------------------------------+----------+----------+----------+----------+----------+----------+

@@ -1,0 +1,18 @@
++------------------+-------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| Package Name     | File Name                                             | Type     | Blank    | JavaDoc  | Comment  | Code     | Total    |
++------------------+-------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| openjpa          | OpenJPAJCacheDataCache.java                           | src      |       15 |        0 |       18 |      124 |      157 |
+| openjpa          | OpenJPAJCacheDataCacheManager.java                    | src      |       11 |        0 |       18 |       91 |      120 |
+| openjpa          | OpenJPAJCacheDataCacheManager_ESTest.java             | test     |       23 |        0 |       42 |      138 |      203 |
+| openjpa          | OpenJPAJCacheDataCacheManager_ESTest_scaffolding.java | test     |       16 |        5 |        0 |     1952 |     1973 |
+| openjpa          | OpenJPAJCacheDataCache_ESTest.java                    | test     |       29 |        0 |       49 |      173 |      251 |
+| openjpa          | OpenJPAJCacheDataCache_ESTest_scaffolding.java        | test     |       16 |        5 |        0 |     1267 |     1288 |
+| openjpa          | OpenJPAJCacheDerivation.java                          | src      |        6 |        0 |       18 |       51 |       75 |
+| openjpa          | OpenJPAJCacheDerivation_ESTest.java                   | test     |       11 |        0 |       12 |       64 |       87 |
+| openjpa          | OpenJPAJCacheDerivation_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |     1800 |     1821 |
+| openjpa          | OpenJPAJCacheQueryCache.java                          | src      |       15 |        0 |       18 |       92 |      125 |
+| openjpa          | OpenJPAJCacheQueryCache_ESTest.java                   | test     |       24 |        0 |       41 |      137 |      202 |
+| openjpa          | OpenJPAJCacheQueryCache_ESTest_scaffolding.java       | test     |       16 |        5 |        0 |     2322 |     2343 |
++------------------+-------------------------------------------------------+----------+----------+----------+----------+----------+----------+
+| 1 package(s)     | 12 file(s)                                            | java     |      198 |       20 |      216 |     8211 |     8645 |
++------------------+-------------------------------------------------------+----------+----------+----------+----------+----------+----------+

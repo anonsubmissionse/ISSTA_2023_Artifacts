@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="/media/soneya/extradrive1/toga-eval-issta-2023/issta-artifacts-nov-10/evosuite-artifacts/bcel-6.5.0-src/target/apidocs/META-INF">
+    <fileset dir="/media/soneya/extradrive1/toga-eval-issta-2023/issta-artifacts-nov-10/evosuite-artifacts/bcel-6.5.0-src">
+      <include name="LICENSE.txt"/>
+      <include name="NOTICE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>
